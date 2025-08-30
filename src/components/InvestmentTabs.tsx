@@ -22,7 +22,7 @@ const InvestmentTabs = () => {
           <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-2 mb-12 h-16 bg-muted/50 backdrop-blur-sm">
             <TabsTrigger 
               value="dry-warehouse" 
-              className="flex items-center space-x-3 text-base font-semibold data-[state=active]:bg-gold data-[state=active]:text-background transition-all duration-300"
+              className="flex items-center space-x-3 text-base font-semibold text-foreground data-[state=active]:bg-gold data-[state=active]:text-gray-900 transition-all duration-300"
             >
               <Warehouse className="w-5 h-5" />
               <div className="text-left">
@@ -32,7 +32,7 @@ const InvestmentTabs = () => {
             </TabsTrigger>
             <TabsTrigger 
               value="refrigerated-warehouse" 
-              className="flex items-center space-x-3 text-base font-semibold data-[state=active]:bg-gold data-[state=active]:text-background transition-all duration-300"
+              className="flex items-center space-x-3 text-base font-semibold text-foreground data-[state=active]:bg-gold data-[state=active]:text-gray-900 transition-all duration-300"
             >
               <Thermometer className="w-5 h-5" />
               <div className="text-left">
