@@ -72,7 +72,7 @@ export default function RefrigeratedWarehouseInvestment() {
           <img 
             src="/lovable-uploads/9d1d06b0-dabf-4d17-ae37-d862d5fc0302.png" 
             alt="Premium cold storage facility with specialized refrigerated equipment and loading doors" 
-            className="w-full h-80 object-cover"
+            className="w-full h-96 object-cover"
           />
         </div>
 
