@@ -240,7 +240,7 @@ export default function Calculator() {
               <span className="text-xs text-muted-foreground">Presets are editable below.</span>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
               <Field label="Buildable Area (SF)">
                 <NumberInput value={squareFeet} onChange={setSquareFeet} min={0} step={1000} />
               </Field>
@@ -258,7 +258,7 @@ export default function Calculator() {
               </Field>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
               <Field label="Land Cost ($)">
                 <NumberInput value={landCost} onChange={setLandCost} min={0} step={50000} />
               </Field>
@@ -317,14 +317,14 @@ export default function Calculator() {
               </Button>
             </div>
 
-            <div className="grid grid-cols-1 gap-4 mb-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6">
               <Stat label="Project Cost" value={formatUSD(totalProjectCost)} sub={`${formatUSD(landCost)} land + ${formatUSD(hardCost)} hard + ${softCostPct}% soft`} />
               <Stat label="Loan Amount" value={useDebt ? formatUSD(loanAmount) : "—"} sub={`${ltv}% LTV`} />
               <Stat label="Equity Needed" value={formatUSD(equityRequired)} sub={useDebt ? "Total Cost − Loan" : "No debt used"} />
               <Stat label="Annual DS" value={useDebt ? formatUSD(ads) : "—"} sub={`${rate}% / ${amortYears}y`} />
             </div>
 
-            <div className="grid grid-cols-1 gap-4 mb-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6">
               <Stat label="Year 1 Monthly Gross" value={y1 ? formatUSD(y1.gpr/12) : "—"} sub={`${fmt(baseRent)} $/SF/Yr × ${fmt(squareFeet)} SF`} />
               <Stat label="Year 1 Monthly NOI" value={y1 ? formatUSD(y1.noi/12) : "—"} sub={`${vacancy}% vac, ${opexPct}% OpEx`} />
               <Stat label="Year 10 Monthly Gross" value={y10 ? formatUSD(y10.gpr/12) : "—"} sub={`@ ${growth}% growth`} />
@@ -344,43 +344,80 @@ export default function Calculator() {
           </aside>
         </div>
 
-        {/* Table */}
-        <section className="mt-8 investment-card p-6 overflow-x-auto">
+        {/* Table - Desktop and Tablet */}
+        <section className="mt-8 investment-card p-4 sm:p-6">
           <h3 className="text-lg font-semibold mb-4 text-foreground">10-Year Projection</h3>
-          <table className="min-w-full text-sm">
-            <thead>
-              <tr className="text-left text-muted-foreground border-b border-border">
-                <Th>Year</Th>
-                <Th>Rent $/SF/Yr</Th>
-                <Th>Gross Potential Rent</Th>
-                <Th>Vacancy Loss</Th>
-                <Th>Effective Gross Income</Th>
-                <Th>Operating Expenses</Th>
-                <Th>NOI</Th>
-                <Th>Debt Service</Th>
-                <Th>Levered Cash Flow</Th>
-                <Th>Monthly Gross</Th>
-                <Th>Monthly NOI</Th>
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map((r) => (
-                <tr key={r.year} className="border-b border-border/50 last:border-0">
-                  <Td>{r.year}</Td>
-                  <Td>{fmt(r.baseRentPSF, 2)}</Td>
-                  <Td>{formatUSD(r.gpr)}</Td>
-                  <Td className="text-accent-ruby">{formatUSD(r.vacancyLoss)}</Td>
-                  <Td>{formatUSD(r.egi)}</Td>
-                  <Td className="text-accent-amber">{formatUSD(r.opex)}</Td>
-                  <Td className="font-medium text-foreground">{formatUSD(r.noi)}</Td>
-                  <Td>{useDebt ? formatUSD(r.ds) : "—"}</Td>
-                  <Td className={r.cashFlow < 0 ? "text-accent-ruby" : "text-accent-emerald"}>{useDebt ? formatUSD(r.cashFlow) : "—"}</Td>
-                  <Td>{formatUSD(r.gpr/12)}</Td>
-                  <Td>{formatUSD(r.noi/12)}</Td>
+          
+          {/* Mobile Cards View */}
+          <div className="block lg:hidden space-y-4">
+            {rows.map((r) => (
+              <div key={r.year} className="bg-muted/30 rounded-lg p-4 space-y-3">
+                <div className="flex justify-between items-center border-b border-border/50 pb-2">
+                  <h4 className="font-semibold text-foreground">Year {r.year}</h4>
+                  <span className="text-sm text-muted-foreground">{fmt(r.baseRentPSF, 2)} $/SF/Yr</span>
+                </div>
+                
+                <div className="grid grid-cols-2 gap-3 text-sm">
+                  <div>
+                    <div className="text-muted-foreground">Monthly Gross</div>
+                    <div className="font-medium">{formatUSD(r.gpr/12)}</div>
+                  </div>
+                  <div>
+                    <div className="text-muted-foreground">Monthly NOI</div>
+                    <div className="font-medium text-accent-emerald">{formatUSD(r.noi/12)}</div>
+                  </div>
+                  <div>
+                    <div className="text-muted-foreground">Annual NOI</div>
+                    <div className="font-medium">{formatUSD(r.noi)}</div>
+                  </div>
+                  <div>
+                    <div className="text-muted-foreground">Cash Flow</div>
+                    <div className={`font-medium ${r.cashFlow < 0 ? "text-accent-ruby" : "text-accent-emerald"}`}>
+                      {useDebt ? formatUSD(r.cashFlow) : "—"}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Desktop Table */}
+          <div className="hidden lg:block overflow-x-auto">
+            <table className="min-w-full text-sm">
+              <thead>
+                <tr className="text-left text-muted-foreground border-b border-border">
+                  <Th>Year</Th>
+                  <Th>Rent $/SF/Yr</Th>
+                  <Th>Gross Potential Rent</Th>
+                  <Th>Vacancy Loss</Th>
+                  <Th>Effective Gross Income</Th>
+                  <Th>Operating Expenses</Th>
+                  <Th>NOI</Th>
+                  <Th>Debt Service</Th>
+                  <Th>Levered Cash Flow</Th>
+                  <Th>Monthly Gross</Th>
+                  <Th>Monthly NOI</Th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {rows.map((r) => (
+                  <tr key={r.year} className="border-b border-border/50 last:border-0">
+                    <Td>{r.year}</Td>
+                    <Td>{fmt(r.baseRentPSF, 2)}</Td>
+                    <Td>{formatUSD(r.gpr)}</Td>
+                    <Td className="text-accent-ruby">{formatUSD(r.vacancyLoss)}</Td>
+                    <Td>{formatUSD(r.egi)}</Td>
+                    <Td className="text-accent-amber">{formatUSD(r.opex)}</Td>
+                    <Td className="font-medium text-foreground">{formatUSD(r.noi)}</Td>
+                    <Td>{useDebt ? formatUSD(r.ds) : "—"}</Td>
+                    <Td className={r.cashFlow < 0 ? "text-accent-ruby" : "text-accent-emerald"}>{useDebt ? formatUSD(r.cashFlow) : "—"}</Td>
+                    <Td>{formatUSD(r.gpr/12)}</Td>
+                    <Td>{formatUSD(r.noi/12)}</Td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </section>
 
         <footer className="mt-8 text-xs text-muted-foreground">
@@ -438,7 +475,7 @@ function NumberInput({ value, onChange, min, max, step }: {
       max={max}
       step={step}
       onChange={(e) => onChange(parseFloat(e.target.value || "0"))}
-      className="w-full rounded-lg border border-border bg-background px-3 py-2 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+      className="w-full rounded-lg border border-border bg-background px-3 py-3 sm:py-2 text-base sm:text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors min-h-[44px] sm:min-h-[40px]"
     />
   );
 }
