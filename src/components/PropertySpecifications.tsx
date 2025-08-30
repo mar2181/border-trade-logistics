@@ -226,25 +226,25 @@ export default function PropertySpecifications() {
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="relative overflow-hidden rounded-xl border border-border">
               <img 
-                src="/lovable-uploads/b30a695d-c533-4cf3-8c19-f48fec560759.png" 
-                alt="Site plan showing warehouse lot configurations along Military Highway" 
-                className="w-full h-48 object-cover"
+                src="/lovable-uploads/18eaafa7-6467-4037-8e2d-6d8017b50422.png" 
+                alt="Aerial view of development lots and parcels along Military Highway" 
+                className="w-full h-64 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
               <div className="absolute bottom-4 left-4 right-4">
-                <div className="text-gold text-sm font-medium">Site Plan - Military Highway Development</div>
+                <div className="text-gold text-sm font-medium">Aerial View - Military Highway Development</div>
               </div>
             </div>
             
             <div className="relative overflow-hidden rounded-xl border border-border">
               <img 
-                src="/lovable-uploads/c30c6a61-4069-4336-85ff-2178028a85ce.png" 
-                alt="Detailed development site plan showing all lot configurations" 
-                className="w-full h-48 object-cover"
+                src="/lovable-uploads/318dfb75-0eb2-4d25-a153-b8b6829a954b.png" 
+                alt="Detailed site plan blueprint showing warehouse layouts and configurations" 
+                className="w-full h-64 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
               <div className="absolute bottom-4 left-4 right-4">
-                <div className="text-gold text-sm font-medium">Complete Development Layout</div>
+                <div className="text-gold text-sm font-medium">Detailed Site Plan Blueprint</div>
               </div>
             </div>
           </div>
