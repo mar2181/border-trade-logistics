@@ -32,24 +32,42 @@ const Index = () => {
               </div>
             </div>
             
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden md:flex items-center space-x-6">
               <a href="#overview" className="text-muted-foreground hover:text-gold transition-colors">Overview</a>
               <a href="#analysis" className="text-muted-foreground hover:text-gold transition-colors">Market Analysis</a>
-              <a href="#investment-comparison" className="text-muted-foreground hover:text-gold transition-colors">Investments</a>
+              <button 
+                onClick={() => {
+                  document.getElementById('investment-comparison')?.scrollIntoView({ behavior: 'smooth' });
+                  setTimeout(() => {
+                    const dryTab = document.querySelector('[value="dry-warehouse"]') as HTMLElement;
+                    if (dryTab) dryTab.click();
+                  }, 500);
+                }}
+                className="text-muted-foreground hover:text-gold transition-colors"
+              >
+                Dry Warehouse
+              </button>
+              <button 
+                onClick={() => {
+                  document.getElementById('investment-comparison')?.scrollIntoView({ behavior: 'smooth' });
+                  setTimeout(() => {
+                    const refTab = document.querySelector('[value="refrigerated-warehouse"]') as HTMLElement;
+                    if (refTab) refTab.click();
+                  }, 500);
+                }}
+                className="text-muted-foreground hover:text-gold transition-colors"
+              >
+                Refrigerated
+              </button>
               <a href="#financials" className="text-muted-foreground hover:text-gold transition-colors">Financials</a>
               <a href="#properties" className="text-muted-foreground hover:text-gold transition-colors">Properties</a>
-              <a href="#contact" className="text-muted-foreground hover:text-gold transition-colors">Contact</a>
             </div>
 
             <div className="flex items-center space-x-4">
-              <div className="hidden md:flex items-center space-x-2 text-sm text-muted-foreground">
+              <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <Phone className="w-4 h-4" />
                 <span>(956) 522-1481</span>
               </div>
-              <Button className="bg-gradient-to-r from-gold to-gold-dark text-background font-semibold hover:shadow-lg hover:shadow-gold/25 transition-all duration-300">
-                <Download className="w-4 h-4 mr-2" />
-                Executive Summary
-              </Button>
             </div>
           </div>
         </div>
