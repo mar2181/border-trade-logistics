@@ -6,8 +6,7 @@ import warehouseInterior from "@/assets/warehouse-interior.jpg";
 import heroSunsetHighway from "@/assets/hero-sunset-highway.jpg";
 import ExecutiveSummary from "@/components/ExecutiveSummary";
 import MarketAnalysis from "@/components/MarketAnalysis";
-import DryWarehouseInvestment from "@/components/DryWarehouseInvestment";
-import RefrigeratedWarehouseInvestment from "@/components/RefrigeratedWarehouseInvestment";
+import InvestmentTabs from "@/components/InvestmentTabs";
 import PropertySpecifications from "@/components/PropertySpecifications";
 import FinancialProjections from "@/components/FinancialProjections";
 import LocationAdvantages from "@/components/LocationAdvantages";
@@ -36,6 +35,7 @@ const Index = () => {
             <div className="hidden md:flex items-center space-x-8">
               <a href="#overview" className="text-muted-foreground hover:text-gold transition-colors">Overview</a>
               <a href="#analysis" className="text-muted-foreground hover:text-gold transition-colors">Market Analysis</a>
+              <a href="#investment-comparison" className="text-muted-foreground hover:text-gold transition-colors">Investments</a>
               <a href="#financials" className="text-muted-foreground hover:text-gold transition-colors">Financials</a>
               <a href="#properties" className="text-muted-foreground hover:text-gold transition-colors">Properties</a>
               <a href="#contact" className="text-muted-foreground hover:text-gold transition-colors">Contact</a>
@@ -199,8 +199,7 @@ const Index = () => {
 
       <ExecutiveSummary />
       <MarketAnalysis />
-      <DryWarehouseInvestment />
-      <RefrigeratedWarehouseInvestment />
+      <InvestmentTabs />
       <PropertySpecifications />
       <FinancialProjections />
       <LocationAdvantages />
