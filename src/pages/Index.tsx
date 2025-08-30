@@ -7,6 +7,11 @@ import ExecutiveSummary from "@/components/ExecutiveSummary";
 import MarketAnalysis from "@/components/MarketAnalysis";
 import DryWarehouseInvestment from "@/components/DryWarehouseInvestment";
 import RefrigeratedWarehouseInvestment from "@/components/RefrigeratedWarehouseInvestment";
+import PropertySpecifications from "@/components/PropertySpecifications";
+import FinancialProjections from "@/components/FinancialProjections";
+import LocationAdvantages from "@/components/LocationAdvantages";
+import RiskAnalysis from "@/components/RiskAnalysis";
+import InvestmentProcess from "@/components/InvestmentProcess";
 
 const Index = () => {
   return (
@@ -179,68 +184,11 @@ const Index = () => {
       <MarketAnalysis />
       <DryWarehouseInvestment />
       <RefrigeratedWarehouseInvestment />
-
-      {/* Contact Section */}
-      <section className="py-16 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-primary-foreground mb-4">Ready to Invest?</h2>
-          <p className="text-xl text-muted-foreground mb-8">
-            Connect with our development team to explore this exceptional McAllen warehouse opportunity
-          </p>
-          
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
-            <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8">
-              <h3 className="text-xl font-semibold text-primary-foreground mb-4">Property Development</h3>
-              <p className="text-muted-foreground mb-4">
-                Experienced warehouse construction specialists with proven track record in cold storage and 
-                industrial development throughout South Texas.
-              </p>
-              <div className="flex items-center justify-center space-x-2 text-gold">
-                <Phone className="h-5 w-5" />
-                <span className="font-semibold">(956) 522-1481</span>
-              </div>
-            </div>
-            
-            <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8">
-              <h3 className="text-xl font-semibold text-primary-foreground mb-4">Investment Advisory</h3>
-              <p className="text-muted-foreground mb-4">
-                Comprehensive investment structuring and market analysis services tailored for 
-                international investors and high-net-worth individuals.
-              </p>
-              <Button className="bg-gradient-to-r from-gold to-gold-dark text-background font-semibold hover:shadow-lg hover:shadow-gold/25 transition-all duration-300">
-                Email Inquiry
-              </Button>
-            </div>
-          </div>
-
-          <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8">
-            <h3 className="text-2xl font-semibold text-primary-foreground mb-4">Investment Summary</h3>
-            <p className="text-muted-foreground mb-6">
-              Strategic warehouse development opportunity in North America's premier cross-border trade corridor 
-              targeting 7-9% cap rates with stable, long-term income.
-            </p>
-            
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-              <div>
-                <div className="text-xl font-bold text-gold mb-1">McAllen, TX</div>
-                <div className="text-sm text-muted-foreground">Military Highway</div>
-              </div>
-              <div>
-                <div className="text-xl font-bold text-emerald-500 mb-1">343,350 SF</div>
-                <div className="text-sm text-muted-foreground">Buildable Area</div>
-              </div>
-              <div>
-                <div className="text-xl font-bold text-blue-500 mb-1">11 Months</div>
-                <div className="text-sm text-muted-foreground">Development Timeline</div>
-              </div>
-              <div>
-                <div className="text-xl font-bold text-amber-500 mb-1">$15-20M</div>
-                <div className="text-sm text-muted-foreground">Investment Range</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <PropertySpecifications />
+      <FinancialProjections />
+      <LocationAdvantages />
+      <RiskAnalysis />
+      <InvestmentProcess />
     </div>
   );
 };
