@@ -6,8 +6,7 @@ import warehouseInterior from "@/assets/warehouse-interior.jpg";
 import heroSunsetHighway from "@/assets/hero-sunset-highway.jpg";
 import ExecutiveSummary from "@/components/ExecutiveSummary";
 import MarketAnalysis from "@/components/MarketAnalysis";
-import InvestmentTabs from "@/components/InvestmentTabs";
-import PropertySpecifications from "@/components/PropertySpecifications";
+import LandParcels from "@/components/LandParcels";
 import FinancialProjections from "@/components/FinancialProjections";
 import LocationAdvantages from "@/components/LocationAdvantages";
 import RiskAnalysis from "@/components/RiskAnalysis";
@@ -45,25 +44,15 @@ const Index = () => {
                   className="h-6 sm:h-8"
                 />
                 <Building className="w-5 h-5 sm:w-6 sm:h-6 text-gold" />
-                <span className="text-lg sm:text-xl font-bold text-primary-foreground">McAllen Warehouse</span>
+                <span className="text-lg sm:text-xl font-bold text-primary-foreground">Industrial Land</span>
               </div>
             </div>
             
             <div className="hidden md:flex items-center space-x-6">
               <a href="#overview" className="text-muted-foreground hover:text-gold transition-colors">Overview</a>
               <a href="#analysis" className="text-muted-foreground hover:text-gold transition-colors">Market Analysis</a>
-              <button 
-                onClick={() => handleMobileNavigation('dry')}
-                className="text-muted-foreground hover:text-gold transition-colors"
-              >
-                Dry Warehouse
-              </button>
-              <button 
-                onClick={() => handleMobileNavigation('refrigerated')}
-                className="text-muted-foreground hover:text-gold transition-colors"
-              >
-                Refrigerated
-              </button>
+              <a href="#land-parcels" className="text-muted-foreground hover:text-gold transition-colors">Land Parcels</a>
+              <a href="#comparables" className="text-muted-foreground hover:text-gold transition-colors">Comparables</a>
               <a href="#financials" className="text-muted-foreground hover:text-gold transition-colors">Financials</a>
               <a href="#properties" className="text-muted-foreground hover:text-gold transition-colors">Properties</a>
               <a href="/calculator" className="text-muted-foreground hover:text-gold transition-colors">Calculator</a>
@@ -114,12 +103,12 @@ const Index = () => {
             
             <div className="space-y-4 sm:space-y-6">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">
-                McAllen Warehouse
-                <span className="block text-gold">Investment Opportunity</span>
+                Prime Shovel-Ready
+                <span className="block text-gold">Industrial Land Opportunities</span>
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-gray-200 max-w-2xl leading-relaxed">
-                Two distinct investment strategies in North America's premier cross-border trade corridor. 
-                Fed rate cuts creating unprecedented financing opportunities with 1.3% vacancy rates.
+                49 acres of utilities-equipped industrial land parcels along Military Highway, minutes from Pharr-Reynosa Bridge. 
+                1.3% vacancy rates and Fed rate cuts create unmatched appreciation potential.
               </p>
             </div>
 
@@ -140,8 +129,8 @@ const Index = () => {
                 <div className="text-xs text-gray-300">TX Produce Imports</div>
               </div>
               <div className="text-center bg-black/20 rounded-lg p-2 sm:p-3 backdrop-blur-sm">
-                <div className="text-lg sm:text-xl lg:text-2xl font-bold text-accent-sapphire">Fed Cuts</div>
-                <div className="text-xs text-gray-300">Lower Financing Costs</div>
+                <div className="text-lg sm:text-xl lg:text-2xl font-bold text-accent-sapphire">$250-300K</div>
+                <div className="text-xs text-gray-300">Per Acre Pricing</div>
               </div>
               <div className="text-center bg-black/20 rounded-lg p-2 sm:p-3 backdrop-blur-sm">
                 <div className="text-lg sm:text-xl lg:text-2xl font-bold text-accent-amber">49 Acres</div>
@@ -173,8 +162,8 @@ const Index = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4">
-                  <h3 className="text-white text-lg sm:text-xl font-bold">Investment Overview</h3>
-                  <p className="text-gray-200 text-xs sm:text-sm">Premium Industrial Development</p>
+                  <h3 className="text-white text-lg sm:text-xl font-bold">Land Investment</h3>
+                  <p className="text-gray-200 text-xs sm:text-sm">Shovel-Ready Industrial Parcels</p>
                 </div>
               </div>
               
@@ -182,27 +171,27 @@ const Index = () => {
               <div className="p-4 sm:p-6 space-y-4 sm:space-y-6">
                 <div className="grid grid-cols-2 gap-3 sm:gap-4">
                   <div className="text-center p-3 sm:p-4 bg-gray-50 rounded-lg">
-                    <div className="text-xl sm:text-2xl font-bold text-gold">13.0%</div>
-                    <div className="text-xs text-gray-900">Dry Warehouse ROI</div>
+                    <div className="text-xl sm:text-2xl font-bold text-gold">10-15%</div>
+                    <div className="text-xs text-gray-900">Annual Land Appreciation</div>
                   </div>
                   <div className="text-center p-3 sm:p-4 bg-gray-50 rounded-lg">
-                    <div className="text-xl sm:text-2xl font-bold text-accent-sapphire">8.8%</div>
-                    <div className="text-xs text-gray-900">Refrigerated ROI</div>
+                    <div className="text-xl sm:text-2xl font-bold text-accent-sapphire">$13.5M</div>
+                    <div className="text-xs text-gray-900">Total Land Value</div>
                   </div>
                 </div>
                 
-                <div className="space-y-2 sm:space-y-3">
+                  <div className="space-y-2 sm:space-y-3">
                   <div className="flex justify-between items-center">
-                    <span className="text-muted-foreground text-sm">Total Investment:</span>
-                    <span className="font-bold text-primary text-sm">$101M - $167M</span>
+                    <span className="text-muted-foreground text-sm">Land Portfolio:</span>
+                    <span className="font-bold text-primary text-sm">$13.5M Total</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-muted-foreground text-sm">Available Land:</span>
+                    <span className="text-muted-foreground text-sm">Available Acres:</span>
                     <span className="font-bold text-primary text-sm">49 Acres</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-muted-foreground text-sm">Market Vacancy:</span>
-                    <span className="font-bold text-accent-emerald text-sm">1.3%</span>
+                    <span className="text-muted-foreground text-sm">Pricing Range:</span>
+                    <span className="font-bold text-accent-emerald text-sm">$250K-$300K/acre</span>
                   </div>
                 </div>
 
@@ -234,8 +223,7 @@ const Index = () => {
 
       <ExecutiveSummary />
       <MarketAnalysis />
-      <InvestmentTabs />
-      <PropertySpecifications />
+      <LandParcels />
       <FinancialProjections />
       <LocationAdvantages />
       <RiskAnalysis />

@@ -8,59 +8,59 @@ export default function RiskAnalysis() {
       color: "text-red-500",
       bgColor: "bg-red-500/20",
       factors: [
-        "Construction cost inflation (3-5% annually)",
-        "Border trade policy sensitivity", 
-        "Competition from institutional developers"
+        "Economic downturns affecting land values",
+        "Border trade policy changes", 
+        "Competition from other development sites"
       ],
-      mitigation: "Fixed-price construction contracts, diversified tenant base, strategic timing"
+      mitigation: "Diversified exit strategies, strategic location value, strong market fundamentals"
     },
     {
-      category: "Development Risks", 
+      category: "Regulatory Risks", 
       icon: AlertTriangle,
       color: "text-amber-500",
       bgColor: "bg-amber-500/20",
       factors: [
-        "Permit approval delays",
-        "Infrastructure development timing",
-        "Weather-related construction delays"
+        "Zoning changes or restrictions",
+        "New environmental regulations",
+        "Property tax increases"
       ],
-      mitigation: "Early permitting, pre-qualified contractors, contingency planning"
+      mitigation: "Current industrial zoning, environmental clearance, locked-in tax assessments"
     },
     {
-      category: "Operational Risks",
+      category: "Financial Risks",
       icon: Shield,
       color: "text-blue-500", 
       bgColor: "bg-blue-500/20",
       factors: [
-        "Energy cost volatility (refrigerated facilities)",
-        "Labor market competition",
-        "Technology infrastructure requirements"
+        "Interest rate fluctuations",
+        "Holding costs during appreciation period",
+        "Market liquidity for exit"
       ],
-      mitigation: "Energy-efficient design, competitive compensation, modern systems"
+      mitigation: "Fed rate cuts environment, low holding costs, multiple exit strategies"
     }
   ];
 
   const competitiveAdvantages = [
-    "Proven local development team with track record",
-    "Established relationships with border trade community", 
-    "First-mover advantage in small-format segment",
-    "Strategic land control in high-demand corridor"
+    "Shovel-ready status with all utilities connected",
+    "Strategic location along major transportation corridor", 
+    "Industrial zoning already in place - no approval delays",
+    "Limited supply in tight 1.3% vacancy market"
   ];
 
   const investmentProtection = [
-    "Diversified tenant mix reduces single-tenant risk",
-    "Multiple exit strategies including sale to REITs",
-    "Strong cash-on-cash returns support debt service",
-    "Location value appreciation independent of operations"
+    "No construction risks - land investment only",
+    "Multiple exit strategies: hold, resell, or develop",
+    "Location value independent of specific development",
+    "Low holding costs relative to appreciation potential"
   ];
 
   return (
     <section className="py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-primary mb-4">Risk Analysis & Mitigation</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4">Land Investment Risk Analysis & Mitigation</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-            Comprehensive assessment of potential risks and proven strategies to protect investor capital and ensure project success
+            Comprehensive assessment of land investment risks and proven strategies to protect investor capital while maximizing appreciation potential
           </p>
         </div>
 
@@ -98,7 +98,7 @@ export default function RiskAnalysis() {
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8">
             <div className="flex items-center mb-6">
               <TrendingUp className="h-8 w-8 text-gold mr-3" />
-              <h3 className="text-xl font-semibold text-primary">Market Position Strengths</h3>
+              <h3 className="text-xl font-semibold text-primary">Land Position Strengths</h3>
             </div>
             
             <ul className="space-y-3">
@@ -114,7 +114,7 @@ export default function RiskAnalysis() {
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8">
             <div className="flex items-center mb-6">
               <Shield className="h-8 w-8 text-blue-500 mr-3" />
-              <h3 className="text-xl font-semibold text-primary">Investment Protection</h3>
+              <h3 className="text-xl font-semibold text-primary">Land Investment Protection</h3>
             </div>
             
             <ul className="space-y-3">
