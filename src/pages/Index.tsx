@@ -128,7 +128,7 @@ const Index = () => {
               {/* Card Header with Image */}
               <div className="relative h-48 overflow-hidden">
                 <img 
-                  src={warehouseExterior} 
+                  src="/lovable-uploads/8b288e5c-4ba2-4340-8eb9-f8e6d81d2ffb.png" 
                   alt="Modern warehouse facility" 
                   className="w-full h-full object-cover"
                 />
