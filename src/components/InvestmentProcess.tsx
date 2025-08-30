@@ -33,14 +33,14 @@ export default function InvestmentProcess() {
     <section className="py-16 px-6 bg-muted/20">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-primary-foreground mb-4">Next Steps</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4">Next Steps</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
             Ready to capitalize on this exceptional McAllen warehouse investment opportunity? Connect with our experienced development team to begin your investment journey.
           </p>
         </div>
 
         <div className="mb-16">
-          <h3 className="text-2xl font-semibold text-primary-foreground mb-8 text-center">Investment Process</h3>
+          <h3 className="text-2xl font-semibold text-primary mb-8 text-center">Investment Process</h3>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {processSteps.map((step, index) => (
@@ -52,7 +52,7 @@ export default function InvestmentProcess() {
                   <step.icon className="h-8 w-8 text-gold" />
                 </div>
                 
-                <h4 className="text-lg font-semibold text-primary-foreground mb-3">{step.title}</h4>
+                <h4 className="text-lg font-semibold text-primary mb-3">{step.title}</h4>
                 <p className="text-sm text-muted-foreground">{step.description}</p>
               </div>
             ))}
@@ -60,11 +60,11 @@ export default function InvestmentProcess() {
         </div>
 
         <div className="mb-12">
-          <h3 className="text-2xl font-semibold text-primary-foreground mb-8 text-center">Development Team</h3>
+          <h3 className="text-2xl font-semibold text-primary mb-8 text-center">Development Team</h3>
           
           <div className="grid lg:grid-cols-2 gap-8">
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8">
-              <h4 className="text-xl font-semibold text-primary-foreground mb-4">Property Development</h4>
+              <h4 className="text-xl font-semibold text-primary mb-4">Property Development</h4>
               <p className="text-muted-foreground mb-6">
                 Experienced warehouse construction specialists with proven track record in cold storage and 
                 industrial development throughout South Texas.
@@ -77,7 +77,7 @@ export default function InvestmentProcess() {
             </div>
             
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8">
-              <h4 className="text-xl font-semibold text-primary-foreground mb-4">Investment Advisory</h4>
+              <h4 className="text-xl font-semibold text-primary mb-4">Investment Advisory</h4>
               <p className="text-muted-foreground mb-6">
                 Comprehensive investment structuring and market analysis services tailored for 
                 international investors and high-net-worth individuals.
@@ -97,7 +97,7 @@ export default function InvestmentProcess() {
           <div className="text-center">
             <div className="flex items-center justify-center mb-4">
               <CheckCircle className="h-8 w-8 text-emerald-500 mr-3" />
-              <h3 className="text-2xl font-semibold text-primary-foreground">Investment Summary</h3>
+              <h3 className="text-2xl font-semibold text-primary">Investment Summary</h3>
             </div>
             
             <p className="text-muted-foreground mb-8 max-w-3xl mx-auto">

@@ -13,7 +13,7 @@ export default function MarketAnalysis() {
     <section className="py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-primary-foreground mb-4">Market Analysis</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4">Market Analysis</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
             McAllen's industrial market transformation creates unprecedented investment opportunities driven by cross-border trade and supply chain dynamics
           </p>
@@ -21,7 +21,7 @@ export default function MarketAnalysis() {
 
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
           <div>
-            <h3 className="text-2xl font-semibold text-primary-foreground mb-6">Market Transformation</h3>
+            <h3 className="text-2xl font-semibold text-primary mb-6">Market Transformation</h3>
             <p className="text-muted-foreground mb-8 leading-relaxed">
               Historic decline in vacancy rates from 6.6% to 1.3% while rental rates increased 375% demonstrates exceptional market tightening and landlord leverage.
             </p>
@@ -74,7 +74,7 @@ export default function MarketAnalysis() {
             </div>
             
             <div>
-              <h3 className="text-2xl font-semibold text-primary-foreground mb-6">Trade Volume Distribution</h3>
+              <h3 className="text-2xl font-semibold text-primary mb-6">Trade Volume Distribution</h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 $7.05B annual produce trade through Pharr-Reynosa Bridge creates consistent demand for specialized cold storage and distribution facilities.
               </p>
@@ -85,7 +85,7 @@ export default function MarketAnalysis() {
                     <div className="flex justify-between items-center">
                       <div className="flex items-center">
                         <div className={`w-3 h-3 rounded-full ${item.color} mr-3`}></div>
-                        <span className="text-primary-foreground font-medium text-sm">{item.product}</span>
+                        <span className="text-foreground font-medium text-sm">{item.product}</span>
                       </div>
                       <span className="text-gold font-semibold text-sm">{item.value}</span>
                     </div>

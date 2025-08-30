@@ -58,7 +58,7 @@ export default function RiskAnalysis() {
     <section className="py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-primary-foreground mb-4">Risk Analysis & Mitigation</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4">Risk Analysis & Mitigation</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
             Comprehensive assessment of potential risks and proven strategies to protect investor capital and ensure project success
           </p>
@@ -71,7 +71,7 @@ export default function RiskAnalysis() {
                 <div className={`p-3 rounded-full ${risk.bgColor} mr-4`}>
                   <risk.icon className={`h-6 w-6 ${risk.color}`} />
                 </div>
-                <h3 className="text-xl font-semibold text-primary-foreground">{risk.category}</h3>
+                <h3 className="text-xl font-semibold text-primary">{risk.category}</h3>
               </div>
 
               <div className="mb-6">
@@ -98,7 +98,7 @@ export default function RiskAnalysis() {
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8">
             <div className="flex items-center mb-6">
               <TrendingUp className="h-8 w-8 text-gold mr-3" />
-              <h3 className="text-xl font-semibold text-primary-foreground">Market Position Strengths</h3>
+              <h3 className="text-xl font-semibold text-primary">Market Position Strengths</h3>
             </div>
             
             <ul className="space-y-3">
@@ -114,7 +114,7 @@ export default function RiskAnalysis() {
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8">
             <div className="flex items-center mb-6">
               <Shield className="h-8 w-8 text-blue-500 mr-3" />
-              <h3 className="text-xl font-semibold text-primary-foreground">Investment Protection</h3>
+              <h3 className="text-xl font-semibold text-primary">Investment Protection</h3>
             </div>
             
             <ul className="space-y-3">

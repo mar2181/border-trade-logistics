@@ -62,7 +62,7 @@ export default function DryWarehouseInvestment() {
     <section className="py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-primary-foreground mb-4">Dry Warehouse Investment</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4">Dry Warehouse Investment</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
             High-ROI opportunity with lower entry costs and strong cash-on-cash returns. Fed rate cuts make financing more attractive for traditional warehouse development.
           </p>
@@ -100,7 +100,7 @@ export default function DryWarehouseInvestment() {
         </div>
 
         <div className="mb-12">
-          <h3 className="text-2xl font-semibold text-primary-foreground mb-8">Individual Investment Opportunities</h3>
+          <h3 className="text-2xl font-semibold text-primary mb-8">Individual Investment Opportunities</h3>
           
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div className="relative overflow-hidden rounded-xl border border-border">
@@ -125,7 +125,7 @@ export default function DryWarehouseInvestment() {
               <div key={lot.id} className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 hover:shadow-lg hover:shadow-gold/10 transition-all duration-300 hover:-translate-y-1">
                 <div className="flex justify-between items-start mb-4">
                   <div>
-                    <h4 className="text-lg font-semibold text-primary-foreground">Lot {lot.id} - {lot.type} Frontage</h4>
+                    <h4 className="text-lg font-semibold text-primary">Lot {lot.id} - {lot.type} Frontage</h4>
                     <span className={`inline-block px-2 py-1 rounded-full text-xs font-medium ${
                       lot.type === 'Premium' ? 'bg-gold/20 text-gold' : 'bg-blue-500/20 text-blue-400'
                     }`}>
@@ -137,11 +137,11 @@ export default function DryWarehouseInvestment() {
                 <div className="space-y-3">
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Size:</span>
-                    <span className="text-primary-foreground font-medium">{lot.size}</span>
+                    <span className="text-foreground font-medium">{lot.size}</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Buildable SF:</span>
-                    <span className="text-primary-foreground font-medium">{lot.buildableSF}</span>
+                    <span className="text-foreground font-medium">{lot.buildableSF}</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Total Investment:</span>
@@ -163,7 +163,7 @@ export default function DryWarehouseInvestment() {
 
         <div className="grid lg:grid-cols-2 gap-12">
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8">
-            <h3 className="text-2xl font-semibold text-primary-foreground mb-6">Fed Rate Cuts Impact on Dry Warehouse Investment</h3>
+            <h3 className="text-2xl font-semibold text-primary mb-6">Fed Rate Cuts Impact on Dry Warehouse Investment</h3>
             
             <div className="mb-6">
               <h4 className="text-lg font-medium text-gold mb-4">Financing Advantages</h4>
@@ -211,7 +211,7 @@ export default function DryWarehouseInvestment() {
           </div>
 
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8">
-            <h3 className="text-2xl font-semibold text-primary-foreground mb-6 text-center">Complete Dry Warehouse Portfolio</h3>
+            <h3 className="text-2xl font-semibold text-primary mb-6 text-center">Complete Dry Warehouse Portfolio</h3>
             
             <div className="grid grid-cols-2 gap-4">
               <div className="text-center">

@@ -12,7 +12,7 @@ export default function LocationAdvantages() {
     <section className="py-16 px-6 bg-muted/20">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-primary-foreground mb-4">Location Advantages</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4">Location Advantages</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
             Prime positioning in North America's most strategic cross-border trade corridor with unmatched access to Mexico's growing produce economy
           </p>
@@ -29,7 +29,7 @@ export default function LocationAdvantages() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8 text-center hover:shadow-lg hover:shadow-gold/10 transition-all duration-300">
             <MapPin className="h-12 w-12 text-gold mx-auto mb-4" />
-            <h3 className="text-xl font-semibold text-primary-foreground mb-3">Strategic Border Location</h3>
+            <h3 className="text-xl font-semibold text-primary mb-3">Strategic Border Location</h3>
             <p className="text-muted-foreground mb-4">
               Direct access to Pharr-Reynosa International Bridge - North America's #1 produce gateway
             </p>
@@ -39,7 +39,7 @@ export default function LocationAdvantages() {
 
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8 text-center hover:shadow-lg hover:shadow-emerald-500/10 transition-all duration-300">
             <Truck className="h-12 w-12 text-emerald-500 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold text-primary-foreground mb-3">Transportation Infrastructure</h3>
+            <h3 className="text-xl font-semibold text-primary mb-3">Transportation Infrastructure</h3>
             <p className="text-muted-foreground mb-4">
               Military Highway (FM 1016) provides seamless connectivity to major distribution networks
             </p>
@@ -49,7 +49,7 @@ export default function LocationAdvantages() {
 
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8 text-center hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300">
             <Building2 className="h-12 w-12 text-blue-500 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold text-primary-foreground mb-3">Cross-Border Trade Hub</h3>
+            <h3 className="text-xl font-semibold text-primary mb-3">Cross-Border Trade Hub</h3>
             <p className="text-muted-foreground mb-4">
               Gateway to $7.05B annual produce trade with projected 44% growth by 2025
             </p>
@@ -59,7 +59,7 @@ export default function LocationAdvantages() {
 
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8 text-center hover:shadow-lg hover:shadow-amber-500/10 transition-all duration-300">
             <Zap className="h-12 w-12 text-amber-500 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold text-primary-foreground mb-3">Utility Infrastructure</h3>
+            <h3 className="text-xl font-semibold text-primary mb-3">Utility Infrastructure</h3>
             <p className="text-muted-foreground mb-4">
               Established industrial utilities with capacity for large-scale warehouse development
             </p>
@@ -69,7 +69,7 @@ export default function LocationAdvantages() {
 
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8 text-center hover:shadow-lg hover:shadow-purple-500/10 transition-all duration-300">
             <Users className="h-12 w-12 text-purple-500 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold text-primary-foreground mb-3">Labor Market Access</h3>
+            <h3 className="text-xl font-semibold text-primary mb-3">Labor Market Access</h3>
             <p className="text-muted-foreground mb-4">
               Access to 145,000+ manufacturing employees in the Rio Grande Valley region
             </p>
@@ -79,7 +79,7 @@ export default function LocationAdvantages() {
 
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8 text-center hover:shadow-lg hover:shadow-rose-500/10 transition-all duration-300">
             <CheckCircle className="h-12 w-12 text-rose-500 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold text-primary-foreground mb-3">Development Ecosystem</h3>
+            <h3 className="text-xl font-semibold text-primary mb-3">Development Ecosystem</h3>
             <p className="text-muted-foreground mb-4">
               Established network of cold storage specialists and food processing facilities
             </p>
@@ -89,7 +89,7 @@ export default function LocationAdvantages() {
         </div>
 
         <div className="mb-16">
-          <h3 className="text-2xl font-semibold text-primary-foreground mb-8 text-center">Economic Impact & Growth Drivers</h3>
+          <h3 className="text-2xl font-semibold text-primary mb-8 text-center">Economic Impact & Growth Drivers</h3>
           
           <div className="grid md:grid-cols-4 gap-6">
             {economicData.map((item, index) => (
@@ -104,7 +104,7 @@ export default function LocationAdvantages() {
 
         <div className="bg-gradient-to-r from-gold/10 to-emerald-500/10 rounded-xl p-8">
           <div className="text-center mb-6">
-            <h3 className="text-2xl font-semibold text-primary-foreground mb-4">Military Highway (FM 1016) Corridor</h3>
+            <h3 className="text-2xl font-semibold text-primary mb-4">Military Highway (FM 1016) Corridor</h3>
             <p className="text-muted-foreground max-w-4xl mx-auto">
               Strategically located along the primary industrial transportation artery connecting McAllen to the Pharr-Reynosa International Bridge, providing seamless access to Mexico's growing produce export economy and North American distribution networks.
             </p>

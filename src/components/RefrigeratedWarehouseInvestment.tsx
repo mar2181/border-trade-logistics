@@ -62,7 +62,7 @@ export default function RefrigeratedWarehouseInvestment() {
     <section className="py-16 px-6 bg-muted/20">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-primary-foreground mb-4">Refrigerated Warehouse Investment</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4">Refrigerated Warehouse Investment</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
             Premium cold storage facilities serving the cross-border produce trade. Higher investment, stable returns, and essential infrastructure for food supply chains.
           </p>
@@ -100,13 +100,13 @@ export default function RefrigeratedWarehouseInvestment() {
         </div>
 
         <div className="mb-12">
-          <h3 className="text-2xl font-semibold text-primary-foreground mb-8">Individual Investment Opportunities</h3>
+          <h3 className="text-2xl font-semibold text-primary mb-8">Individual Investment Opportunities</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {lots.map((lot) => (
               <div key={lot.id} className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 hover:shadow-lg hover:shadow-blue-400/10 transition-all duration-300 hover:-translate-y-1">
                 <div className="flex justify-between items-start mb-4">
                   <div>
-                    <h4 className="text-lg font-semibold text-primary-foreground">Lot {lot.id} - {lot.type} Frontage</h4>
+                    <h4 className="text-lg font-semibold text-primary">Lot {lot.id} - {lot.type} Frontage</h4>
                     <span className={`inline-block px-2 py-1 rounded-full text-xs font-medium ${
                       lot.type === 'Premium' ? 'bg-blue-400/20 text-blue-400' : 'bg-emerald-500/20 text-emerald-400'
                     }`}>
@@ -118,11 +118,11 @@ export default function RefrigeratedWarehouseInvestment() {
                 <div className="space-y-3">
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Size:</span>
-                    <span className="text-primary-foreground font-medium">{lot.size}</span>
+                    <span className="text-foreground font-medium">{lot.size}</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Buildable SF:</span>
-                    <span className="text-primary-foreground font-medium">{lot.buildableSF}</span>
+                    <span className="text-foreground font-medium">{lot.buildableSF}</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Total Investment:</span>
@@ -144,7 +144,7 @@ export default function RefrigeratedWarehouseInvestment() {
 
         <div className="grid lg:grid-cols-2 gap-12">
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8">
-            <h3 className="text-2xl font-semibold text-primary-foreground mb-6">Cold Storage Market Advantages</h3>
+            <h3 className="text-2xl font-semibold text-primary mb-6">Cold Storage Market Advantages</h3>
             
             <div className="mb-6">
               <h4 className="text-lg font-medium text-blue-400 mb-4">Market Fundamentals</h4>
@@ -192,7 +192,7 @@ export default function RefrigeratedWarehouseInvestment() {
           </div>
 
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8">
-            <h3 className="text-2xl font-semibold text-primary-foreground mb-6 text-center">Complete Refrigerated Warehouse Portfolio</h3>
+            <h3 className="text-2xl font-semibold text-primary mb-6 text-center">Complete Refrigerated Warehouse Portfolio</h3>
             
             <div className="grid grid-cols-2 gap-4">
               <div className="text-center">

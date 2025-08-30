@@ -38,7 +38,7 @@ export default function FinancialProjections() {
     <section className="py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-primary-foreground mb-4">Financial Projections</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4">Financial Projections</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
             Comprehensive investment analysis showing projected returns for both dry and refrigerated warehouse development scenarios
           </p>
@@ -53,13 +53,13 @@ export default function FinancialProjections() {
         </div>
 
         <div className="mb-16">
-          <h3 className="text-2xl font-semibold text-primary-foreground mb-8 text-center">Portfolio Investment Summary</h3>
+          <h3 className="text-2xl font-semibold text-primary mb-8 text-center">Portfolio Investment Summary</h3>
           
           <div className="grid lg:grid-cols-2 gap-8">
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8">
               <div className="flex items-center mb-6">
                 <BarChart3 className="h-8 w-8 text-gold mr-3" />
-                <h4 className="text-xl font-semibold text-primary-foreground">Dry Warehouse Portfolio</h4>
+                <h4 className="text-xl font-semibold text-primary">Dry Warehouse Portfolio</h4>
               </div>
               
               <div className="space-y-4">
@@ -85,7 +85,7 @@ export default function FinancialProjections() {
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8">
               <div className="flex items-center mb-6">
                 <DollarSign className="h-8 w-8 text-blue-400 mr-3" />
-                <h4 className="text-xl font-semibold text-primary-foreground">Refrigerated Warehouse Portfolio</h4>
+                <h4 className="text-xl font-semibold text-primary">Refrigerated Warehouse Portfolio</h4>
               </div>
               
               <div className="space-y-4">
@@ -111,7 +111,7 @@ export default function FinancialProjections() {
         </div>
 
         <div className="mb-16">
-          <h3 className="text-2xl font-semibold text-primary-foreground mb-8 text-center">Key Investment Assumptions</h3>
+          <h3 className="text-2xl font-semibold text-primary mb-8 text-center">Key Investment Assumptions</h3>
           
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6">
@@ -120,7 +120,7 @@ export default function FinancialProjections() {
                 {keyAssumptions.market.map((item, index) => (
                   <div key={index} className="flex justify-between">
                     <span className="text-muted-foreground">{item.label}:</span>
-                    <span className="text-primary-foreground font-medium">{item.value}</span>
+                    <span className="text-foreground font-medium">{item.value}</span>
                   </div>
                 ))}
               </div>
@@ -132,7 +132,7 @@ export default function FinancialProjections() {
                 {keyAssumptions.construction.map((item, index) => (
                   <div key={index} className="flex justify-between">
                     <span className="text-muted-foreground">{item.label}:</span>
-                    <span className="text-primary-foreground font-medium">{item.value}</span>
+                    <span className="text-foreground font-medium">{item.value}</span>
                   </div>
                 ))}
               </div>
@@ -144,7 +144,7 @@ export default function FinancialProjections() {
                 {keyAssumptions.rental.map((item, index) => (
                   <div key={index} className="flex justify-between">
                     <span className="text-muted-foreground">{item.label}:</span>
-                    <span className="text-primary-foreground font-medium">{item.value}</span>
+                    <span className="text-foreground font-medium">{item.value}</span>
                   </div>
                 ))}
               </div>
@@ -154,7 +154,7 @@ export default function FinancialProjections() {
 
         <div className="bg-gradient-to-r from-gold/10 to-blue-500/10 rounded-xl p-8">
           <div className="text-center">
-            <h3 className="text-2xl font-semibold text-primary-foreground mb-4">Risk-Adjusted Return Profile</h3>
+            <h3 className="text-2xl font-semibold text-primary mb-4">Risk-Adjusted Return Profile</h3>
             <p className="text-muted-foreground mb-8 max-w-3xl mx-auto">
               Conservative projections and proven mitigation strategies create a compelling risk-adjusted return profile for sophisticated investors
             </p>
