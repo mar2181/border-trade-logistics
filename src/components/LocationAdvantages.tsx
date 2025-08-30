@@ -13,9 +13,17 @@ export default function LocationAdvantages() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-primary-foreground mb-4">Location Advantages</h2>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
             Prime positioning in North America's most strategic cross-border trade corridor with unmatched access to Mexico's growing produce economy
           </p>
+          
+          <div className="relative overflow-hidden rounded-xl border border-border max-w-3xl mx-auto">
+            <img 
+              src="/lovable-uploads/89320e06-66fc-4e58-8169-f1553c111e32.png" 
+              alt="Modern warehouse facility with distinctive green architecture" 
+              className="w-full h-56 object-cover"
+            />
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">

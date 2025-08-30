@@ -223,12 +223,30 @@ export default function PropertySpecifications() {
             Ten premium development lots strategically located along Military Highway (FM 1016) with varying sizes and configurations to match diverse investor preferences and budgets
           </p>
           
-          <div className="relative overflow-hidden rounded-xl border border-border max-w-4xl mx-auto">
-            <img 
-              src="/lovable-uploads/bbfe3108-c3ba-4020-91ea-738af9eca141.png" 
-              alt="Aerial view of modern warehouse development site" 
-              className="w-full h-64 object-cover"
-            />
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="relative overflow-hidden rounded-xl border border-border">
+              <img 
+                src="/lovable-uploads/b30a695d-c533-4cf3-8c19-f48fec560759.png" 
+                alt="Site plan showing warehouse lot configurations along Military Highway" 
+                className="w-full h-48 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+              <div className="absolute bottom-4 left-4 right-4">
+                <div className="text-gold text-sm font-medium">Site Plan - Military Highway Development</div>
+              </div>
+            </div>
+            
+            <div className="relative overflow-hidden rounded-xl border border-border">
+              <img 
+                src="/lovable-uploads/c30c6a61-4069-4336-85ff-2178028a85ce.png" 
+                alt="Detailed development site plan showing all lot configurations" 
+                className="w-full h-48 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+              <div className="absolute bottom-4 left-4 right-4">
+                <div className="text-gold text-sm font-medium">Complete Development Layout</div>
+              </div>
+            </div>
           </div>
         </div>
 

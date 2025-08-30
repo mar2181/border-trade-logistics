@@ -64,24 +64,34 @@ export default function MarketAnalysis() {
             </div>
           </div>
 
-          <div>
-            <h3 className="text-2xl font-semibold text-primary-foreground mb-6">Trade Volume Distribution</h3>
-            <p className="text-muted-foreground mb-8 leading-relaxed">
-              $7.05B annual produce trade through Pharr-Reynosa Bridge creates consistent demand for specialized cold storage and distribution facilities.
-            </p>
+          <div className="space-y-6">
+            <div className="relative overflow-hidden rounded-xl border border-border">
+              <img 
+                src="/lovable-uploads/c0bf7b79-7018-4e17-bd29-84916604610b.png" 
+                alt="Modern warehouse development with professional glass facade" 
+                className="w-full h-64 object-cover"
+              />
+            </div>
             
-            <div className="space-y-4">
-              {tradeVolume.map((item, index) => (
-                <div key={index} className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-4">
-                  <div className="flex justify-between items-center">
-                    <div className="flex items-center">
-                      <div className={`w-3 h-3 rounded-full ${item.color} mr-3`}></div>
-                      <span className="text-primary-foreground font-medium">{item.product}</span>
+            <div>
+              <h3 className="text-2xl font-semibold text-primary-foreground mb-6">Trade Volume Distribution</h3>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                $7.05B annual produce trade through Pharr-Reynosa Bridge creates consistent demand for specialized cold storage and distribution facilities.
+              </p>
+              
+              <div className="space-y-3">
+                {tradeVolume.map((item, index) => (
+                  <div key={index} className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-3">
+                    <div className="flex justify-between items-center">
+                      <div className="flex items-center">
+                        <div className={`w-3 h-3 rounded-full ${item.color} mr-3`}></div>
+                        <span className="text-primary-foreground font-medium text-sm">{item.product}</span>
+                      </div>
+                      <span className="text-gold font-semibold text-sm">{item.value}</span>
                     </div>
-                    <span className="text-gold font-semibold">{item.value}</span>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>

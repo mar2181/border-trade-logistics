@@ -101,6 +101,25 @@ export default function DryWarehouseInvestment() {
 
         <div className="mb-12">
           <h3 className="text-2xl font-semibold text-primary-foreground mb-8">Individual Investment Opportunities</h3>
+          
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="relative overflow-hidden rounded-xl border border-border">
+              <img 
+                src="/lovable-uploads/318dfb75-0eb2-4d25-a153-b8b6829a954b.png" 
+                alt="Warehouse interior showing loading docks and high-ceiling design" 
+                className="w-full h-48 object-cover"
+              />
+            </div>
+            
+            <div className="relative overflow-hidden rounded-xl border border-border">
+              <img 
+                src="/lovable-uploads/4978e488-3fbd-486b-98e7-7512cc55957f.png" 
+                alt="Modern warehouse exterior with professional landscaping" 
+                className="w-full h-48 object-cover"
+              />
+            </div>
+          </div>
+          
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {lots.map((lot) => (
               <div key={lot.id} className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 hover:shadow-lg hover:shadow-gold/10 transition-all duration-300 hover:-translate-y-1">
