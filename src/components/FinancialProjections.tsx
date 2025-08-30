@@ -39,9 +39,17 @@ export default function FinancialProjections() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-primary-foreground mb-4">Financial Projections</h2>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
             Comprehensive investment analysis showing projected returns for both dry and refrigerated warehouse development scenarios
           </p>
+          
+          <div className="relative overflow-hidden rounded-xl border border-border max-w-2xl mx-auto">
+            <img 
+              src="/lovable-uploads/3f8d60fa-ce14-48f0-b0e1-baac1a96b428.png" 
+              alt="Modern laboratory facility for produce quality testing" 
+              className="w-full h-48 object-cover"
+            />
+          </div>
         </div>
 
         <div className="mb-16">

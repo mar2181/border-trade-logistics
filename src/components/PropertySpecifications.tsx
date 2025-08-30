@@ -219,9 +219,17 @@ export default function PropertySpecifications() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-primary-foreground mb-4">Property Specifications</h2>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
             Ten premium development lots strategically located along Military Highway (FM 1016) with varying sizes and configurations to match diverse investor preferences and budgets
           </p>
+          
+          <div className="relative overflow-hidden rounded-xl border border-border max-w-4xl mx-auto">
+            <img 
+              src="/lovable-uploads/bbfe3108-c3ba-4020-91ea-738af9eca141.png" 
+              alt="Aerial view of modern warehouse development site" 
+              className="w-full h-64 object-cover"
+            />
+          </div>
         </div>
 
         <div className="grid gap-8">

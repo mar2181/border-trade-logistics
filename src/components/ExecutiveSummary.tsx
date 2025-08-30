@@ -49,13 +49,29 @@ export default function ExecutiveSummary() {
                 <MapPin className="h-5 w-5 text-gold mr-2" />
                 <span>Military Highway (FM 1016) • Minutes from Pharr-Reynosa International Bridge</span>
               </div>
+
+              <div className="relative overflow-hidden rounded-xl border border-border mb-6">
+                <img 
+                  src="/lovable-uploads/18eaafa7-6467-4037-8e2d-6d8017b50422.png" 
+                  alt="Modern warehouse exterior with professional office space" 
+                  className="w-full h-48 object-cover"
+                />
+              </div>
             </div>
 
             <div>
               <h3 className="text-2xl font-semibold text-primary-foreground mb-4">Target Market</h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed mb-4">
                 Sophisticated Mexican and international investors seeking stable, income-producing assets with strong fundamentals and growth potential in a proven cross-border trade environment.
               </p>
+
+              <div className="relative overflow-hidden rounded-xl border border-border">
+                <img 
+                  src="/lovable-uploads/3e9cf4b0-cd02-4374-a49b-8642655e444f.png" 
+                  alt="Modern office space in warehouse development" 
+                  className="w-full h-48 object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -68,6 +68,14 @@ export default function RefrigeratedWarehouseInvestment() {
           </p>
         </div>
 
+        <div className="relative overflow-hidden rounded-xl border border-border mb-8">
+          <img 
+            src="/lovable-uploads/9d1d06b0-dabf-4d17-ae37-d862d5fc0302.png" 
+            alt="Cold storage facility with specialized refrigerated equipment" 
+            className="w-full h-64 object-cover"
+          />
+        </div>
+
         <div className="grid md:grid-cols-4 gap-6 mb-12">
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-blue-400/10 transition-all duration-300">
             <Snowflake className="h-8 w-8 text-blue-400 mx-auto mb-3" />

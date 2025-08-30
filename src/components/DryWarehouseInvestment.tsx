@@ -68,6 +68,14 @@ export default function DryWarehouseInvestment() {
           </p>
         </div>
 
+        <div className="relative overflow-hidden rounded-xl border border-border mb-8">
+          <img 
+            src="/lovable-uploads/7b830446-6938-41b0-9b69-92d8fc6a54ee.png" 
+            alt="Modern dry warehouse interior with polished concrete floors" 
+            className="w-full h-64 object-cover"
+          />
+        </div>
+
         <div className="grid md:grid-cols-4 gap-6 mb-12">
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-gold/10 transition-all duration-300">
             <Building2 className="h-8 w-8 text-gold mx-auto mb-3" />
