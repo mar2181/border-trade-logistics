@@ -284,7 +284,7 @@ export default function PropertySpecifications() {
                           <span className="text-blue-500 font-semibold">{lot.dryWarehouse.totalInvestment}</span>
                         </div>
                         <div className="flex justify-between">
-                          <span className="text-muted-foreground">Annual Rental ($18/sq ft):</span>
+                          <span className="text-muted-foreground">Annual Rental ($12.50/sq ft):</span>
                           <span className="text-emerald-500 font-semibold">{lot.dryWarehouse.annualRental}</span>
                         </div>
                         <div className="flex justify-between pt-2 border-t border-border">
@@ -306,7 +306,7 @@ export default function PropertySpecifications() {
                           <span className="text-blue-500 font-semibold">{lot.refrigerated.totalInvestment}</span>
                         </div>
                         <div className="flex justify-between">
-                          <span className="text-muted-foreground">Annual Rental ($20/sq ft):</span>
+                          <span className="text-muted-foreground">Annual Rental ($19.50/sq ft):</span>
                           <span className="text-emerald-500 font-semibold">{lot.refrigerated.annualRental}</span>
                         </div>
                         <div className="flex justify-between pt-2 border-t border-border">

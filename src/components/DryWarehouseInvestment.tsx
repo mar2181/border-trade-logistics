@@ -76,7 +76,7 @@ export default function DryWarehouseInvestment() {
           </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-emerald-500/10 transition-all duration-300">
             <DollarSign className="h-8 w-8 text-emerald-500 mx-auto mb-3" />
-            <div className="text-3xl font-bold text-emerald-500 mb-2">$18</div>
+            <div className="text-3xl font-bold text-emerald-500 mb-2">$12.50</div>
             <div className="text-sm text-muted-foreground">Annual Rent per Sq Ft</div>
           </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300">

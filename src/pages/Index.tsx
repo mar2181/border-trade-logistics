@@ -86,7 +86,7 @@ const Index = () => {
                     </div>
                     <div className="flex justify-between text-sm">
                       <span className="text-muted-foreground">Annual rent:</span>
-                      <span className="text-emerald-500 font-semibold">$18/sq ft</span>
+                      <span className="text-emerald-500 font-semibold">$12.50/sq ft</span>
                     </div>
                     <div className="flex justify-between text-sm">
                       <span className="text-muted-foreground">ROI:</span>
@@ -111,7 +111,7 @@ const Index = () => {
                     </div>
                     <div className="flex justify-between text-sm">
                       <span className="text-muted-foreground">Annual rent:</span>
-                      <span className="text-emerald-500 font-semibold">$20/sq ft</span>
+                      <span className="text-emerald-500 font-semibold">$19.50/sq ft</span>
                     </div>
                     <div className="flex justify-between text-sm">
                       <span className="text-muted-foreground">ROI:</span>

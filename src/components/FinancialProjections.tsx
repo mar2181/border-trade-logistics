@@ -28,8 +28,8 @@ export default function FinancialProjections() {
       { label: "Development Timeline", value: "11 months" }
     ],
     rental: [
-      { label: "Dry Storage", value: "$18.2/sq ft" },
-      { label: "Refrigerated", value: "$18.95/sq ft" },
+      { label: "Dry Storage", value: "$12.50/sq ft" },
+      { label: "Refrigerated", value: "$19.50/sq ft" },
       { label: "Unit Size", value: "5K-10K sq ft" }
     ]
   };
