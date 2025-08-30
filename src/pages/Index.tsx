@@ -115,7 +115,7 @@ const Index = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-gradient-to-r from-gold to-gold-dark text-black font-semibold hover:shadow-lg hover:shadow-gold/25 transition-all duration-300">
+              <Button size="lg" className="bg-gradient-to-r from-gold to-gold-dark text-primary-foreground font-semibold hover:shadow-lg hover:shadow-gold/25 transition-all duration-300">
                 <BarChart3 className="h-5 w-5 mr-2" />
                 View Detailed Analysis
               </Button>
@@ -148,25 +148,25 @@ const Index = () => {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="text-center p-4 bg-gray-50 rounded-lg">
                     <div className="text-2xl font-bold text-gold">13.0%</div>
-                    <div className="text-xs text-gray-600">Dry Warehouse ROI</div>
+                    <div className="text-xs text-gray-900">Dry Warehouse ROI</div>
                   </div>
                   <div className="text-center p-4 bg-gray-50 rounded-lg">
                     <div className="text-2xl font-bold text-blue-600">8.8%</div>
-                    <div className="text-xs text-gray-600">Refrigerated ROI</div>
+                    <div className="text-xs text-gray-900">Refrigerated ROI</div>
                   </div>
                 </div>
                 
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-600">Total Investment:</span>
-                    <span className="font-bold text-gray-900">$101M - $167M</span>
+                    <span className="text-muted-foreground">Total Investment:</span>
+                    <span className="font-bold text-primary">$101M - $167M</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-600">Available Land:</span>
-                    <span className="font-bold text-gray-900">49 Acres</span>
+                    <span className="text-muted-foreground">Available Land:</span>
+                    <span className="font-bold text-primary">49 Acres</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-600">Market Vacancy:</span>
+                    <span className="text-muted-foreground">Market Vacancy:</span>
                     <span className="font-bold text-emerald-600">1.3%</span>
                   </div>
                 </div>
@@ -180,8 +180,8 @@ const Index = () => {
                         className="w-10 h-10 rounded-full object-cover"
                       />
                       <div>
-                        <div className="text-sm font-semibold text-gray-900">Your Investment Specialist</div>
-                        <div className="text-xs text-gray-600">RE/MAX Commercial</div>
+                        <div className="text-sm font-semibold text-foreground">Your Investment Specialist</div>
+                        <div className="text-xs text-muted-foreground">RE/MAX Commercial</div>
                       </div>
                     </div>
                     <img 
