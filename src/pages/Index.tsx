@@ -22,9 +22,13 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              <div className="flex items-center space-x-2">
-                <div className="bg-white px-3 py-1 rounded text-red-600 font-bold text-lg">RE/MAX</div>
-                <Building className="w-8 h-8 text-gold" />
+              <div className="flex items-center space-x-3">
+                <img 
+                  src="/lovable-uploads/86c0cf99-26fd-48bd-9d8a-d0c791fcbf83.png" 
+                  alt="RE/MAX Commercial" 
+                  className="h-8"
+                />
+                <Building className="w-6 h-6 text-gold" />
                 <span className="text-xl font-bold text-primary-foreground">McAllen Warehouse</span>
               </div>
             </div>
@@ -169,11 +173,22 @@ const Index = () => {
 
                 <div className="pt-4 border-t border-gray-200">
                   <div className="flex items-center justify-between">
-                    <span className="text-sm text-gray-600">Fed Rate Impact</span>
-                    <div className="flex items-center text-emerald-600">
-                      <TrendingDown className="w-4 h-4 mr-1" />
-                      <span className="text-sm font-semibold">Financing Advantage</span>
+                    <div className="flex items-center space-x-3">
+                      <img 
+                        src="/lovable-uploads/6f3fa122-bcae-43f0-bdac-141ce2b74e76.png" 
+                        alt="Investment Agent" 
+                        className="w-10 h-10 rounded-full object-cover"
+                      />
+                      <div>
+                        <div className="text-sm font-semibold text-gray-900">Your Investment Specialist</div>
+                        <div className="text-xs text-gray-600">RE/MAX Commercial</div>
+                      </div>
                     </div>
+                    <img 
+                      src="/lovable-uploads/a8412600-74ab-454d-ab80-6da0e46ef31b.png" 
+                      alt="RE/MAX" 
+                      className="w-8 h-8"
+                    />
                   </div>
                 </div>
               </div>
