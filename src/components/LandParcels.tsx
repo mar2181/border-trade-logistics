@@ -110,6 +110,31 @@ export default function LandParcels() {
             Individual shovel-ready lots with utilities connected, zoned industrial. Purchase single lots or entire portfolio for maximum flexibility and scale.
           </p>
           
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl overflow-hidden">
+              <img 
+                src="/lovable-uploads/2e5ea358-1541-4271-8f74-88fe7d53e902.png" 
+                alt="Aerial view of shovel-ready industrial land parcels with infrastructure in place"
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-lg font-semibold text-primary mb-2">Aerial View</h3>
+                <p className="text-sm text-muted-foreground">Shovel-ready parcels with all infrastructure and utilities in place</p>
+              </div>
+            </div>
+            <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl overflow-hidden">
+              <img 
+                src="/lovable-uploads/2049e680-9c5a-4406-880c-f8ac5c578cb6.png" 
+                alt="Detailed site plan showing 10 industrial land lots with measurements and specifications"
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-lg font-semibold text-primary mb-2">Site Plan</h3>
+                <p className="text-sm text-muted-foreground">Professional lot layout with detailed measurements and specifications</p>
+              </div>
+            </div>
+          </div>
+          
           <div className="inline-flex items-center px-4 py-2 bg-gold/20 text-gold rounded-full text-sm font-medium border border-gold/30 backdrop-blur-sm mb-8">
             <Zap className="h-4 w-4 mr-2" />
             Shovel-Ready with Water, Power & Sewer Connected
