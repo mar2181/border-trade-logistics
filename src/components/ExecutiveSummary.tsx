@@ -54,7 +54,7 @@ export default function ExecutiveSummary() {
                 <img 
                   src="/lovable-uploads/18eaafa7-6467-4037-8e2d-6d8017b50422.png" 
                   alt="Modern warehouse exterior with professional office space" 
-                  className="w-full h-48 object-cover"
+                  className="w-full h-64 object-cover"
                 />
               </div>
             </div>
@@ -69,7 +69,7 @@ export default function ExecutiveSummary() {
                 <img 
                   src="/lovable-uploads/3e9cf4b0-cd02-4374-a49b-8642655e444f.png" 
                   alt="Modern office space in warehouse development" 
-                  className="w-full h-48 object-cover"
+                  className="w-full h-64 object-cover"
                 />
               </div>
             </div>

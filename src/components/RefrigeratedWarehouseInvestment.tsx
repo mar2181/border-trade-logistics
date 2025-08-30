@@ -71,8 +71,8 @@ export default function RefrigeratedWarehouseInvestment() {
         <div className="relative overflow-hidden rounded-xl border border-border mb-8">
           <img 
             src="/lovable-uploads/9d1d06b0-dabf-4d17-ae37-d862d5fc0302.png" 
-            alt="Cold storage facility with specialized refrigerated equipment" 
-            className="w-full h-64 object-cover"
+            alt="Premium cold storage facility with specialized refrigerated equipment and loading doors" 
+            className="w-full h-80 object-cover"
           />
         </div>
 

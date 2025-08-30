@@ -72,7 +72,7 @@ export default function DryWarehouseInvestment() {
           <img 
             src="/lovable-uploads/7b830446-6938-41b0-9b69-92d8fc6a54ee.png" 
             alt="Modern dry warehouse interior with polished concrete floors" 
-            className="w-full h-64 object-cover"
+            className="w-full h-80 object-cover"
           />
         </div>
 
@@ -107,7 +107,7 @@ export default function DryWarehouseInvestment() {
               <img 
                 src="/lovable-uploads/318dfb75-0eb2-4d25-a153-b8b6829a954b.png" 
                 alt="Warehouse interior showing loading docks and high-ceiling design" 
-                className="w-full h-48 object-cover"
+                className="w-full h-72 object-cover"
               />
             </div>
             
@@ -115,7 +115,7 @@ export default function DryWarehouseInvestment() {
               <img 
                 src="/lovable-uploads/4978e488-3fbd-486b-98e7-7512cc55957f.png" 
                 alt="Modern warehouse exterior with professional landscaping" 
-                className="w-full h-48 object-cover"
+                className="w-full h-72 object-cover"
               />
             </div>
           </div>
