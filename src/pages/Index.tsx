@@ -61,6 +61,7 @@ const Index = () => {
               </button>
               <a href="#financials" className="text-muted-foreground hover:text-gold transition-colors">Financials</a>
               <a href="#properties" className="text-muted-foreground hover:text-gold transition-colors">Properties</a>
+              <a href="/calculator" className="text-muted-foreground hover:text-gold transition-colors">Calculator</a>
             </div>
 
             <div className="flex items-center space-x-4">
