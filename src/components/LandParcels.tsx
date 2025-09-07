@@ -1,104 +1,111 @@
-import { MapPin, Building, Calculator, TrendingUp, Zap } from "lucide-react";
+import { MapPin, Building, Calculator, TrendingUp, Zap, Eye, Maximize2 } from "lucide-react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 
 export default function LandParcels() {
   const lots = [
     {
       id: "01",
-      type: "Premium",
-      landInvestment: "$1.1M",
-      totalAcres: "3.62",
-      buildableSF: "55,000",
-      perAcre: "$300K",
-      frontage: "Military Highway"
+      type: "Premium", 
+      landInvestment: "$1,260,000",
+      totalAcres: "5.04",
+      buildableSF: "57,240",
+      maxWarehouseSF: "57,240",
+      perAcre: "$250K",
+      frontage: "Military Highway",
+      dimensions: "440' x 498'",
+      utilities: "Water, Sewer, Electric Ready"
     },
     {
       id: "02",
       type: "Premium",
-      landInvestment: "$1.1M",
-      totalAcres: "3.81",
-      buildableSF: "58,000",
-      perAcre: "$300K",
-      frontage: "Military Highway"
+      landInvestment: "$1,265,000", 
+      totalAcres: "5.06",
+      buildableSF: "66,780",
+      maxWarehouseSF: "66,780",
+      perAcre: "$250K",
+      frontage: "Military Highway",
+      dimensions: "445' x 495'",
+      utilities: "Water, Sewer, Electric Ready"
     },
     {
       id: "03",
       type: "Premium",
-      landInvestment: "$2.1M",
-      totalAcres: "7.02",
-      buildableSF: "107,000",
-      perAcre: "$300K",
-      frontage: "Military Highway"
+      landInvestment: "$1,432,500",
+      totalAcres: "5.73",
+      buildableSF: "80,000",
+      maxWarehouseSF: "80,000", 
+      perAcre: "$250K",
+      frontage: "Military Highway",
+      dimensions: "500' x 500'",
+      utilities: "Water, Sewer, Electric Ready"
     },
     {
       id: "04",
       type: "Premium",
-      landInvestment: "$2.1M",
-      totalAcres: "7.15",
-      buildableSF: "109,000",
-      perAcre: "$300K",
-      frontage: "Military Highway"
+      landInvestment: "$1,619,150",
+      totalAcres: "6.12",
+      buildableSF: "80,000",
+      maxWarehouseSF: "80,000",
+      perAcre: "$265K",
+      frontage: "Military Highway", 
+      dimensions: "520' x 513'",
+      utilities: "Water, Sewer, Electric Ready"
     },
     {
       id: "05",
       type: "Premium",
-      landInvestment: "$2.5M",
-      totalAcres: "8.2",
-      buildableSF: "125,000",
-      perAcre: "$300K",
-      frontage: "Military Highway"
+      landInvestment: "$1,530,000",
+      totalAcres: "6.12",
+      buildableSF: "80,000",
+      maxWarehouseSF: "80,000",
+      perAcre: "$250K",
+      frontage: "Military Highway",
+      dimensions: "520' x 513'",
+      utilities: "Water, Sewer, Electric Ready"
     },
     {
       id: "06",
-      type: "Standard",
-      landInvestment: "$0.9M",
-      totalAcres: "3.51",
-      buildableSF: "53,500",
+      type: "Premium",
+      landInvestment: "$1,447,500",
+      totalAcres: "5.79",
+      buildableSF: "80,000",
+      maxWarehouseSF: "80,000",
       perAcre: "$250K",
-      frontage: "Interior Access"
+      frontage: "Military Highway",
+      dimensions: "490' x 515'", 
+      utilities: "Water, Sewer, Electric Ready"
     },
     {
       id: "07",
-      type: "Standard",
-      landInvestment: "$0.9M",
-      totalAcres: "3.5",
-      buildableSF: "53,300",
-      perAcre: "$250K",
-      frontage: "Interior Access"
+      type: "Premium",
+      landInvestment: "$2,154,000",
+      totalAcres: "7.18",
+      buildableSF: "103,350",
+      maxWarehouseSF: "103,350",
+      perAcre: "$300K",
+      frontage: "Military Highway",
+      dimensions: "600' x 525'",
+      utilities: "Water, Sewer, Electric Ready"
     },
     {
-      id: "08",
+      id: "08", 
       type: "Standard",
-      landInvestment: "$0.9M",
-      totalAcres: "3.46",
-      buildableSF: "52,700",
+      landInvestment: "$782,500",
+      totalAcres: "3.13",
+      buildableSF: "38,160",
+      maxWarehouseSF: "38,160",
       perAcre: "$250K",
-      frontage: "Interior Access"
-    },
-    {
-      id: "09",
-      type: "Standard",
-      landInvestment: "$0.9M",
-      totalAcres: "3.63",
-      buildableSF: "55,300",
-      perAcre: "$250K",
-      frontage: "Interior Access"
-    },
-    {
-      id: "10",
-      type: "Standard",
-      landInvestment: "$1.1M",
-      totalAcres: "4.21",
-      buildableSF: "64,100",
-      perAcre: "$250K",
-      frontage: "Interior Access"
+      frontage: "Interior Access",
+      dimensions: "350' x 390'",
+      utilities: "Water, Sewer, Electric Ready"
     }
   ];
 
   const portfolioTotals = {
-    totalAcres: "49.01",
-    totalInvestment: "$13.5M",
-    avgPricePerAcre: "$275K",
-    totalBuildableSF: "343,350"
+    totalAcres: "53.61",
+    totalInvestment: "$11.89M",
+    avgPricePerAcre: "$265K", 
+    totalBuildableSF: "605,530"
   };
 
   return (
@@ -122,17 +129,46 @@ export default function LandParcels() {
                 <p className="text-sm text-muted-foreground">Shovel-ready parcels with all infrastructure and utilities in place</p>
               </div>
             </div>
-            <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl overflow-hidden">
-              <img 
-                src="/lovable-uploads/2049e680-9c5a-4406-880c-f8ac5c578cb6.png" 
-                alt="Detailed site plan showing 10 industrial land lots with measurements and specifications"
-                className="w-full h-64 object-cover"
-              />
-              <div className="p-4">
-                <h3 className="text-lg font-semibold text-primary mb-2">Site Plan</h3>
-                <p className="text-sm text-muted-foreground">Professional lot layout with detailed measurements and specifications</p>
-              </div>
-            </div>
+            <Dialog>
+              <DialogTrigger asChild>
+                <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl overflow-hidden cursor-pointer hover:shadow-lg hover:shadow-gold/10 transition-all duration-300 relative group">
+                  <img 
+                    src="/lovable-uploads/2049e680-9c5a-4406-880c-f8ac5c578cb6.png" 
+                    alt="Detailed site plan showing 8 industrial land lots with measurements and specifications"
+                    className="w-full h-64 object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="text-white text-center">
+                      <Maximize2 className="h-8 w-8 mx-auto mb-2" />
+                      <span className="text-sm font-medium">Click to Enlarge</span>
+                    </div>
+                  </div>
+                  <div className="p-4">
+                    <h3 className="text-lg font-semibold text-primary mb-2">Interactive Site Plan</h3>
+                    <p className="text-sm text-muted-foreground">Professional lot layout with detailed measurements - Click to view full size</p>
+                  </div>
+                </div>
+              </DialogTrigger>
+              <DialogContent className="max-w-6xl max-h-[90vh] overflow-auto">
+                <DialogHeader>
+                  <DialogTitle className="text-2xl font-bold text-primary">MCC Industrial Park - Master Site Plan</DialogTitle>
+                </DialogHeader>
+                <div className="mt-4">
+                  <img 
+                    src="/lovable-uploads/2049e680-9c5a-4406-880c-f8ac5c578cb6.png"
+                    alt="Full detailed site plan showing all 8 lots with precise measurements, utilities, and access roads"
+                    className="w-full h-auto rounded-lg border border-border"
+                  />
+                  <div className="mt-4 p-4 bg-muted/30 rounded-lg">
+                    <p className="text-sm text-muted-foreground">
+                      <strong>Site Plan Features:</strong> All lots are shovel-ready with utilities connected. 
+                      Military Highway frontage lots (1-7) offer premium positioning, while Lot 8 provides interior access. 
+                      Each lot shows precise dimensions and buildable envelopes for maximum warehouse development potential.
+                    </p>
+                  </div>
+                </div>
+              </DialogContent>
+            </Dialog>
           </div>
           
           <div className="inline-flex items-center px-4 py-2 bg-gold/20 text-gold rounded-full text-sm font-medium border border-gold/30 backdrop-blur-sm mb-8">
@@ -181,16 +217,16 @@ export default function LandParcels() {
                   </div>
                 </div>
 
-                <div className="grid md:grid-cols-4 gap-4">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
                   <div className="text-center p-4 bg-muted/30 rounded-lg">
                     <MapPin className="h-6 w-6 text-gold mx-auto mb-2" />
-                    <div className="text-lg font-bold text-foreground">{lot.totalAcres}</div>
-                    <div className="text-xs text-muted-foreground">Total Acres</div>
+                    <div className="text-lg font-bold text-foreground">{lot.totalAcres} acres</div>
+                    <div className="text-xs text-muted-foreground">Total Lot Size</div>
                   </div>
                   <div className="text-center p-4 bg-muted/30 rounded-lg">
                     <Building className="h-6 w-6 text-emerald-500 mx-auto mb-2" />
-                    <div className="text-lg font-bold text-foreground">{lot.buildableSF}</div>
-                    <div className="text-xs text-muted-foreground">Buildable Sq Ft</div>
+                    <div className="text-lg font-bold text-foreground">{lot.maxWarehouseSF.toLocaleString()}</div>
+                    <div className="text-xs text-muted-foreground">Max Warehouse SF</div>
                   </div>
                   <div className="text-center p-4 bg-muted/30 rounded-lg">
                     <Calculator className="h-6 w-6 text-blue-500 mx-auto mb-2" />
@@ -201,6 +237,43 @@ export default function LandParcels() {
                     <TrendingUp className="h-6 w-6 text-amber-500 mx-auto mb-2" />
                     <div className="text-lg font-bold text-foreground">10-15%</div>
                     <div className="text-xs text-muted-foreground">Est. Annual Appreciation</div>
+                  </div>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-4 mb-4">
+                  <div className="p-4 bg-blue-50 dark:bg-blue-500/10 rounded-lg">
+                    <h4 className="font-semibold text-blue-700 dark:text-blue-400 mb-2">Lot Specifications</h4>
+                    <div className="space-y-1 text-sm">
+                      <div className="flex justify-between">
+                        <span className="text-muted-foreground">Dimensions:</span>
+                        <span className="font-medium">{lot.dimensions}</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-muted-foreground">Utilities:</span>
+                        <span className="font-medium text-emerald-600">{lot.utilities}</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-muted-foreground">Zoning:</span>
+                        <span className="font-medium">Industrial</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="p-4 bg-amber-50 dark:bg-amber-500/10 rounded-lg">
+                    <h4 className="font-semibold text-amber-700 dark:text-amber-400 mb-2">Development Potential</h4>
+                    <div className="space-y-1 text-sm">
+                      <div className="flex justify-between">
+                        <span className="text-muted-foreground">Max Coverage:</span>
+                        <span className="font-medium">65%</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-muted-foreground">Height Limit:</span>
+                        <span className="font-medium">40 feet</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-muted-foreground">Parking Required:</span>
+                        <span className="font-medium">1 per 1,000 SF</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
