@@ -67,8 +67,8 @@ export default function MarketAnalysis() {
           <div className="space-y-6">
             <div className="relative overflow-hidden rounded-xl border border-border">
               <img 
-                src="/lovable-uploads/c0bf7b79-7018-4e17-bd29-84916604610b.png" 
-                alt="Modern warehouse development with professional glass facade" 
+                src="/lovable-uploads/42ae0efd-1421-4306-ac6f-4e016f62e8fd.png" 
+                alt="Strategic location aerial view showing McAllen industrial area with site positioning relative to airports, bridges, and industrial parks" 
                 className="w-full h-64 object-cover"
               />
             </div>
