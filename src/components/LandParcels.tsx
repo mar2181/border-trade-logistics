@@ -132,11 +132,11 @@ export default function LandParcels() {
             <Dialog>
               <DialogTrigger asChild>
                 <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl overflow-hidden cursor-pointer hover:shadow-lg hover:shadow-gold/10 transition-all duration-300 relative group">
-                  <img 
-                    src="/lovable-uploads/2049e680-9c5a-4406-880c-f8ac5c578cb6.png" 
-                    alt="Detailed site plan showing 8 industrial land lots with measurements and specifications"
-                    className="w-full h-64 object-cover"
-                  />
+                   <img 
+                     src="/lovable-uploads/cf22fa2d-78fc-4ffb-bc40-51232435018e.png" 
+                     alt="Detailed site plan showing 8 industrial land lots with measurements and specifications"
+                     className="w-full h-64 object-cover"
+                   />
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <div className="text-white text-center">
                       <Maximize2 className="h-8 w-8 mx-auto mb-2" />
@@ -154,11 +154,11 @@ export default function LandParcels() {
                   <DialogTitle className="text-2xl font-bold text-primary">MCC Industrial Park - Master Site Plan</DialogTitle>
                 </DialogHeader>
                 <div className="mt-4">
-                  <img 
-                    src="/lovable-uploads/2049e680-9c5a-4406-880c-f8ac5c578cb6.png"
-                    alt="Full detailed site plan showing all 8 lots with precise measurements, utilities, and access roads"
-                    className="w-full h-auto rounded-lg border border-border"
-                  />
+                   <img 
+                     src="/lovable-uploads/cf22fa2d-78fc-4ffb-bc40-51232435018e.png"
+                     alt="Full detailed site plan showing all 8 lots with precise measurements, utilities, and access roads"
+                     className="w-full h-auto rounded-lg border border-border"
+                   />
                   <div className="mt-4 p-4 bg-muted/30 rounded-lg">
                     <p className="text-sm text-muted-foreground">
                       <strong>Site Plan Features:</strong> All lots are shovel-ready with utilities connected. 
