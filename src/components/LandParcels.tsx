@@ -6,11 +6,12 @@ export default function LandParcels() {
     {
       id: "01",
       type: "Premium", 
-      landInvestment: "$1,260,000",
+      landInvestment: "$1,512,000",
       totalAcres: "5.04",
       buildableSF: "57,240",
       maxWarehouseSF: "57,240",
-      perAcre: "$250K",
+      perAcre: "$300K",
+      warehouseValue: "$300,000",
       frontage: "Military Highway",
       dimensions: "440' x 498'",
       utilities: "Water, Sewer, Electric Ready"
@@ -18,11 +19,12 @@ export default function LandParcels() {
     {
       id: "02",
       type: "Premium",
-      landInvestment: "$1,265,000", 
+      landInvestment: "$1,340,900", 
       totalAcres: "5.06",
       buildableSF: "66,780",
       maxWarehouseSF: "66,780",
-      perAcre: "$250K",
+      perAcre: "$265K",
+      warehouseValue: "$265,000",
       frontage: "Military Highway",
       dimensions: "445' x 495'",
       utilities: "Water, Sewer, Electric Ready"
@@ -30,11 +32,12 @@ export default function LandParcels() {
     {
       id: "03",
       type: "Premium",
-      landInvestment: "$1,432,500",
+      landInvestment: "$1,518,450",
       totalAcres: "5.73",
       buildableSF: "80,000",
       maxWarehouseSF: "80,000", 
-      perAcre: "$250K",
+      perAcre: "$265K",
+      warehouseValue: "$265,000",
       frontage: "Military Highway",
       dimensions: "500' x 500'",
       utilities: "Water, Sewer, Electric Ready"
@@ -47,6 +50,7 @@ export default function LandParcels() {
       buildableSF: "80,000",
       maxWarehouseSF: "80,000",
       perAcre: "$265K",
+      warehouseValue: "$265,000",
       frontage: "Military Highway", 
       dimensions: "520' x 513'",
       utilities: "Water, Sewer, Electric Ready"
@@ -54,11 +58,12 @@ export default function LandParcels() {
     {
       id: "05",
       type: "Premium",
-      landInvestment: "$1,530,000",
+      landInvestment: "$1,621,800",
       totalAcres: "6.12",
       buildableSF: "80,000",
       maxWarehouseSF: "80,000",
-      perAcre: "$250K",
+      perAcre: "$265K",
+      warehouseValue: "$265,000",
       frontage: "Military Highway",
       dimensions: "520' x 513'",
       utilities: "Water, Sewer, Electric Ready"
@@ -71,6 +76,7 @@ export default function LandParcels() {
       buildableSF: "80,000",
       maxWarehouseSF: "80,000",
       perAcre: "$250K",
+      warehouseValue: "$250,000",
       frontage: "Military Highway",
       dimensions: "490' x 515'", 
       utilities: "Water, Sewer, Electric Ready"
@@ -83,18 +89,33 @@ export default function LandParcels() {
       buildableSF: "103,350",
       maxWarehouseSF: "103,350",
       perAcre: "$300K",
+      warehouseValue: "$300,000",
       frontage: "Military Highway",
       dimensions: "600' x 525'",
       utilities: "Water, Sewer, Electric Ready"
     },
     {
       id: "08", 
-      type: "Standard",
-      landInvestment: "$782,500",
+      type: "Premium",
+      landInvestment: "$1,534,350",
       totalAcres: "3.13",
       buildableSF: "38,160",
       maxWarehouseSF: "38,160",
-      perAcre: "$250K",
+      perAcre: "$300K",
+      warehouseValue: "$300,000",
+      frontage: "Military Highway",
+      dimensions: "350' x 390'",
+      utilities: "Water, Sewer, Electric Ready"
+    },
+    {
+      id: "09",
+      type: "Standard",
+      landInvestment: "$829,450",
+      totalAcres: "3.13",
+      buildableSF: "38,160",
+      maxWarehouseSF: "38,160",
+      perAcre: "$265K",
+      warehouseValue: "$265,000",
       frontage: "Interior Access",
       dimensions: "350' x 390'",
       utilities: "Water, Sewer, Electric Ready"
@@ -102,10 +123,10 @@ export default function LandParcels() {
   ];
 
   const portfolioTotals = {
-    totalAcres: "53.61",
-    totalInvestment: "$11.89M",
-    avgPricePerAcre: "$265K", 
-    totalBuildableSF: "605,530"
+    totalAcres: "45.92",
+    totalInvestment: "$13.62M",
+    avgPricePerAcre: "$297K", 
+    totalBuildableSF: "643,690"
   };
 
   return (
@@ -120,13 +141,13 @@ export default function LandParcels() {
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl overflow-hidden">
               <img 
-                src="/lovable-uploads/2e5ea358-1541-4271-8f74-88fe7d53e902.png" 
-                alt="Aerial view of shovel-ready industrial land parcels with infrastructure in place"
+                src="/lovable-uploads/cd2a4f27-d483-4ce3-8417-d8ad5d1b2ebe.png" 
+                alt="Detailed site plan showing MCC Industrial Park with 9 available lots and specifications table"
                 className="w-full h-64 object-cover"
               />
               <div className="p-4">
-                <h3 className="text-lg font-semibold text-primary mb-2">Aerial View</h3>
-                <p className="text-sm text-muted-foreground">Shovel-ready parcels with all infrastructure and utilities in place</p>
+                <h3 className="text-lg font-semibold text-primary mb-2">Property Layout & Specifications</h3>
+                <p className="text-sm text-muted-foreground">Official site plan with lot details, acreage, and warehouse capacity for all 9 available parcels</p>
               </div>
             </div>
             <Dialog>
@@ -205,7 +226,7 @@ export default function LandParcels() {
                     <h3 className="text-xl font-bold text-primary mb-2">
                       Lot {lot.id} - {lot.frontage}
                     </h3>
-                    <span className={`inline-block px-3 py-1 rounded-full text-sm font-medium ${
+                     <span className={`inline-block px-3 py-1 rounded-full text-sm font-medium ${
                       lot.type === 'Premium' ? 'bg-gold/20 text-gold' : 'bg-blue-500/20 text-blue-400'
                     }`}>
                       {lot.type === 'Premium' ? 'Highway Frontage Premium' : 'Interior Access Standard'}
@@ -235,8 +256,8 @@ export default function LandParcels() {
                   </div>
                   <div className="text-center p-4 bg-muted/30 rounded-lg">
                     <TrendingUp className="h-6 w-6 text-amber-500 mx-auto mb-2" />
-                    <div className="text-lg font-bold text-foreground">10-15%</div>
-                    <div className="text-xs text-muted-foreground">Est. Annual Appreciation</div>
+                    <div className="text-lg font-bold text-foreground">{lot.warehouseValue}</div>
+                    <div className="text-xs text-muted-foreground">Warehouse Value</div>
                   </div>
                 </div>
 
@@ -292,8 +313,22 @@ export default function LandParcels() {
           <div className="text-center">
             <h3 className="text-2xl font-semibold text-primary mb-4">Portfolio Summary</h3>
             <p className="text-muted-foreground mb-6">
-              Total portfolio: 49 acres, $13.5M land cost – purchase individual lots or complete portfolio for scale advantages.
+              Total portfolio: 45.92 acres, $13.62M total value – purchase individual lots or complete portfolio for scale advantages.
             </p>
+            
+            <div className="mb-8 bg-card/50 backdrop-blur-sm border border-border rounded-xl overflow-hidden">
+              <img 
+                src="/lovable-uploads/d775f7d6-ebe9-40e0-9cbe-77e7e7aed1f4.png" 
+                alt="Detailed pricing table showing lot numbers, acreage, warehouse values, and total investment for each parcel"
+                className="w-full h-auto object-cover"
+              />
+              <div className="p-4">
+                <h4 className="text-lg font-semibold text-primary mb-2">Complete Investment Breakdown</h4>
+                <p className="text-sm text-muted-foreground">
+                  Comprehensive pricing table showing individual lot investments, warehouse development values, and total project costs for each parcel.
+                </p>
+              </div>
+            </div>
             
             <div className="grid md:grid-cols-2 gap-8">
               <div>
