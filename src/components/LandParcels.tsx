@@ -43,9 +43,9 @@ export default function LandParcels() {
     <section id="land-parcels" className="py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-primary mb-4">Prime Industrial Park Investment</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4">Prime Land Development Opportunity</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-            Proposed industrial park development on Military Highway featuring 8 modern warehouse buildings with solar installations and premium truck access.
+            Raw land parcels available for development on Military Highway with prime agricultural fields ready for industrial conversion.
           </p>
           
           <div className="grid md:grid-cols-1 gap-8 mb-8">
@@ -53,8 +53,8 @@ export default function LandParcels() {
               <DialogTrigger asChild>
                 <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl overflow-hidden cursor-pointer hover:shadow-lg hover:shadow-gold/10 transition-all duration-300 relative group">
                   <img 
-                    src="/lovable-uploads/0bff25de-03b4-45d3-9344-d2cf2f27944a.png" 
-                    alt="Aerial view of Military Highway Industrial Park showing 8 warehouse buildings with solar panels and truck access"
+                    src="/lovable-uploads/6a074678-b761-405d-9c8b-3995ae50e852.png" 
+                    alt="Aerial view of the actual land parcels available for development on Military Highway"
                     className="w-full h-96 object-cover"
                   />
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
@@ -64,26 +64,25 @@ export default function LandParcels() {
                     </div>
                   </div>
                   <div className="p-6">
-                    <h3 className="text-2xl font-semibold text-primary mb-2">Military Highway Industrial Park</h3>
-                    <p className="text-muted-foreground">Premium industrial development with 8 warehouse buildings, solar installations, and excellent logistics access</p>
+                    <h3 className="text-2xl font-semibold text-primary mb-2">Military Highway Land Development</h3>
+                    <p className="text-muted-foreground">Prime raw land parcels ready for industrial development with excellent highway access and build-to-suit potential</p>
                   </div>
                 </div>
               </DialogTrigger>
               <DialogContent className="max-w-6xl max-h-[90vh] overflow-auto">
                 <DialogHeader>
-                  <DialogTitle className="text-2xl font-bold text-primary">Military Highway Industrial Park - Aerial Overview</DialogTitle>
+                  <DialogTitle className="text-2xl font-bold text-primary">Military Highway Land Development - Aerial Overview</DialogTitle>
                 </DialogHeader>
                 <div className="mt-4">
                   <img 
-                    src="/lovable-uploads/0bff25de-03b4-45d3-9344-d2cf2f27944a.png"
-                    alt="Complete aerial view of the industrial park showing all buildings, parking, truck access, and solar installations"
+                    src="/lovable-uploads/6a074678-b761-405d-9c8b-3995ae50e852.png"
+                    alt="Complete aerial view of the raw land parcels showing agricultural fields ready for industrial development"
                     className="w-full h-auto rounded-lg border border-border"
                   />
                   <div className="mt-4 p-4 bg-muted/30 rounded-lg">
                     <p className="text-sm text-muted-foreground">
-                      <strong>Industrial Park Features:</strong> This fully operational 47.5-acre industrial park features 8 modern warehouse buildings totaling 485,000 SF, 
-                      each equipped with rooftop solar installations. The development offers excellent truck access, ample parking, 
-                      and is strategically positioned on Military Highway for optimal logistics operations.
+                      <strong>Land Development Features:</strong> This 47.5-acre raw land parcel offers prime development potential with agricultural fields ready for conversion to industrial use. 
+                      The property provides excellent access to Military Highway for optimal logistics operations and is positioned for build-to-suit development opportunities.
                     </p>
                   </div>
                 </div>
