@@ -69,7 +69,7 @@ export default function InvestmentProcess() {
               <h4 className="text-xl font-semibold text-primary mb-4">Your McAllen Investment Specialist</h4>
               <p className="text-muted-foreground mb-6">
                 20+ years international real estate experience specializing in The Valley's industrial market. 
-                Expert in Dodge Arena District properties with deep knowledge of McAllen's explosive growth potential 
+                Expert in Dodge Arena District properties with deep knowledge of McAllen's sustained growth potential 
                 and proven track record helping investors secure million-dollar opportunities before they're gone.
               </p>
               
@@ -97,7 +97,7 @@ export default function InvestmentProcess() {
             
             <p className="text-muted-foreground mb-8 max-w-3xl mx-auto">
               <span className="font-semibold text-accent-emerald">PERFECT TIMING:</span> Only 8 properties left in McAllen's Dodge Arena District. 
-              Fed rate cuts are imminent - secure your million-dollar investment at $250K-$300K/acre before the Valley's explosive growth 
+              Fed rate cuts are imminent - secure your million-dollar investment at $250K-$300K/acre before the Valley's dynamic growth 
               drives prices higher. This is your chance to get ahead of the curve in America's hidden gem.
             </p>
             
@@ -126,7 +126,7 @@ export default function InvestmentProcess() {
             
             <div className="mt-8 p-4 bg-accent-emerald/10 rounded-lg border border-accent-emerald/30">
               <p className="text-accent-emerald font-semibold">
-                Contact your specialist at (956) 522-1481 TODAY - These 8 premium properties won't last in The Valley's explosive growth market!
+                Contact your specialist at (956) 522-1481 TODAY - These 8 premium properties won't last in The Valley's dynamic growth market!
               </p>
             </div>
           </div>

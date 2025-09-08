@@ -111,7 +111,7 @@ const Index = () => {
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-gray-200 max-w-2xl leading-relaxed">
                 Only 8 premium properties left in McAllen's coveted Dodge Arena District on 10th Street. The Valley is America's hidden gem - 
-                those who invest here stay and grow. Fed rate cuts are imminent, creating perfect timing for this no-risk opportunity.
+                those who invest here stay and grow. Fed rate cuts are imminent, creating optimal timing for this compelling opportunity.
               </p>
             </div>
 

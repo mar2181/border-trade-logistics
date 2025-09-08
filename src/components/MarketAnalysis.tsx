@@ -20,7 +20,7 @@ export default function MarketAnalysis() {
             </p>
             <p className="text-lg text-muted-foreground max-w-5xl mx-auto text-center mt-4">
               McAllen's transformation into America's produce distribution capital creates unprecedented opportunities. 
-              The Valley is <span className="text-accent-emerald font-semibold">immune to national real estate issues</span> due to explosive growth and demand. 
+              The Valley <span className="text-accent-emerald font-semibold">demonstrates remarkable market stability</span> supported by sustained growth and consistent demand. 
               <span className="text-gold font-semibold">Savvy investors moving now</span> will benefit from rate cuts and position themselves in the most desirable market.
             </p>
           </div>
@@ -28,7 +28,7 @@ export default function MarketAnalysis() {
 
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
           <div>
-            <h3 className="text-2xl font-semibold text-primary mb-6">The Valley's Explosive Market Transformation</h3>
+            <h3 className="text-2xl font-semibold text-primary mb-6">The Valley's Dynamic Market Transformation</h3>
             <p className="text-muted-foreground mb-8 leading-relaxed">
               <strong className="text-gold">America's Hidden Gem:</strong> McAllen's 900K+ metropolitan area rivals El Paso in size but offers superior growth potential. 
               Historic vacancy drop from 6.6% to 1.3% while rental rates surged 375% proves this market's exceptional strength. 

@@ -201,7 +201,7 @@ export default function PropertySpecifications() {
             <p className="text-lg text-muted-foreground max-w-5xl mx-auto text-center mt-4">
               Located on 10th Street, minutes from Dodge Arena in the heart of America's produce distribution hub. 
               <span className="text-accent-emerald font-semibold"> Fed rate cuts are imminent</span> - position yourself ahead of the curve in this 
-              <span className="text-gold font-semibold"> no-risk investment opportunity</span> with guaranteed upside potential.
+              <span className="text-gold font-semibold"> superior investment opportunity</span> with multiple upsides and strong fundamentals.
             </p>
           </div>
           
@@ -275,7 +275,7 @@ export default function PropertySpecifications() {
                     <div className="bg-gradient-to-r from-gold/10 to-accent-sapphire/10 rounded-xl p-6 mb-8">
                       <h4 className="text-xl font-bold text-primary mb-4 flex items-center">
                         <Shield className="h-5 w-5 text-gold mr-2" />
-                        No-Risk Investment Opportunity
+                        Strategic Investment Opportunity
                       </h4>
                       <div className="grid md:grid-cols-3 gap-4">
                         {getPropertyAdvantages(lot.id).map((advantage, idx) => (
@@ -503,7 +503,7 @@ export default function PropertySpecifications() {
               <div>
                 <div className="text-3xl font-bold text-gold mb-2">900K+</div>
                 <div className="text-sm text-muted-foreground">McAllen Metro Population</div>
-                <div className="text-xs text-accent-emerald">Immune to National Real Estate Issues</div>
+                <div className="text-xs text-accent-emerald">Demonstrates Market Resilience</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-accent-emerald mb-2">20+ Years</div>

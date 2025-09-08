@@ -12,7 +12,7 @@ export default function RiskAnalysis() {
         "Valley market cycle considerations", 
         "McAllen industrial demand fluctuations"
       ],
-      mitigation: "Fed rate cuts are imminent, Valley market is recession-proof, industrial demand surging with 20-year growth projected"
+      mitigation: "Fed rate cuts are imminent, Valley market demonstrates exceptional resilience, industrial demand growing with 20-year expansion projected"
     },
     {
       category: "Regulatory Risks", 
@@ -44,28 +44,28 @@ export default function RiskAnalysis() {
     "Dodge Arena District - McAllen's most coveted industrial location",
     "10th Street positioning with new road development enhancing access", 
     "Only 8 properties remaining in this premium district",
-    "Valley's 900K+ population immune to national real estate issues",
+    "Valley's 900K+ population supports sustained market fundamentals",
     "Heart of America's produce distribution alley with surging demand",
     "Fed rate cuts create perfect timing for investment or development financing"
   ];
 
   const investmentProtection = [
-    "No construction risks - land investment in proven growth market",
+    "Strategic land investment in proven growth market with minimal construction exposure",
     "Multiple exit strategies: hold for appreciation, resell at premium, or develop",
-    "McAllen market immunity to national real estate downturns",
-    "Valley's 20-year growth projection provides long-term security",
-    "Savvy investors who invest in The Valley stay and grow",
-    "Perfect timing with Fed rate cuts enhancing all investment scenarios"
+    "McAllen market demonstrates resilience amid changing national conditions",
+    "Valley's 20-year growth projection provides sustained investment security",
+    "Proven track record: savvy investors who choose The Valley achieve lasting success",
+    "Optimal timing with Fed rate cuts enhancing all strategic scenarios"
   ];
 
   return (
     <section className="py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-primary mb-4">No-Risk Investment Analysis - The Valley Advantage</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4">Strategic Investment Analysis - The Valley Advantage</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-            <span className="text-gold font-bold">Why This Is a No-Risk Investment:</span> McAllen's Dodge Arena District offers multiple upsides with guaranteed protection. 
-            The Valley is immune to national real estate cycles due to explosive growth and demand that continues regardless of economic conditions.
+            <span className="text-gold font-bold">Why This Represents Exceptional Value:</span> McAllen's Dodge Arena District offers compelling risk-adjusted returns with strong downside protection. 
+            The Valley's market fundamentals create sustainable growth momentum that transcends typical real estate cycles.
           </p>
         </div>
 
@@ -119,7 +119,7 @@ export default function RiskAnalysis() {
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8">
             <div className="flex items-center mb-6">
               <Shield className="h-8 w-8 text-blue-500 mr-3" />
-              <h3 className="text-xl font-semibold text-primary">No-Risk Investment Protection</h3>
+              <h3 className="text-xl font-semibold text-primary">Strategic Investment Protection</h3>
             </div>
             
             <ul className="space-y-3">
