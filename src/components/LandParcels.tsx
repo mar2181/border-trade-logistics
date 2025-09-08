@@ -189,26 +189,6 @@ export default function LandParcels() {
             </div>
           </div>
 
-          {/* Tenant Mix */}
-          <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl overflow-hidden">
-            <div className="p-6">
-              <h3 className="text-2xl font-bold text-primary mb-6">Credit Tenant Portfolio</h3>
-              <div className="grid gap-4">
-                {industrialPark.tenants.map((tenant, index) => (
-                  <div key={index} className="flex justify-between items-center p-4 bg-muted/30 rounded-lg">
-                    <div>
-                      <h4 className="font-semibold text-foreground">{tenant.name}</h4>
-                      <p className="text-sm text-muted-foreground">{tenant.lease} lease term</p>
-                    </div>
-                    <div className="text-right">
-                      <div className="font-bold text-gold">{Number(tenant.sf).toLocaleString()} SF</div>
-                      <div className="text-xs text-muted-foreground">Leased Space</div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
         </div>
 
         <div className="mt-12 bg-gradient-to-r from-gold/10 to-emerald-500/10 rounded-xl p-8">
