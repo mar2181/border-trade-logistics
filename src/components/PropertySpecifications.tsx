@@ -22,169 +22,169 @@ export default function PropertySpecifications() {
     {
       id: "01",
       type: "Premium",
-      landInvestment: "$1.1M",
-      totalAcres: "3.62",
-      buildableSF: "55,000",
+      landInvestment: "$1.5M",
+      totalAcres: "5.04",
+      buildableSF: "57,240",
       perAcre: "$300K",
       estUnits: "7",
       dryWarehouse: {
-        constructionCost: "$6.6M",
-        totalInvestment: "$7.7M",
+        constructionCost: "$6.9M",
+        totalInvestment: "$8.4M",
         annualRental: "$1.0M",
-        roi: "9.7%"
+        roi: "9.5%"
       },
       refrigerated: {
-        constructionCost: "$11.6M",
-        totalInvestment: "$12.6M",
-        annualRental: "$1.1M",
-        roi: "6.5%"
+        constructionCost: "$12.6M",
+        totalInvestment: "$14.1M",
+        annualRental: "$1.2M",
+        roi: "6.4%"
       }
     },
     {
       id: "02",
       type: "Premium",
-      landInvestment: "$1.1M",
-      totalAcres: "3.81",
-      buildableSF: "58,000",
+      landInvestment: "$1.5M",
+      totalAcres: "5.06",
+      buildableSF: "66,780",
       perAcre: "$300K",
-      estUnits: "7",
+      estUnits: "8",
       dryWarehouse: {
-        constructionCost: "$7.0M",
-        totalInvestment: "$8.1M",
-        annualRental: "$1.0M",
-        roi: "9.7%"
+        constructionCost: "$8.0M",
+        totalInvestment: "$9.5M",
+        annualRental: "$1.2M",
+        roi: "9.5%"
       },
       refrigerated: {
-        constructionCost: "$12.2M",
-        totalInvestment: "$13.3M",
-        annualRental: "$1.2M",
-        roi: "6.5%"
+        constructionCost: "$14.7M",
+        totalInvestment: "$16.2M",
+        annualRental: "$1.4M",
+        roi: "6.4%"
       }
     },
     {
       id: "03",
       type: "Premium",
-      landInvestment: "$2.1M",
-      totalAcres: "7.02",
-      buildableSF: "107,000",
+      landInvestment: "$1.7M",
+      totalAcres: "5.73",
+      buildableSF: "80,000",
       perAcre: "$300K",
-      estUnits: "13",
+      estUnits: "10",
       dryWarehouse: {
-        constructionCost: "$12.8M",
-        totalInvestment: "$14.9M",
-        annualRental: "$1.9M",
-        roi: "9.7%"
+        constructionCost: "$9.6M",
+        totalInvestment: "$11.3M",
+        annualRental: "$1.4M",
+        roi: "9.5%"
       },
       refrigerated: {
-        constructionCost: "$22.5M",
-        totalInvestment: "$24.6M",
-        annualRental: "$2.1M",
-        roi: "6.5%"
+        constructionCost: "$17.6M",
+        totalInvestment: "$19.3M",
+        annualRental: "$1.7M",
+        roi: "6.4%"
       }
     },
     {
       id: "04",
       type: "Premium",
-      landInvestment: "$2.1M",
-      totalAcres: "7.15",
-      buildableSF: "109,000",
+      landInvestment: "$1.8M",
+      totalAcres: "6.12",
+      buildableSF: "80,000",
       perAcre: "$300K",
-      estUnits: "14",
+      estUnits: "10",
       dryWarehouse: {
-        constructionCost: "$13.1M",
-        totalInvestment: "$15.2M",
-        annualRental: "$2.0M",
-        roi: "9.7%"
+        constructionCost: "$9.6M",
+        totalInvestment: "$11.4M",
+        annualRental: "$1.4M",
+        roi: "9.5%"
       },
       refrigerated: {
-        constructionCost: "$22.9M",
-        totalInvestment: "$25.0M",
-        annualRental: "$2.2M",
-        roi: "6.5%"
+        constructionCost: "$17.6M",
+        totalInvestment: "$19.4M",
+        annualRental: "$1.7M",
+        roi: "6.4%"
       }
     },
     {
       id: "05",
       type: "Premium",
-      landInvestment: "$2.5M",
-      totalAcres: "8.2",
-      buildableSF: "125,000",
+      landInvestment: "$1.8M",
+      totalAcres: "6.12",
+      buildableSF: "80,000",
       perAcre: "$300K",
-      estUnits: "16",
+      estUnits: "10",
       dryWarehouse: {
-        constructionCost: "$15.0M",
-        totalInvestment: "$17.5M",
-        annualRental: "$2.3M",
-        roi: "9.7%"
+        constructionCost: "$9.6M",
+        totalInvestment: "$11.4M",
+        annualRental: "$1.4M",
+        roi: "9.5%"
       },
       refrigerated: {
-        constructionCost: "$26.3M",
-        totalInvestment: "$28.7M",
-        annualRental: "$2.5M",
-        roi: "6.5%"
+        constructionCost: "$17.6M",
+        totalInvestment: "$19.4M",
+        annualRental: "$1.7M",
+        roi: "6.4%"
       }
     },
     {
       id: "06",
-      type: "Standard",
-      landInvestment: "$0.9M",
-      totalAcres: "3.51",
-      buildableSF: "53,500",
-      perAcre: "$250K",
-      estUnits: "7",
+      type: "Premium",
+      landInvestment: "$1.7M",
+      totalAcres: "5.79",
+      buildableSF: "80,000",
+      perAcre: "$300K",
+      estUnits: "10",
       dryWarehouse: {
-        constructionCost: "$6.4M",
-        totalInvestment: "$7.3M",
-        annualRental: "$1.0M",
-        roi: "9.9%"
+        constructionCost: "$9.6M",
+        totalInvestment: "$11.3M",
+        annualRental: "$1.4M",
+        roi: "9.5%"
       },
       refrigerated: {
-        constructionCost: "$11.2M",
-        totalInvestment: "$12.1M",
-        annualRental: "$1.1M",
-        roi: "6.6%"
+        constructionCost: "$17.6M",
+        totalInvestment: "$19.3M",
+        annualRental: "$1.7M",
+        roi: "6.4%"
       }
     },
     {
       id: "07",
-      type: "Standard",
+      type: "Premium",
       landInvestment: "$0.9M",
-      totalAcres: "3.5",
-      buildableSF: "53,300",
-      perAcre: "$250K",
-      estUnits: "7",
+      totalAcres: "3.13",
+      buildableSF: "103,350",
+      perAcre: "$290K",
+      estUnits: "13",
       dryWarehouse: {
-        constructionCost: "$6.4M",
-        totalInvestment: "$7.3M",
-        annualRental: "$1.0M",
-        roi: "9.9%"
+        constructionCost: "$12.4M",
+        totalInvestment: "$13.3M",
+        annualRental: "$1.8M",
+        roi: "10.2%"
       },
       refrigerated: {
-        constructionCost: "$11.2M",
-        totalInvestment: "$12.1M",
-        annualRental: "$1.1M",
-        roi: "6.6%"
+        constructionCost: "$22.7M",
+        totalInvestment: "$23.6M",
+        annualRental: "$2.2M",
+        roi: "6.7%"
       }
     },
     {
       id: "08",
-      type: "Standard",
-      landInvestment: "$0.9M",
-      totalAcres: "3.46",
-      buildableSF: "52,700",
-      perAcre: "$250K",
-      estUnits: "7",
+      type: "Premium",
+      landInvestment: "$2.2M",
+      totalAcres: "7.18",
+      buildableSF: "38,160",
+      perAcre: "$300K",
+      estUnits: "5",
       dryWarehouse: {
-        constructionCost: "$6.3M",
-        totalInvestment: "$7.2M",
-        annualRental: "$0.9M",
-        roi: "9.9%"
+        constructionCost: "$4.6M",
+        totalInvestment: "$6.8M",
+        annualRental: "$0.7M",
+        roi: "8.8%"
       },
       refrigerated: {
-        constructionCost: "$11.1M",
-        totalInvestment: "$11.9M",
-        annualRental: "$1.1M",
-        roi: "6.6%"
+        constructionCost: "$8.4M",
+        totalInvestment: "$10.6M",
+        annualRental: "$0.8M",
+        roi: "5.7%"
       }
     }
   ];
