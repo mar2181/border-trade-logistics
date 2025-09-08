@@ -85,10 +85,10 @@ export default function Demographics() {
 
         <div className="bg-gradient-to-r from-gold/10 to-emerald-500/10 rounded-xl p-8">
           <div className="text-center mb-8">
-            <h3 className="text-2xl font-semibold text-primary mb-4">Market Insights from 2020 ACS - US Census</h3>
+            <h3 className="text-2xl font-semibold text-primary mb-4">Current Market Demographics</h3>
             <p className="text-muted-foreground max-w-4xl mx-auto">
               The 5-mile demographic profile demonstrates a young, growing workforce with increasing household incomes, 
-              creating strong demand for distribution and logistics services.
+              creating strong demand for distribution and logistics services in today's booming Valley market.
             </p>
           </div>
 

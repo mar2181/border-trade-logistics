@@ -42,20 +42,6 @@ export default function MarketAnalysis() {
               </div>
               <div className="space-y-3">
                 <div className="flex justify-between items-center">
-                  <span className="text-sm">2016</span>
-                  <div className="flex-1 mx-4 bg-muted-foreground/20 rounded-full h-2">
-                    <div className="bg-red-500 h-2 rounded-full" style={{ width: '66%' }}></div>
-                  </div>
-                  <span className="text-sm text-gold font-semibold">6.6%</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm">2020</span>
-                  <div className="flex-1 mx-4 bg-muted-foreground/20 rounded-full h-2">
-                    <div className="bg-amber-500 h-2 rounded-full" style={{ width: '40%' }}></div>
-                  </div>
-                  <span className="text-sm text-gold font-semibold">4.0%</span>
-                </div>
-                <div className="flex justify-between items-center">
                   <span className="text-sm">2023</span>
                   <div className="flex-1 mx-4 bg-muted-foreground/20 rounded-full h-2">
                     <div className="bg-emerald-500 h-2 rounded-full" style={{ width: '20%' }}></div>
