@@ -12,14 +12,19 @@ export default function VideoCarousel() {
       description: "Current market conditions and investment opportunities in industrial real estate"
     },
     {
-      id: "19k2h7gpQ2U", 
-      title: "Warehouse Development Trends",
-      description: "Latest trends in warehouse development and logistics infrastructure"
+      id: "fRc0qGYyRU4",
+      title: "Prime Industrial Land Investment",
+      description: "Featured investment opportunity and strategic positioning analysis"
     },
     {
       id: "lqCFB4mAJj4",
       title: "Investment Strategy Insights",
       description: "Strategic insights for industrial real estate investment success"
+    },
+    {
+      id: "19k2h7gpQ2U", 
+      title: "Warehouse Development Trends",
+      description: "Latest trends in warehouse development and logistics infrastructure"
     }
   ];
 
