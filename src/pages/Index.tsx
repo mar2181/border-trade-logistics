@@ -14,6 +14,7 @@ import StrategicPosition from "@/components/StrategicPosition";
 import RiskAnalysis from "@/components/RiskAnalysis";
 import InvestmentProcess from "@/components/InvestmentProcess";
 import MobileNavigation from "@/components/MobileNavigation";
+import VideoCarousel from "@/components/VideoCarousel";
 
 const Index = () => {
   const handleMobileNavigation = (action: string) => {
@@ -230,6 +231,7 @@ const Index = () => {
       <LocationAdvantages />
       <Demographics />
       <StrategicPosition />
+      <VideoCarousel />
       <RiskAnalysis />
       <InvestmentProcess />
     </div>
