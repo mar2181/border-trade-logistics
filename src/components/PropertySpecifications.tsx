@@ -1,6 +1,8 @@
 import { MapPin, Building, Calculator, TrendingUp, Star, Clock, Phone, CalendarDays, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { ProfessionalUnderwriting } from "./ProfessionalUnderwriting";
+import { PortfolioSummary } from "./PortfolioSummary";
 
 export default function PropertySpecifications() {
   // Add individual property advantages for McAllen location
@@ -18,190 +20,148 @@ export default function PropertySpecifications() {
     return advantages[lotId] || [];
   };
 
+  // Professional underwriting calculations
+  const calculateMetrics = (acres: number, buildableSF: number) => {
+    const coverage = (buildableSF / (acres * 43560)) * 100;
+    const dryRent12 = buildableSF * 12;
+    const dryRent12_5 = buildableSF * 12.5;
+    const coldRent18 = buildableSF * 18;
+    return {
+      coverage: coverage.toFixed(1),
+      dryRent12,
+      dryRent12_5,
+      coldRent18,
+      coverageFlag: coverage < 20 || coverage > 65 ? 'FLAGGED' : 'NORMAL'
+    };
+  };
+
+  // CORRECTED LOT DATA - Professional underwriting ready
   const lots = [
     {
       id: "01",
-      type: "Premium",
-      landInvestment: "$1.5M",
-      totalAcres: "5.04",
-      buildableSF: "57,240",
-      perAcre: "$300K",
-      estUnits: "7",
-      dryWarehouse: {
-        constructionCost: "$6.9M",
-        totalInvestment: "$8.4M",
-        annualRental: "$1.0M",
-        roi: "9.5%"
-      },
-      refrigerated: {
-        constructionCost: "$12.6M",
-        totalInvestment: "$14.1M",
-        annualRental: "$1.2M",
-        roi: "6.4%"
-      }
+      type: "Premium", 
+      location: "10th St & Military Hwy, Dodge Arena District",
+      acres: 5.04,
+      buildableSF: 57240,
+      landInvestment: 1500000,
+      planAnnual: 1000000,
+      advantages: ["Direct highway access from Military Hwy", "Dodge Arena proximity enhances visibility", "Premium corner position with dual frontage"],
+      riskNotes: "Verify detention pond requirements and utility capacity",
+      positioning: "Ideal for smaller tenant mix with flexible warehouse configurations"
     },
     {
-      id: "02",
+      id: "02", 
       type: "Premium",
-      landInvestment: "$1.5M",
-      totalAcres: "5.06",
-      buildableSF: "66,780",
-      perAcre: "$300K",
-      estUnits: "8",
-      dryWarehouse: {
-        constructionCost: "$8.0M",
-        totalInvestment: "$9.5M",
-        annualRental: "$1.2M",
-        roi: "9.5%"
-      },
-      refrigerated: {
-        constructionCost: "$14.7M",
-        totalInvestment: "$16.2M",
-        annualRental: "$1.4M",
-        roi: "6.4%"
-      }
+      location: "10th St & Military Hwy, Dodge Arena District",
+      acres: 5.06,
+      buildableSF: 66780,
+      landInvestment: 1520000,
+      planAnnual: 1200000,
+      advantages: ["New road development access improvements", "High traffic visibility on major corridor", "Enhanced frontage premium location"],
+      riskNotes: "Monitor road construction timeline impact",
+      positioning: "Strong dry warehouse potential with visibility benefits"
     },
     {
       id: "03",
       type: "Premium",
-      landInvestment: "$1.7M",
-      totalAcres: "5.73",
-      buildableSF: "80,000",
-      perAcre: "$300K",
-      estUnits: "10",
-      dryWarehouse: {
-        constructionCost: "$9.6M",
-        totalInvestment: "$11.3M",
-        annualRental: "$1.4M",
-        roi: "9.5%"
-      },
-      refrigerated: {
-        constructionCost: "$17.6M",
-        totalInvestment: "$19.3M",
-        annualRental: "$1.7M",
-        roi: "6.4%"
-      }
+      location: "10th St & Military Hwy, Dodge Arena District", 
+      acres: 5.73,
+      buildableSF: 80000,
+      landInvestment: 1719000,
+      planAnnual: 1900000,
+      advantages: ["Largest available development lot in district", "Maximum development potential for anchor tenant", "Strategic center position with multiple access points"],
+      riskNotes: "Ensure adequate truck circulation for large-scale operations", 
+      positioning: "Best suited for cold storage anchor tenant or large dry warehouse"
     },
     {
       id: "04",
       type: "Premium",
-      landInvestment: "$1.8M",
-      totalAcres: "6.12",
-      buildableSF: "80,000",
-      perAcre: "$300K",
-      estUnits: "10",
-      dryWarehouse: {
-        constructionCost: "$9.6M",
-        totalInvestment: "$11.4M",
-        annualRental: "$1.4M",
-        roi: "9.5%"
-      },
-      refrigerated: {
-        constructionCost: "$17.6M",
-        totalInvestment: "$19.4M",
-        annualRental: "$1.7M",
-        roi: "6.4%"
-      }
+      location: "10th St & Military Hwy, Dodge Arena District",
+      acres: 6.12, 
+      buildableSF: 80000,
+      landInvestment: 1836000,
+      planAnnual: 2000000,
+      advantages: ["Future expansion ready with adjacent parcels", "Utilities optimized for large-scale development", "Distribution hub potential with regional access"],
+      riskNotes: "Confirm expansion rights and utility upgrade costs",
+      positioning: "Distribution hub potential - ideal for multi-tenant facility"
     },
     {
       id: "05",
-      type: "Premium",
-      landInvestment: "$1.8M",
-      totalAcres: "6.12",
-      buildableSF: "80,000",
-      perAcre: "$300K",
-      estUnits: "10",
-      dryWarehouse: {
-        constructionCost: "$9.6M",
-        totalInvestment: "$11.4M",
-        annualRental: "$1.4M",
-        roi: "9.5%"
-      },
-      refrigerated: {
-        constructionCost: "$17.6M",
-        totalInvestment: "$19.4M",
-        annualRental: "$1.7M",
-        roi: "6.4%"
-      }
+      type: "Premium", 
+      location: "10th St & Military Hwy, Dodge Arena District",
+      acres: 6.12,
+      buildableSF: 80000, 
+      landInvestment: 1836000,
+      planAnnual: 2300000,
+      advantages: ["Premium development site with optimal configuration", "Multiple access points for efficient operations", "Flexible configuration for various tenant types"],
+      riskNotes: "Verify parking requirements for multi-tenant configuration",
+      positioning: "Premium multi-tenant opportunity with flexible layouts"
     },
     {
       id: "06",
       type: "Premium",
-      landInvestment: "$1.7M",
-      totalAcres: "5.79",
-      buildableSF: "80,000",
-      perAcre: "$300K",
-      estUnits: "10",
-      dryWarehouse: {
-        constructionCost: "$9.6M",
-        totalInvestment: "$11.3M",
-        annualRental: "$1.4M",
-        roi: "9.5%"
-      },
-      refrigerated: {
-        constructionCost: "$17.6M",
-        totalInvestment: "$19.3M",
-        annualRental: "$1.7M",
-        roi: "6.4%"
-      }
+      location: "10th St & Military Hwy, Dodge Arena District",
+      acres: 5.79,
+      buildableSF: 80000,
+      landInvestment: 1737000, 
+      planAnnual: 1000000,
+      advantages: ["Value investment position below district average", "Quick development ready with minimal site work", "Strong ROI potential with current market rents"],
+      riskNotes: "Investigate below-market pricing factors",
+      positioning: "Value play - high ROI potential with immediate development"
     },
     {
-      id: "07",
+      id: "07", 
       type: "Premium",
-      landInvestment: "$0.9M",
-      totalAcres: "3.13",
-      buildableSF: "103,350",
-      perAcre: "$290K",
-      estUnits: "13",
-      dryWarehouse: {
-        constructionCost: "$12.4M",
-        totalInvestment: "$13.3M",
-        annualRental: "$1.8M",
-        roi: "10.2%"
-      },
-      refrigerated: {
-        constructionCost: "$22.7M",
-        totalInvestment: "$23.6M",
-        annualRental: "$2.2M",
-        roi: "6.7%"
-      }
+      location: "10th St & Military Hwy, Dodge Arena District",
+      acres: 7.18, // CORRECTED - was showing 3.13
+      buildableSF: 103350, // Largest buildable SF
+      landInvestment: 2154000,
+      planAnnual: 1800000,
+      advantages: ["Largest lot with maximum building potential", "Proven market demand in established corridor", "Immediate build-ready with all utilities available"],
+      riskNotes: "Large lot requires comprehensive site circulation plan",
+      positioning: "Flagship development opportunity - anchor tenant ideal"
     },
     {
       id: "08",
-      type: "Premium",
-      landInvestment: "$2.2M",
-      totalAcres: "7.18",
-      buildableSF: "38,160",
-      perAcre: "$300K",
-      estUnits: "5",
-      dryWarehouse: {
-        constructionCost: "$4.6M",
-        totalInvestment: "$6.8M",
-        annualRental: "$0.7M",
-        roi: "8.8%"
-      },
-      refrigerated: {
-        constructionCost: "$8.4M",
-        totalInvestment: "$10.6M",
-        annualRental: "$0.8M",
-        roi: "5.7%"
-      }
+      type: "Premium", 
+      location: "10th St & Military Hwy, Dodge Arena District",
+      acres: 3.13, // CORRECTED - was showing 7.18 
+      buildableSF: 38160, // Smallest buildable SF
+      landInvestment: 939000,
+      planAnnual: 700000,
+      advantages: ["Entry level investment with high appreciation potential", "Smaller footprint ideal for specialized operations", "Flexible use options for various industrial applications"],
+      riskNotes: "Limited size may restrict tenant options",
+      positioning: "Entry-level investment - specialized tenant focus"
     }
   ];
+
+  // Portfolio calculations
+  const portfolioTotals = lots.reduce((acc, lot) => ({
+    acres: acc.acres + lot.acres,
+    buildableSF: acc.buildableSF + lot.buildableSF,
+    landInvestment: acc.landInvestment + lot.landInvestment,
+    planAnnual: acc.planAnnual + lot.planAnnual
+  }), { acres: 0, buildableSF: 0, landInvestment: 0, planAnnual: 0 });
+
+  const portfolioMetrics = {
+    totalDryRent12: portfolioTotals.buildableSF * 12,
+    totalDryRent12_5: portfolioTotals.buildableSF * 12.5,
+    totalColdRent18: portfolioTotals.buildableSF * 18
+  };
 
   return (
     <section className="py-16 px-6 bg-muted/20">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-primary mb-4">Property Specifications</h2>
-          <div className="bg-gradient-to-r from-gold/20 via-accent-sapphire/20 to-gold/20 rounded-2xl p-6 mb-8">
+          <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl p-6 mb-8">
             <p className="text-xl text-foreground max-w-4xl mx-auto text-center font-medium">
-              <span className="text-gold font-bold">Only 8 Premium Properties Available</span> in McAllen's Most Coveted Industrial District
+              <span className="text-primary font-bold">8 Premium Industrial Lots Available</span> - Professional Underwriting Analysis
             </p>
             <p className="text-lg text-muted-foreground max-w-5xl mx-auto text-center mt-4">
-              Located on 10th Street, minutes from Dodge Arena in the heart of America's produce distribution hub. 
-              <span className="text-accent-emerald font-semibold"> Fed rate cuts are imminent</span> - position yourself ahead of the curve in this 
-              <span className="text-gold font-semibold"> superior investment opportunity</span> with multiple upsides and strong fundamentals.
+              Located in McAllen's Dodge Arena District with proven logistics demand. 
+              <span className="text-primary font-semibold">Corrected data</span> shows 44.17 acres total, 585,530 SF buildable - 
+              <span className="text-accent font-semibold">significantly larger than marketing materials indicated</span>.
             </p>
           </div>
           
@@ -214,7 +174,7 @@ export default function PropertySpecifications() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
               <div className="absolute bottom-4 left-4 right-4">
-                <div className="text-gold text-sm font-medium">Aerial View - Military Highway Development</div>
+                <div className="text-primary text-sm font-medium">Aerial View - Military Highway Development</div>
               </div>
             </div>
             
@@ -226,298 +186,42 @@ export default function PropertySpecifications() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
               <div className="absolute bottom-4 left-4 right-4">
-                <div className="text-gold text-sm font-medium">Detailed Site Plan Blueprint</div>
+                <div className="text-primary text-sm font-medium">Detailed Site Plan Blueprint</div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Premium Property Showcase Carousel */}
+        {/* Professional Lot Analysis Carousel */}
         <Carousel className="w-full mb-12">
           <CarouselContent>
             {lots.map((lot) => (
               <CarouselItem key={lot.id}>
-                <div className="bg-gradient-to-br from-card/80 via-card/60 to-muted/40 backdrop-blur-lg border-2 border-gold/30 rounded-2xl overflow-hidden shadow-2xl hover:shadow-gold/20 transition-all duration-500">
-                  {/* Premium Header */}
-                  <div className="bg-gradient-to-r from-gold/20 via-accent-sapphire/10 to-gold/20 p-6">
-                    <div className="flex justify-between items-start">
-                      <div className="space-y-3">
-                        <div className="flex items-center space-x-3">
-                          <Star className="h-6 w-6 text-gold" />
-                          <h3 className="text-3xl font-bold text-primary">
-                            Premium Investment Lot {lot.id}
-                          </h3>
-                        </div>
-                        <div className="flex items-center space-x-4">
-                          <span className={`inline-flex items-center px-4 py-2 rounded-full text-sm font-bold ${
-                            lot.type === 'Premium' ? 'bg-gold/30 text-gold border border-gold/50' : 'bg-accent-sapphire/30 text-accent-sapphire border border-accent-sapphire/50'
-                          }`}>
-                            {lot.type === 'Premium' ? '🏆 PREMIUM FRONTAGE' : '💎 VALUE POSITION'}
-                          </span>
-                          <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-accent-emerald/20 text-accent-emerald border border-accent-emerald/30">
-                            DODGE ARENA DISTRICT
-                          </span>
-                        </div>
-                        <p className="text-muted-foreground">
-                          Positioned in McAllen's most coveted industrial corridor, minutes from Dodge Arena with new road development enhancing accessibility and value appreciation.
-                        </p>
-                      </div>
-                      <div className="text-right space-y-2">
-                        <div className="text-4xl font-bold text-gold">{lot.landInvestment}</div>
-                        <div className="text-sm text-muted-foreground">Million-Dollar Investment</div>
-                        <div className="text-xs text-accent-emerald font-medium">Ready for Fed Rate Cuts</div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="p-8">
-                    {/* Investment Spotlight */}
-                    <div className="bg-gradient-to-r from-gold/10 to-accent-sapphire/10 rounded-xl p-6 mb-8">
-                      <h4 className="text-xl font-bold text-primary mb-4 flex items-center">
-                        <Shield className="h-5 w-5 text-gold mr-2" />
-                        Strategic Investment Opportunity
-                      </h4>
-                      <div className="grid md:grid-cols-3 gap-4">
-                        {getPropertyAdvantages(lot.id).map((advantage, idx) => (
-                          <div key={idx} className="flex items-center space-x-2">
-                            <div className="w-2 h-2 bg-gold rounded-full"></div>
-                            <span className="text-sm font-medium text-foreground">{advantage}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Key Investment Metrics */}
-                    <div className="grid md:grid-cols-4 gap-6 mb-8">
-                      <div className="bg-card/60 rounded-xl p-4 text-center border border-gold/20">
-                        <MapPin className="h-8 w-8 text-gold mx-auto mb-2" />
-                        <div className="text-2xl font-bold text-gold">{lot.totalAcres}</div>
-                        <div className="text-sm text-muted-foreground">Premium Acres</div>
-                        <div className="text-xs text-accent-emerald">Valley Growth Market</div>
-                      </div>
-                      <div className="bg-card/60 rounded-xl p-4 text-center border border-accent-emerald/20">
-                        <Building className="h-8 w-8 text-accent-emerald mx-auto mb-2" />
-                        <div className="text-2xl font-bold text-accent-emerald">{lot.buildableSF}</div>
-                        <div className="text-sm text-muted-foreground">Buildable Sq Ft</div>
-                        <div className="text-xs text-gold">Immediate Build-Ready</div>
-                      </div>
-                      <div className="bg-card/60 rounded-xl p-4 text-center border border-accent-sapphire/20">
-                        <Calculator className="h-8 w-8 text-accent-sapphire mx-auto mb-2" />
-                        <div className="text-2xl font-bold text-accent-sapphire">{lot.perAcre}</div>
-                        <div className="text-sm text-muted-foreground">Per Acre Value</div>
-                        <div className="text-xs text-gold">Below Market Rate</div>
-                      </div>
-                      <div className="bg-card/60 rounded-xl p-4 text-center border border-accent-amber/20">
-                        <TrendingUp className="h-8 w-8 text-accent-amber mx-auto mb-2" />
-                        <div className="text-2xl font-bold text-accent-amber">{lot.estUnits}</div>
-                        <div className="text-sm text-muted-foreground">Warehouse Units</div>
-                        <div className="text-xs text-accent-emerald">High Demand Market</div>
-                      </div>
-                    </div>
-
-                    {/* Development Potential with Valley Advantage */}
-                    <div className="bg-gradient-to-br from-muted/40 to-card/60 rounded-xl p-8 border border-border">
-                      <div className="flex items-center justify-between mb-6">
-                        <h4 className="text-2xl font-bold text-primary">Development Potential in America's Hidden Gem</h4>
-                        <div className="text-right">
-                          <div className="text-sm text-accent-emerald font-medium">McAllen Metro: 900K+ Population</div>
-                          <div className="text-xs text-muted-foreground">20-Year Growth Projection</div>
-                        </div>
-                      </div>
-                      
-                      <div className="bg-accent-emerald/10 rounded-lg p-4 mb-6">
-                        <p className="text-sm text-foreground">
-                          <strong className="text-accent-emerald">Refrigerated Warehouse Industry in High Demand:</strong> The Valley's strategic position in the produce industry alley, 
-                          combined with upcoming Fed rate cuts, creates an unprecedented opportunity for savvy investors. Build your warehouse in the heart of North America's 
-                          fresh produce corridor where demand continues to surge.
-                        </p>
-                      </div>
-                  
-                      <div className="grid lg:grid-cols-2 gap-6">
-                        <div className="bg-gradient-to-br from-card/80 to-muted/40 backdrop-blur-sm border-2 border-gold/30 rounded-xl p-6 hover:shadow-lg hover:shadow-gold/20 transition-all duration-300">
-                          <h5 className="font-bold text-primary mb-4 text-lg flex items-center">
-                            <Building className="h-5 w-5 text-gold mr-2" />
-                            Dry Warehouse Development ($120/sq ft)
-                          </h5>
-                          <div className="text-xs text-accent-emerald mb-4 font-medium">Perfect for Lower Interest Rate Environment</div>
-                      <div className="space-y-3">
-                        <div className="flex justify-between">
-                          <span className="text-muted-foreground">Construction Cost:</span>
-                          <span className="text-gold font-semibold">{lot.dryWarehouse.constructionCost}</span>
-                        </div>
-                        <div className="flex justify-between">
-                          <span className="text-muted-foreground">Total Investment:</span>
-                          <span className="text-blue-500 font-semibold">{lot.dryWarehouse.totalInvestment}</span>
-                        </div>
-                        <div className="flex justify-between">
-                          <span className="text-muted-foreground">Annual Rental ($12.50/sq ft):</span>
-                          <span className="text-emerald-500 font-semibold">{lot.dryWarehouse.annualRental}</span>
-                        </div>
-                        <div className="flex justify-between pt-2 border-t border-border">
-                          <span className="text-muted-foreground">Annual ROI:</span>
-                          <span className="text-gold font-bold text-lg">{lot.dryWarehouse.roi}</span>
-                        </div>
-                      </div>
-                    </div>
-
-                        <div className="bg-gradient-to-br from-card/80 to-accent-sapphire/10 backdrop-blur-sm border-2 border-accent-sapphire/30 rounded-xl p-6 hover:shadow-lg hover:shadow-accent-sapphire/20 transition-all duration-300">
-                          <h5 className="font-bold text-primary mb-4 text-lg flex items-center">
-                            <Star className="h-5 w-5 text-accent-sapphire mr-2" />
-                            Refrigerated Warehouse ($200-220/sq ft)
-                          </h5>
-                          <div className="text-xs text-gold mb-4 font-medium">Heart of Produce Industry Alley - High Demand</div>
-                      <div className="space-y-3">
-                        <div className="flex justify-between">
-                          <span className="text-muted-foreground">Construction Cost:</span>
-                          <span className="text-blue-400 font-semibold">{lot.refrigerated.constructionCost}</span>
-                        </div>
-                        <div className="flex justify-between">
-                          <span className="text-muted-foreground">Total Investment:</span>
-                          <span className="text-blue-500 font-semibold">{lot.refrigerated.totalInvestment}</span>
-                        </div>
-                        <div className="flex justify-between">
-                          <span className="text-muted-foreground">Annual Rental ($19.50/sq ft):</span>
-                          <span className="text-emerald-500 font-semibold">{lot.refrigerated.annualRental}</span>
-                        </div>
-                        <div className="flex justify-between pt-2 border-t border-border">
-                          <span className="text-muted-foreground">Annual ROI:</span>
-                          <span className="text-gold font-bold text-lg">{lot.refrigerated.roi}</span>
-                        </div>
-                      </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Investment Action Section */}
-                    <div className="mt-8 bg-gradient-to-r from-gold/10 via-accent-emerald/10 to-gold/10 rounded-xl p-6">
-                      <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
-                        <div>
-                          <h5 className="text-lg font-bold text-primary mb-2">Ready to Act on This Million-Dollar Opportunity?</h5>
-                          <p className="text-sm text-muted-foreground">Fed rate cuts are imminent - perfect timing for investment or development financing</p>
-                        </div>
-                        <div className="flex space-x-3">
-                          <Button className="bg-gold hover:bg-gold-dark text-primary-foreground">
-                            <Phone className="h-4 w-4 mr-2" />
-                            Schedule Site Visit
-                          </Button>
-                          <Button variant="outline" className="border-accent-emerald text-accent-emerald hover:bg-accent-emerald/10">
-                            <CalendarDays className="h-4 w-4 mr-2" />
-                            Request Information
-                          </Button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <ProfessionalUnderwriting lot={lot} />
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="left-4" />
-          <CarouselNext className="right-4" />
+          <CarouselPrevious />
+          <CarouselNext />
         </Carousel>
 
-        {/* Portfolio Summary - McAllen Advantage */}
-        <div className="mt-16 bg-gradient-to-br from-card/80 via-muted/40 to-card/60 backdrop-blur-lg border-2 border-gold/30 rounded-2xl p-10 shadow-2xl">
-          <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold text-primary mb-4">Complete 8-Property Portfolio: The Valley's Hidden Gem</h3>
-            <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-              These 8 premium properties represent the last available opportunities in McAllen's most coveted industrial district. 
-              With the Valley projected to grow significantly over the next 20 years and beyond, early investors position themselves 
-              for extraordinary returns in America's fastest-growing produce distribution hub.
-            </p>
-            <div className="inline-flex items-center mt-4 px-6 py-3 bg-accent-emerald/20 text-accent-emerald rounded-full font-semibold border border-accent-emerald/30">
-              <Clock className="h-5 w-5 mr-2" />
-              Only 8 Properties Available - Act Before Fed Rate Cuts Drive Prices Higher
-            </div>
-          </div>
-          
-          <div className="grid lg:grid-cols-2 gap-8">
-            <div className="bg-gradient-to-br from-gold/10 to-gold/5 rounded-xl p-8 border border-gold/30">
-              <h4 className="text-2xl font-bold text-gold mb-6 text-center flex items-center justify-center">
-                <Building className="h-6 w-6 mr-2" />
-                Dry Warehouse Portfolio Development
-              </h4>
-              <div className="space-y-4">
-                <div className="flex justify-between items-center bg-card/40 rounded-lg p-4">
-                  <span className="text-muted-foreground">8 Properties Land Cost:</span>
-                  <span className="text-2xl font-bold text-gold">$11.89M</span>
-                </div>
-                <div className="flex justify-between items-center bg-card/40 rounded-lg p-4">
-                  <span className="text-muted-foreground">Construction Investment:</span>
-                  <span className="text-2xl font-bold text-accent-emerald">$79.3M</span>
-                </div>
-                <div className="flex justify-between items-center bg-gradient-to-r from-accent-sapphire/20 to-accent-sapphire/10 rounded-lg p-4 border border-accent-sapphire/30">
-                  <span className="text-accent-sapphire font-semibold">Total Portfolio Investment:</span>
-                  <span className="text-3xl font-bold text-accent-sapphire">$91.2M</span>
-                </div>
-                <div className="flex justify-between items-center bg-card/40 rounded-lg p-4">
-                  <span className="text-muted-foreground">Annual Rental Income:</span>
-                  <span className="text-2xl font-bold text-accent-amber">$11.9M</span>
-                </div>
-                <div className="text-center mt-6 p-4 bg-gold/20 rounded-lg border border-gold/40">
-                  <div className="text-2xl font-bold text-gold">13.0% Annual ROI</div>
-                  <div className="text-sm text-muted-foreground">Enhanced by Lower Interest Rates</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-br from-accent-sapphire/10 to-accent-sapphire/5 rounded-xl p-8 border border-accent-sapphire/30">
-              <h4 className="text-2xl font-bold text-accent-sapphire mb-6 text-center flex items-center justify-center">
-                <Star className="h-6 w-6 mr-2" />
-                Refrigerated Warehouse Portfolio
-              </h4>
-              <div className="text-center mb-6">
-                <div className="inline-flex items-center px-4 py-2 bg-accent-emerald/20 text-accent-emerald rounded-full text-sm font-bold border border-accent-emerald/30">
-                  🌟 PRODUCE INDUSTRY ALLEY - HIGH DEMAND
-                </div>
-              </div>
-              <div className="space-y-4">
-                <div className="flex justify-between items-center bg-card/40 rounded-lg p-4">
-                  <span className="text-muted-foreground">8 Properties Land Cost:</span>
-                  <span className="text-2xl font-bold text-accent-sapphire">$11.89M</span>
-                </div>
-                <div className="flex justify-between items-center bg-card/40 rounded-lg p-4">
-                  <span className="text-muted-foreground">Cold Storage Construction:</span>
-                  <span className="text-2xl font-bold text-accent-emerald">$139.0M</span>
-                </div>
-                <div className="flex justify-between items-center bg-gradient-to-r from-gold/20 to-gold/10 rounded-lg p-4 border border-gold/30">
-                  <span className="text-gold font-semibold">Total Portfolio Investment:</span>
-                  <span className="text-3xl font-bold text-gold">$150.9M</span>
-                </div>
-                <div className="flex justify-between items-center bg-card/40 rounded-lg p-4">
-                  <span className="text-muted-foreground">Annual Rental Income:</span>
-                  <span className="text-2xl font-bold text-accent-amber">$13.2M</span>
-                </div>
-                <div className="text-center mt-6 p-4 bg-accent-sapphire/20 rounded-lg border border-accent-sapphire/40">
-                  <div className="text-2xl font-bold text-accent-sapphire">8.7% Annual ROI</div>
-                  <div className="text-sm text-muted-foreground">Premium Cold Storage Market</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          {/* Valley Investment Summary */}
-          <div className="mt-12 bg-gradient-to-r from-accent-emerald/10 via-gold/10 to-accent-emerald/10 rounded-xl p-8 border border-accent-emerald/30">
-            <h4 className="text-2xl font-bold text-primary text-center mb-6">The Valley Investment Advantage</h4>
-            <div className="grid md:grid-cols-3 gap-6 text-center">
-              <div>
-                <div className="text-3xl font-bold text-gold mb-2">900K+</div>
-                <div className="text-sm text-muted-foreground">McAllen Metro Population</div>
-                <div className="text-xs text-accent-emerald">Demonstrates Market Resilience</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-accent-emerald mb-2">20+ Years</div>
-                <div className="text-sm text-muted-foreground">Projected Growth Timeline</div>
-                <div className="text-xs text-gold">Those Who Invest Here Stay & Grow</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-accent-sapphire mb-2">37.3 Acres</div>
-                <div className="text-sm text-muted-foreground">Total Available Land</div>
-                <div className="text-xs text-accent-emerald">Last 8 Properties in District</div>
-              </div>
-            </div>
-          </div>
-        </div>
+        {/* Portfolio Summary */}
+        <PortfolioSummary 
+          portfolioData={{
+            totalAcres: portfolioTotals.acres,
+            totalBuildableSF: portfolioTotals.buildableSF,
+            totalLandInvestment: portfolioTotals.landInvestment,
+            totalPlanAnnual: portfolioTotals.planAnnual,
+            totalDryRent12: portfolioMetrics.totalDryRent12,
+            totalDryRent12_5: portfolioMetrics.totalDryRent12_5,
+            totalColdRent18: portfolioMetrics.totalColdRent18,
+            averageCoverage: lots.reduce((acc, lot) => acc + ((lot.buildableSF / (lot.acres * 43560)) * 100), 0) / lots.length,
+            flaggedLots: lots.filter(lot => {
+              const coverage = (lot.buildableSF / (lot.acres * 43560)) * 100;
+              return coverage < 20 || coverage > 65;
+            }).length
+          }}
+        />
       </div>
     </section>
   );
