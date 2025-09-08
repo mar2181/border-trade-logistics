@@ -99,13 +99,13 @@ export default function MarketAnalysis() {
           </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-emerald-500/10 transition-all duration-300">
             <TrendingUp className="h-8 w-8 text-emerald-500 mx-auto mb-3" />
-            <div className="text-2xl font-bold text-emerald-500 mb-2">+44%</div>
-            <div className="text-sm text-muted-foreground">Import Growth - Projected increase in produce truckloads by 2025</div>
+            <div className="text-2xl font-bold text-emerald-500 mb-2">+10%</div>
+            <div className="text-sm text-muted-foreground">Import Growth - Annual cross-border trade growth (Texas A&M Research)</div>
           </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300">
             <DollarSign className="h-8 w-8 text-blue-500 mx-auto mb-3" />
-            <div className="text-2xl font-bold text-blue-500 mb-2">+4%</div>
-            <div className="text-sm text-muted-foreground">Rent Trajectory - Annual rental rate growth supported by demand</div>
+            <div className="text-2xl font-bold text-blue-500 mb-2">+2-3%</div>
+            <div className="text-sm text-muted-foreground">Rent Trajectory - Annual rental rate growth supported by market fundamentals</div>
           </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-amber-500/10 transition-all duration-300">
             <ArrowUp className="h-8 w-8 text-amber-500 mx-auto mb-3" />
