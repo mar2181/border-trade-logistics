@@ -53,13 +53,6 @@ export default function ExecutiveSummary() {
                 <span>Military Highway (FM 1016) • Minutes from Pharr-Reynosa International Bridge</span>
               </div>
 
-              <div className="relative overflow-hidden rounded-xl border border-border mb-6">
-                <img 
-                  src="/lovable-uploads/18eaafa7-6467-4037-8e2d-6d8017b50422.png" 
-                  alt="Modern warehouse exterior with professional office space" 
-                  className="w-full h-64 object-cover"
-                />
-              </div>
             </div>
 
             <div>
