@@ -8,8 +8,8 @@ export default function VideoCarousel() {
   const videos = [
     {
       id: "TfTzm9aI29c",
-      title: "Industrial Real Estate Investment Fundamentals",
-      description: "Essential strategies for successful industrial property investments and market analysis"
+      title: "Fed Could Cut Rates to at Least 3%, Says Bank of America's Cabana",
+      description: "36K views • 4 days ago - Expert analysis on Federal Reserve rate cuts and their impact on real estate investments"
     },
     {
       id: "fRc0qGYyRU4",
@@ -18,13 +18,13 @@ export default function VideoCarousel() {
     },
     {
       id: "lqCFB4mAJj4",
-      title: "Commercial Real Estate Market Trends 2024",
-      description: "Current market conditions and emerging opportunities in commercial real estate"
+      title: "A Fed interest rate cut is 'imminent', says JPMorgan's Gabriela Santos",
+      description: "Market expert insights on upcoming rate changes and real estate investment timing strategies"
     },
     {
       id: "19k2h7gpQ2U", 
-      title: "Industrial Development and Logistics Infrastructure",
-      description: "Modern warehouse design trends and supply chain optimization strategies"
+      title: "Everything Fed Chair Powell was 'TOO LATE' on revealed",
+      description: "1 day ago - Critical analysis of Federal Reserve decisions affecting commercial real estate markets"
     }
   ];
 
