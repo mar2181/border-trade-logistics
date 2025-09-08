@@ -14,16 +14,25 @@ export default function MarketAnalysis() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-primary mb-4">Market Analysis</h2>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-            McAllen's industrial market transformation creates unprecedented investment opportunities driven by cross-border trade and supply chain dynamics
-          </p>
+          <div className="bg-gradient-to-r from-accent-emerald/20 via-gold/20 to-accent-emerald/20 rounded-2xl p-6 mb-8">
+            <p className="text-xl text-foreground max-w-4xl mx-auto text-center font-medium">
+              <span className="text-gold font-bold">Fed Rate Cuts + Valley Growth = Perfect Storm</span>
+            </p>
+            <p className="text-lg text-muted-foreground max-w-5xl mx-auto text-center mt-4">
+              McAllen's transformation into America's produce distribution capital creates unprecedented opportunities. 
+              The Valley is <span className="text-accent-emerald font-semibold">immune to national real estate issues</span> due to explosive growth and demand. 
+              <span className="text-gold font-semibold">Savvy investors moving now</span> will benefit from rate cuts and position themselves in the most desirable market.
+            </p>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
           <div>
-            <h3 className="text-2xl font-semibold text-primary mb-6">Market Transformation</h3>
+            <h3 className="text-2xl font-semibold text-primary mb-6">The Valley's Explosive Market Transformation</h3>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              Historic decline in vacancy rates from 6.6% to 1.3% while rental rates increased 375% demonstrates exceptional market tightening and landlord leverage.
+              <strong className="text-gold">America's Hidden Gem:</strong> McAllen's 900K+ metropolitan area rivals El Paso in size but offers superior growth potential. 
+              Historic vacancy drop from 6.6% to 1.3% while rental rates surged 375% proves this market's exceptional strength. 
+              <strong className="text-accent-emerald">The Valley is projected to grow dramatically for the next 20 years</strong> - and realistically, for the foreseeable future.
             </p>
             
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6">
@@ -114,8 +123,8 @@ export default function MarketAnalysis() {
           </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-amber-500/10 transition-all duration-300">
             <ArrowUp className="h-8 w-8 text-amber-500 mx-auto mb-3" />
-            <div className="text-2xl font-bold text-amber-500 mb-2">49 Acres</div>
-            <div className="text-sm text-muted-foreground">Total Available - Premium development sites with strategic positioning</div>
+            <div className="text-2xl font-bold text-amber-500 mb-2">37.3 Acres</div>
+            <div className="text-sm text-muted-foreground">Only 8 Properties Left - Dodge Arena District's last premium opportunities</div>
           </div>
         </div>
       </div>

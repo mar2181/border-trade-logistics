@@ -6,17 +6,26 @@ export default function ExecutiveSummary() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-primary mb-4">Executive Summary</h2>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-            A premier $13.5M land portfolio opportunity in North America's top fresh produce corridor. 49 acres of shovel-ready parcels with utilities in place, offering unmatched appreciation and flexibility for sophisticated investors.
-          </p>
+          <div className="bg-gradient-to-r from-gold/20 via-accent-emerald/20 to-gold/20 rounded-2xl p-6 mb-8">
+            <p className="text-xl text-foreground max-w-4xl mx-auto text-center font-medium">
+              <span className="text-gold font-bold">The Valley's Hidden Gem:</span> A premier $11.89M land portfolio in America's most coveted industrial district
+            </p>
+            <p className="text-lg text-muted-foreground max-w-5xl mx-auto text-center mt-4">
+              37.3 acres of premium shovel-ready parcels on 10th Street, minutes from Dodge Arena in McAllen's explosive growth market. 
+              <span className="text-accent-emerald font-semibold"> Fed rate cuts are imminent</span> - position yourself ahead of the curve in this 
+              <span className="text-gold font-semibold"> immune-to-recession market</span> where savvy investors stay and grow.
+            </p>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-semibold text-primary mb-4">Prime Land Investment</h3>
+              <h3 className="text-2xl font-semibold text-primary mb-4">McAllen's No-Risk Investment Opportunity</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Strategic industrial land parcels along Military Highway (FM 1016) with utilities in place, zoned for industrial use, offering 343,350 SF buildable area. Target: 10-15% annual appreciation amid 375% rental growth and supply shortage.
+                <strong className="text-accent-emerald">Only 8 properties available</strong> in McAllen's Dodge Arena District. Strategic 10th Street corridor parcels with utilities ready, 
+                zoned industrial, 331,900 SF buildable. The Valley's projected 20-year boom, combined with Fed rate cuts, creates unmatched appreciation potential. 
+                <strong className="text-gold">This area is immune to national real estate issues</strong> due to explosive demand and limited supply.
               </p>
             </div>
 
@@ -26,7 +35,7 @@ export default function ExecutiveSummary() {
                   <Building className="h-5 w-5 text-gold mr-2" />
                   <span className="text-sm text-muted-foreground">Land Portfolio Value</span>
                 </div>
-                <div className="text-3xl font-bold text-gold">$13.5M</div>
+                <div className="text-3xl font-bold text-gold">$11.89M</div>
               </div>
               <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6">
                 <div className="flex items-center mb-3">
@@ -40,25 +49,29 @@ export default function ExecutiveSummary() {
 
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-semibold text-primary mb-4">Land Advantages & Market Position</h3>
+              <h3 className="text-2xl font-semibold text-primary mb-4">The Valley Advantage - America's Hidden Gem</h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                • Strategic location with direct highway access and bridge proximity<br/>
-                • Market drivers: $7.05B trade volume with +44% projected growth<br/>
-                • Pricing edge: $250K-$300K/acre matches ready-to-build comparables<br/>
-                • Flexibility: Hold for appreciation, resell, or develop custom facilities
+                • <strong className="text-gold">Dodge Arena District:</strong> Premium corner location on 10th Street with new road development<br/>
+                • <strong className="text-accent-emerald">900K+ Metro Population:</strong> McAllen rivals El Paso size with explosive growth ahead<br/>
+                • <strong className="text-accent-sapphire">Refrigerated Industry Boom:</strong> Heart of produce alley with surging demand<br/>
+                • <strong className="text-gold">Fed Rate Cut Timing:</strong> Perfect storm for development financing and appreciation<br/>
+                • <strong className="text-accent-emerald">Recession Immune:</strong> Valley growth/demand shields from national real estate cycles
               </p>
               
               <div className="flex items-center text-muted-foreground mb-4">
                 <MapPin className="h-5 w-5 text-gold mr-2" />
-                <span>Military Highway (FM 1016) • Minutes from Pharr-Reynosa International Bridge</span>
+                <span>10th Street • Dodge Arena District • Heart of America's Produce Distribution Hub</span>
               </div>
 
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold text-primary mb-4">Land Comparables & Pricing Validation</h3>
+              <h3 className="text-2xl font-semibold text-primary mb-4">Valley Investment Opportunity - Perfect Timing</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Recent McAllen/Hidalgo comparables: Shovel-ready industrial lots average $281K/acre (Crexi data). Raw parcels without utilities average $105-170K/acre. Our pricing at $250K-$300K/acre is competitive for fully ready sites with immediate build potential.
+                <strong className="text-gold">Why Investors Choose The Valley:</strong> Those who have done business in McAllen stay and grow - it's America's best-kept secret. 
+                Recent comparables show $281K/acre for ready sites, making our $250K-$300K pricing extremely attractive. 
+                <strong className="text-accent-emerald">Act in the next few months</strong> to benefit from Fed rate cuts whether you build or hold. 
+                This is a <strong className="text-gold">no-risk investment</strong> with multiple upsides in a recession-proof market.
               </p>
 
               <div className="relative overflow-hidden rounded-xl border border-border">
@@ -88,8 +101,8 @@ export default function ExecutiveSummary() {
               <div className="text-sm text-muted-foreground">Rental rate growth signals strong land appreciation potential</div>
             </div>
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center">
-              <div className="text-2xl font-bold text-gold mb-2">343,350 SF</div>
-              <div className="text-sm text-muted-foreground">Total buildable area across 49 premium acres available</div>
+              <div className="text-2xl font-bold text-gold mb-2">331,900 SF</div>
+              <div className="text-sm text-muted-foreground">Total buildable area across 37.3 premium acres - only 8 properties left</div>
             </div>
           </div>
         </div>

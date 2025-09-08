@@ -8,11 +8,11 @@ export default function RiskAnalysis() {
       color: "text-red-500",
       bgColor: "bg-red-500/20",
       factors: [
-        "Economic downturns affecting land values",
-        "Border trade policy changes", 
-        "Competition from other development sites"
+        "Fed rate environment and financing costs",
+        "Valley market cycle considerations", 
+        "McAllen industrial demand fluctuations"
       ],
-      mitigation: "Diversified exit strategies, strategic location value, strong market fundamentals"
+      mitigation: "Fed rate cuts are imminent, Valley market is recession-proof, industrial demand surging with 20-year growth projected"
     },
     {
       category: "Regulatory Risks", 
@@ -20,11 +20,11 @@ export default function RiskAnalysis() {
       color: "text-amber-500",
       bgColor: "bg-amber-500/20",
       factors: [
-        "Zoning changes or restrictions",
-        "New environmental regulations",
-        "Property tax increases"
+        "Zoning changes in Dodge Arena District",
+        "New McAllen development regulations",
+        "Property tax adjustments in growth market"
       ],
-      mitigation: "Current industrial zoning, environmental clearance, locked-in tax assessments"
+      mitigation: "Established industrial zoning in premier district, Valley business-friendly environment, locked-in assessments"
     },
     {
       category: "Financial Risks",
@@ -32,35 +32,40 @@ export default function RiskAnalysis() {
       color: "text-blue-500", 
       bgColor: "bg-blue-500/20",
       factors: [
-        "Interest rate fluctuations",
-        "Holding costs during appreciation period",
-        "Market liquidity for exit"
+        "Interest rate environment changes",
+        "Holding costs during Valley appreciation",
+        "Exit liquidity in growing market"
       ],
-      mitigation: "Fed rate cuts environment, low holding costs, multiple exit strategies"
+      mitigation: "Fed cuts imminent - perfect timing, minimal holding costs vs. appreciation, multiple high-demand exit strategies"
     }
   ];
 
   const competitiveAdvantages = [
-    "Shovel-ready status with all utilities connected",
-    "Strategic location along major transportation corridor", 
-    "Industrial zoning already in place - no approval delays",
-    "Limited supply in tight 1.3% vacancy market"
+    "Dodge Arena District - McAllen's most coveted industrial location",
+    "10th Street positioning with new road development enhancing access", 
+    "Only 8 properties remaining in this premium district",
+    "Valley's 900K+ population immune to national real estate issues",
+    "Heart of America's produce distribution alley with surging demand",
+    "Fed rate cuts create perfect timing for investment or development financing"
   ];
 
   const investmentProtection = [
-    "No construction risks - land investment only",
-    "Multiple exit strategies: hold, resell, or develop",
-    "Location value independent of specific development",
-    "Low holding costs relative to appreciation potential"
+    "No construction risks - land investment in proven growth market",
+    "Multiple exit strategies: hold for appreciation, resell at premium, or develop",
+    "McAllen market immunity to national real estate downturns",
+    "Valley's 20-year growth projection provides long-term security",
+    "Savvy investors who invest in The Valley stay and grow",
+    "Perfect timing with Fed rate cuts enhancing all investment scenarios"
   ];
 
   return (
     <section className="py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-primary mb-4">Land Investment Risk Analysis & Mitigation</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4">No-Risk Investment Analysis - The Valley Advantage</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-            Comprehensive assessment of land investment risks and proven strategies to protect investor capital while maximizing appreciation potential
+            <span className="text-gold font-bold">Why This Is a No-Risk Investment:</span> McAllen's Dodge Arena District offers multiple upsides with guaranteed protection. 
+            The Valley is immune to national real estate cycles due to explosive growth and demand that continues regardless of economic conditions.
           </p>
         </div>
 
@@ -98,7 +103,7 @@ export default function RiskAnalysis() {
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8">
             <div className="flex items-center mb-6">
               <TrendingUp className="h-8 w-8 text-gold mr-3" />
-              <h3 className="text-xl font-semibold text-primary">Land Position Strengths</h3>
+              <h3 className="text-xl font-semibold text-primary">Valley Investment Advantages</h3>
             </div>
             
             <ul className="space-y-3">
@@ -114,7 +119,7 @@ export default function RiskAnalysis() {
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8">
             <div className="flex items-center mb-6">
               <Shield className="h-8 w-8 text-blue-500 mr-3" />
-              <h3 className="text-xl font-semibold text-primary">Land Investment Protection</h3>
+              <h3 className="text-xl font-semibold text-primary">No-Risk Investment Protection</h3>
             </div>
             
             <ul className="space-y-3">

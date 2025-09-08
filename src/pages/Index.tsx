@@ -110,15 +110,15 @@ const Index = () => {
                 <span className="block text-gold">Industrial Land Opportunities</span>
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-gray-200 max-w-2xl leading-relaxed">
-                 53.61 acres of utilities-equipped industrial land parcels along Military Highway, minutes from Pharr-Reynosa Bridge. 
-                1.3% vacancy rates and Fed rate cuts create unmatched appreciation potential.
+                Only 8 premium properties left in McAllen's coveted Dodge Arena District on 10th Street. The Valley is America's hidden gem - 
+                those who invest here stay and grow. Fed rate cuts are imminent, creating perfect timing for this no-risk opportunity.
               </p>
             </div>
 
             <div className="hidden sm:flex items-center space-x-6 text-gray-200 text-sm">
               <div className="flex items-center">
                 <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-gold mr-2 flex-shrink-0" />
-                <span>Military Highway (FM 1016) • Minutes from Pharr-Reynosa International Bridge</span>
+                <span>10th Street • Dodge Arena District • Heart of America's Produce Distribution Hub</span>
               </div>
             </div>
 
@@ -136,8 +136,8 @@ const Index = () => {
                 <div className="text-xs text-gray-300">Per Acre Pricing</div>
               </div>
               <div className="text-center bg-black/20 rounded-lg p-2 sm:p-3 backdrop-blur-sm">
-                <div className="text-lg sm:text-xl lg:text-2xl font-bold text-accent-amber">53.61 Acres</div>
-                <div className="text-xs text-gray-300">Total Available</div>
+                <div className="text-lg sm:text-xl lg:text-2xl font-bold text-accent-amber">8 Properties</div>
+                <div className="text-xs text-gray-300">Only Remaining</div>
               </div>
             </div>
 
@@ -189,8 +189,8 @@ const Index = () => {
                     <span className="font-bold text-primary text-sm">$11.89M Total</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-muted-foreground text-sm">Available Acres:</span>
-                    <span className="font-bold text-primary text-sm">53.61 Acres</span>
+                    <span className="text-muted-foreground text-sm">Properties Available:</span>
+                    <span className="font-bold text-primary text-sm">Only 8 Left</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-muted-foreground text-sm">Pricing Range:</span>

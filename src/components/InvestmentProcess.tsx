@@ -5,26 +5,26 @@ export default function InvestmentProcess() {
   const processSteps = [
     {
       number: "01",
-      title: "Initial Land Inquiry",
-      description: "Contact RE/MAX agent to review available parcels and pricing",
+      title: "Initial Property Inquiry",
+      description: "Contact specialist to review 8 available Dodge Arena District properties",
       icon: Calendar
     },
     {
       number: "02", 
       title: "Site Visit & Inspection",
-      description: "Tour properties, verify utilities, and review development potential",
+      description: "Tour McAllen properties, verify utilities, assess development potential",
       icon: Search
     },
     {
       number: "03",
-      title: "Purchase Structuring", 
-      description: "Negotiate terms, financing options, and closing timeline",
+      title: "Investment Structuring", 
+      description: "Structure terms to benefit from Fed rate cuts and Valley growth",
       icon: FileText
     },
     {
       number: "04",
-      title: "Land Acquisition",
-      description: "Close transaction and take ownership of shovel-ready land",
+      title: "Property Acquisition",
+      description: "Secure your position in America's most coveted industrial district",
       icon: Building
     }
   ];
@@ -33,14 +33,16 @@ export default function InvestmentProcess() {
     <section className="py-16 px-6 bg-muted/20">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-primary mb-4">Secure Your Land Today</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4">Act Now - Fed Cuts Are Imminent</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-            Don't miss this opportunity in a 1.3% vacancy market. Contact RE/MAX agent today to purchase these limited shovel-ready parcels and secure your stake in $7.05B trade growth.
+            <span className="text-gold font-bold">Only 8 Properties Remaining</span> in McAllen's Dodge Arena District. 
+            Savvy investors moving in the next few months will benefit from Fed rate cuts and position themselves ahead of the curve 
+            in The Valley - America's hidden gem where those who invest stay and grow.
           </p>
         </div>
 
         <div className="mb-16">
-          <h3 className="text-2xl font-semibold text-primary mb-8 text-center">Land Purchase Process</h3>
+          <h3 className="text-2xl font-semibold text-primary mb-8 text-center">Premium Property Investment Process</h3>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {processSteps.map((step, index) => (
@@ -64,10 +66,11 @@ export default function InvestmentProcess() {
           
           <div className="grid lg:grid-cols-1 gap-8 max-w-2xl mx-auto">
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8 text-center">
-              <h4 className="text-xl font-semibold text-primary mb-4">Your Land Investment Specialist</h4>
+              <h4 className="text-xl font-semibold text-primary mb-4">Your McAllen Investment Specialist</h4>
               <p className="text-muted-foreground mb-6">
-                Expert in McAllen industrial land sales with deep knowledge of cross-border trade market dynamics 
-                and proven track record helping investors secure premium properties.
+                20+ years international real estate experience specializing in The Valley's industrial market. 
+                Expert in Dodge Arena District properties with deep knowledge of McAllen's explosive growth potential 
+                and proven track record helping investors secure million-dollar opportunities before they're gone.
               </p>
               
               <div className="flex flex-col items-center space-y-4">
@@ -78,7 +81,7 @@ export default function InvestmentProcess() {
                 
                 <Button className="bg-gradient-to-r from-gold to-gold-dark text-background font-semibold hover:shadow-lg hover:shadow-gold/25 transition-all duration-300">
                   <Mail className="h-4 w-4 mr-2" />
-                  Contact for Exclusive Access
+                  Contact for Million-Dollar Opportunity
                 </Button>
               </div>
             </div>
@@ -89,40 +92,41 @@ export default function InvestmentProcess() {
           <div className="text-center">
             <div className="flex items-center justify-center mb-4">
               <CheckCircle className="h-8 w-8 text-emerald-500 mr-3" />
-              <h3 className="text-2xl font-semibold text-primary">Limited Availability - Act Now</h3>
+              <h3 className="text-2xl font-semibold text-primary">Last 8 Properties - Act Before Fed Cuts Drive Prices Higher</h3>
             </div>
             
             <p className="text-muted-foreground mb-8 max-w-3xl mx-auto">
-              <span className="font-semibold text-red-500">URGENT:</span> Only 49 acres available in 1.3% vacancy market. 
-              Secure premium shovel-ready land at $250K-$300K/acre before prices rise with market tightening.
+              <span className="font-semibold text-accent-emerald">PERFECT TIMING:</span> Only 8 properties left in McAllen's Dodge Arena District. 
+              Fed rate cuts are imminent - secure your million-dollar investment at $250K-$300K/acre before the Valley's explosive growth 
+              drives prices higher. This is your chance to get ahead of the curve in America's hidden gem.
             </p>
             
             <div className="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
               <div>
-                <div className="text-xl font-bold text-gold mb-1">McAllen, TX</div>
-                <div className="text-sm text-muted-foreground">Military Highway</div>
+                <div className="text-xl font-bold text-gold mb-1">Dodge Arena</div>
+                <div className="text-sm text-muted-foreground">District Premium</div>
               </div>
               <div>
-                <div className="text-xl font-bold text-emerald-500 mb-1">49 Acres</div>
-                <div className="text-sm text-muted-foreground">Total Available</div>
+                <div className="text-xl font-bold text-accent-emerald mb-1">8 Properties</div>
+                <div className="text-sm text-muted-foreground">Only Remaining</div>
               </div>
               <div>
-                <div className="text-xl font-bold text-blue-500 mb-1">$13.5M</div>
+                <div className="text-xl font-bold text-accent-sapphire mb-1">$11.89M</div>
                 <div className="text-sm text-muted-foreground">Portfolio Value</div>
               </div>
               <div>
-                <div className="text-xl font-bold text-amber-500 mb-1">10-15%</div>
-                <div className="text-sm text-muted-foreground">Annual Appreciation</div>
+                <div className="text-xl font-bold text-accent-amber mb-1">900K+</div>
+                <div className="text-sm text-muted-foreground">Metro Population</div>
               </div>
               <div>
-                <div className="text-xl font-bold text-purple-500 mb-1">Immediate</div>
-                <div className="text-sm text-muted-foreground">Ready to Build</div>
+                <div className="text-xl font-bold text-purple-500 mb-1">Fed Cuts</div>
+                <div className="text-sm text-muted-foreground">Imminent Timing</div>
               </div>
             </div>
             
-            <div className="mt-8 p-4 bg-red-50 dark:bg-red-500/10 rounded-lg border border-red-200 dark:border-red-500/20">
-              <p className="text-red-700 dark:text-red-400 font-semibold">
-                Contact RE/MAX agent at (956) 522-1481 TODAY - These parcels won't last in this tight market!
+            <div className="mt-8 p-4 bg-accent-emerald/10 rounded-lg border border-accent-emerald/30">
+              <p className="text-accent-emerald font-semibold">
+                Contact your specialist at (956) 522-1481 TODAY - These 8 premium properties won't last in The Valley's explosive growth market!
               </p>
             </div>
           </div>
