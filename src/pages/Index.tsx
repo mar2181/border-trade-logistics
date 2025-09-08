@@ -16,6 +16,7 @@ import InvestmentProcess from "@/components/InvestmentProcess";
 import MobileNavigation from "@/components/MobileNavigation";
 import VideoCarousel from "@/components/VideoCarousel";
 import InvestmentTabs from "@/components/InvestmentTabs";
+import PropertySpecifications from "@/components/PropertySpecifications";
 
 const Index = () => {
   const handleMobileNavigation = (action: string) => {
@@ -232,6 +233,7 @@ const Index = () => {
       <LocationAdvantages />
       <Demographics />
       <StrategicPosition />
+      <PropertySpecifications />
       <InvestmentTabs />
       <VideoCarousel />
       <RiskAnalysis />
