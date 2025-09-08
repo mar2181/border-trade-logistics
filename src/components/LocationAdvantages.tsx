@@ -30,7 +30,7 @@ export default function LocationAdvantages() {
               <div className="space-y-3">
                 <div className="flex justify-between items-center">
                   <span className="text-muted-foreground">IH-2 Interstate</span>
-                  <span className="font-semibold text-gold">3.1 miles (6 min)</span>
+                  <span className="font-semibold text-gold">3 miles</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-muted-foreground">365 Toll Road</span>
@@ -38,15 +38,15 @@ export default function LocationAdvantages() {
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-muted-foreground">Anzalduas Bridge</span>
-                  <span className="font-semibold text-blue-500">3.3 miles</span>
+                  <span className="font-semibold text-blue-500">3 miles</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-muted-foreground">McAllen-Hidalgo Bridge</span>
-                  <span className="font-semibold text-amber-500">6.1 miles</span>
+                  <span className="font-semibold text-amber-500">6 miles</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-muted-foreground">Pharr-Reynosa Bridge</span>
-                  <span className="font-semibold text-purple-500">7.5 miles</span>
+                  <span className="font-semibold text-purple-500">7 miles</span>
                 </div>
               </div>
             </div>
