@@ -8,23 +8,23 @@ export default function VideoCarousel() {
   const videos = [
     {
       id: "TfTzm9aI29c",
-      title: "Industrial Real Estate Market Overview",
-      description: "Current market conditions and investment opportunities in industrial real estate"
+      title: "Industrial Real Estate Investment Fundamentals",
+      description: "Essential strategies for successful industrial property investments and market analysis"
     },
     {
       id: "fRc0qGYyRU4",
-      title: "Prime Industrial Land Investment",
-      description: "Featured investment opportunity and strategic positioning analysis"
+      title: "Cómo impactará la baja de tasas de interés? | Hoy Día | Telemundo",
+      description: "Analysis of how interest rate cuts will impact real estate investments and market opportunities"
     },
     {
       id: "lqCFB4mAJj4",
-      title: "Investment Strategy Insights",
-      description: "Strategic insights for industrial real estate investment success"
+      title: "Commercial Real Estate Market Trends 2024",
+      description: "Current market conditions and emerging opportunities in commercial real estate"
     },
     {
       id: "19k2h7gpQ2U", 
-      title: "Warehouse Development Trends",
-      description: "Latest trends in warehouse development and logistics infrastructure"
+      title: "Industrial Development and Logistics Infrastructure",
+      description: "Modern warehouse design trends and supply chain optimization strategies"
     }
   ];
 
