@@ -1,89 +1,190 @@
-import { MapPin, Building, Calculator, TrendingUp, Zap, Eye, Maximize2, Users, Truck, Sun } from "lucide-react";
+import { MapPin, Building, Calculator, TrendingUp, Zap, Eye, Maximize2 } from "lucide-react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 
 export default function LandParcels() {
-  const industrialPark = {
-    name: "Military Highway Industrial Park",
-    location: "Military Highway, Norfolk, VA",
-    totalInvestment: "$45.8M",
-    totalAcres: "47.5",
-    buildingCount: "8",
-    totalLeasableSF: "485,000",
-    occupancyRate: "95%",
-    avgRent: "$8.50/SF NNN",
-    annualNOI: "$3.89M",
-    capRate: "8.5%",
-    yearBuilt: "2019-2021",
-    features: [
-      "Solar panels on all buildings",
-      "Fully leased to credit tenants", 
-      "Class A warehouse facilities",
-      "Excellent truck access",
-      "On-site management",
-      "Modern loading facilities"
-    ],
-    tenants: [
-      { name: "Amazon Logistics", sf: "125,000", lease: "10 years" },
-      { name: "FedEx Ground", sf: "95,000", lease: "8 years" },
-      { name: "Home Depot Supply", sf: "85,000", lease: "12 years" },
-      { name: "Sysco Foods", sf: "75,000", lease: "7 years" },
-      { name: "UPS Logistics", sf: "65,000", lease: "9 years" },
-      { name: "Costco Wholesale", sf: "40,000", lease: "5 years" }
-    ]
-  };
+  const lots = [
+    {
+      id: "01",
+      type: "Premium", 
+      landInvestment: "$1,512,000",
+      totalAcres: "5.04",
+      buildableSF: "57,240",
+      maxWarehouseSF: "57,240",
+      perAcre: "$300K",
+      warehouseValue: "$300,000",
+      frontage: "Military Highway",
+      dimensions: "440' x 498'",
+      utilities: "Water, Sewer, Electric Ready"
+    },
+    {
+      id: "02",
+      type: "Premium",
+      landInvestment: "$1,340,900", 
+      totalAcres: "5.06",
+      buildableSF: "66,780",
+      maxWarehouseSF: "66,780",
+      perAcre: "$265K",
+      warehouseValue: "$265,000",
+      frontage: "Military Highway",
+      dimensions: "445' x 495'",
+      utilities: "Water, Sewer, Electric Ready"
+    },
+    {
+      id: "03",
+      type: "Premium",
+      landInvestment: "$1,518,450",
+      totalAcres: "5.73",
+      buildableSF: "80,000",
+      maxWarehouseSF: "80,000", 
+      perAcre: "$265K",
+      warehouseValue: "$265,000",
+      frontage: "Military Highway",
+      dimensions: "500' x 500'",
+      utilities: "Water, Sewer, Electric Ready"
+    },
+    {
+      id: "04",
+      type: "Premium",
+      landInvestment: "$1,619,150",
+      totalAcres: "6.12",
+      buildableSF: "80,000",
+      maxWarehouseSF: "80,000",
+      perAcre: "$265K",
+      warehouseValue: "$265,000",
+      frontage: "Military Highway", 
+      dimensions: "520' x 513'",
+      utilities: "Water, Sewer, Electric Ready"
+    },
+    {
+      id: "05",
+      type: "Premium",
+      landInvestment: "$1,621,800",
+      totalAcres: "6.12",
+      buildableSF: "80,000",
+      maxWarehouseSF: "80,000",
+      perAcre: "$265K",
+      warehouseValue: "$265,000",
+      frontage: "Military Highway",
+      dimensions: "520' x 513'",
+      utilities: "Water, Sewer, Electric Ready"
+    },
+    {
+      id: "06",
+      type: "Premium",
+      landInvestment: "$1,447,500",
+      totalAcres: "5.79",
+      buildableSF: "80,000",
+      maxWarehouseSF: "80,000",
+      perAcre: "$250K",
+      warehouseValue: "$250,000",
+      frontage: "Military Highway",
+      dimensions: "490' x 515'", 
+      utilities: "Water, Sewer, Electric Ready"
+    },
+    {
+      id: "07",
+      type: "Premium",
+      landInvestment: "$2,154,000",
+      totalAcres: "7.18",
+      buildableSF: "103,350",
+      maxWarehouseSF: "103,350",
+      perAcre: "$300K",
+      warehouseValue: "$300,000",
+      frontage: "Military Highway",
+      dimensions: "600' x 525'",
+      utilities: "Water, Sewer, Electric Ready"
+    },
+    {
+      id: "08", 
+      type: "Premium",
+      landInvestment: "$1,534,350",
+      totalAcres: "3.13",
+      buildableSF: "38,160",
+      maxWarehouseSF: "38,160",
+      perAcre: "$300K",
+      warehouseValue: "$300,000",
+      frontage: "Military Highway",
+      dimensions: "350' x 390'",
+      utilities: "Water, Sewer, Electric Ready"
+    },
+    {
+      id: "09",
+      type: "Standard",
+      landInvestment: "$829,450",
+      totalAcres: "3.13",
+      buildableSF: "38,160",
+      maxWarehouseSF: "38,160",
+      perAcre: "$265K",
+      warehouseValue: "$265,000",
+      frontage: "Interior Access",
+      dimensions: "350' x 390'",
+      utilities: "Water, Sewer, Electric Ready"
+    }
+  ];
 
-  const keyMetrics = {
-    totalValue: "$45.8M",
-    cashFlow: "$3.89M Annual",
-    capRate: "8.5%",
-    occupancy: "95%"
+  const portfolioTotals = {
+    totalAcres: "45.92",
+    totalInvestment: "$13.62M",
+    avgPricePerAcre: "$297K", 
+    totalBuildableSF: "643,690"
   };
 
   return (
     <section id="land-parcels" className="py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-primary mb-4">Prime Industrial Park Investment</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4">Prime Land Parcels for Sale</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-            Fully operational industrial park on Military Highway featuring 8 modern warehouse buildings with solar installations, 95% occupied by credit tenants.
+            Individual shovel-ready lots with utilities connected, zoned industrial. Purchase single lots or entire portfolio for maximum flexibility and scale.
           </p>
           
-          <div className="grid md:grid-cols-1 gap-8 mb-8">
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl overflow-hidden">
+              <img 
+                src="/lovable-uploads/cd2a4f27-d483-4ce3-8417-d8ad5d1b2ebe.png" 
+                alt="Detailed site plan showing MCC Industrial Park with 9 available lots and specifications table"
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-lg font-semibold text-primary mb-2">Property Layout & Specifications</h3>
+                <p className="text-sm text-muted-foreground">Official site plan with lot details, acreage, and warehouse capacity for all 9 available parcels</p>
+              </div>
+            </div>
             <Dialog>
               <DialogTrigger asChild>
                 <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl overflow-hidden cursor-pointer hover:shadow-lg hover:shadow-gold/10 transition-all duration-300 relative group">
-                  <img 
-                    src="/lovable-uploads/0bff25de-03b4-45d3-9344-d2cf2f27944a.png" 
-                    alt="Aerial view of Military Highway Industrial Park showing 8 warehouse buildings with solar panels and truck access"
-                    className="w-full h-96 object-cover"
-                  />
+                   <img 
+                     src="/lovable-uploads/cf22fa2d-78fc-4ffb-bc40-51232435018e.png" 
+                     alt="Detailed site plan showing 8 industrial land lots with measurements and specifications"
+                     className="w-full h-64 object-cover"
+                   />
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <div className="text-white text-center">
                       <Maximize2 className="h-8 w-8 mx-auto mb-2" />
                       <span className="text-sm font-medium">Click to Enlarge</span>
                     </div>
                   </div>
-                  <div className="p-6">
-                    <h3 className="text-2xl font-semibold text-primary mb-2">Military Highway Industrial Park</h3>
-                    <p className="text-muted-foreground">Premium industrial development with 8 warehouse buildings, solar installations, and excellent logistics access</p>
+                  <div className="p-4">
+                    <h3 className="text-lg font-semibold text-primary mb-2">Interactive Site Plan</h3>
+                    <p className="text-sm text-muted-foreground">Professional lot layout with detailed measurements - Click to view full size</p>
                   </div>
                 </div>
               </DialogTrigger>
               <DialogContent className="max-w-6xl max-h-[90vh] overflow-auto">
                 <DialogHeader>
-                  <DialogTitle className="text-2xl font-bold text-primary">Military Highway Industrial Park - Aerial Overview</DialogTitle>
+                  <DialogTitle className="text-2xl font-bold text-primary">MCC Industrial Park - Master Site Plan</DialogTitle>
                 </DialogHeader>
                 <div className="mt-4">
-                  <img 
-                    src="/lovable-uploads/0bff25de-03b4-45d3-9344-d2cf2f27944a.png"
-                    alt="Complete aerial view of the industrial park showing all buildings, parking, truck access, and solar installations"
-                    className="w-full h-auto rounded-lg border border-border"
-                  />
+                   <img 
+                     src="/lovable-uploads/cf22fa2d-78fc-4ffb-bc40-51232435018e.png"
+                     alt="Full detailed site plan showing all 8 lots with precise measurements, utilities, and access roads"
+                     className="w-full h-auto rounded-lg border border-border"
+                   />
                   <div className="mt-4 p-4 bg-muted/30 rounded-lg">
                     <p className="text-sm text-muted-foreground">
-                      <strong>Industrial Park Features:</strong> This fully operational 47.5-acre industrial park features 8 modern warehouse buildings totaling 485,000 SF, 
-                      each equipped with rooftop solar installations. The development offers excellent truck access, ample parking, 
-                      and is strategically positioned on Military Highway for optimal logistics operations.
+                      <strong>Site Plan Features:</strong> All lots are shovel-ready with utilities connected. 
+                      Military Highway frontage lots (1-7) offer premium positioning, while Lot 8 provides interior access. 
+                      Each lot shows precise dimensions and buildable envelopes for maximum warehouse development potential.
                     </p>
                   </div>
                 </div>
@@ -91,153 +192,161 @@ export default function LandParcels() {
             </Dialog>
           </div>
           
-          <div className="inline-flex items-center px-4 py-2 bg-emerald-500/20 text-emerald-400 rounded-full text-sm font-medium border border-emerald-500/30 backdrop-blur-sm mb-8">
-            <TrendingUp className="h-4 w-4 mr-2" />
-            95% Occupied - Stabilized Income-Producing Asset
+          <div className="inline-flex items-center px-4 py-2 bg-gold/20 text-gold rounded-full text-sm font-medium border border-gold/30 backdrop-blur-sm mb-8">
+            <Zap className="h-4 w-4 mr-2" />
+            Shovel-Ready with Water, Power & Sewer Connected
           </div>
 
           <div className="grid md:grid-cols-4 gap-6 mb-8">
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center">
-              <div className="text-2xl font-bold text-gold mb-2">{keyMetrics.totalValue}</div>
-              <div className="text-sm text-muted-foreground">Total Investment</div>
+              <div className="text-2xl font-bold text-gold mb-2">{portfolioTotals.totalAcres}</div>
+              <div className="text-sm text-muted-foreground">Total Acres Available</div>
             </div>
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center">
-              <div className="text-2xl font-bold text-emerald-500 mb-2">{keyMetrics.cashFlow}</div>
-              <div className="text-sm text-muted-foreground">Net Operating Income</div>
+              <div className="text-2xl font-bold text-emerald-500 mb-2">{portfolioTotals.totalInvestment}</div>
+              <div className="text-sm text-muted-foreground">Total Portfolio Value</div>
             </div>
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center">
-              <div className="text-2xl font-bold text-blue-500 mb-2">{keyMetrics.capRate}</div>
-              <div className="text-sm text-muted-foreground">Cap Rate</div>
+              <div className="text-2xl font-bold text-blue-500 mb-2">{portfolioTotals.avgPricePerAcre}</div>
+              <div className="text-sm text-muted-foreground">Average Price/Acre</div>
             </div>
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center">
-              <div className="text-2xl font-bold text-amber-500 mb-2">{keyMetrics.occupancy}</div>
-              <div className="text-sm text-muted-foreground">Occupancy Rate</div>
+              <div className="text-2xl font-bold text-amber-500 mb-2">{portfolioTotals.totalBuildableSF}</div>
+              <div className="text-sm text-muted-foreground">Total Buildable SF</div>
             </div>
           </div>
         </div>
 
-        <div className="grid gap-8">
-          {/* Property Overview */}
-          <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl overflow-hidden">
-            <div className="p-6">
-              <div className="flex justify-between items-start mb-6">
-                <div>
-                  <h3 className="text-2xl font-bold text-primary mb-2">{industrialPark.name}</h3>
-                  <p className="text-muted-foreground mb-4">{industrialPark.location}</p>
-                  <span className="inline-block px-3 py-1 rounded-full text-sm font-medium bg-emerald-500/20 text-emerald-400">
-                    Stabilized Income Property
-                  </span>
+        <div className="grid gap-6">
+          {lots.map((lot) => (
+            <div key={lot.id} className="bg-card/50 backdrop-blur-sm border border-border rounded-xl overflow-hidden">
+              <div className="p-6">
+                <div className="flex justify-between items-start mb-6">
+                  <div>
+                    <h3 className="text-xl font-bold text-primary mb-2">
+                      Lot {lot.id} - {lot.frontage}
+                    </h3>
+                     <span className={`inline-block px-3 py-1 rounded-full text-sm font-medium ${
+                      lot.type === 'Premium' ? 'bg-gold/20 text-gold' : 'bg-blue-500/20 text-blue-400'
+                    }`}>
+                      {lot.type === 'Premium' ? 'Highway Frontage Premium' : 'Interior Access Standard'}
+                    </span>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-2xl font-bold text-gold">{lot.landInvestment}</div>
+                    <div className="text-sm text-muted-foreground">Land Price</div>
+                  </div>
                 </div>
-                <div className="text-right">
-                  <div className="text-3xl font-bold text-gold">{industrialPark.totalInvestment}</div>
-                  <div className="text-sm text-muted-foreground">Total Investment</div>
-                </div>
-              </div>
 
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-                <div className="text-center p-4 bg-muted/30 rounded-lg">
-                  <MapPin className="h-6 w-6 text-gold mx-auto mb-2" />
-                  <div className="text-lg font-bold text-foreground">{industrialPark.totalAcres} acres</div>
-                  <div className="text-xs text-muted-foreground">Total Site Size</div>
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
+                  <div className="text-center p-4 bg-muted/30 rounded-lg">
+                    <MapPin className="h-6 w-6 text-gold mx-auto mb-2" />
+                    <div className="text-lg font-bold text-foreground">{lot.totalAcres} acres</div>
+                    <div className="text-xs text-muted-foreground">Total Lot Size</div>
+                  </div>
+                  <div className="text-center p-4 bg-muted/30 rounded-lg">
+                    <Building className="h-6 w-6 text-emerald-500 mx-auto mb-2" />
+                    <div className="text-lg font-bold text-foreground">{lot.maxWarehouseSF.toLocaleString()}</div>
+                    <div className="text-xs text-muted-foreground">Max Warehouse SF</div>
+                  </div>
+                  <div className="text-center p-4 bg-muted/30 rounded-lg">
+                    <Calculator className="h-6 w-6 text-blue-500 mx-auto mb-2" />
+                    <div className="text-lg font-bold text-foreground">{lot.perAcre}</div>
+                    <div className="text-xs text-muted-foreground">Per Acre</div>
+                  </div>
+                  <div className="text-center p-4 bg-muted/30 rounded-lg">
+                    <TrendingUp className="h-6 w-6 text-amber-500 mx-auto mb-2" />
+                    <div className="text-lg font-bold text-foreground">{lot.warehouseValue}</div>
+                    <div className="text-xs text-muted-foreground">Warehouse Value</div>
+                  </div>
                 </div>
-                <div className="text-center p-4 bg-muted/30 rounded-lg">
-                  <Building className="h-6 w-6 text-emerald-500 mx-auto mb-2" />
-                  <div className="text-lg font-bold text-foreground">{industrialPark.buildingCount} Buildings</div>
-                  <div className="text-xs text-muted-foreground">{industrialPark.totalLeasableSF} SF Total</div>
-                </div>
-                <div className="text-center p-4 bg-muted/30 rounded-lg">
-                  <Calculator className="h-6 w-6 text-blue-500 mx-auto mb-2" />
-                  <div className="text-lg font-bold text-foreground">{industrialPark.avgRent}</div>
-                  <div className="text-xs text-muted-foreground">Average Rent NNN</div>
-                </div>
-                <div className="text-center p-4 bg-muted/30 rounded-lg">
-                  <TrendingUp className="h-6 w-6 text-amber-500 mx-auto mb-2" />
-                  <div className="text-lg font-bold text-foreground">{industrialPark.capRate}</div>
-                  <div className="text-xs text-muted-foreground">Cap Rate</div>
-                </div>
-              </div>
 
-              <div className="grid md:grid-cols-2 gap-4 mb-4">
-                <div className="p-4 bg-blue-50 dark:bg-blue-500/10 rounded-lg">
-                  <h4 className="font-semibold text-blue-700 dark:text-blue-400 mb-2">Property Features</h4>
-                  <div className="space-y-2 text-sm">
-                    {industrialPark.features.map((feature, index) => (
-                      <div key={index} className="flex items-center">
-                        <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
-                        <span className="text-muted-foreground">{feature}</span>
+                <div className="grid md:grid-cols-2 gap-4 mb-4">
+                  <div className="p-4 bg-blue-50 dark:bg-blue-500/10 rounded-lg">
+                    <h4 className="font-semibold text-blue-700 dark:text-blue-400 mb-2">Lot Specifications</h4>
+                    <div className="space-y-1 text-sm">
+                      <div className="flex justify-between">
+                        <span className="text-muted-foreground">Dimensions:</span>
+                        <span className="font-medium">{lot.dimensions}</span>
                       </div>
-                    ))}
-                  </div>
-                </div>
-                <div className="p-4 bg-emerald-50 dark:bg-emerald-500/10 rounded-lg">
-                  <h4 className="font-semibold text-emerald-700 dark:text-emerald-400 mb-2">Investment Highlights</h4>
-                  <div className="space-y-1 text-sm">
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Year Built:</span>
-                      <span className="font-medium">{industrialPark.yearBuilt}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Occupancy:</span>
-                      <span className="font-medium text-emerald-600">{industrialPark.occupancyRate}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Annual NOI:</span>
-                      <span className="font-medium">{industrialPark.annualNOI}</span>
+                      <div className="flex justify-between">
+                        <span className="text-muted-foreground">Utilities:</span>
+                        <span className="font-medium text-emerald-600">{lot.utilities}</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-muted-foreground">Zoning:</span>
+                        <span className="font-medium">Industrial</span>
+                      </div>
                     </div>
                   </div>
+                  <div className="p-4 bg-amber-50 dark:bg-amber-500/10 rounded-lg">
+                    <h4 className="font-semibold text-amber-700 dark:text-amber-400 mb-2">Development Potential</h4>
+                    <div className="space-y-1 text-sm">
+                      <div className="flex justify-between">
+                        <span className="text-muted-foreground">Max Coverage:</span>
+                        <span className="font-medium">65%</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-muted-foreground">Height Limit:</span>
+                        <span className="font-medium">40 feet</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-muted-foreground">Parking Required:</span>
+                        <span className="font-medium">1 per 1,000 SF</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          {/* Tenant Mix */}
-          <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl overflow-hidden">
-            <div className="p-6">
-              <h3 className="text-2xl font-bold text-primary mb-6">Credit Tenant Portfolio</h3>
-              <div className="grid gap-4">
-                {industrialPark.tenants.map((tenant, index) => (
-                  <div key={index} className="flex justify-between items-center p-4 bg-muted/30 rounded-lg">
-                    <div>
-                      <h4 className="font-semibold text-foreground">{tenant.name}</h4>
-                      <p className="text-sm text-muted-foreground">{tenant.lease} lease term</p>
-                    </div>
-                    <div className="text-right">
-                      <div className="font-bold text-gold">{Number(tenant.sf).toLocaleString()} SF</div>
-                      <div className="text-xs text-muted-foreground">Leased Space</div>
-                    </div>
-                  </div>
-                ))}
+                <div className="mt-4 p-4 bg-emerald-50 dark:bg-emerald-500/10 rounded-lg">
+                  <p className="text-sm text-emerald-700 dark:text-emerald-400">
+                    <strong>Potential uses:</strong> Custom warehouse, distribution center, manufacturing facility, e-commerce hub. 
+                    All utilities connected - no infrastructure delays, immediate build potential.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+          ))}
         </div>
 
         <div className="mt-12 bg-gradient-to-r from-gold/10 to-emerald-500/10 rounded-xl p-8">
           <div className="text-center">
-            <h3 className="text-2xl font-semibold text-primary mb-4">Investment Summary</h3>
+            <h3 className="text-2xl font-semibold text-primary mb-4">Portfolio Summary</h3>
             <p className="text-muted-foreground mb-6">
-              Stabilized industrial park with excellent tenant mix, modern facilities, and sustainable energy features generating strong cash flow.
+              Total portfolio: 45.92 acres, $13.62M total value – purchase individual lots or complete portfolio for scale advantages.
             </p>
+            
+            <div className="mb-8 bg-card/50 backdrop-blur-sm border border-border rounded-xl overflow-hidden">
+              <img 
+                src="/lovable-uploads/d775f7d6-ebe9-40e0-9cbe-77e7e7aed1f4.png" 
+                alt="Detailed pricing table showing lot numbers, acreage, warehouse values, and total investment for each parcel"
+                className="w-full h-auto object-cover"
+              />
+              <div className="p-4">
+                <h4 className="text-lg font-semibold text-primary mb-2">Complete Investment Breakdown</h4>
+                <p className="text-sm text-muted-foreground">
+                  Comprehensive pricing table showing individual lot investments, warehouse development values, and total project costs for each parcel.
+                </p>
+              </div>
+            </div>
             
             <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <h4 className="text-xl font-semibold text-gold mb-4">Key Advantages</h4>
+                <h4 className="text-xl font-semibold text-gold mb-4">Land Investment Benefits</h4>
                 <ul className="text-left space-y-2 text-muted-foreground">
-                  <li>• Immediate cash flow from day one</li>
-                  <li>• Credit tenants with long-term leases</li>
-                  <li>• Solar installations reduce operating costs</li>
-                  <li>• Prime Military Highway location</li>
-                  <li>• Professional on-site management</li>
+                  <li>• Annual holding costs ~2-3% (taxes/maintenance)</li>
+                  <li>• Projected appreciation 10-15% based on market trends</li>
+                  <li>• Exit strategies: Resell at 20-30% premium in 2-3 years</li>
+                  <li>• No construction risks upfront</li>
                 </ul>
               </div>
               <div>
-                <h4 className="text-xl font-semibold text-emerald-500 mb-4">Financial Performance</h4>
+                <h4 className="text-xl font-semibold text-emerald-500 mb-4">Market Position Strengths</h4>
                 <ul className="text-left space-y-2 text-muted-foreground">
-                  <li>• 8.5% stabilized cap rate</li>
-                  <li>• $3.89M annual net operating income</li>
-                  <li>• 95% occupancy with quality tenants</li>
-                  <li>• Built-in rent escalations</li>
-                  <li>• Value-add potential through expansions</li>
+                  <li>• Strategic location with highway access</li>
+                  <li>• All utilities connected and ready</li>
+                  <li>• Zoned industrial - no approval delays</li>
+                  <li>• Limited 49 acres in tight 1.3% vacancy market</li>
                 </ul>
               </div>
             </div>
