@@ -68,8 +68,8 @@ export default function StrategicPosition() {
           <div className="space-y-6">
             <div className="relative overflow-hidden rounded-xl border border-border">
               <img 
-                src="/lovable-uploads/c30c6a61-4069-4336-85ff-2178028a85ce.png"
-                alt="Strategic location overview showing proximity to McAllen industrial developments"
+                src="/lovable-uploads/91317bb0-2352-47ce-86ac-450496928ed0.png"
+                alt="Aerial render of proposed industrial development on Military Highway showing warehouses with solar panels and truck access"
                 className="w-full h-64 object-cover"
               />
             </div>
