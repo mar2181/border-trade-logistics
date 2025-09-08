@@ -36,7 +36,7 @@ export default function LandParcels() {
     totalValue: "$45.8M",
     cashFlow: "$3.89M Annual",
     capRate: "8.5%",
-    occupancy: "95%"
+    occupancy: "Development Ready"
   };
 
   return (
@@ -45,7 +45,7 @@ export default function LandParcels() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-primary mb-4">Prime Industrial Park Investment</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-            Fully operational industrial park on Military Highway featuring 8 modern warehouse buildings with solar installations, 95% occupied by credit tenants.
+            Proposed industrial park development on Military Highway featuring 8 modern warehouse buildings with solar installations and premium truck access.
           </p>
           
           <div className="grid md:grid-cols-1 gap-8 mb-8">
@@ -91,9 +91,9 @@ export default function LandParcels() {
             </Dialog>
           </div>
           
-          <div className="inline-flex items-center px-4 py-2 bg-emerald-500/20 text-emerald-400 rounded-full text-sm font-medium border border-emerald-500/30 backdrop-blur-sm mb-8">
+          <div className="inline-flex items-center px-4 py-2 bg-blue-500/20 text-blue-400 rounded-full text-sm font-medium border border-blue-500/30 backdrop-blur-sm mb-8">
             <TrendingUp className="h-4 w-4 mr-2" />
-            95% Occupied - Stabilized Income-Producing Asset
+            Development Ready - Build-to-Suit Available
           </div>
 
           <div className="grid md:grid-cols-4 gap-6 mb-8">
