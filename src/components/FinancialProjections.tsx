@@ -2,12 +2,12 @@ import { BarChart3, DollarSign, Percent, TrendingUp } from "lucide-react";
 
 export default function FinancialProjections() {
   const landPortfolioSummary = {
-    totalLandInvestment: "$13.5M",
-    totalAcres: "49 acres",
-    avgPricePerAcre: "$275K",
-    annualHoldingCosts: "$400K",
-    projectedAppreciation: "10-15%",
-    threYearValue: "$20.3M"
+    totalLandInvestment: "$12.24M",
+    totalAcres: "44.17 acres",
+    avgPricePerAcre: "$277K",
+    annualHoldingCosts: "$367K",
+    projectedAppreciation: "8-12%",
+    threYearValue: "$17.5M"
   };
 
   const landAssumptions = {
@@ -32,9 +32,9 @@ export default function FinancialProjections() {
     <section className="py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-primary mb-4">Land-Only Financial Projections</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4">MCC Industrial Park - Financial Projections & Strategy</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-            Land investment analysis showing appreciation potential, holding costs, and exit strategies based on market fundamentals
+            Comprehensive analysis of land appreciation potential, development strategies, and exit scenarios for the 44.17-acre portfolio
           </p>
           
           <div className="relative overflow-hidden rounded-xl border border-border max-w-2xl mx-auto">
@@ -53,7 +53,7 @@ export default function FinancialProjections() {
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8">
               <div className="flex items-center mb-6 justify-center">
                 <BarChart3 className="h-8 w-8 text-gold mr-3" />
-                <h4 className="text-xl font-semibold text-primary">49-Acre Land Portfolio</h4>
+                <h4 className="text-xl font-semibold text-primary">MCC Industrial Park - 44.17 Acres</h4>
               </div>
               
               <div className="grid md:grid-cols-2 gap-8">

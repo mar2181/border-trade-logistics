@@ -18,6 +18,8 @@ import MobileNavigation from "@/components/MobileNavigation";
 import VideoCarousel from "@/components/VideoCarousel";
 import InvestmentTabs from "@/components/InvestmentTabs";
 import PropertySpecifications from "@/components/PropertySpecifications";
+import IndividualLots from "@/components/IndividualLots";
+import ProfessionalAnalysis from "@/components/ProfessionalAnalysis";
 const Index = () => {
   const handleMobileNavigation = (action: string) => {
     if (action === 'dry') {
@@ -162,11 +164,11 @@ const Index = () => {
               <div className="p-4 sm:p-6 space-y-4 sm:space-y-6">
                 <div className="grid grid-cols-2 gap-3 sm:gap-4">
                   <div className="text-center p-3 sm:p-4 bg-gray-50 rounded-lg">
-                    <div className="text-xl sm:text-2xl font-bold text-gold">10-15%</div>
+                    <div className="text-xl sm:text-2xl font-bold text-gold">8-12%</div>
                     <div className="text-xs text-gray-900">Annual Land Appreciation</div>
                   </div>
                   <div className="text-center p-3 sm:p-4 bg-gray-50 rounded-lg">
-                    <div className="text-xl sm:text-2xl font-bold text-accent-sapphire">$11.89M</div>
+                    <div className="text-xl sm:text-2xl font-bold text-accent-sapphire">$12.24M</div>
                     <div className="text-xs text-gray-900">Total Land Value</div>
                   </div>
                 </div>
@@ -174,15 +176,15 @@ const Index = () => {
                   <div className="space-y-2 sm:space-y-3">
                   <div className="flex justify-between items-center">
                     <span className="text-muted-foreground text-sm">Land Portfolio:</span>
-                    <span className="font-bold text-primary text-sm">$11.89M Total</span>
+                    <span className="font-bold text-primary text-sm">$12.24M Total</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-muted-foreground text-sm">Properties Available:</span>
-                    <span className="font-bold text-primary text-sm">Only 8 Left</span>
+                    <span className="text-muted-foreground text-sm">Total Acres:</span>
+                    <span className="font-bold text-primary text-sm">44.17 Acres</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-muted-foreground text-sm">Pricing Range:</span>
-                    <span className="font-bold text-accent-emerald text-sm">$250K-$300K/acre</span>
+                    <span className="text-muted-foreground text-sm">Buildable SF:</span>
+                    <span className="font-bold text-accent-emerald text-sm">585,530 SF</span>
                   </div>
                 </div>
 
@@ -207,16 +209,18 @@ const Index = () => {
       <ExecutiveSummary />
       <MarketAnalysis />
       <LandParcels />
+      <IndividualLots />
       <FinancialProjections />
+      <InvestmentTabs />
       <LocationAdvantages />
-      <Demographics />
       <StrategicPosition />
       <PropertySpecifications />
-      <InvestmentTabs />
+      <Demographics />
       <VideoCarousel />
-      <MarketDataSources />
+      <ProfessionalAnalysis />
       <RiskAnalysis />
       <InvestmentProcess />
+      <MarketDataSources />
     </div>;
 };
 export default Index;

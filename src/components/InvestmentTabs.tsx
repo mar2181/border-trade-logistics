@@ -49,22 +49,22 @@ const InvestmentTabs = () => {
               <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
                 <div className="text-center p-6 bg-card rounded-lg border border-border">
                   <DollarSign className="w-8 h-8 text-gold mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-gold">$101M</div>
+                  <div className="text-2xl font-bold text-gold">$82.5M</div>
                   <div className="text-sm text-muted-foreground">Total Investment</div>
                 </div>
                 <div className="text-center p-6 bg-card rounded-lg border border-border">
                   <TrendingUp className="w-8 h-8 text-emerald-500 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-emerald-500">13.0%</div>
+                  <div className="text-2xl font-bold text-emerald-500">8.9%</div>
                   <div className="text-sm text-muted-foreground">Average ROI</div>
                 </div>
                 <div className="text-center p-6 bg-card rounded-lg border border-border">
                   <Warehouse className="w-8 h-8 text-blue-500 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-blue-500">1.2M</div>
+                  <div className="text-2xl font-bold text-blue-500">585K</div>
                   <div className="text-sm text-muted-foreground">Total SF</div>
                 </div>
                 <div className="text-center p-6 bg-card rounded-lg border border-border">
-                  <div className="w-8 h-8 bg-amber-500 rounded-full mx-auto mb-2 flex items-center justify-center text-background font-bold">26</div>
-                  <div className="text-2xl font-bold text-amber-500">26 Acres</div>
+                  <div className="w-8 h-8 bg-amber-500 rounded-full mx-auto mb-2 flex items-center justify-center text-background font-bold">44</div>
+                  <div className="text-2xl font-bold text-amber-500">44.17 Acres</div>
                   <div className="text-sm text-muted-foreground">Available Land</div>
                 </div>
               </div>
@@ -78,22 +78,22 @@ const InvestmentTabs = () => {
               <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
                 <div className="text-center p-6 bg-card rounded-lg border border-border">
                   <DollarSign className="w-8 h-8 text-gold mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-gold">$167M</div>
+                  <div className="text-2xl font-bold text-gold">$135.0M</div>
                   <div className="text-sm text-muted-foreground">Total Investment</div>
                 </div>
                 <div className="text-center p-6 bg-card rounded-lg border border-border">
                   <TrendingUp className="w-8 h-8 text-blue-500 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-blue-500">8.8%</div>
+                  <div className="text-2xl font-bold text-blue-500">7.8%</div>
                   <div className="text-sm text-muted-foreground">Average ROI</div>
                 </div>
                 <div className="text-center p-6 bg-card rounded-lg border border-border">
                   <Thermometer className="w-8 h-8 text-cyan-500 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-cyan-500">800K</div>
+                  <div className="text-2xl font-bold text-cyan-500">585K</div>
                   <div className="text-sm text-muted-foreground">Total SF</div>
                 </div>
                 <div className="text-center p-6 bg-card rounded-lg border border-border">
-                  <div className="w-8 h-8 bg-purple-500 rounded-full mx-auto mb-2 flex items-center justify-center text-background font-bold">23</div>
-                  <div className="text-2xl font-bold text-purple-500">23 Acres</div>
+                  <div className="w-8 h-8 bg-purple-500 rounded-full mx-auto mb-2 flex items-center justify-center text-background font-bold">44</div>
+                  <div className="text-2xl font-bold text-purple-500">44.17 Acres</div>
                   <div className="text-sm text-muted-foreground">Available Land</div>
                 </div>
               </div>

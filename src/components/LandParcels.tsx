@@ -3,39 +3,38 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 
 export default function LandParcels() {
   const industrialPark = {
-    name: "Military Highway Industrial Park",
-    location: "Military Highway, Norfolk, VA",
-    totalInvestment: "$45.8M",
-    totalAcres: "47.5",
-    buildingCount: "8",
-    totalLeasableSF: "485,000",
-    occupancyRate: "95%",
-    avgRent: "$8.50/SF NNN",
-    annualNOI: "$3.89M",
-    capRate: "8.5%",
-    yearBuilt: "2019-2021",
+    name: "MCC Industrial Park",
+    location: "10th Street & Military Highway, McAllen, TX",
+    totalInvestment: "$12.24M",
+    totalAcres: "44.17",
+    buildingCount: "8 Lots",
+    totalLeasableSF: "585,530",
+    occupancyRate: "Development Ready",
+    avgRent: "Shovel-Ready",
+    annualNOI: "Land Investment",
+    capRate: "8-12% Appreciation",
+    yearBuilt: "Immediate Development",
     features: [
-      "Fully leased to credit tenants", 
-      "Class A warehouse facilities",
-      "Excellent truck access",
-      "On-site management",
-      "Modern loading facilities"
+      "Shovel-ready development lots", 
+      "Industrial zoning approved",
+      "Utilities to site boundaries",
+      "Strategic border location",
+      "Prime highway access"
     ],
-    tenants: [
-      { name: "Amazon Logistics", sf: "125,000", lease: "10 years" },
-      { name: "FedEx Ground", sf: "95,000", lease: "8 years" },
-      { name: "Home Depot Supply", sf: "85,000", lease: "12 years" },
-      { name: "Sysco Foods", sf: "75,000", lease: "7 years" },
-      { name: "UPS Logistics", sf: "65,000", lease: "9 years" },
-      { name: "Costco Wholesale", sf: "40,000", lease: "5 years" }
+    advantages: [
+      "7 miles from Pharr-Reynosa International Bridge",
+      "60% of Texas fresh produce imports",
+      "$47-50 billion annual bridge trade volume",
+      "Sub-4% industrial vacancy rate",
+      "Federal rate environment supporting development"
     ]
   };
 
   const keyMetrics = {
-    totalValue: "$45.8M",
-    cashFlow: "$3.89M Annual",
-    capRate: "8.5%",
-    occupancy: "Development Ready"
+    totalValue: "$12.24M",
+    cashFlow: "585,530 SF",
+    capRate: "$277K Avg",
+    occupancy: "44.17 Acres"
   };
 
   return (
@@ -97,19 +96,19 @@ export default function LandParcels() {
           <div className="grid md:grid-cols-4 gap-6 mb-8">
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center">
               <div className="text-2xl font-bold text-gold mb-2">{keyMetrics.totalValue}</div>
-              <div className="text-sm text-muted-foreground">Total Investment</div>
+              <div className="text-sm text-muted-foreground">Portfolio Investment</div>
             </div>
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center">
               <div className="text-2xl font-bold text-emerald-500 mb-2">{keyMetrics.cashFlow}</div>
-              <div className="text-sm text-muted-foreground">Net Operating Income</div>
+              <div className="text-sm text-muted-foreground">Total Buildable SF</div>
             </div>
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center">
               <div className="text-2xl font-bold text-blue-500 mb-2">{keyMetrics.capRate}</div>
-              <div className="text-sm text-muted-foreground">Cap Rate</div>
+              <div className="text-sm text-muted-foreground">Price Per Acre</div>
             </div>
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center">
               <div className="text-2xl font-bold text-amber-500 mb-2">{keyMetrics.occupancy}</div>
-              <div className="text-sm text-muted-foreground">Occupancy Rate</div>
+              <div className="text-sm text-muted-foreground">Total Acres</div>
             </div>
           </div>
         </div>
