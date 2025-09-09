@@ -78,7 +78,7 @@ export default function LocationAdvantages() {
             <Building2 className="h-12 w-12 text-blue-500 mx-auto mb-4" />
             <h3 className="text-xl font-semibold text-primary mb-3">Cross-Border Trade Hub</h3>
             <p className="text-muted-foreground mb-4">
-              Gateway to $7.05B annual produce trade with projected 44% growth by 2025
+              Gateway to $6B+ annual produce trade through Pharr-Reynosa Bridge (~$47-$50B total trade)
             </p>
             <div className="text-2xl font-bold text-blue-500">$8B+</div>
             <div className="text-sm text-muted-foreground">2024 imports</div>

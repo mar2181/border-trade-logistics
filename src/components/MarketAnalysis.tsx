@@ -16,12 +16,12 @@ export default function MarketAnalysis() {
           <h2 className="text-4xl font-bold text-primary mb-4">Market Analysis</h2>
           <div className="bg-gradient-to-r from-accent-emerald/20 via-gold/20 to-accent-emerald/20 rounded-2xl p-6 mb-8">
             <p className="text-xl text-foreground max-w-4xl mx-auto text-center font-medium">
-              <span className="text-gold font-bold">Fed Rate Cuts + Valley Growth = Perfect Storm</span>
+              <span className="text-gold font-bold">McAllen's Strategic Cross-Border Position</span>
             </p>
             <p className="text-lg text-muted-foreground max-w-5xl mx-auto text-center mt-4">
-              McAllen's transformation into America's produce distribution capital creates unprecedented opportunities. 
-              The Valley <span className="text-accent-emerald font-semibold">demonstrates remarkable market stability</span> supported by sustained growth and consistent demand. 
-              <span className="text-gold font-semibold">Savvy investors moving now</span> will benefit from rate cuts and position themselves in the most desirable market.
+              Located in McAllen's Dodge Arena District with proven produce/logistics demand. 
+              The Valley <span className="text-accent-emerald font-semibold">demonstrates market stability</span> supported by cross-border trade through Pharr-Reynosa Bridge. 
+              <span className="text-gold font-semibold">Modeled under base and stress scenarios</span> for lender confidence and investment clarity.
             </p>
           </div>
         </div>
@@ -30,9 +30,9 @@ export default function MarketAnalysis() {
           <div>
             <h3 className="text-2xl font-semibold text-primary mb-6">The Valley's Dynamic Market Transformation</h3>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              <strong className="text-gold">America's Hidden Gem:</strong> McAllen's 900K+ metropolitan area rivals El Paso in size but offers superior growth potential. 
-              Historic vacancy drop from 6.6% to 1.3% while rental rates surged 375% proves this market's exceptional strength. 
-              <strong className="text-accent-emerald">The Valley is projected to grow dramatically for the next 20 years</strong> - and realistically, for the foreseeable future.
+              <strong className="text-gold">McAllen MSA Market Dynamics:</strong> Recent third-party reads show McAllen industrial vacancy around 3.9% (3Q24) with LTM rent growth ~1.9%–2.5%. 
+              Q2-2025 asking rents averaged $8.43/SF amid &gt;1.3M SF under construction (CBRE Q2-2025). 
+              <strong className="text-accent-emerald">The Valley demonstrates consistent growth supported by cross-border trade</strong> with proven logistics demand patterns.
             </p>
             
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6">
@@ -46,14 +46,14 @@ export default function MarketAnalysis() {
                   <div className="flex-1 mx-4 bg-muted-foreground/20 rounded-full h-2">
                     <div className="bg-emerald-500 h-2 rounded-full" style={{ width: '20%' }}></div>
                   </div>
-                  <span className="text-sm text-gold font-semibold">2.0%</span>
+                  <span className="text-sm text-gold font-semibold">4.5%</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-sm">2025</span>
                   <div className="flex-1 mx-4 bg-muted-foreground/20 rounded-full h-2">
                     <div className="bg-gold h-2 rounded-full" style={{ width: '13%' }}></div>
                   </div>
-                  <span className="text-sm text-gold font-semibold">1.3%</span>
+                  <span className="text-sm text-gold font-semibold">3.9%</span>
                 </div>
               </div>
             </div>
@@ -71,7 +71,7 @@ export default function MarketAnalysis() {
             <div>
               <h3 className="text-2xl font-semibold text-primary mb-6">Trade Volume Distribution</h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                $7.05B annual produce trade through Pharr-Reynosa Bridge creates consistent demand for specialized cold storage and distribution facilities.
+                Over $6B annual produce trade through Pharr-Reynosa Bridge (~$47-$50B total trade) creates consistent demand for specialized cold storage and distribution facilities.
               </p>
               
               <div className="space-y-3">

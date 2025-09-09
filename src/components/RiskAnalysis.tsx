@@ -12,7 +12,7 @@ export default function RiskAnalysis() {
         "Valley market cycle considerations", 
         "McAllen industrial demand fluctuations"
       ],
-      mitigation: "Fed rate cuts are imminent, Valley market demonstrates exceptional resilience, industrial demand growing with 20-year expansion projected"
+      mitigation: "Following Fed rate adjustments, Valley market demonstrates stability, industrial demand supported by cross-border trade fundamentals"
     },
     {
       category: "Regulatory Risks", 
@@ -36,7 +36,7 @@ export default function RiskAnalysis() {
         "Holding costs during Valley appreciation",
         "Exit liquidity in growing market"
       ],
-      mitigation: "Fed cuts imminent - perfect timing, minimal holding costs vs. appreciation, multiple high-demand exit strategies"
+      mitigation: "Strategic timing consideration, modeled holding costs vs. appreciation potential, multiple exit strategies available"
     }
   ];
 

@@ -13,7 +13,7 @@ export default function Calculator() {
   const [squareFeet, setSquareFeet] = useState(55000); // default: Lot 01 example
   const [baseRent, setBaseRent] = useState(19.5); // $/SF/Yr starting at stabilization
   const [growth, setGrowth] = useState(4); // % per year
-  const [vacancy, setVacancy] = useState(1.3); // % of GPR
+  const [vacancy, setVacancy] = useState(3.9); // % of GPR - Updated to 3Q24 market data
   const [opexPct, setOpexPct] = useState(35); // % of EGI
 
   // Costs
@@ -423,7 +423,7 @@ export default function Calculator() {
         <footer className="mt-8 text-xs text-muted-foreground">
           <p>
             Built for the McAllen / Military Hwy (FM 1016) opportunity. Adjust defaults for Dry vs Refrigerated, or plug in your own assumptions
-            (e.g., $19.50 starting rent, 4% growth, 1.3% vacancy, 35% OpEx). Use the CSV to share with investors.
+            (e.g., $19.50 starting rent, 4% growth, 3.9% vacancy, 35% OpEx). Use the CSV to share with investors.
           </p>
         </footer>
       </div>

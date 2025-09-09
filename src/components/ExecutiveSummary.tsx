@@ -12,7 +12,7 @@ export default function ExecutiveSummary() {
             </p>
             <p className="text-lg text-muted-foreground max-w-5xl mx-auto text-center mt-4">
               37.3 acres of premium shovel-ready parcels on 10th Street, minutes from Dodge Arena in McAllen's dynamic growth market. 
-              <span className="text-accent-emerald font-semibold"> Fed rate cuts are imminent</span> - position yourself ahead of the curve in this 
+              <span className="text-accent-emerald font-semibold"> Following Fed rate adjustments</span> - position yourself strategically in this 
               <span className="text-gold font-semibold"> compelling market position</span> where savvy investors stay and grow.
             </p>
           </div>
@@ -89,15 +89,15 @@ export default function ExecutiveSummary() {
           <h3 className="text-2xl font-semibold text-primary mb-8 text-center">Key Land Investment Highlights</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center">
-              <div className="text-2xl font-bold text-gold mb-2">1.3%</div>
-              <div className="text-sm text-muted-foreground">Historic vacancy drives land value appreciation in tight market</div>
+              <div className="text-2xl font-bold text-gold mb-2">3.9%</div>
+              <div className="text-sm text-muted-foreground">Market vacancy (3Q24) supports stable occupancy in established market</div>
             </div>
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center">
-              <div className="text-2xl font-bold text-gold mb-2">$7.05B</div>
+              <div className="text-2xl font-bold text-gold mb-2">$6B+</div>
               <div className="text-sm text-muted-foreground">Annual trade volume supports land demand with 44% growth projected</div>
             </div>
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center">
-              <div className="text-2xl font-bold text-gold mb-2">375%</div>
+              <div className="text-2xl font-bold text-gold mb-2">2.5%</div>
               <div className="text-sm text-muted-foreground">Rental rate growth signals strong land appreciation potential</div>
             </div>
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center">

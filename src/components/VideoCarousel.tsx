@@ -18,7 +18,7 @@ export default function VideoCarousel() {
     },
     {
       id: "lqCFB4mAJj4",
-      title: "A Fed interest rate cut is 'imminent', says JPMorgan's Gabriela Santos",
+      title: "Fed Rate Environment and Commercial Real Estate Impact Analysis",
       description: "Market expert insights on upcoming rate changes and real estate investment timing strategies"
     },
     {

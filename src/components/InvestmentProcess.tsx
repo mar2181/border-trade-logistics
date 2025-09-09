@@ -33,7 +33,7 @@ export default function InvestmentProcess() {
     <section className="py-16 px-6 bg-muted/20">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-primary mb-4">Act Now - Fed Cuts Are Imminent</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4">Strategic Investment Timing</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
             <span className="text-gold font-bold">Only 8 Properties Remaining</span> in McAllen's Dodge Arena District. 
             Savvy investors moving in the next few months will benefit from Fed rate cuts and position themselves ahead of the curve 
@@ -97,7 +97,7 @@ export default function InvestmentProcess() {
             
             <p className="text-muted-foreground mb-8 max-w-3xl mx-auto">
               <span className="font-semibold text-accent-emerald">PERFECT TIMING:</span> Only 8 properties left in McAllen's Dodge Arena District. 
-              Fed rate cuts are imminent - secure your million-dollar investment at $250K-$300K/acre before the Valley's dynamic growth 
+              Following Fed rate adjustments - position your investment strategically at current market pricing before the Valley's continued growth 
               drives prices higher. This is your chance to get ahead of the curve in America's hidden gem.
             </p>
             
@@ -120,7 +120,7 @@ export default function InvestmentProcess() {
               </div>
               <div>
                 <div className="text-xl font-bold text-purple-500 mb-1">Fed Cuts</div>
-                <div className="text-sm text-muted-foreground">Imminent Timing</div>
+                <div className="text-sm text-muted-foreground">Strategic Timing</div>
               </div>
             </div>
             
