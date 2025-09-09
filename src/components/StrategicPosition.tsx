@@ -69,7 +69,7 @@ export default function StrategicPosition() {
             <div className="relative overflow-hidden rounded-xl border border-border">
               <img 
                 src="/lovable-uploads/91317bb0-2352-47ce-86ac-450496928ed0.png"
-                alt="Aerial render of proposed industrial development on Military Highway showing warehouses with solar panels and truck access"
+                alt="Aerial render of proposed industrial development on Military Highway showing modern warehouse facilities and truck access"
                 className="w-full h-64 object-cover"
               />
             </div>

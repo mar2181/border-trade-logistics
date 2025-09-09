@@ -15,7 +15,6 @@ export default function LandParcels() {
     capRate: "8.5%",
     yearBuilt: "2019-2021",
     features: [
-      "Solar panels on all buildings",
       "Fully leased to credit tenants", 
       "Class A warehouse facilities",
       "Excellent truck access",
@@ -204,9 +203,9 @@ export default function LandParcels() {
                 <ul className="text-left space-y-2 text-muted-foreground">
                   <li>• Immediate cash flow from day one</li>
                   <li>• Credit tenants with long-term leases</li>
-                  <li>• Solar installations reduce operating costs</li>
                   <li>• Prime Military Highway location</li>
                   <li>• Professional on-site management</li>
+                  <li>• Excellent transportation access</li>
                 </ul>
               </div>
               <div>
