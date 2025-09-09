@@ -6,10 +6,10 @@ export default function ExecutiveSummary() {
           <h2 className="text-4xl font-bold text-primary mb-4">Executive Summary</h2>
           <div className="bg-gradient-to-r from-gold/20 via-accent-emerald/20 to-gold/20 rounded-2xl p-6 mb-8">
             <p className="text-xl text-foreground max-w-4xl mx-auto text-center font-medium">
-              <span className="text-gold font-bold">The Valley's Hidden Gem:</span> A premier $11.89M land portfolio in America's most coveted industrial district
+              <span className="text-gold font-bold">The Valley's Hidden Gem:</span> A premier $12.24M land portfolio in America's most coveted industrial district
             </p>
             <p className="text-lg text-muted-foreground max-w-5xl mx-auto text-center mt-4">
-              37.3 acres of premium shovel-ready parcels on 10th Street, minutes from Dodge Arena in McAllen's dynamic growth market. 
+              44.17 acres of premium shovel-ready parcels on 10th Street, minutes from Dodge Arena in McAllen's dynamic growth market. 
               <span className="text-accent-emerald font-semibold"> Following Fed rate adjustments</span> - position yourself strategically in this 
               <span className="text-gold font-semibold"> compelling market position</span> where savvy investors stay and grow.
             </p>
@@ -21,8 +21,8 @@ export default function ExecutiveSummary() {
             <div>
               <h3 className="text-2xl font-semibold text-primary mb-4">McAllen's Strategic Investment Opportunity</h3>
               <p className="text-muted-foreground leading-relaxed">
-                <strong className="text-accent-emerald">Only 8 properties available</strong> in McAllen's Dodge Arena District. Strategic 10th Street corridor parcels with utilities ready, 
-                zoned industrial, 331,900 SF buildable. The Valley's projected 20-year boom, combined with Fed rate cuts, creates unmatched appreciation potential. 
+                <strong className="text-accent-emerald">Only 9 properties available</strong> in McAllen's Dodge Arena District. Strategic 10th Street corridor parcels with utilities ready, 
+                zoned industrial, 585,530 SF buildable. The Valley's projected 20-year boom, combined with Fed rate cuts, creates unmatched appreciation potential.
                 <strong className="text-gold">This market demonstrates exceptional resilience</strong> amid changing national conditions due to its unique demand drivers and constrained supply.
               </p>
             </div>
@@ -33,7 +33,7 @@ export default function ExecutiveSummary() {
                   <Building className="h-5 w-5 text-gold mr-2" />
                   <span className="text-sm text-muted-foreground">Land Portfolio Value</span>
                 </div>
-                <div className="text-3xl font-bold text-gold">$11.89M</div>
+                <div className="text-3xl font-bold text-gold">$12.24M</div>
               </div>
               <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6">
                 <div className="flex items-center mb-3">
@@ -95,8 +95,8 @@ export default function ExecutiveSummary() {
               <div className="text-sm text-muted-foreground">Rental rate growth signals strong land appreciation potential</div>
             </div>
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center">
-              <div className="text-2xl font-bold text-gold mb-2">331,900 SF</div>
-              <div className="text-sm text-muted-foreground">Total buildable area across 37.3 premium acres - only 8 properties left</div>
+                <div className="text-2xl font-bold text-gold mb-2">585,530 SF</div>
+              <div className="text-sm text-muted-foreground">Total buildable area across 44.17 premium acres - only 9 properties left</div>
             </div>
           </div>
         </div>

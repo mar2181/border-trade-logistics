@@ -131,12 +131,33 @@ export default function IndividualLots() {
     },
     {
       id: 7,
-      name: "Lot 7 - Flagship Development Opportunity",
+      name: "Lot 7 - Compact Development Site",
+      acres: 3.13,
+      warehouseSF: 38160,
+      investment: 939000,
+      pricePerAcre: 300000,
+      position: "Efficient small-scale development, specialized use potential",
+      dryWarehouse: {
+        constructionCost: 4579200,
+        totalInvestment: 5518200,
+        annualNOI: 477000,
+        roi: 8.7
+      },
+      refrigerated: {
+        constructionCost: 8013600,
+        totalInvestment: 8952600,
+        annualNOI: 686880,
+        roi: 7.6
+      }
+    },
+    {
+      id: 8,
+      name: "Lot 8 - Flagship Development Opportunity", 
       acres: 7.18,
       warehouseSF: 103350,
       investment: 2154000,
       pricePerAcre: 300000,
-      position: "Largest development lot, premium positioning for anchor tenant",
+      position: "Large development lot, premium positioning for anchor tenant",
       dryWarehouse: {
         constructionCost: 12402000,
         totalInvestment: 14556000,
@@ -151,24 +172,24 @@ export default function IndividualLots() {
       }
     },
     {
-      id: 8,
-      name: "Lot 8 - Entry-Level Investment",
+      id: 9,
+      name: "Lot 9 - Strategic Corner Position",
       acres: 3.13,
       warehouseSF: 38160,
-      investment: 939000,
-      pricePerAcre: 300000,
-      position: "Smallest investment requirement, specialized use potential",
+      investment: 829450,
+      pricePerAcre: 265000,
+      position: "Corner positioning with excellent visibility and access",
       dryWarehouse: {
         constructionCost: 4579200,
-        totalInvestment: 5518200,
+        totalInvestment: 5408650,
         annualNOI: 477000,
-        roi: 8.7
+        roi: 8.8
       },
       refrigerated: {
         constructionCost: 8013600,
-        totalInvestment: 8952600,
+        totalInvestment: 8843050,
         annualNOI: 686880,
-        roi: 7.6
+        roi: 7.8
       }
     }
   ];
@@ -186,7 +207,7 @@ export default function IndividualLots() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-primary mb-4">Individual Lot Analysis</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-            8 strategically positioned lots at 10th Street & Military Highway intersection, McAllen, Texas
+            9 strategically positioned lots at 10th Street & Military Highway intersection, McAllen, Texas
           </p>
           
           <div className="grid md:grid-cols-4 gap-6 mb-8">

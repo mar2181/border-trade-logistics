@@ -7,7 +7,7 @@ export default function LandParcels() {
     location: "10th Street & Military Highway, McAllen, TX",
     totalInvestment: "$12.24M",
     totalAcres: "44.17",
-    buildingCount: "8 Lots",
+    buildingCount: "9 Lots",
     totalLeasableSF: "585,530",
     occupancyRate: "Development Ready",
     avgRent: "Shovel-Ready",
