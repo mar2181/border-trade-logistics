@@ -71,18 +71,18 @@ export default function IndividualLots() {
       name: "Lot 4 - Distribution Hub Potential",
       acres: 6.12,
       warehouseSF: 80000,
-      investment: 1621800,
+      investment: 1619150,
       pricePerAcre: 265000,
       position: "Prime for cross-dock operations, regional distribution center",
       dryWarehouse: {
         constructionCost: 9600000,
-        totalInvestment: 11221800,
+        totalInvestment: 11219150,
         annualNOI: 1000000,
         roi: 8.9
       },
       refrigerated: {
         constructionCost: 16800000,
-        totalInvestment: 18421800,
+        totalInvestment: 18419150,
         annualNOI: 1440000,
         roi: 7.8
       }
@@ -111,16 +111,37 @@ export default function IndividualLots() {
     {
       id: 6,
       name: "Lot 6 - Value Investment Position",
+      acres: 5.79,
+      warehouseSF: 80000,
+      investment: 1534350,
+      pricePerAcre: 265000,
+      position: "Strong development density, excellent ROI potential",
+      dryWarehouse: {
+        constructionCost: 9600000,
+        totalInvestment: 11134350,
+        annualNOI: 1000000,
+        roi: 9.0
+      },
+      refrigerated: {
+        constructionCost: 16800000,
+        totalInvestment: 18334350,
+        annualNOI: 1440000,
+        roi: 7.9
+      }
+    },
+    {
+      id: 7,
+      name: "Lot 7 - Premium Development Site",
       acres: 7.18,
       warehouseSF: 103350,
       investment: 2154000,
       pricePerAcre: 300000,
-      position: "Strong development density, excellent ROI potential",
+      position: "Large development capacity with premium positioning",
       dryWarehouse: {
         constructionCost: 12402000,
         totalInvestment: 14556000,
         annualNOI: 1291875,
-        roi: 8.8
+        roi: 8.9
       },
       refrigerated: {
         constructionCost: 21703500,
@@ -130,75 +151,33 @@ export default function IndividualLots() {
       }
     },
     {
-      id: 7,
-      name: "Lot 7 - Compact Development Site",
-      acres: 3.13,
-      warehouseSF: 38160,
-      investment: 1534350,
-      pricePerAcre: 490175,
-      position: "Efficient small-scale development, specialized use potential",
-      dryWarehouse: {
-        constructionCost: 4579200,
-        totalInvestment: 6113550,
-        annualNOI: 477000,
-        roi: 7.8
-      },
-      refrigerated: {
-        constructionCost: 8013600,
-        totalInvestment: 9547950,
-        annualNOI: 686880,
-        roi: 7.2
-      }
-    },
-    {
       id: 8,
-      name: "Lot 8 - Flagship Development Opportunity", 
+      name: "Lot 8 - Compact Development Opportunity", 
       acres: 3.13,
       warehouseSF: 38160,
-      investment: 829450,
-      pricePerAcre: 265000,
-      position: "Large development lot, premium positioning for anchor tenant",
+      investment: 939000,
+      pricePerAcre: 300000,
+      position: "Efficient development site with premium positioning",
       dryWarehouse: {
         constructionCost: 4579200,
-        totalInvestment: 5408650,
+        totalInvestment: 5518200,
         annualNOI: 477000,
-        roi: 8.8
+        roi: 8.6
       },
       refrigerated: {
         constructionCost: 8013600,
-        totalInvestment: 8843050,
+        totalInvestment: 8952600,
         annualNOI: 686880,
-        roi: 7.8
-      }
-    },
-    {
-      id: 9,
-      name: "Lot 9 - Strategic Corner Position",
-      acres: 3.13,
-      warehouseSF: 38160,
-      investment: 829450,
-      pricePerAcre: 265000,
-      position: "Corner positioning with excellent visibility and access",
-      dryWarehouse: {
-        constructionCost: 4579200,
-        totalInvestment: 5408650,
-        annualNOI: 477000,
-        roi: 8.8
-      },
-      refrigerated: {
-        constructionCost: 8013600,
-        totalInvestment: 8843050,
-        annualNOI: 686880,
-        roi: 7.8
+        roi: 7.7
       }
     }
   ];
 
   const portfolioSummary = {
-    totalAcres: 44.64,
+    totalAcres: 44.17,
     totalWarehouseSF: 585530,
-    totalLandInvestment: 12962200,
-    avgPricePerAcre: 290000
+    totalLandInvestment: 12242300,
+    avgPricePerAcre: 277163
   };
 
   return (
@@ -207,7 +186,7 @@ export default function IndividualLots() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-primary mb-4">Individual Lot Analysis</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-            9 strategically positioned lots at 10th Street & Military Highway intersection, McAllen, Texas
+            8 strategically positioned lots at 10th Street & Military Highway intersection, McAllen, Texas
           </p>
           
           <div className="grid md:grid-cols-4 gap-6 mb-8">
@@ -327,7 +306,7 @@ export default function IndividualLots() {
                 <p className="text-sm text-muted-foreground mb-4">
                   Lower initial capital requirement with 8-12% annual appreciation potential
                 </p>
-                <div className="text-2xl font-bold text-gold">${(12962200 / 1000000).toFixed(2)}M</div>
+                <div className="text-2xl font-bold text-gold">${(12242300 / 1000000).toFixed(2)}M</div>
                 <div className="text-xs text-muted-foreground">Portfolio Investment</div>
               </div>
               <div className="p-6 bg-background/50 rounded-lg border border-border">

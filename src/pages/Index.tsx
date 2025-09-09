@@ -104,7 +104,7 @@ const Index = () => {
                 <span className="block text-gold">Industrial Land Opportunities</span>
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-gray-200 max-w-2xl leading-relaxed">
-                Only 9 premium properties left in McAllen's coveted Dodge Arena District on 10th Street. The Valley is America's hidden gem - 
+                Only 8 premium properties left in McAllen's coveted Dodge Arena District on 10th Street. The Valley is America's hidden gem - 
                 those who invest here stay and grow. Following Fed rate adjustments, this presents strategic timing for positioned investors.
               </p>
             </div>
@@ -130,7 +130,7 @@ const Index = () => {
                 <div className="text-xs text-gray-300">Per Acre Pricing</div>
               </div>
               <div className="text-center bg-black/20 rounded-lg p-2 sm:p-3 backdrop-blur-sm">
-                <div className="text-lg sm:text-xl lg:text-2xl font-bold text-accent-amber">9 Properties</div>
+                <div className="text-lg sm:text-xl lg:text-2xl font-bold text-accent-amber">8 Properties</div>
                 <div className="text-xs text-gray-300">Only Remaining</div>
               </div>
             </div>
@@ -168,7 +168,7 @@ const Index = () => {
                     <div className="text-xs text-gray-900">Annual Land Appreciation</div>
                   </div>
                   <div className="text-center p-3 sm:p-4 bg-gray-50 rounded-lg">
-                    <div className="text-xl sm:text-2xl font-bold text-accent-sapphire">$12.96M</div>
+                    <div className="text-xl sm:text-2xl font-bold text-accent-sapphire">$12.24M</div>
                     <div className="text-xs text-gray-900">Total Land Value</div>
                   </div>
                 </div>
@@ -176,11 +176,11 @@ const Index = () => {
                   <div className="space-y-2 sm:space-y-3">
                   <div className="flex justify-between items-center">
                     <span className="text-muted-foreground text-sm">Land Portfolio:</span>
-                    <span className="font-bold text-primary text-sm">$12.96M Total</span>
+                    <span className="font-bold text-primary text-sm">$12.24M Total</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-muted-foreground text-sm">Total Acres:</span>
-                    <span className="font-bold text-primary text-sm">44.64 Acres</span>
+                    <span className="font-bold text-primary text-sm">44.17 Acres</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-muted-foreground text-sm">Buildable SF:</span>
