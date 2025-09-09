@@ -152,7 +152,7 @@ const Index = () => {
             <div className="bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-white/20 overflow-hidden max-w-md mx-auto">
               {/* Card Header with Image */}
               <div className="relative h-36 sm:h-48 overflow-hidden">
-                <img src="/lovable-uploads/8b288e5c-4ba2-4340-8eb9-f8e6d81d2ffb.png" alt="Modern warehouse facility" className="w-full h-full object-cover" />
+                <img src="/lovable-uploads/d6effb3b-46b7-41a2-bcf6-897a9536d8f7.png" alt="MCC Industrial Park at sunset" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4">
                   <h3 className="text-white text-lg sm:text-xl font-bold">Land Investment</h3>
