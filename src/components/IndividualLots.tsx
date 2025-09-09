@@ -111,53 +111,11 @@ export default function IndividualLots() {
     {
       id: 6,
       name: "Lot 6 - Value Investment Position",
-      acres: 5.79,
-      warehouseSF: 80000,
-      investment: 1534350,
-      pricePerAcre: 265000,
-      position: "Strong development density, excellent ROI potential",
-      dryWarehouse: {
-        constructionCost: 9600000,
-        totalInvestment: 11134350,
-        annualNOI: 1000000,
-        roi: 9.0
-      },
-      refrigerated: {
-        constructionCost: 16800000,
-        totalInvestment: 18334350,
-        annualNOI: 1440000,
-        roi: 7.9
-      }
-    },
-    {
-      id: 7,
-      name: "Lot 7 - Compact Development Site",
-      acres: 3.13,
-      warehouseSF: 38160,
-      investment: 939000,
-      pricePerAcre: 300000,
-      position: "Efficient small-scale development, specialized use potential",
-      dryWarehouse: {
-        constructionCost: 4579200,
-        totalInvestment: 5518200,
-        annualNOI: 477000,
-        roi: 8.7
-      },
-      refrigerated: {
-        constructionCost: 8013600,
-        totalInvestment: 8952600,
-        annualNOI: 686880,
-        roi: 7.6
-      }
-    },
-    {
-      id: 8,
-      name: "Lot 8 - Flagship Development Opportunity", 
       acres: 7.18,
       warehouseSF: 103350,
       investment: 2154000,
       pricePerAcre: 300000,
-      position: "Large development lot, premium positioning for anchor tenant",
+      position: "Strong development density, excellent ROI potential",
       dryWarehouse: {
         constructionCost: 12402000,
         totalInvestment: 14556000,
@@ -168,6 +126,48 @@ export default function IndividualLots() {
         constructionCost: 21703500,
         totalInvestment: 23857500,
         annualNOI: 1860300,
+        roi: 7.8
+      }
+    },
+    {
+      id: 7,
+      name: "Lot 7 - Compact Development Site",
+      acres: 3.13,
+      warehouseSF: 38160,
+      investment: 1534350,
+      pricePerAcre: 490175,
+      position: "Efficient small-scale development, specialized use potential",
+      dryWarehouse: {
+        constructionCost: 4579200,
+        totalInvestment: 6113550,
+        annualNOI: 477000,
+        roi: 7.8
+      },
+      refrigerated: {
+        constructionCost: 8013600,
+        totalInvestment: 9547950,
+        annualNOI: 686880,
+        roi: 7.2
+      }
+    },
+    {
+      id: 8,
+      name: "Lot 8 - Flagship Development Opportunity", 
+      acres: 3.13,
+      warehouseSF: 38160,
+      investment: 829450,
+      pricePerAcre: 265000,
+      position: "Large development lot, premium positioning for anchor tenant",
+      dryWarehouse: {
+        constructionCost: 4579200,
+        totalInvestment: 5408650,
+        annualNOI: 477000,
+        roi: 8.8
+      },
+      refrigerated: {
+        constructionCost: 8013600,
+        totalInvestment: 8843050,
+        annualNOI: 686880,
         roi: 7.8
       }
     },
@@ -195,10 +195,10 @@ export default function IndividualLots() {
   ];
 
   const portfolioSummary = {
-    totalAcres: 44.17,
+    totalAcres: 44.64,
     totalWarehouseSF: 585530,
-    totalLandInvestment: 12242300,
-    avgPricePerAcre: 277000
+    totalLandInvestment: 12962200,
+    avgPricePerAcre: 290000
   };
 
   return (
@@ -327,7 +327,7 @@ export default function IndividualLots() {
                 <p className="text-sm text-muted-foreground mb-4">
                   Lower initial capital requirement with 8-12% annual appreciation potential
                 </p>
-                <div className="text-2xl font-bold text-gold">${(portfolioSummary.totalLandInvestment / 1000000).toFixed(2)}M</div>
+                <div className="text-2xl font-bold text-gold">${(12962200 / 1000000).toFixed(2)}M</div>
                 <div className="text-xs text-muted-foreground">Portfolio Investment</div>
               </div>
               <div className="p-6 bg-background/50 rounded-lg border border-border">

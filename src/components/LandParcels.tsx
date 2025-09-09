@@ -5,8 +5,8 @@ export default function LandParcels() {
   const industrialPark = {
     name: "MCC Industrial Park",
     location: "10th Street & Military Highway, McAllen, TX",
-    totalInvestment: "$12.24M",
-    totalAcres: "44.17",
+    totalInvestment: "$12.96M",
+    totalAcres: "44.64",
     buildingCount: "9 Lots",
     totalLeasableSF: "585,530",
     occupancyRate: "Development Ready",
@@ -31,10 +31,10 @@ export default function LandParcels() {
   };
 
   const keyMetrics = {
-    totalValue: "$12.24M",
+    totalValue: "$12.96M",
     cashFlow: "585,530 SF",
-    capRate: "$277K Avg",
-    occupancy: "44.17 Acres"
+    capRate: "$290K Avg",
+    occupancy: "44.64 Acres"
   };
 
   return (
