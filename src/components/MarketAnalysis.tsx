@@ -68,7 +68,7 @@ export default function MarketAnalysis() {
                     width: '13%'
                   }}></div>
                   </div>
-                  <span className="text-sm text-gold font-semibold">3.9%</span>
+                  <span className="text-sm text-gold font-semibold">3%</span>
                 </div>
               </div>
             </div>
@@ -118,7 +118,7 @@ export default function MarketAnalysis() {
           </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-amber-500/10 transition-all duration-300">
             <ArrowUp className="h-8 w-8 text-amber-500 mx-auto mb-3" />
-            <div className="text-2xl font-bold text-amber-500 mb-2">37.3 Acres</div>
+            <div className="text-2xl font-bold text-amber-500 mb-2">42 Acres</div>
             <div className="text-sm text-muted-foreground">Only 8 Properties Left - Dodge Arena District's last premium opportunities</div>
           </div>
         </div>
