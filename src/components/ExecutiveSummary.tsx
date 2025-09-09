@@ -1,8 +1,6 @@
 import { Building, MapPin, Clock } from "lucide-react";
-
 export default function ExecutiveSummary() {
-  return (
-    <section className="py-16 px-6">
+  return <section className="py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-primary mb-4">Executive Summary</h2>
@@ -51,10 +49,10 @@ export default function ExecutiveSummary() {
             <div>
               <h3 className="text-2xl font-semibold text-primary mb-4">The Valley Advantage - America's Hidden Gem</h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                • <strong className="text-gold">Dodge Arena District:</strong> Premium corner location on 10th Street with new road development<br/>
-                • <strong className="text-accent-emerald">900K+ Metro Population:</strong> McAllen rivals El Paso size with strong growth trajectory<br/>
-                • <strong className="text-accent-sapphire">Refrigerated Industry Boom:</strong> Heart of produce alley with surging demand<br/>
-                • <strong className="text-gold">Fed Rate Cut Timing:</strong> Perfect storm for development financing and appreciation<br/>
+                • <strong className="text-gold">Dodge Arena District:</strong> Premium corner location on 10th Street with new road development<br />
+                • <strong className="text-accent-emerald">900K+ Metro Population:</strong> McAllen rivals El Paso size with strong growth trajectory<br />
+                • <strong className="text-accent-sapphire">Refrigerated Industry Boom:</strong> Heart of produce alley with surging demand<br />
+                • <strong className="text-gold">Fed Rate Cut Timing:</strong> Perfect storm for development financing and appreciation<br />
                 • <strong className="text-accent-emerald">Market Resilience:</strong> Valley growth fundamentals provide stability amid changing national conditions
               </p>
               
@@ -75,11 +73,7 @@ export default function ExecutiveSummary() {
               </p>
 
               <div className="relative overflow-hidden rounded-xl border border-border">
-                <img 
-                  src="/lovable-uploads/3e9cf4b0-cd02-4374-a49b-8642655e444f.png" 
-                  alt="Modern office space in warehouse development" 
-                  className="w-full h-64 object-cover"
-                />
+                <img src="/lovable-uploads/3e9cf4b0-cd02-4374-a49b-8642655e444f.png" alt="Modern office space in warehouse development" className="w-full h-64 object-cover" />
               </div>
             </div>
           </div>
@@ -89,7 +83,7 @@ export default function ExecutiveSummary() {
           <h3 className="text-2xl font-semibold text-primary mb-8 text-center">Key Land Investment Highlights</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center">
-              <div className="text-2xl font-bold text-gold mb-2">3.9%</div>
+              <div className="text-2xl font-bold text-gold mb-2">3%</div>
               <div className="text-sm text-muted-foreground">Market vacancy (3Q24) supports stable occupancy in established market</div>
             </div>
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center">
@@ -107,6 +101,5 @@ export default function ExecutiveSummary() {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }

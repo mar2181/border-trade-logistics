@@ -18,37 +18,34 @@ import MobileNavigation from "@/components/MobileNavigation";
 import VideoCarousel from "@/components/VideoCarousel";
 import InvestmentTabs from "@/components/InvestmentTabs";
 import PropertySpecifications from "@/components/PropertySpecifications";
-
 const Index = () => {
   const handleMobileNavigation = (action: string) => {
     if (action === 'dry') {
-      document.getElementById('investment-comparison')?.scrollIntoView({ behavior: 'smooth' });
+      document.getElementById('investment-comparison')?.scrollIntoView({
+        behavior: 'smooth'
+      });
       setTimeout(() => {
         const dryTab = document.querySelector('[value="dry-warehouse"]') as HTMLElement;
         if (dryTab) dryTab.click();
       }, 500);
     } else if (action === 'refrigerated') {
-      document.getElementById('investment-comparison')?.scrollIntoView({ behavior: 'smooth' });
+      document.getElementById('investment-comparison')?.scrollIntoView({
+        behavior: 'smooth'
+      });
       setTimeout(() => {
         const refTab = document.querySelector('[value="refrigerated-warehouse"]') as HTMLElement;
         if (refTab) refTab.click();
       }, 500);
     }
   };
-
-  return (
-    <div className="min-h-screen bg-background text-foreground">
+  return <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3 sm:space-x-4">
               <div className="flex items-center space-x-2 sm:space-x-3">
-                <img 
-                  src="/lovable-uploads/86c0cf99-26fd-48bd-9d8a-d0c791fcbf83.png" 
-                  alt="RE/MAX Commercial" 
-                  className="h-6 sm:h-8"
-                />
+                <img src="/lovable-uploads/86c0cf99-26fd-48bd-9d8a-d0c791fcbf83.png" alt="RE/MAX Commercial" className="h-6 sm:h-8" />
                 <Building className="w-5 h-5 sm:w-6 sm:h-6 text-gold" />
                 <span className="text-lg sm:text-xl font-bold text-primary-foreground">Industrial Land</span>
               </div>
@@ -70,11 +67,7 @@ const Index = () => {
                 <span>(956) 522-1481</span>
               </div>
               
-              <a 
-                href="tel:(956)522-1481"
-                className="sm:hidden flex items-center justify-center w-8 h-8 bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors"
-                aria-label="Call now"
-              >
+              <a href="tel:(956)522-1481" className="sm:hidden flex items-center justify-center w-8 h-8 bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors" aria-label="Call now">
                 <Phone className="w-4 h-4" />
               </a>
               
@@ -88,11 +81,7 @@ const Index = () => {
       <section className="relative min-h-[80vh] sm:min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
-          <img 
-            src={heroSunsetHighway} 
-            alt="Sunset highway background" 
-            className="w-full h-full object-cover"
-          />
+          <img src={heroSunsetHighway} alt="Sunset highway background" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30" />
         </div>
@@ -127,7 +116,7 @@ const Index = () => {
 
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
               <div className="text-center bg-black/20 rounded-lg p-2 sm:p-3 backdrop-blur-sm">
-                <div className="text-lg sm:text-xl lg:text-2xl font-bold text-gold">3.9%</div>
+                <div className="text-lg sm:text-xl lg:text-2xl font-bold text-gold">3%</div>
                 <div className="text-xs text-gray-300">Market Vacancy (3Q24)</div>
               </div>
               <div className="text-center bg-black/20 rounded-lg p-2 sm:p-3 backdrop-blur-sm">
@@ -161,11 +150,7 @@ const Index = () => {
             <div className="bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-white/20 overflow-hidden max-w-md mx-auto">
               {/* Card Header with Image */}
               <div className="relative h-36 sm:h-48 overflow-hidden">
-                <img 
-                  src="/lovable-uploads/8b288e5c-4ba2-4340-8eb9-f8e6d81d2ffb.png" 
-                  alt="Modern warehouse facility" 
-                  className="w-full h-full object-cover"
-                />
+                <img src="/lovable-uploads/8b288e5c-4ba2-4340-8eb9-f8e6d81d2ffb.png" alt="Modern warehouse facility" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4">
                   <h3 className="text-white text-lg sm:text-xl font-bold">Land Investment</h3>
@@ -204,21 +189,13 @@ const Index = () => {
                 <div className="pt-3 sm:pt-4 border-t border-gray-200">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-2 sm:space-x-3">
-                      <img 
-                        src="/lovable-uploads/6f3fa122-bcae-43f0-bdac-141ce2b74e76.png" 
-                        alt="Investment Agent" 
-                        className="w-8 h-8 sm:w-10 sm:h-10 rounded-full object-cover"
-                      />
+                      <img src="/lovable-uploads/6f3fa122-bcae-43f0-bdac-141ce2b74e76.png" alt="Investment Agent" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full object-cover" />
                       <div>
                         <div className="text-xs sm:text-sm font-semibold text-foreground">Investment Specialist</div>
                         <div className="text-xs text-muted-foreground">RE/MAX Commercial</div>
                       </div>
                     </div>
-                    <img 
-                      src="/lovable-uploads/a8412600-74ab-454d-ab80-6da0e46ef31b.png" 
-                      alt="RE/MAX" 
-                      className="w-6 h-6 sm:w-8 sm:h-8"
-                    />
+                    <img src="/lovable-uploads/a8412600-74ab-454d-ab80-6da0e46ef31b.png" alt="RE/MAX" className="w-6 h-6 sm:w-8 sm:h-8" />
                   </div>
                 </div>
               </div>
@@ -240,8 +217,6 @@ const Index = () => {
       <MarketDataSources />
       <RiskAnalysis />
       <InvestmentProcess />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
