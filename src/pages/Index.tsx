@@ -126,7 +126,7 @@ const Index = () => {
                 <div className="text-xs text-gray-300">TX Produce Imports</div>
               </div>
               <div className="text-center bg-black/20 rounded-lg p-2 sm:p-3 backdrop-blur-sm">
-                <div className="text-lg sm:text-xl lg:text-2xl font-bold text-accent-sapphire">$250-300K</div>
+                <div className="text-lg sm:text-xl lg:text-2xl font-bold text-accent-sapphire">$265-300K</div>
                 <div className="text-xs text-gray-300">Per Acre Pricing</div>
               </div>
               <div className="text-center bg-black/20 rounded-lg p-2 sm:p-3 backdrop-blur-sm">
