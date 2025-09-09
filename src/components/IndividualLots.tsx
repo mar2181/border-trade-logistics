@@ -211,83 +211,83 @@ export default function IndividualLots() {
 
         <div className="grid gap-8">
           {lots.map((lot) => (
-            <Card key={lot.id} className="bg-card/50 backdrop-blur-sm border border-border">
+            <Card key={lot.id} className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-border/60 hover:border-gold/30 hover:shadow-xl hover:shadow-gold/10 transition-all duration-300 group">
               <CardHeader>
                 <div className="flex justify-between items-start">
                   <div>
-                    <CardTitle className="text-xl text-primary mb-2">{lot.name}</CardTitle>
+                    <CardTitle className="text-xl text-primary mb-2 group-hover:text-gold transition-colors duration-300">{lot.name}</CardTitle>
                     <p className="text-muted-foreground">{lot.position}</p>
                   </div>
                   <div className="text-right">
-                    <div className="text-2xl font-bold text-gold">${(lot.investment / 1000000).toFixed(2)}M</div>
+                    <div className="text-2xl font-bold text-gold group-hover:text-gold/90 transition-colors duration-300">${(lot.investment / 1000000).toFixed(2)}M</div>
                     <div className="text-sm text-muted-foreground">Land Investment</div>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-                  <div className="text-center p-4 bg-muted/30 rounded-lg">
+                  <div className="text-center p-4 bg-gradient-to-br from-gold/10 to-gold/5 rounded-lg border border-gold/20 hover:from-gold/20 hover:to-gold/10 transition-all duration-300">
                     <MapPin className="h-6 w-6 text-gold mx-auto mb-2" />
                     <div className="text-lg font-bold text-foreground">{lot.acres} acres</div>
-                    <div className="text-xs text-muted-foreground">${(lot.pricePerAcre / 1000).toFixed(0)}K/acre</div>
+                    <div className="text-xs text-gold/80 font-medium">${(lot.pricePerAcre / 1000).toFixed(0)}K/acre</div>
                   </div>
-                  <div className="text-center p-4 bg-muted/30 rounded-lg">
+                  <div className="text-center p-4 bg-gradient-to-br from-emerald-500/10 to-emerald-500/5 rounded-lg border border-emerald-500/20 hover:from-emerald-500/20 hover:to-emerald-500/10 transition-all duration-300">
                     <Building className="h-6 w-6 text-emerald-500 mx-auto mb-2" />
                     <div className="text-lg font-bold text-foreground">{lot.warehouseSF.toLocaleString()}</div>
-                    <div className="text-xs text-muted-foreground">Buildable SF</div>
+                    <div className="text-xs text-emerald-600 font-medium">Buildable SF</div>
                   </div>
-                  <div className="text-center p-4 bg-muted/30 rounded-lg">
+                  <div className="text-center p-4 bg-gradient-to-br from-blue-500/10 to-blue-500/5 rounded-lg border border-blue-500/20 hover:from-blue-500/20 hover:to-blue-500/10 transition-all duration-300">
                     <Calculator className="h-6 w-6 text-blue-500 mx-auto mb-2" />
                     <div className="text-lg font-bold text-foreground">{lot.dryWarehouse.roi}%</div>
-                    <div className="text-xs text-muted-foreground">Dry Warehouse ROI</div>
+                    <div className="text-xs text-blue-600 font-medium">Dry Warehouse ROI</div>
                   </div>
-                  <div className="text-center p-4 bg-muted/30 rounded-lg">
+                  <div className="text-center p-4 bg-gradient-to-br from-cyan-500/10 to-cyan-500/5 rounded-lg border border-cyan-500/20 hover:from-cyan-500/20 hover:to-cyan-500/10 transition-all duration-300">
                     <TrendingUp className="h-6 w-6 text-cyan-500 mx-auto mb-2" />
                     <div className="text-lg font-bold text-foreground">{lot.refrigerated.roi}%</div>
-                    <div className="text-xs text-muted-foreground">Refrigerated ROI</div>
+                    <div className="text-xs text-cyan-600 font-medium">Refrigerated ROI</div>
                   </div>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-4">
-                  <div className="p-4 bg-blue-50 dark:bg-blue-500/10 rounded-lg">
-                    <h4 className="font-semibold text-blue-700 dark:text-blue-400 mb-2">Dry Warehouse Development</h4>
-                    <div className="space-y-1 text-sm">
-                      <div className="flex justify-between">
+                  <div className="p-4 bg-gradient-to-br from-blue-500/20 to-blue-500/5 rounded-lg border border-blue-500/30 hover:from-blue-500/30 hover:to-blue-500/10 transition-all duration-300">
+                    <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-3 text-base">Dry Warehouse Development</h4>
+                    <div className="space-y-2 text-sm">
+                      <div className="flex justify-between items-center">
                         <span className="text-muted-foreground">Construction Cost:</span>
-                        <span className="font-medium">${(lot.dryWarehouse.constructionCost / 1000000).toFixed(2)}M</span>
+                        <span className="font-bold text-orange-500 text-base">${(lot.dryWarehouse.constructionCost / 1000000).toFixed(2)}M</span>
                       </div>
-                      <div className="flex justify-between">
+                      <div className="flex justify-between items-center">
                         <span className="text-muted-foreground">Total Investment:</span>
-                        <span className="font-medium">${(lot.dryWarehouse.totalInvestment / 1000000).toFixed(2)}M</span>
+                        <span className="font-bold text-amber-500 text-base">${(lot.dryWarehouse.totalInvestment / 1000000).toFixed(2)}M</span>
                       </div>
-                      <div className="flex justify-between">
+                      <div className="flex justify-between items-center">
                         <span className="text-muted-foreground">Annual NOI:</span>
-                        <span className="font-medium text-emerald-600">${(lot.dryWarehouse.annualNOI / 1000).toFixed(0)}K</span>
+                        <span className="font-bold text-emerald-500 text-base">${(lot.dryWarehouse.annualNOI / 1000).toFixed(0)}K</span>
                       </div>
-                      <div className="flex justify-between pt-2 border-t border-border">
-                        <span className="text-muted-foreground">Projected ROI:</span>
-                        <span className="font-bold text-blue-600">{lot.dryWarehouse.roi}%</span>
+                      <div className="flex justify-between items-center pt-2 border-t border-blue-500/20">
+                        <span className="text-foreground font-medium">Projected ROI:</span>
+                        <span className="font-bold text-blue-500 text-lg">{lot.dryWarehouse.roi}%</span>
                       </div>
                     </div>
                   </div>
-                  <div className="p-4 bg-cyan-50 dark:bg-cyan-500/10 rounded-lg">
-                    <h4 className="font-semibold text-cyan-700 dark:text-cyan-400 mb-2">Refrigerated Development</h4>
-                    <div className="space-y-1 text-sm">
-                      <div className="flex justify-between">
+                  <div className="p-4 bg-gradient-to-br from-cyan-500/20 to-cyan-500/5 rounded-lg border border-cyan-500/30 hover:from-cyan-500/30 hover:to-cyan-500/10 transition-all duration-300">
+                    <h4 className="font-semibold text-cyan-600 dark:text-cyan-400 mb-3 text-base">Refrigerated Development</h4>
+                    <div className="space-y-2 text-sm">
+                      <div className="flex justify-between items-center">
                         <span className="text-muted-foreground">Construction Cost:</span>
-                        <span className="font-medium">${(lot.refrigerated.constructionCost / 1000000).toFixed(2)}M</span>
+                        <span className="font-bold text-orange-500 text-base">${(lot.refrigerated.constructionCost / 1000000).toFixed(2)}M</span>
                       </div>
-                      <div className="flex justify-between">
+                      <div className="flex justify-between items-center">
                         <span className="text-muted-foreground">Total Investment:</span>
-                        <span className="font-medium">${(lot.refrigerated.totalInvestment / 1000000).toFixed(2)}M</span>
+                        <span className="font-bold text-amber-500 text-base">${(lot.refrigerated.totalInvestment / 1000000).toFixed(2)}M</span>
                       </div>
-                      <div className="flex justify-between">
+                      <div className="flex justify-between items-center">
                         <span className="text-muted-foreground">Annual NOI:</span>
-                        <span className="font-medium text-emerald-600">${(lot.refrigerated.annualNOI / 1000).toFixed(0)}K</span>
+                        <span className="font-bold text-emerald-500 text-base">${(lot.refrigerated.annualNOI / 1000).toFixed(0)}K</span>
                       </div>
-                      <div className="flex justify-between pt-2 border-t border-border">
-                        <span className="text-muted-foreground">Projected ROI:</span>
-                        <span className="font-bold text-cyan-600">{lot.refrigerated.roi}%</span>
+                      <div className="flex justify-between items-center pt-2 border-t border-cyan-500/20">
+                        <span className="text-foreground font-medium">Projected ROI:</span>
+                        <span className="font-bold text-cyan-500 text-lg">{lot.refrigerated.roi}%</span>
                       </div>
                     </div>
                   </div>
