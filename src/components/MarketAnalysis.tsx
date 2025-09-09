@@ -30,7 +30,7 @@ export default function MarketAnalysis() {
           <div>
             <h3 className="text-2xl font-semibold text-primary mb-6">The Valley's Dynamic Market Transformation</h3>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              <strong className="text-gold">McAllen MSA Market Dynamics:</strong> Recent third-party reads show McAllen industrial vacancy around 3.9% (3Q24) with LTM rent growth ~1.9%–2.5%. 
+              <strong className="text-gold">McAllen MSA Market Dynamics:</strong> Recent third-party reads show McAllen industrial vacancy around 3% (3Q24) with LTM rent growth ~1.9%–2.5%. 
               Q2-2025 asking rents averaged $8.43/SF amid &gt;1.3M SF under construction (CBRE Q2-2025). 
               <strong className="text-accent-emerald">The Valley demonstrates consistent growth supported by cross-border trade</strong> with proven logistics demand patterns.
             </p>
@@ -53,7 +53,7 @@ export default function MarketAnalysis() {
                   <div className="flex-1 mx-4 bg-muted-foreground/20 rounded-full h-2">
                     <div className="bg-gold h-2 rounded-full" style={{ width: '13%' }}></div>
                   </div>
-                  <span className="text-sm text-gold font-semibold">3.9%</span>
+                  <span className="text-sm text-gold font-semibold">3%</span>
                 </div>
               </div>
             </div>
