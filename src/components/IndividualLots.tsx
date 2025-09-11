@@ -131,44 +131,44 @@ export default function IndividualLots() {
     },
     {
       id: 7,
-      name: "Lot 7 - Premium Development Site",
-      acres: 7.18,
+      name: "Lot 7 - High-Density Development Site",
+      acres: 3.13,
       warehouseSF: 103350,
-      investment: 2154000,
+      investment: 939000,
       pricePerAcre: 300000,
-      position: "Large development capacity with premium positioning",
+      position: "Compact site with exceptional development density potential",
       dryWarehouse: {
         constructionCost: 12402000,
-        totalInvestment: 14556000,
+        totalInvestment: 13341000,
         annualNOI: 1291875,
-        roi: 8.9
+        roi: 9.7
       },
       refrigerated: {
         constructionCost: 21703500,
-        totalInvestment: 23857500,
+        totalInvestment: 22642500,
         annualNOI: 2015325,
-        roi: 8.4
+        roi: 8.9
       }
     },
     {
       id: 8,
-      name: "Lot 8 - Compact Development Opportunity", 
-      acres: 3.13,
+      name: "Lot 8 - Premium Large Development Opportunity", 
+      acres: 7.18,
       warehouseSF: 38160,
-      investment: 939000,
+      investment: 2154000,
       pricePerAcre: 300000,
-      position: "Efficient development site with premium positioning",
+      position: "Large acreage site ideal for future expansion and development",
       dryWarehouse: {
         constructionCost: 4579200,
-        totalInvestment: 5518200,
+        totalInvestment: 6733200,
         annualNOI: 477000,
-        roi: 8.6
+        roi: 7.1
       },
       refrigerated: {
         constructionCost: 8013600,
-        totalInvestment: 8952600,
+        totalInvestment: 10167600,
         annualNOI: 744120,
-        roi: 8.3
+        roi: 7.3
       }
     }
   ];

@@ -113,25 +113,25 @@ export default function PropertySpecifications() {
       id: "07", 
       type: "Premium",
       location: "10th St & Military Hwy, McAllen Industrial District",
-      acres: 7.18, // CORRECTED - was showing 3.13
-      buildableSF: 103350, // Largest buildable SF
-      landInvestment: 2154000,
+      acres: 3.13, // CORRECTED to match uploaded data
+      buildableSF: 103350, // Highest density development
+      landInvestment: 939000,
       planAnnual: 1800000,
-      advantages: ["Largest lot with maximum building potential", "Proven market demand in established corridor", "Immediate build-ready with all utilities available"],
-      riskNotes: "Large lot requires comprehensive site circulation plan",
-      positioning: "Flagship development opportunity - anchor tenant ideal"
+      advantages: ["Highest density development potential in portfolio", "Exceptional SF per acre ratio", "Compact site maximizes building efficiency"],
+      riskNotes: "High density requires careful site planning and circulation",
+      positioning: "High-density specialized warehouse opportunity"
     },
     {
       id: "08",
       type: "Premium", 
       location: "10th St & Military Hwy, McAllen Industrial District",
-      acres: 3.13, // CORRECTED - was showing 7.18 
-      buildableSF: 38160, // Smallest buildable SF
-      landInvestment: 939000,
+      acres: 7.18, // CORRECTED to match uploaded data 
+      buildableSF: 38160, // Large lot with expansion potential
+      landInvestment: 2154000,
       planAnnual: 700000,
-      advantages: ["Entry level investment with high appreciation potential", "Smaller footprint ideal for specialized operations", "Flexible use options for various industrial applications"],
-      riskNotes: "Limited size may restrict tenant options",
-      positioning: "Entry-level investment - specialized tenant focus"
+      advantages: ["Largest acreage in portfolio for future expansion", "Multiple development phases possible", "Strategic land hold with appreciation potential"],
+      riskNotes: "Lower initial building density - focus on land appreciation",
+      positioning: "Premium land hold with future development upside"
     }
   ];
 
