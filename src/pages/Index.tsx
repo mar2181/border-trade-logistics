@@ -110,25 +110,12 @@ const Index = () => {
               <a href="/calculator" className="text-muted-foreground hover:text-gold transition-colors">Calculator</a>
             </div>
 
-            {/* Desktop Contact & Chat */}
+            {/* Desktop Contact */}
             <div className="hidden md:flex items-center space-x-4">
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <Phone className="w-4 h-4" />
                 <span>(956) 522-1481</span>
               </div>
-              
-              <button
-                onClick={() => {
-                  const agent = document.querySelector('elevenlabs-convai');
-                  if (agent) {
-                    (agent as any).click?.();
-                  }
-                }}
-                className="flex items-center justify-center w-8 h-8 bg-accent text-accent-foreground rounded-full hover:bg-accent/80 transition-colors"
-                aria-label="Start chat"
-              >
-                <MessageCircle className="w-4 h-4" />
-              </button>
             </div>
           </div>
         </div>
