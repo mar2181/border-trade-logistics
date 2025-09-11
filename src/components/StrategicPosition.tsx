@@ -1,25 +1,28 @@
 import { MapPin, Truck, Building2, ArrowRight } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function StrategicPosition() {
+  const { t } = useLanguage();
+  
   const proximityFeatures = [
     {
-      name: "McAllen Foreign Trade Zone",
+      name: t('strategic.mcallenForeignTradeZone'),
       distance: "Adjacent",
-      description: "Duty-free processing and warehousing",
+      description: t('strategic.dutyFreeProcessing'),
       icon: Building2,
       color: "text-gold"
     },
     {
-      name: "McAllen Produce Terminal",
+      name: t('strategic.mcallenProduceTerminal'),
       distance: "2.5 miles",
-      description: "Major regional produce distribution hub",
+      description: t('strategic.produceDistributionHub'),
       icon: Truck,
       color: "text-emerald-500"
     },
     {
-      name: "Majestic International Trading Port",
+      name: t('strategic.majesticTradingPort'),
       distance: "4.2 miles", 
-      description: "Cross-border logistics facility",
+      description: t('strategic.crossBorderLogistics'),
       icon: MapPin,
       color: "text-blue-500"
     }
@@ -29,19 +32,17 @@ export default function StrategicPosition() {
     <section className="py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-primary mb-4">Strategic Industrial Ecosystem</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4">{t('strategic.ecosystemTitle')}</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-            Located in the heart of McAllen's industrial corridor with direct access to key trade and logistics infrastructure
+            {t('strategic.ecosystemSubtitle')}
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
           <div>
-            <h3 className="text-2xl font-semibold text-primary mb-6">Prime Industrial Positioning</h3>
+            <h3 className="text-2xl font-semibold text-primary mb-6">{t('strategic.primePositioning')}</h3>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              The site's strategic location adjacent to the McAllen South Industrial Park development positions it at the center 
-              of the region's most dynamic industrial growth area, with established infrastructure and proven demand from 
-              major logistics operators.
+              {t('strategic.positioningDescription')}
             </p>
             
             <div className="space-y-4">
@@ -75,23 +76,23 @@ export default function StrategicPosition() {
             </div>
             
             <div className="bg-gradient-to-r from-gold/10 to-emerald-500/10 rounded-xl p-6">
-              <h4 className="text-xl font-semibold text-primary mb-4">Competitive Advantages</h4>
+              <h4 className="text-xl font-semibold text-primary mb-4">{t('strategic.competitiveAdvantages')}</h4>
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-gold rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span>Military Highway frontage with high visibility and truck accessibility</span>
+                  <span>{t('strategic.militaryHighwayFrontage')}</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-emerald-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span>Established industrial corridor with proven tenant demand</span>
+                  <span>{t('strategic.establishedCorridor')}</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span>Proximity to three international bridges for diversified trade access</span>
+                  <span>{t('strategic.proximityBridges')}</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-amber-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span>Infrastructure-ready sites eliminate development delays and costs</span>
+                  <span>{t('strategic.infrastructureReady')}</span>
                 </li>
               </ul>
             </div>

@@ -3,8 +3,11 @@ import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { ProfessionalUnderwriting } from "./ProfessionalUnderwriting";
 import { PortfolioSummary } from "./PortfolioSummary";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function PropertySpecifications() {
+  const { t } = useLanguage();
+  
   // Add individual property advantages for McAllen location
   const getPropertyAdvantages = (lotId: string) => {
     const advantages = {
@@ -40,7 +43,7 @@ export default function PropertySpecifications() {
     {
       id: "01",
       type: "Premium", 
-      location: "10th St & Military Hwy, McAllen Industrial District",
+      location: t('underwriting.location'),
       acres: 5.04,
       buildableSF: 57240,
       landInvestment: 1500000,
@@ -52,7 +55,7 @@ export default function PropertySpecifications() {
     {
       id: "02", 
       type: "Premium",
-      location: "10th St & Military Hwy, McAllen Industrial District",
+      location: t('underwriting.location'),
       acres: 5.06,
       buildableSF: 66780,
       landInvestment: 1520000,
@@ -64,7 +67,7 @@ export default function PropertySpecifications() {
     {
       id: "03",
       type: "Premium",
-      location: "10th St & Military Hwy, McAllen Industrial District",
+      location: t('underwriting.location'),
       acres: 5.73,
       buildableSF: 80000,
       landInvestment: 1719000,
@@ -76,7 +79,7 @@ export default function PropertySpecifications() {
     {
       id: "04",
       type: "Premium",
-      location: "10th St & Military Hwy, McAllen Industrial District",
+      location: t('underwriting.location'),
       acres: 6.12, 
       buildableSF: 80000,
       landInvestment: 1836000,
@@ -88,7 +91,7 @@ export default function PropertySpecifications() {
     {
       id: "05",
       type: "Premium", 
-      location: "10th St & Military Hwy, McAllen Industrial District",
+      location: t('underwriting.location'),
       acres: 6.12,
       buildableSF: 80000, 
       landInvestment: 1836000,
@@ -100,7 +103,7 @@ export default function PropertySpecifications() {
     {
       id: "06",
       type: "Premium",
-      location: "10th St & Military Hwy, McAllen Industrial District",
+      location: t('underwriting.location'),
       acres: 5.79,
       buildableSF: 80000,
       landInvestment: 1737000, 
@@ -112,7 +115,7 @@ export default function PropertySpecifications() {
     {
       id: "07", 
       type: "Premium",
-      location: "10th St & Military Hwy, McAllen Industrial District",
+      location: t('underwriting.location'),
       acres: 3.13, // CORRECTED to match uploaded data
       buildableSF: 103350, // Highest density development
       landInvestment: 939000,
@@ -124,7 +127,7 @@ export default function PropertySpecifications() {
     {
       id: "08",
       type: "Premium", 
-      location: "10th St & Military Hwy, McAllen Industrial District",
+      location: t('underwriting.location'),
       acres: 7.18, // CORRECTED to match uploaded data 
       buildableSF: 38160, // Large lot with expansion potential
       landInvestment: 2154000,
@@ -153,15 +156,15 @@ export default function PropertySpecifications() {
     <section id="properties" className="py-16 px-6 bg-muted/20">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-primary mb-4">Property Specifications</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4">{t('properties.title')}</h2>
           <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl p-6 mb-8">
             <p className="text-xl text-foreground max-w-4xl mx-auto text-center font-medium">
-              <span className="text-primary font-bold">8 Premium Industrial Lots Available</span> - Professional Underwriting Analysis
+              <span className="text-primary font-bold">{t('properties.premiumLots')}</span> - {t('properties.professionalAnalysis')}
             </p>
             <p className="text-lg text-muted-foreground max-w-5xl mx-auto text-center mt-4">
-              Located in McAllen's premier industrial district with proven logistics demand. 
-              <span className="text-primary font-semibold">Corrected data</span> shows 44.17 acres total, 585,530 SF buildable - 
-              <span className="text-accent font-semibold">significantly larger than marketing materials indicated</span>.
+              {t('properties.locationDescription')} 
+              <span className="text-primary font-semibold">{t('properties.correctedData')}</span> shows 44.17 acres total, 585,530 SF buildable - 
+              <span className="text-accent font-semibold">{t('properties.significantlyLarger')}</span>.
             </p>
           </div>
           
@@ -174,7 +177,7 @@ export default function PropertySpecifications() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
               <div className="absolute bottom-4 left-4 right-4">
-                <div className="text-primary text-sm font-medium">Aerial View - Military Highway Development</div>
+                <div className="text-primary text-sm font-medium">{t('properties.aerialView')}</div>
               </div>
             </div>
             
@@ -186,7 +189,7 @@ export default function PropertySpecifications() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
               <div className="absolute bottom-4 left-4 right-4">
-                <div className="text-primary text-sm font-medium">Detailed Site Plan Blueprint</div>
+                <div className="text-primary text-sm font-medium">{t('properties.siteBlueprint')}</div>
               </div>
             </div>
           </div>
