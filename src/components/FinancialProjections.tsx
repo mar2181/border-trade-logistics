@@ -24,7 +24,7 @@ export default function FinancialProjections() {
       value: "$300K/acre"
     }, {
       label: "Standard Lots",
-      value: "$250K/acre"
+      value: "$265K/acre"
     }, {
       label: "Market Comparables",
       value: "$281K/acre avg"
