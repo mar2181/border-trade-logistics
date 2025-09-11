@@ -1,6 +1,8 @@
 import { Shield, AlertTriangle, TrendingUp, CheckCircle } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function RiskAnalysis() {
+  const { t } = useLanguage();
   const risks = [
     {
       category: "Market Risks",
@@ -62,10 +64,9 @@ export default function RiskAnalysis() {
     <section className="py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-primary mb-4">Strategic Investment Analysis - The Valley Advantage</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4">{t('riskAnalysis.title')}</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-            <span className="text-gold font-bold">Why This Represents Exceptional Value:</span> McAllen's premier industrial district offers compelling risk-adjusted returns with strong downside protection. 
-            The Valley's market fundamentals create sustainable growth momentum that transcends typical real estate cycles.
+            <span className="text-gold font-bold">{t('riskAnalysis.whyValue')}</span> {t('riskAnalysis.description')}
           </p>
         </div>
 

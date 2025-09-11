@@ -1,8 +1,10 @@
 import { FileText, Shield, TrendingUp, Building } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export const MarketDataSources = () => {
+  const { t } = useLanguage();
   const dataSources = [
     {
       category: "Vacancy & Rent Data",
@@ -88,8 +90,8 @@ export const MarketDataSources = () => {
       {/* Header */}
       <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl p-6 border border-primary/20">
         <div className="text-center space-y-2">
-          <h2 className="text-3xl font-bold text-primary">Market Data Verification</h2>
-          <p className="text-muted-foreground">Third-party sourced metrics for lender-ready analysis</p>
+          <h2 className="text-3xl font-bold text-primary">{t('marketDataSources.title')}</h2>
+          <p className="text-muted-foreground">{t('marketDataSources.subtitle')}</p>
         </div>
       </div>
 

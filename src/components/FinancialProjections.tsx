@@ -1,5 +1,8 @@
 import { BarChart3, DollarSign, Percent, TrendingUp } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+
 export default function FinancialProjections() {
+  const { t } = useLanguage();
   const landPortfolioSummary = {
     totalLandInvestment: "$12.24M",
     totalAcres: "44.17 acres",
@@ -43,9 +46,9 @@ export default function FinancialProjections() {
   return <section id="financials" className="py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-primary mb-4">MCC Industrial Park - Financial Projections & Strategy</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4">{t('financialProjections.title')}</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-            Comprehensive analysis of land appreciation potential, development strategies, and exit scenarios for the 44.17-acre portfolio
+            {t('financialProjections.subtitle')}
           </p>
           
           <div className="relative overflow-hidden rounded-xl border border-border max-w-2xl mx-auto">

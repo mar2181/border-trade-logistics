@@ -1,5 +1,8 @@
 import { TrendingUp, DollarSign, Package, ArrowUp } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+
 export default function MarketAnalysis() {
+  const { t } = useLanguage();
   const tradeVolume = [{
     product: "Avocados",
     value: "$1,970M",
@@ -24,26 +27,26 @@ export default function MarketAnalysis() {
   return <section id="analysis" className="py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-primary mb-4">Market Analysis</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4">{t('marketAnalysis.title')}</h2>
           <div className="bg-gradient-to-r from-accent-emerald/20 via-gold/20 to-accent-emerald/20 rounded-2xl p-6 mb-8">
             <p className="text-xl text-foreground max-w-4xl mx-auto text-center font-medium">
-              <span className="text-gold font-bold">McAllen's Strategic Cross-Border Position</span>
+              <span className="text-gold font-bold">{t('marketAnalysis.strategicPosition')}</span>
             </p>
             <p className="text-lg text-muted-foreground max-w-5xl mx-auto text-center mt-4">
-              Located in McAllen's premier industrial district with proven produce/logistics demand. 
-              The Valley <span className="text-accent-emerald font-semibold">demonstrates market stability</span> supported by cross-border trade through Pharr-Reynosa Bridge. 
-              <span className="text-gold font-semibold">Modeled under base and stress scenarios</span> for lender confidence and investment clarity.
+              {t('marketAnalysis.locationDescription')}
+              {t('marketAnalysis.valley')} <span className="text-accent-emerald font-semibold">{t('marketAnalysis.marketStability')}</span> {t('marketAnalysis.tradeSupport')}
+              <span className="text-gold font-semibold">{t('marketAnalysis.stressScenarios')}</span> {t('marketAnalysis.lenderConfidence')}
             </p>
           </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
           <div>
-            <h3 className="text-2xl font-semibold text-primary mb-6">The Valley's Dynamic Market Transformation</h3>
+            <h3 className="text-2xl font-semibold text-primary mb-6">{t('marketAnalysis.dynamicTransformation')}</h3>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              <strong className="text-gold">McAllen MSA Market Dynamics:</strong> Recent third-party reads show McAllen industrial vacancy around 3.9% (3Q24) with LTM rent growth ~1.9%–2.5%. 
-              Q2-2025 asking rents averaged $8.43/SF amid &gt;1.3M SF under construction (CBRE Q2-2025). 
-              <strong className="text-accent-emerald">The Valley demonstrates consistent growth supported by cross-border trade</strong> with proven logistics demand patterns.
+              <strong className="text-gold">{t('marketAnalysis.msaDynamics')}</strong> {t('marketAnalysis.thirdPartyReads')}
+              {t('marketAnalysis.askingRents')}
+              <strong className="text-accent-emerald">{t('marketAnalysis.consistentGrowth')}</strong> {t('marketAnalysis.logisticsDemand')}
             </p>
             
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6">
@@ -80,9 +83,9 @@ export default function MarketAnalysis() {
             </div>
             
             <div>
-              <h3 className="text-2xl font-semibold text-primary mb-6">Trade Volume Distribution</h3>
+              <h3 className="text-2xl font-semibold text-primary mb-6">{t('marketAnalysis.tradeDistribution')}</h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Over $6B annual produce trade through Pharr-Reynosa Bridge (~$47-$50B total trade) creates consistent demand for specialized cold storage and distribution facilities.
+                {t('marketAnalysis.produceTradeDescription')}
               </p>
               
               <div className="space-y-3">
