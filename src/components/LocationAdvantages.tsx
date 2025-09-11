@@ -1,8 +1,6 @@
 import { MapPin, Truck, Building2, Users, Zap, CheckCircle, TrendingUp, DollarSign } from "lucide-react";
-import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function LocationAdvantages() {
-  const { t } = useLanguage();
   const economicData = [
     { label: "Regional Retail Trade", value: "$17.5B", icon: DollarSign },
     { label: "Population Growth (2012-2022)", value: "+80K", icon: Users },
@@ -14,9 +12,9 @@ export default function LocationAdvantages() {
     <section className="py-16 px-6 bg-muted/20">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-primary mb-4">{t('locationAdvantages.title')}</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4">Strategic Location & Connectivity</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-            {t('locationAdvantages.subtitle')}
+            Prime positioning adjacent to McAllen South Industrial Park with direct access to major international bridges and trade corridors
           </p>
           
           <div className="grid md:grid-cols-2 gap-8 mb-8">

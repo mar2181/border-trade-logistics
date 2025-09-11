@@ -1,9 +1,7 @@
 import { Phone, Mail, Calendar, Search, FileText, Building, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function InvestmentProcess() {
-  const { t } = useLanguage();
   const processSteps = [
     {
       number: "01",
@@ -35,15 +33,16 @@ export default function InvestmentProcess() {
     <section className="py-16 px-6 bg-muted/20">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-primary mb-4">{t('investmentProcess.title')}</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4">Strategic Investment Timing</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-            <span className="text-gold font-bold">{t('investmentProcess.limitedProperties')}</span> {t('investmentProcess.district')}
-            {t('investmentProcess.investors')}
+            <span className="text-gold font-bold">Only 8 Properties Remaining</span> in McAllen's premier industrial district. 
+            Savvy investors moving in the next few months will benefit from Fed rate cuts and position themselves ahead of the curve 
+            in The Valley - America's hidden gem where those who invest stay and grow.
           </p>
         </div>
 
         <div className="mb-16">
-          <h3 className="text-2xl font-semibold text-primary mb-8 text-center">{t('investmentProcess.processTitle')}</h3>
+          <h3 className="text-2xl font-semibold text-primary mb-8 text-center">Premium Property Investment Process</h3>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {processSteps.map((step, index) => (
@@ -67,9 +66,11 @@ export default function InvestmentProcess() {
           
           <div className="grid lg:grid-cols-1 gap-8 max-w-2xl mx-auto">
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8 text-center">
-              <h4 className="text-xl font-semibold text-primary mb-4">{t('investmentProcess.specialistTitle')}</h4>
+              <h4 className="text-xl font-semibold text-primary mb-4">Your McAllen Investment Specialist</h4>
               <p className="text-muted-foreground mb-6">
-                {t('investmentProcess.specialistDescription')}
+                20+ years international real estate experience specializing in The Valley's industrial market. 
+                Expert in McAllen industrial properties with deep knowledge of The Valley's sustained growth potential 
+                and proven track record helping investors secure million-dollar opportunities before they're gone.
               </p>
               
               <div className="flex flex-col items-center space-y-4">
@@ -80,7 +81,7 @@ export default function InvestmentProcess() {
                 
                 <Button className="bg-gradient-to-r from-gold to-gold-dark text-background font-semibold hover:shadow-lg hover:shadow-gold/25 transition-all duration-300">
                   <Mail className="h-4 w-4 mr-2" />
-                  {t('investmentProcess.contactButton')}
+                  Contact for Million-Dollar Opportunity
                 </Button>
               </div>
             </div>
