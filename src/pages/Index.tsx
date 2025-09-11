@@ -1,4 +1,4 @@
-import { Building, MapPin, TrendingUp, DollarSign, Phone, Download, BarChart3, Calendar, Users, TrendingDown } from "lucide-react";
+import { Building, MapPin, TrendingUp, DollarSign, Phone, Download, BarChart3, Calendar, Users, TrendingDown, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import warehouseAerial from "@/assets/warehouse-aerial.jpg";
@@ -15,7 +15,7 @@ import StrategicPosition from "@/components/StrategicPosition";
 import RiskAnalysis from "@/components/RiskAnalysis";
 import { MarketDataSources } from "@/components/MarketDataSources";
 import InvestmentProcess from "@/components/InvestmentProcess";
-import MobileNavigation from "@/components/MobileNavigation";
+
 import FloatingBottomNav from "@/components/FloatingBottomNav";
 import VideoCarousel from "@/components/VideoCarousel";
 import InvestmentTabs from "@/components/InvestmentTabs";
@@ -79,7 +79,22 @@ const Index = () => {
                 <Phone className="w-4 h-4" />
               </a>
               
-              <MobileNavigation onNavigate={handleMobileNavigation} />
+              <div className="sm:hidden flex items-center space-x-2 text-xs font-medium text-foreground">
+                <span>Juan Elizondo</span>
+              </div>
+              
+              <button
+                onClick={() => {
+                  const agent = document.querySelector('elevenlabs-convai');
+                  if (agent) {
+                    (agent as any).click?.();
+                  }
+                }}
+                className="flex items-center justify-center w-8 h-8 bg-accent text-accent-foreground rounded-full hover:bg-accent/80 transition-colors"
+                aria-label="Start chat"
+              >
+                <MessageCircle className="w-4 h-4" />
+              </button>
             </div>
           </div>
         </div>
@@ -340,8 +355,8 @@ const Index = () => {
       <InvestmentProcess />
       <MarketDataSources />
       
-      {/* ElevenLabs Conversational AI Agent */}
-      <div dangerouslySetInnerHTML={{
+      {/* ElevenLabs Conversational AI Agent - Hidden but accessible */}
+      <div style={{ position: 'absolute', left: '-9999px' }} dangerouslySetInnerHTML={{
         __html: '<elevenlabs-convai agent-id="agent_8801k4w0v35xepfbwgksee62qets"></elevenlabs-convai>'
       }} />
 
