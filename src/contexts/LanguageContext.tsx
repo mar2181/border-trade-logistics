@@ -372,6 +372,141 @@ const translations = {
     "investment_recommendation": "Recomendación de Inversión",
     "positioning_strategy": "Estrategia de Posicionamiento: Ideal para una mezcla de inquilinos más pequeños con configuraciones de almacén flexibles.",
     
+    // Professional Lot Analysis - Additional Details
+    "lot_02_professional": "Lote 02 - Análisis Profesional",
+    "lot_03_professional": "Lote 03 - Análisis Profesional",
+    "lot_04_professional": "Lote 04 - Análisis Profesional",
+    "lot_05_professional": "Lote 05 - Análisis Profesional",
+    "lot_06_professional": "Lote 06 - Análisis Profesional",
+    "lot_07_professional": "Lote 07 - Análisis Profesional",
+    "lot_08_professional": "Lote 08 - Análisis Profesional",
+    
+    // Lot 03 Specific
+    "largest_development_lot": "Lote de desarrollo más grande disponible en el distrito",
+    "maximum_anchor_potential": "Máximo potencial de desarrollo para inquilino ancla",
+    "strategic_central_position": "Posición central estratégica con múltiples puntos de acceso",
+    "ensure_truck_circulation": "Asegurar circulación adecuada de camiones para operaciones a gran escala",
+    "best_for_anchor_tenant": "Estrategia de Posicionamiento: Mejor para inquilino ancla de almacenamiento en frío o almacén seco grande.",
+    
+    // Lot 04 Specific
+    "ready_future_expansion": "Listo para futura expansión con parcelas adyacentes",
+    "optimized_utilities": "Servicios optimizados para desarrollo a gran escala",
+    "distribution_center_potential": "Potencial de centro de distribución con acceso regional",
+    "confirm_expansion_rights": "Confirmar derechos de expansión y costos de actualización de servicios",
+    "distribution_center_ideal": "Estrategia de Posicionamiento: Potencial de centro de distribución - ideal para instalación multi-inquilino.",
+    
+    // Lot 05 Specific
+    "premium_development_site": "Sitio de desarrollo premium con configuración óptima",
+    "multiple_access_points": "Múltiples puntos de acceso para operaciones eficientes",
+    "flexible_tenant_configuration": "Configuración flexible para varios tipos de inquilinos",
+    "verify_parking_requirements": "Verificar requisitos de estacionamiento para configuración multi-inquilino",
+    "premium_multi_tenant": "Estrategia de Posicionamiento: Oportunidad premium multi-inquilino con diseños flexibles.",
+    
+    // Lot 06 Specific
+    "value_investment_position": "Posición de inversión de valor por debajo del promedio del distrito",
+    "ready_rapid_development": "Listo para desarrollo rápido con trabajo mínimo en el sitio",
+    "strong_roi_potential": "Fuerte potencial de ROI con rentas de mercado actuales",
+    "investigate_pricing_factors": "Investigar factores de precios por debajo del mercado",
+    "value_play_high_roi": "Estrategia de Posicionamiento: Juego de valor - alto potencial de ROI con desarrollo inmediato.",
+    
+    // Lot 07 Specific
+    "above_typical_range": "(Por encima del rango típico)",
+    "highest_density_potential": "Mayor potencial de desarrollo de alta densidad en el portafolio",
+    "exceptional_sf_ratio": "Relación excepcional de SF por acre",
+    "compact_site_efficiency": "Sitio compacto maximiza la eficiencia del edificio",
+    "high_density_planning": "Alta densidad requiere planificación cuidadosa del sitio y circulación",
+    "coverage_flag_above": "Bandera de Cobertura: Por encima del 65% - confirmar cumplimiento de zonificación",
+    "specialized_warehouse_opportunity": "Estrategia de Posicionamiento: Oportunidad de almacén especializado de alta densidad.",
+    
+    // Lot 08 Specific
+    "below_efficient_range": "(Por debajo del rango eficiente)",
+    "largest_acreage_portfolio": "Mayor superficie en el portafolio para futura expansión",
+    "multiple_development_phases": "Posibles múltiples fases de desarrollo",
+    "strategic_land_investment_appreciation": "Inversión en terreno estratégico con potencial de apreciación",
+    "low_initial_density": "Baja densidad inicial de construcción - enfocarse en la apreciación del terreno",
+    "coverage_flag_below": "Bandera de Cobertura: Por debajo del 20% - verificar restricciones del sitio",
+    "premium_land_future_development": "Estrategia de Posicionamiento: Inversión en terreno premium con potencial de desarrollo futuro.",
+    
+    // Portfolio Summary
+    "8_lot_portfolio_summary": "Resumen del Portafolio de 8 Lotes",
+    "professional_underwriting_analysis": "Análisis profesional de suscripción - Distrito Industrial de McAllen, TX",
+    "total_acres_44": "44.17 Acres Totales",
+    "total_sf_585": "585,530 SF Totales",
+    "coverage_flags_2": "2 Banderas de Cobertura",
+    "data_reconciliation": "Reconciliación de Datos vs. Materiales de Marketing",
+    "indicated_marketing_materials": "Indicado en Materiales de Marketing:",
+    "373_total_acres": "37.3 acres totales",
+    "331900_buildable_sf": "331,900 SF construibles",
+    "verified_site_plan": "Verificado del Plano del Sitio:",
+    "4417_total_acres": "44.17 acres totales",
+    "585530_buildable_sf": "585,530 SF construibles",
+    "critical_correction_required": "Corrección Crítica Requerida:",
+    "portfolio_contains_more": "El portafolio contiene significativamente más área desarrollable que la indicada en los materiales de marketing. Las superficies de los lotes 7 y 8 fueron transpuestas en los materiales originales.",
+    "portfolio_noi_potential": "Potencial de NOI del Portafolio (Anual)",
+    "mixed_development_scenario": "Escenario de Desarrollo Mixto (Proyección del Plan): Varía, $11,900,000 NOI",
+    "all_dry_warehouse_12": "Todo Almacén Seco ($12/SF): $12.00, $7,026,360 NOI, -41.0%",
+    "all_dry_warehouse_1250": "Todo Almacén Seco ($12.50/SF): $12.50, $7,319,125 NOI, -38.5%",
+    "all_refrigerated_18": "Todo Almacén Refrigerado ($18/SF): $18.00, $10,539,540 NOI, -11.4%",
+    
+    // Portfolio Investment Strategies
+    "portfolio_investment_strategies": "Estrategias de Inversión del Portafolio",
+    "land_hold_strategy": "Estrategia de Retención de Terrenos",
+    "lower_capital_requirement": "Menor requerimiento de capital inicial con un potencial de apreciación anual del 8-12%.",
+    "portfolio_investment_1224": "$12.24M: Inversión del Portafolio",
+    "dry_warehouse_development": "Desarrollo de Almacén Seco",
+    "stabilized_roi_85_90": "ROI estabilizado del 8.5-9.0% a través de la creación de valor y flujo de caja.",
+    "total_development_825": "$82.5M: Desarrollo Total",
+    "refrigerated_warehouse_development": "Desarrollo de Almacén Refrigerado",
+    "roi_76_79": "ROI del 7.6-7.9% con prima de almacenamiento en frío especializado.",
+    "total_development_135": "$135.0M: Desarrollo Total",
+    
+    // Professional Investment Analysis
+    "professional_investment_analysis": "Análisis de Inversión Profesional",
+    "comprehensive_investment_analysis": "Análisis exhaustivo de estrategias de inversión, evaluación de riesgos y documentación de diligencia debida",
+    "land_hold_strategy_detailed": "Estrategia de Retención de Terrenos",
+    "lower_capital_no_construction": "Menor requerimiento de capital inicial sin riesgo de construcción.",
+    "total_investment_122": "$12.2M: Inversión Total",
+    "expected_roi_8_12": "8-12%: ROI Esperado",
+    "strategic_advantages_land": "Ventajas Estratégicas",
+    "no_construction_risk": "Sin riesgo de construcción ni de arrendamiento de inquilinos",
+    "flexibility_develop_sell": "Flexibilidad para desarrollar o vender en el momento óptimo del mercado",
+    "lower_capital_requirement_detailed": "Menor requerimiento de capital inicial",
+    "based_historical_performance": "Basado en el desempeño histórico de terrenos industriales premium",
+    "risk_considerations_land": "Consideraciones de Riesgo",
+    "no_immediate_income": "Sin generación de ingresos inmediata",
+    "subject_market_fluctuations": "Sujeto a fluctuaciones de apreciación del mercado",
+    "annual_carrying_costs": "Costos anuales de mantenimiento reducen los retornos netos",
+    
+    // Dry Warehouse Development Strategy
+    "dry_warehouse_development_detailed": "Desarrollo de Almacén Seco",
+    "value_creation_immediate": "Creación de valor a través del desarrollo con generación de ingresos inmediata.",
+    "total_investment_825": "$82.5M: Inversión Total",
+    "expected_roi_89": "8.9%: ROI Esperado",
+    "strategic_advantages_dry": "Ventajas Estratégicas",
+    "immediate_income_generation": "Generación de ingresos inmediata tras el arrendamiento",
+    "higher_returns_value_creation": "Mayores retornos a través de la creación de valor",
+    "long_term_cash_flow": "Flujo de caja a largo plazo de activos industriales de calidad",
+    "value_add_operational": "Valor agregado mediante mejoras operativas",
+    "risk_considerations_dry": "Consideraciones de Riesgo",
+    "construction_cost_inflation": "Riesgo de inflación de costos de construcción",
+    "tenant_leasing_uncertainty": "Incertidumbre en el cronograma de arrendamiento de inquilinos",
+    "market_rent_volatility": "Volatilidad de rentas de mercado durante el desarrollo",
+    
+    // Refrigerated Warehouse Development Strategy
+    "refrigerated_warehouse_development_detailed": "Desarrollo de Almacén Refrigerado",
+    "specialized_cold_storage": "Instalaciones de almacenamiento en frío especializadas dirigidas al mercado de productos agrícolas.",
+    "total_investment_135": "$135.0M: Inversión Total",
+    "expected_roi_78": "7.8%: ROI Esperado",
+    "strategic_advantages_refrigerated": "Ventajas Estratégicas",
+    "premium_rents_cold_storage": "Rentas premium por almacenamiento en frío especializado",
+    "strong_tenant_demand": "Fuerte demanda de inquilinos de la industria de productos agrícolas",
+    "high_barriers_entry": "Altas barreras de entrada",
+    "long_term_tenant_relationships": "Relaciones a largo plazo con inquilinos",
+    "risk_considerations_refrigerated": "Consideraciones de Riesgo",
+    "higher_construction_complexity": "Mayor complejidad y costos de construcción",
+    "specialized_equipment_maintenance": "Requerimientos de mantenimiento de equipos especializados",
+    "limited_tenant_pool": "Grupo limitado de inquilinos para almacenamiento en frío",
+    
     // Navigation
     "nav_home": "Inicio",
     "nav_calculator": "Calculadora"
