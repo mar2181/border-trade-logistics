@@ -57,6 +57,7 @@ const Index = () => {
               <a href="#overview" className="text-muted-foreground hover:text-gold transition-colors">Overview</a>
               <a href="#analysis" className="text-muted-foreground hover:text-gold transition-colors">Market Analysis</a>
               <a href="#land-parcels" className="text-muted-foreground hover:text-gold transition-colors">Land Parcels</a>
+              <a href="#virtual-tour" className="text-muted-foreground hover:text-gold transition-colors">Virtual Tour</a>
               <a href="#financials" className="text-muted-foreground hover:text-gold transition-colors">Financials</a>
               <a href="#properties" className="text-muted-foreground hover:text-gold transition-colors">Properties</a>
               <a href="/calculator" className="text-muted-foreground hover:text-gold transition-colors">Calculator</a>
@@ -206,7 +207,7 @@ const Index = () => {
       </section>
 
       {/* Virtual Tour Video Section */}
-      <section className="py-16 bg-background">
+      <section id="virtual-tour" className="py-16 bg-background">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
