@@ -167,7 +167,7 @@ export default function LandParcels() {
                   </div>
                 </div>
                 <div className="p-4 bg-emerald-50 dark:bg-emerald-500/10 rounded-lg">
-                  <h4 className="font-semibold text-emerald-700 dark:text-emerald-400 mb-2">Investment Highlights</h4>
+                  <h4 className="font-semibold text-accent-emerald mb-2">Investment Highlights</h4>
                   <div className="space-y-1 text-sm">
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Year Built:</span>
