@@ -116,25 +116,25 @@ export default function PropertySpecifications() {
       id: "07", 
       type: "Premium",
       location: t('underwriting.location'),
-      acres: 3.13, // CORRECTED to match uploaded data
-      buildableSF: 103350, // Highest density development
-      landInvestment: 939000,
-      planAnnual: 1800000,
-      advantages: ["Highest density development potential in portfolio", "Exceptional SF per acre ratio", "Compact site maximizes building efficiency"],
-      riskNotes: "High density requires careful site planning and circulation",
-      positioning: "High-density specialized warehouse opportunity"
-    },
-    {
-      id: "08",
-      type: "Premium", 
-      location: t('underwriting.location'),
-      acres: 7.18, // CORRECTED to match uploaded data 
+      acres: 7.18, // CORRECTED - largest acreage lot
       buildableSF: 38160, // Large lot with expansion potential
       landInvestment: 2154000,
       planAnnual: 700000,
       advantages: ["Largest acreage in portfolio for future expansion", "Multiple development phases possible", "Strategic land hold with appreciation potential"],
       riskNotes: "Lower initial building density - focus on land appreciation",
       positioning: "Premium land hold with future development upside"
+    },
+    {
+      id: "08",
+      type: "Premium", 
+      location: t('underwriting.location'),
+      acres: 3.13, // CORRECTED - high density development
+      buildableSF: 103350, // Highest density development
+      landInvestment: 939000,
+      planAnnual: 1800000,
+      advantages: ["Highest density development potential in portfolio", "Exceptional SF per acre ratio", "Compact site maximizes building efficiency"],
+      riskNotes: "High density requires careful site planning and circulation",
+      positioning: "High-density specialized warehouse opportunity"
     }
   ];
 
