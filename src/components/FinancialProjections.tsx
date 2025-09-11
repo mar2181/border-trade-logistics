@@ -136,9 +136,7 @@ export default function FinancialProjections() {
         <div className="bg-gradient-to-r from-gold/10 to-blue-500/10 rounded-xl p-8">
           <div className="text-center">
             <h3 className="text-2xl font-semibold text-primary mb-4">Land Investment Return Profile</h3>
-            <p className="text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Conservative land appreciation projections based on market fundamentals: 3.9% vacancy (3Q24), $6B+ trade volume, and current rate environment
-            </p>
+            <p className="text-muted-foreground mb-8 max-w-3xl mx-auto">Conservative land appreciation projections based on market fundamentals: 3% vacancy (3Q24), $6B+ trade volume, and current rate environment</p>
             
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center">
