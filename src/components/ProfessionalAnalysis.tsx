@@ -235,6 +235,24 @@ export default function ProfessionalAnalysis() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
+                  {/* Lead Analyst Profile */}
+                  <div className="mb-8 p-6 bg-gradient-to-r from-primary/5 to-blue-500/5 rounded-xl border border-primary/20">
+                    <div className="flex items-center gap-6">
+                      <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-primary/20">
+                        <img 
+                          src="/lovable-uploads/312f9559-a576-44b4-993b-8df7990e61ec.png" 
+                          alt="Juan - Lead Investment Analyst" 
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-semibold text-primary mb-2">Juan Hernandez</h3>
+                        <p className="text-lg text-gold mb-1">Lead Investment Analyst</p>
+                        <p className="text-sm text-muted-foreground">15+ years experience in industrial real estate development and cross-border commerce</p>
+                      </div>
+                    </div>
+                  </div>
+                  
                   <div className="grid md:grid-cols-2 gap-4">
                     <Button variant="outline" className="h-auto p-4 justify-start">
                       <Download className="h-4 w-4 mr-3" />
