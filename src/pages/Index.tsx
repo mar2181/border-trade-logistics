@@ -1,4 +1,4 @@
-import { Building, MapPin, TrendingUp, DollarSign, Phone, Download, BarChart3, Calendar, Users, TrendingDown, MessageCircle } from "lucide-react";
+import { Building, MapPin, TrendingUp, DollarSign, Phone, Download, BarChart3, Calendar, Users, TrendingDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import warehouseAerial from "@/assets/warehouse-aerial.jpg";
@@ -51,45 +51,35 @@ const Index = () => {
                      sm:bg-background/95 sm:backdrop-blur-md sm:border sm:border-border/50 sm:rounded-2xl sm:shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
           <div className="flex items-center justify-between">
-            {/* Left - Call Icon */}
-            <div className="flex items-center">
-              <a href="tel:(956)522-1481" className="flex items-center justify-center w-10 h-10 bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors" aria-label="Call Juan Elizondo">
-                <Phone className="w-5 h-5" />
-              </a>
+            <div className="flex items-center space-x-3 sm:space-x-4">
+              <div className="flex items-center space-x-2 sm:space-x-3">
+                <img src="/lovable-uploads/86c0cf99-26fd-48bd-9d8a-d0c791fcbf83.png" alt="RE/MAX Commercial" className="h-6 sm:h-8" />
+                <Building className="w-5 h-5 sm:w-6 sm:h-6 text-gold" />
+                <span className="text-lg sm:text-xl font-bold text-primary-foreground">Industrial Land</span>
+              </div>
             </div>
             
-            {/* Center - Juan Elizondo Name on Mobile, Desktop Nav on Desktop */}
-            <div className="flex items-center">
-              <div className="md:hidden text-center">
-                <div className="text-sm font-semibold text-primary-foreground">Juan Elizondo</div>
-                <div className="text-xs text-muted-foreground">RE/MAX Commercial</div>
-              </div>
-              
-              <div className="hidden md:flex items-center space-x-6">
-                <a href="#overview" className="text-muted-foreground hover:text-gold transition-colors">Overview</a>
-                <a href="#analysis" className="text-muted-foreground hover:text-gold transition-colors">Market Analysis</a>
-                <a href="#land-parcels" className="text-muted-foreground hover:text-gold transition-colors">Land Parcels</a>
-                <a href="#virtual-tour" className="text-muted-foreground hover:text-gold transition-colors">Virtual Tour</a>
-                <a href="#financials" className="text-muted-foreground hover:text-gold transition-colors">Financials</a>
-                <a href="#properties" className="text-muted-foreground hover:text-gold transition-colors">Properties</a>
-                <a href="/calculator" className="text-muted-foreground hover:text-gold transition-colors">Calculator</a>
-              </div>
+            <div className="hidden md:flex items-center space-x-6">
+              <a href="#overview" className="text-muted-foreground hover:text-gold transition-colors">Overview</a>
+              <a href="#analysis" className="text-muted-foreground hover:text-gold transition-colors">Market Analysis</a>
+              <a href="#land-parcels" className="text-muted-foreground hover:text-gold transition-colors">Land Parcels</a>
+              <a href="#virtual-tour" className="text-muted-foreground hover:text-gold transition-colors">Virtual Tour</a>
+              <a href="#financials" className="text-muted-foreground hover:text-gold transition-colors">Financials</a>
+              <a href="#properties" className="text-muted-foreground hover:text-gold transition-colors">Properties</a>
+              <a href="/calculator" className="text-muted-foreground hover:text-gold transition-colors">Calculator</a>
             </div>
 
-            {/* Right - Chat Icon */}
-            <div className="flex items-center">
-              <button
-                onClick={() => {
-                  const agent = document.querySelector('elevenlabs-convai');
-                  if (agent) {
-                    (agent as any).click?.();
-                  }
-                }}
-                className="flex items-center justify-center w-10 h-10 bg-accent text-accent-foreground rounded-full hover:bg-accent/90 transition-colors"
-                aria-label="Start chat"
-              >
-                <MessageCircle className="w-5 h-5" />
-              </button>
+            <div className="flex items-center space-x-3 sm:space-x-4">
+              <div className="hidden sm:flex items-center space-x-2 text-sm text-muted-foreground">
+                <Phone className="w-4 h-4" />
+                <span>(956) 522-1481</span>
+              </div>
+              
+              <a href="tel:(956)522-1481" className="sm:hidden flex items-center justify-center w-8 h-8 bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors" aria-label="Call now">
+                <Phone className="w-4 h-4" />
+              </a>
+              
+              <MobileNavigation onNavigate={handleMobileNavigation} />
             </div>
           </div>
         </div>
