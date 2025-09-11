@@ -1,6 +1,6 @@
 import { Building, MapPin, TrendingUp, DollarSign, Phone, Download, BarChart3, Calendar, Users, TrendingDown, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import warehouseAerial from "@/assets/warehouse-aerial.jpg";
 import warehouseExterior from "@/assets/warehouse-exterior.jpg";
 import warehouseInterior from "@/assets/warehouse-interior.jpg";
@@ -26,6 +26,30 @@ const Index = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [isMobileChatOpen, setIsMobileChatOpen] = useState(false);
 
+  // Hide ElevenLabs widget globally on mobile
+  useEffect(() => {
+    const style = document.createElement('style');
+    style.textContent = `
+      @media (max-width: 767px) {
+        elevenlabs-convai:not(#mobile-chat-container elevenlabs-convai) {
+          display: none !important;
+          visibility: hidden !important;
+          opacity: 0 !important;
+          pointer-events: none !important;
+          position: absolute !important;
+          left: -9999px !important;
+          top: -9999px !important;
+          z-index: -1 !important;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+    
+    return () => {
+      document.head.removeChild(style);
+    };
+  }, []);
+
   const handleMobileNavigation = (action: string) => {
     if (action === 'dry') {
       document.getElementById('investment-comparison')?.scrollIntoView({
@@ -45,7 +69,9 @@ const Index = () => {
       }, 500);
     }
   };
-  return <div className="min-h-screen bg-background text-foreground">
+
+  return (
+    <div className="min-h-screen bg-background text-foreground">
       {/* Navigation - Floating on Mobile, Fixed on Desktop */}
       <nav className="fixed top-4 left-4 right-4 md:top-0 md:left-0 md:right-0 z-50 
                      md:bg-background/90 md:backdrop-blur-md md:border-b md:border-border
@@ -381,7 +407,7 @@ const Index = () => {
                 ×
               </button>
             </div>
-            <div className="h-96 p-4">
+            <div className="h-96 p-4" id="mobile-chat-container">
               <div dangerouslySetInnerHTML={{
                 __html: '<elevenlabs-convai agent-id="agent_8801k4w0v35xepfbwgksee62qets"></elevenlabs-convai>'
               }} />
@@ -389,6 +415,13 @@ const Index = () => {
           </div>
         </div>
       )}
-    </div>;
+
+      {/* Hidden ElevenLabs chatbot for desktop only */}
+      <div className="hidden md:block" style={{ position: 'absolute', left: '-9999px' }} dangerouslySetInnerHTML={{
+        __html: '<elevenlabs-convai agent-id="agent_8801k4w0v35xepfbwgksee62qets"></elevenlabs-convai>'
+      }} />
+    </div>
+  );
 };
+
 export default Index;
