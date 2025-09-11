@@ -249,6 +249,11 @@ const Index = () => {
       <RiskAnalysis />
       <InvestmentProcess />
       <MarketDataSources />
+      
+      {/* ElevenLabs Conversational AI Agent */}
+      <div dangerouslySetInnerHTML={{
+        __html: '<elevenlabs-convai agent-id="agent_8801k4w0v35xepfbwgksee62qets"></elevenlabs-convai>'
+      }} />
     </div>;
 };
 export default Index;
