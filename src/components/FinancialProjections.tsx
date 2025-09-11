@@ -11,7 +11,7 @@ export default function FinancialProjections() {
   const landAssumptions = {
     market: [{
       label: "Vacancy Rate",
-      value: "3.9%"
+      value: "3%"
     }, {
       label: "Land Appreciation",
       value: "10-15% annually"
