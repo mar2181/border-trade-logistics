@@ -40,7 +40,7 @@ export default function FinancialProjections() {
       value: "Immediate"
     }]
   };
-  return <section className="py-16 px-6">
+  return <section id="financials" className="py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-primary mb-4">MCC Industrial Park - Financial Projections & Strategy</h2>

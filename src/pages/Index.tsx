@@ -57,7 +57,6 @@ const Index = () => {
               <a href="#overview" className="text-muted-foreground hover:text-gold transition-colors">Overview</a>
               <a href="#analysis" className="text-muted-foreground hover:text-gold transition-colors">Market Analysis</a>
               <a href="#land-parcels" className="text-muted-foreground hover:text-gold transition-colors">Land Parcels</a>
-              <a href="#comparables" className="text-muted-foreground hover:text-gold transition-colors">Comparables</a>
               <a href="#financials" className="text-muted-foreground hover:text-gold transition-colors">Financials</a>
               <a href="#properties" className="text-muted-foreground hover:text-gold transition-colors">Properties</a>
               <a href="/calculator" className="text-muted-foreground hover:text-gold transition-colors">Calculator</a>
