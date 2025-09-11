@@ -112,7 +112,7 @@ export default function RefrigeratedWarehouseInvestment() {
           </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-amber-500/10 transition-all duration-300">
             <MapPin className="h-8 w-8 text-amber-500 mx-auto mb-3" />
-            <div className="text-3xl font-bold text-amber-500 mb-2">$167M</div>
+            <div className="text-3xl font-bold text-amber-500 mb-2">$135.1M</div>
             <div className="text-sm text-muted-foreground">Total Portfolio Investment</div>
           </div>
         </div>
@@ -214,19 +214,19 @@ export default function RefrigeratedWarehouseInvestment() {
             
             <div className="grid grid-cols-2 gap-4">
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-400 mb-2">49.11</div>
+                <div className="text-3xl font-bold text-blue-400 mb-2">44.17</div>
                 <div className="text-sm text-muted-foreground">Total Acres</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-emerald-500 mb-2">732K</div>
+                <div className="text-3xl font-bold text-emerald-500 mb-2">585K</div>
                 <div className="text-sm text-muted-foreground">Buildable Sq Ft</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-gold mb-2">$167M</div>
+                <div className="text-3xl font-bold text-gold mb-2">$135.1M</div>
                 <div className="text-sm text-muted-foreground">Total Investment</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-amber-500 mb-2">$14.7M</div>
+                <div className="text-3xl font-bold text-amber-500 mb-2">$11.5M</div>
                 <div className="text-sm text-muted-foreground">Annual Rental Income</div>
               </div>
             </div>
