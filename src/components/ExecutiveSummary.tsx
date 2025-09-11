@@ -51,29 +51,26 @@ export default function ExecutiveSummary() {
                 <img src="/lovable-uploads/0d9c191d-f650-4d6e-adaf-28eacd50ff33.png" alt="Warehouse development floor plan layout" className="w-full h-48 object-cover" />
               </div>
               <div>
-                <h3 className="text-2xl font-semibold text-primary mb-4">The Valley Advantage - America's Hidden Gem</h3>
+                <h3 className="text-2xl font-semibold text-primary mb-4">{t('executiveSummary.valleyAdvantage')}</h3>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  • <strong className="text-gold">Premium Industrial Location:</strong> Strategic corner location on 10th Street with new road development<br />
-                  • <strong className="text-accent-emerald">900K+ Metro Population:</strong> McAllen rivals El Paso size with strong growth trajectory<br />
-                  • <strong className="text-accent-sapphire">Refrigerated Industry Boom:</strong> Heart of produce alley with surging demand<br />
-                  • <strong className="text-gold">Fed Rate Cut Timing:</strong> Perfect storm for development financing and appreciation<br />
-                  • <strong className="text-accent-emerald">Market Resilience:</strong> Valley growth fundamentals provide stability amid changing national conditions
+                  • <strong className="text-gold">{t('executiveSummary.premiumLocation')}</strong><br />
+                  • <strong className="text-accent-emerald">{t('executiveSummary.metroPopulation')}</strong><br />
+                  • <strong className="text-accent-sapphire">{t('executiveSummary.refrigeratedBoom')}</strong><br />
+                  • <strong className="text-gold">{t('executiveSummary.fedTiming')}</strong><br />
+                  • <strong className="text-accent-emerald">{t('executiveSummary.marketResilience')}</strong>
                 </p>
                 
                 <div className="flex items-center text-muted-foreground mb-4">
                   <MapPin className="h-5 w-5 text-gold mr-2" />
-                  <span>10th Street • McAllen Industrial District • Heart of America's Produce Distribution Hub</span>
+                  <span>{t('hero.location')}</span>
                 </div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold text-primary mb-4">Valley Investment Opportunity - Perfect Timing</h3>
+              <h3 className="text-2xl font-semibold text-primary mb-4">{t('executiveSummary.valleyOpportunity')}</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                <strong className="text-gold">Why Investors Choose The Valley:</strong> Those who have done business in McAllen stay and grow - it's America's best-kept secret. 
-                Recent comparables show $281K/acre for ready sites, making our $250K-$300K pricing extremely attractive. 
-                <strong className="text-accent-emerald">Act Now</strong> to benefit from Fed rate cuts whether you build or hold. 
-                This represents a <strong className="text-gold">compelling investment opportunity</strong> with multiple favorable scenarios in a fundamentally strong market.
+                {t('executiveSummary.whyInvestors')}
               </p>
 
               <div className="relative overflow-hidden rounded-xl border border-border">

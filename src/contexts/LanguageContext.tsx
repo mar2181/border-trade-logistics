@@ -48,6 +48,14 @@ const translations = {
     'executiveSummary.opportunityDesc': 'Only 8 properties available in McAllen\'s premier industrial district. Parcels on 10th Street corridor with ready utilities, industrial zoning, 585,530 SF buildable. The Valley\'s projected 20-year boom, combined with Fed rate cuts, creates unmatched appreciation potential. This market shows exceptional resilience to changing national conditions due to its unique demand drivers and limited supply.',
     'executiveSummary.portfolioValue': 'Land Portfolio Value',
     'executiveSummary.pricePerAcre': 'Price per Acre',
+    'executiveSummary.valleyAdvantage': 'The Valley Advantage - America\'s Hidden Gem',
+    'executiveSummary.premiumLocation': 'Premium Industrial Location: Strategic corner location on 10th Street with new road development',
+    'executiveSummary.metroPopulation': '900K+ Metro Population: McAllen rivals El Paso size with strong growth trajectory',
+    'executiveSummary.refrigeratedBoom': 'Refrigerated Industry Boom: Heart of produce alley with surging demand',
+    'executiveSummary.fedTiming': 'Fed Rate Cut Timing: Perfect storm for development financing and appreciation',
+    'executiveSummary.marketResilience': 'Market Resilience: Valley growth fundamentals provide stability amid changing national conditions',
+    'executiveSummary.valleyOpportunity': 'Valley Investment Opportunity - Perfect Timing',
+    'executiveSummary.whyInvestors': 'Why Investors Choose The Valley: Those who have done business in McAllen stay and grow - it\'s America\'s best-kept secret. Recent comparables show $281K/acre for ready sites, making our $250K-$300K pricing extremely attractive. Act Now to benefit from Fed rate cuts whether you build or hold. This represents a compelling investment opportunity with multiple favorable scenarios in a fundamentally strong market.',
     
     // Market Analysis
     'marketAnalysis.title': 'Market Analysis',
@@ -101,6 +109,14 @@ const translations = {
     'executiveSummary.opportunityDesc': 'Solo 8 propiedades disponibles en el principal distrito industrial de McAllen. Parcelas en el corredor de la calle 10 con servicios listos, zonificación industrial, 585,530 SF construibles. El auge proyectado de 20 años del Valle, combinado con recortes de tasas del Fed, crea un potencial de apreciación inigualable. Este mercado muestra una resiliencia excepcional frente a condiciones nacionales cambiantes debido a sus únicos impulsores de demanda y oferta limitada.',
     'executiveSummary.portfolioValue': 'Valor del Portafolio de Terrenos',
     'executiveSummary.pricePerAcre': 'Precio por Acre',
+    'executiveSummary.valleyAdvantage': 'La Ventaja del Valle - La Joya Oculta de América',
+    'executiveSummary.premiumLocation': 'Ubicación Industrial Premium: Ubicación estratégica en esquina en la calle 10 con nuevo desarrollo vial',
+    'executiveSummary.metroPopulation': 'Población Metropolitana de 900K+: McAllen rivaliza con el tamaño de El Paso con una sólida trayectoria de crecimiento',
+    'executiveSummary.refrigeratedBoom': 'Auge de la Industria Refrigerada: Corazón del corredor de productos con demanda creciente',
+    'executiveSummary.fedTiming': 'Momento de Recortes del Fed: Tormenta perfecta para financiamiento de desarrollo y apreciación',
+    'executiveSummary.marketResilience': 'Resistencia del Mercado: Los fundamentos de crecimiento del Valle proporcionan estabilidad en medio de condiciones nacionales cambiantes',
+    'executiveSummary.valleyOpportunity': 'Oportunidad de Inversión del Valle - Momento Perfecto',
+    'executiveSummary.whyInvestors': 'Por Qué los Inversionistas Eligen el Valle: Aquellos que han hecho negocios en McAllen se quedan y crecen - es el secreto mejor guardado de América. Comparables recientes muestran $281K/acre para sitios listos, haciendo que nuestros precios de $250K-$300K sean extremadamente atractivos. Actúa Ahora para beneficiarte de los recortes de tasas del Fed ya sea que construyas o mantengas. Esto representa una oportunidad de inversión convincente con múltiples escenarios favorables en un mercado fundamentalmente sólido.',
     
     // Market Analysis
     'marketAnalysis.title': 'Análisis de Mercado',
