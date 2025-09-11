@@ -26,29 +26,30 @@ const Index = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [isMobileChatOpen, setIsMobileChatOpen] = useState(false);
 
-  // Hide ElevenLabs widget globally on mobile
+  // Move chatbot to mobile container when mobile chat opens
   useEffect(() => {
-    const style = document.createElement('style');
-    style.textContent = `
-      @media (max-width: 767px) {
-        elevenlabs-convai:not(#mobile-chat-container elevenlabs-convai) {
-          display: none !important;
-          visibility: hidden !important;
-          opacity: 0 !important;
-          pointer-events: none !important;
-          position: absolute !important;
-          left: -9999px !important;
-          top: -9999px !important;
-          z-index: -1 !important;
+    const chatWidget = document.querySelector('elevenlabs-convai') as HTMLElement;
+    const mobileContainer = document.getElementById('mobile-chat-container');
+    const hiddenContainer = document.getElementById('elevenlabs-chat-container');
+    
+    if (chatWidget && mobileContainer && hiddenContainer) {
+      if (isMobileChatOpen) {
+        // Move to mobile container and show
+        if (!mobileContainer.contains(chatWidget)) {
+          mobileContainer.appendChild(chatWidget);
+        }
+        chatWidget.style.display = 'block';
+        chatWidget.style.width = '100%';
+        chatWidget.style.height = '100%';
+        chatWidget.style.position = 'relative';
+      } else {
+        // Move back to hidden container
+        if (!hiddenContainer.contains(chatWidget)) {
+          hiddenContainer.appendChild(chatWidget);
         }
       }
-    `;
-    document.head.appendChild(style);
-    
-    return () => {
-      document.head.removeChild(style);
-    };
-  }, []);
+    }
+  }, [isMobileChatOpen]);
 
   const handleMobileNavigation = (action: string) => {
     if (action === 'dry') {
@@ -407,19 +408,33 @@ const Index = () => {
                 ×
               </button>
             </div>
-            <div className="h-96 p-4" id="mobile-chat-container">
-              <div dangerouslySetInnerHTML={{
-                __html: '<elevenlabs-convai agent-id="agent_8801k4w0v35xepfbwgksee62qets"></elevenlabs-convai>'
-              }} />
+            <div 
+              className="h-96 p-4" 
+              id="mobile-chat-container"
+            >
+              {/* Chat widget will appear here when mobile chat is open */}
             </div>
           </div>
         </div>
       )}
 
-      {/* Hidden ElevenLabs chatbot for desktop only */}
-      <div className="hidden md:block" style={{ position: 'absolute', left: '-9999px' }} dangerouslySetInnerHTML={{
-        __html: '<elevenlabs-convai agent-id="agent_8801k4w0v35xepfbwgksee62qets"></elevenlabs-convai>'
-      }} />
+      {/* Single ElevenLabs chatbot instance - positioned based on mobile state */}
+      <div 
+        id="elevenlabs-chat-container"
+        className={
+          isMobileChatOpen 
+            ? "block" 
+            : "md:block hidden"
+        }
+        style={
+          isMobileChatOpen 
+            ? {} 
+            : { position: 'absolute', left: '-9999px' }
+        }
+        dangerouslySetInnerHTML={{
+          __html: '<elevenlabs-convai agent-id="agent_8801k4w0v35xepfbwgksee62qets"></elevenlabs-convai>'
+        }} 
+      />
     </div>
   );
 };
