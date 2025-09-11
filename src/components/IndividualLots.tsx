@@ -1,16 +1,19 @@
 import { MapPin, Building, Calculator, TrendingUp } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function IndividualLots() {
+  const { t } = useLanguage();
+  
   const lots = [
     {
       id: 1,
-      name: "Lot 1 - Premium Corner Position",
+      name: t('individualLots.lot1Title'),
       acres: 5.04,
       warehouseSF: 57240,
       investment: 1512000,
       pricePerAcre: 300000,
-      position: "Corner lot with dual Military Highway and 10th Street frontage",
+      position: t('individualLots.lot1Desc'),
       dryWarehouse: {
         constructionCost: 6870000,
         totalInvestment: 8382000,
@@ -26,12 +29,12 @@ export default function IndividualLots() {
     },
     {
       id: 2,
-      name: "Lot 2 - Flexible Development Site",
+      name: t('individualLots.lot2Title'),
       acres: 5.06,
       warehouseSF: 66780,
       investment: 1340900,
       pricePerAcre: 265000,
-      position: "Excellent truck circulation potential, multi-tenant ready",
+      position: t('individualLots.lot2Desc'),
       dryWarehouse: {
         constructionCost: 8013600,
         totalInvestment: 9354500,
@@ -47,12 +50,12 @@ export default function IndividualLots() {
     },
     {
       id: 3,
-      name: "Lot 3 - High-Capacity Development",
+      name: t('individualLots.lot3Title'),
       acres: 5.73,
       warehouseSF: 80000,
       investment: 1518450,
       pricePerAcre: 265000,
-      position: "Larger development capacity, optimal for anchor tenant",
+      position: t('individualLots.lot3Desc'),
       dryWarehouse: {
         constructionCost: 9600000,
         totalInvestment: 11118450,
@@ -68,12 +71,12 @@ export default function IndividualLots() {
     },
     {
       id: 4,
-      name: "Lot 4 - Distribution Hub Potential",
+      name: t('individualLots.lot4Title'),
       acres: 6.12,
       warehouseSF: 80000,
       investment: 1619150,
       pricePerAcre: 265000,
-      position: "Prime for cross-dock operations, regional distribution center",
+      position: t('individualLots.lot4Desc'),
       dryWarehouse: {
         constructionCost: 9600000,
         totalInvestment: 11219150,
@@ -89,12 +92,12 @@ export default function IndividualLots() {
     },
     {
       id: 5,
-      name: "Lot 5 - Multi-Tenant Configuration",
+      name: t('individualLots.lot5Title'),
       acres: 6.12,
       warehouseSF: 80000,
       investment: 1621800,
       pricePerAcre: 265000,
-      position: "Flexible site layout, multi-tenant industrial park ready",
+      position: t('individualLots.lot5Desc'),
       dryWarehouse: {
         constructionCost: 9600000,
         totalInvestment: 11221800,
@@ -110,12 +113,12 @@ export default function IndividualLots() {
     },
     {
       id: 6,
-      name: "Lot 6 - Value Investment Position",
+      name: t('individualLots.lot6Title'),
       acres: 5.79,
       warehouseSF: 80000,
       investment: 1534350,
       pricePerAcre: 265000,
-      position: "Strong development density, excellent ROI potential",
+      position: t('individualLots.lot6Desc'),
       dryWarehouse: {
         constructionCost: 9600000,
         totalInvestment: 11134350,
@@ -131,12 +134,12 @@ export default function IndividualLots() {
     },
     {
       id: 7,
-      name: "Lot 7 - High-Density Development Site",
+      name: t('individualLots.lot7Title'),
       acres: 3.13,
       warehouseSF: 103350,
       investment: 939000,
       pricePerAcre: 300000,
-      position: "Compact site with exceptional development density potential",
+      position: t('individualLots.lot7Desc'),
       dryWarehouse: {
         constructionCost: 12402000,
         totalInvestment: 13341000,
@@ -152,12 +155,12 @@ export default function IndividualLots() {
     },
     {
       id: 8,
-      name: "Lot 8 - Premium Large Development Opportunity", 
+      name: t('individualLots.lot8Title'), 
       acres: 7.18,
       warehouseSF: 38160,
       investment: 2154000,
       pricePerAcre: 300000,
-      position: "Large acreage site ideal for future expansion and development",
+      position: t('individualLots.lot8Desc'),
       dryWarehouse: {
         constructionCost: 4579200,
         totalInvestment: 6733200,
@@ -184,27 +187,27 @@ export default function IndividualLots() {
     <section className="py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-primary mb-4">Individual Lot Analysis</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4">{t('individualLots.title')}</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-            8 strategically positioned lots at 10th Street & Military Highway intersection, McAllen, Texas
+            {t('individualLots.subtitle')}
           </p>
           
           <div className="grid md:grid-cols-4 gap-6 mb-8">
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center">
               <div className="text-2xl font-bold text-gold mb-2">{portfolioSummary.totalAcres}</div>
-              <div className="text-sm text-muted-foreground">Total Acres</div>
+              <div className="text-sm text-muted-foreground">{t('individualLots.totalAcres')}</div>
             </div>
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center">
               <div className="text-2xl font-bold text-emerald-500 mb-2">{portfolioSummary.totalWarehouseSF.toLocaleString()} SF</div>
-              <div className="text-sm text-muted-foreground">Total Buildable</div>
+              <div className="text-sm text-muted-foreground">{t('individualLots.totalBuildable')}</div>
             </div>
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center">
               <div className="text-2xl font-bold text-blue-500 mb-2">${(portfolioSummary.totalLandInvestment / 1000000).toFixed(2)}M</div>
-              <div className="text-sm text-muted-foreground">Portfolio Investment</div>
+              <div className="text-sm text-muted-foreground">{t('individualLots.portfolioInvestment')}</div>
             </div>
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center">
               <div className="text-2xl font-bold text-amber-500 mb-2">${(portfolioSummary.avgPricePerAcre / 1000).toFixed(0)}K</div>
-              <div className="text-sm text-muted-foreground">Avg Price/Acre</div>
+              <div className="text-sm text-muted-foreground">{t('individualLots.avgPrice')}</div>
             </div>
           </div>
         </div>
@@ -220,7 +223,7 @@ export default function IndividualLots() {
                   </div>
                   <div className="text-right">
                     <div className="text-2xl font-bold text-gold group-hover:text-gold/90 transition-colors duration-300">${(lot.investment / 1000000).toFixed(2)}M</div>
-                    <div className="text-sm text-muted-foreground">Land Investment</div>
+                    <div className="text-sm text-muted-foreground">{t('individualLots.landInvestment')}</div>
                   </div>
                 </div>
               </CardHeader>
@@ -234,59 +237,59 @@ export default function IndividualLots() {
                   <div className="text-center p-4 bg-gradient-to-br from-emerald-500/10 to-emerald-500/5 rounded-lg border border-emerald-500/20 hover:from-emerald-500/20 hover:to-emerald-500/10 transition-all duration-300">
                     <Building className="h-6 w-6 text-emerald-500 mx-auto mb-2" />
                     <div className="text-lg font-bold text-foreground">{lot.warehouseSF.toLocaleString()}</div>
-                    <div className="text-xs text-emerald-600 font-medium">Buildable SF</div>
+                    <div className="text-xs text-emerald-600 font-medium">{t('individualLots.buildableSF')}</div>
                   </div>
                   <div className="text-center p-4 bg-gradient-to-br from-blue-500/10 to-blue-500/5 rounded-lg border border-blue-500/20 hover:from-blue-500/20 hover:to-blue-500/10 transition-all duration-300">
                     <Calculator className="h-6 w-6 text-blue-500 mx-auto mb-2" />
                     <div className="text-lg font-bold text-foreground">{lot.dryWarehouse.roi}%</div>
-                    <div className="text-xs text-blue-600 font-medium">Dry Warehouse ROI</div>
+                    <div className="text-xs text-blue-600 font-medium">{t('individualLots.dryWarehouseROI')}</div>
                   </div>
                   <div className="text-center p-4 bg-gradient-to-br from-cyan-500/10 to-cyan-500/5 rounded-lg border border-cyan-500/20 hover:from-cyan-500/20 hover:to-cyan-500/10 transition-all duration-300">
                     <TrendingUp className="h-6 w-6 text-cyan-500 mx-auto mb-2" />
                     <div className="text-lg font-bold text-foreground">{lot.refrigerated.roi}%</div>
-                    <div className="text-xs text-cyan-600 font-medium">Refrigerated ROI</div>
+                    <div className="text-xs text-cyan-600 font-medium">{t('individualLots.refrigeratedROI')}</div>
                   </div>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="p-4 bg-gradient-to-br from-blue-500/20 to-blue-500/5 rounded-lg border border-blue-500/30 hover:from-blue-500/30 hover:to-blue-500/10 transition-all duration-300">
-                    <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-3 text-base">Dry Warehouse Development</h4>
+                    <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-3 text-base">{t('individualLots.dryWarehouseDev')}</h4>
                     <div className="space-y-2 text-sm">
                       <div className="flex justify-between items-center">
-                        <span className="text-muted-foreground">Construction Cost:</span>
+                        <span className="text-muted-foreground">{t('individualLots.constructionCost')}</span>
                         <span className="font-bold text-orange-500 text-base">${(lot.dryWarehouse.constructionCost / 1000000).toFixed(2)}M</span>
                       </div>
                       <div className="flex justify-between items-center">
-                        <span className="text-muted-foreground">Total Investment:</span>
+                        <span className="text-muted-foreground">{t('individualLots.totalInvestment')}</span>
                         <span className="font-bold text-amber-500 text-base">${(lot.dryWarehouse.totalInvestment / 1000000).toFixed(2)}M</span>
                       </div>
                       <div className="flex justify-between items-center">
-                        <span className="text-muted-foreground">Annual NOI:</span>
+                        <span className="text-muted-foreground">{t('individualLots.annualNOI')}</span>
                         <span className="font-bold text-emerald-500 text-base">${(lot.dryWarehouse.annualNOI / 1000).toFixed(0)}K</span>
                       </div>
                       <div className="flex justify-between items-center pt-2 border-t border-blue-500/20">
-                        <span className="text-foreground font-medium">Projected ROI:</span>
+                        <span className="text-foreground font-medium">{t('individualLots.projectedROI')}</span>
                         <span className="font-bold text-blue-500 text-lg">{lot.dryWarehouse.roi}%</span>
                       </div>
                     </div>
                   </div>
                   <div className="p-4 bg-gradient-to-br from-cyan-500/20 to-cyan-500/5 rounded-lg border border-cyan-500/30 hover:from-cyan-500/30 hover:to-cyan-500/10 transition-all duration-300">
-                    <h4 className="font-semibold text-cyan-600 dark:text-cyan-400 mb-3 text-base">Refrigerated Development</h4>
+                    <h4 className="font-semibold text-cyan-600 dark:text-cyan-400 mb-3 text-base">{t('individualLots.refrigeratedDev')}</h4>
                     <div className="space-y-2 text-sm">
                       <div className="flex justify-between items-center">
-                        <span className="text-muted-foreground">Construction Cost:</span>
+                        <span className="text-muted-foreground">{t('individualLots.constructionCost')}</span>
                         <span className="font-bold text-orange-500 text-base">${(lot.refrigerated.constructionCost / 1000000).toFixed(2)}M</span>
                       </div>
                       <div className="flex justify-between items-center">
-                        <span className="text-muted-foreground">Total Investment:</span>
+                        <span className="text-muted-foreground">{t('individualLots.totalInvestment')}</span>
                         <span className="font-bold text-amber-500 text-base">${(lot.refrigerated.totalInvestment / 1000000).toFixed(2)}M</span>
                       </div>
                       <div className="flex justify-between items-center">
-                        <span className="text-muted-foreground">Annual NOI:</span>
+                        <span className="text-muted-foreground">{t('individualLots.annualNOI')}</span>
                         <span className="font-bold text-emerald-500 text-base">${(lot.refrigerated.annualNOI / 1000).toFixed(0)}K</span>
                       </div>
                       <div className="flex justify-between items-center pt-2 border-t border-cyan-500/20">
-                        <span className="text-foreground font-medium">Projected ROI:</span>
+                        <span className="text-foreground font-medium">{t('individualLots.projectedROI')}</span>
                         <span className="font-bold text-cyan-500 text-lg">{lot.refrigerated.roi}%</span>
                       </div>
                     </div>
