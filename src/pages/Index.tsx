@@ -271,7 +271,7 @@ const Index = () => {
         <div className="md:hidden relative min-h-screen">
           {/* Full Screen Hero Image */}
           <div className="absolute inset-0">
-            <img src={heroSunsetHighway} alt="Industrial land investment opportunity" className="w-full h-full object-cover" />
+            <img src="/lovable-uploads/d6effb3b-46b7-41a2-bcf6-897a9536d8f7.png" alt="MCC Industrial Park at sunset" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
           </div>
 
