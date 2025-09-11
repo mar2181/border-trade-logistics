@@ -1,55 +1,56 @@
 import { TrendingUp, DollarSign, Package, ArrowUp } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+
 export default function MarketAnalysis() {
+  const { t } = useLanguage();
+  
   const tradeVolume = [{
-    product: "Avocados",
+    product: t('marketAnalysis.avocados'),
     value: "$1,970M",
     color: "bg-emerald-500"
   }, {
-    product: "Berries",
+    product: t('marketAnalysis.berries'),
     value: "$1,100M",
     color: "bg-blue-500"
   }, {
-    product: "Peppers",
+    product: t('marketAnalysis.peppers'),
     value: "$890M",
     color: "bg-amber-500"
   }, {
-    product: "Onions",
+    product: t('marketAnalysis.onions'),
     value: "$650M",
     color: "bg-red-500"
   }, {
-    product: "Others",
+    product: t('marketAnalysis.others'),
     value: "$2,440M",
     color: "bg-purple-500"
   }];
+  
   return <section id="analysis" className="py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-primary mb-4">Market Analysis</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4">{t('marketAnalysis.title')}</h2>
           <div className="bg-gradient-to-r from-accent-emerald/20 via-gold/20 to-accent-emerald/20 rounded-2xl p-6 mb-8">
             <p className="text-xl text-foreground max-w-4xl mx-auto text-center font-medium">
-              <span className="text-gold font-bold">McAllen's Strategic Cross-Border Position</span>
+              <span className="text-gold font-bold">{t('marketAnalysis.strategicPosition')}</span>
             </p>
             <p className="text-lg text-muted-foreground max-w-5xl mx-auto text-center mt-4">
-              Located in McAllen's premier industrial district with proven produce/logistics demand. 
-              The Valley <span className="text-accent-emerald font-semibold">demonstrates market stability</span> supported by cross-border trade through Pharr-Reynosa Bridge. 
-              <span className="text-gold font-semibold">Modeled under base and stress scenarios</span> for lender confidence and investment clarity.
+              {t('marketAnalysis.strategicDesc')}
             </p>
           </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
           <div>
-            <h3 className="text-2xl font-semibold text-primary mb-6">The Valley's Dynamic Market Transformation</h3>
+            <h3 className="text-2xl font-semibold text-primary mb-6">{t('marketAnalysis.dynamicTransformation')}</h3>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              <strong className="text-gold">McAllen MSA Market Dynamics:</strong> Recent third-party reads show McAllen industrial vacancy around 3.9% (3Q24) with LTM rent growth ~1.9%–2.5%. 
-              Q2-2025 asking rents averaged $8.43/SF amid &gt;1.3M SF under construction (CBRE Q2-2025). 
-              <strong className="text-accent-emerald">The Valley demonstrates consistent growth supported by cross-border trade</strong> with proven logistics demand patterns.
+              {t('marketAnalysis.dynamicDesc')}
             </p>
             
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6">
               <div className="flex justify-between items-center mb-4">
-                <span className="text-sm text-muted-foreground">Vacancy Rate Trend</span>
-                <span className="text-sm text-muted-foreground">Rental Rate Growth</span>
+                <span className="text-sm text-muted-foreground">{t('marketAnalysis.vacancyTrend')}</span>
+                <span className="text-sm text-muted-foreground">{t('marketAnalysis.rentalRateGrowth')}</span>
               </div>
               <div className="space-y-3">
                 <div className="flex justify-between items-center">
@@ -80,9 +81,9 @@ export default function MarketAnalysis() {
             </div>
             
             <div>
-              <h3 className="text-2xl font-semibold text-primary mb-6">Trade Volume Distribution</h3>
+              <h3 className="text-2xl font-semibold text-primary mb-6">{t('marketAnalysis.tradeVolumeDistribution')}</h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Over $6B annual produce trade through Pharr-Reynosa Bridge (~$47-$50B total trade) creates consistent demand for specialized cold storage and distribution facilities.
+                {t('marketAnalysis.tradeVolumeDesc')}
               </p>
               
               <div className="space-y-3">
@@ -104,22 +105,22 @@ export default function MarketAnalysis() {
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-gold/10 transition-all duration-300">
             <Package className="h-8 w-8 text-gold mx-auto mb-3" />
             <div className="text-2xl font-bold text-gold mb-2">1.5-2.5M SF</div>
-            <div className="text-sm text-muted-foreground">Supply Shortage - Current tenant demand vs limited available inventory</div>
+            <div className="text-sm text-muted-foreground">{t('marketAnalysis.supplyShortage')}</div>
           </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-emerald-500/10 transition-all duration-300">
             <TrendingUp className="h-8 w-8 text-emerald-500 mx-auto mb-3" />
             <div className="text-2xl font-bold text-emerald-500 mb-2">+10%</div>
-            <div className="text-sm text-muted-foreground">Import Growth - Annual cross-border trade growth (Texas A&M Research)</div>
+            <div className="text-sm text-muted-foreground">{t('marketAnalysis.importGrowth')}</div>
           </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300">
             <DollarSign className="h-8 w-8 text-blue-500 mx-auto mb-3" />
             <div className="text-2xl font-bold text-blue-500 mb-2">3%</div>
-            <div className="text-sm text-muted-foreground">Rent Trajectory - Annual rental rate growth supported by market fundamentals</div>
+            <div className="text-sm text-muted-foreground">{t('marketAnalysis.rentTrajectory')}</div>
           </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-amber-500/10 transition-all duration-300">
             <ArrowUp className="h-8 w-8 text-amber-500 mx-auto mb-3" />
             <div className="text-2xl font-bold text-amber-500 mb-2">42 Acres</div>
-            <div className="text-sm text-muted-foreground">Only 8 Properties Left - McAllen's premier industrial opportunities</div>
+            <div className="text-sm text-muted-foreground">{t('marketAnalysis.onlyProperties')}</div>
           </div>
         </div>
       </div>
