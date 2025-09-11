@@ -1,5 +1,4 @@
 import { BarChart3, DollarSign, Percent, TrendingUp } from "lucide-react";
-
 export default function FinancialProjections() {
   const landPortfolioSummary = {
     totalLandInvestment: "$12.24M",
@@ -9,27 +8,39 @@ export default function FinancialProjections() {
     projectedAppreciation: "8-12%",
     threYearValue: "$17.5M"
   };
-
   const landAssumptions = {
-    market: [
-      { label: "Vacancy Rate", value: "3.9%" },
-      { label: "Land Appreciation", value: "10-15% annually" },
-      { label: "Holding Costs", value: "2-3% annually" }
-    ],
-    pricing: [
-      { label: "Premium Lots", value: "$300K/acre" },
-      { label: "Standard Lots", value: "$250K/acre" },
-      { label: "Market Comparables", value: "$281K/acre avg" }
-    ],
-    development: [
-      { label: "Optional Dry Warehouse", value: "$120/sq ft" },
-      { label: "Optional Refrigerated", value: "$200-220/sq ft" },
-      { label: "Land Ready for Build", value: "Immediate" }
-    ]
+    market: [{
+      label: "Vacancy Rate",
+      value: "3.9%"
+    }, {
+      label: "Land Appreciation",
+      value: "10-15% annually"
+    }, {
+      label: "Holding Costs",
+      value: "2-3% annually"
+    }],
+    pricing: [{
+      label: "Premium Lots",
+      value: "$300K/acre"
+    }, {
+      label: "Standard Lots",
+      value: "$250K/acre"
+    }, {
+      label: "Market Comparables",
+      value: "$281K/acre avg"
+    }],
+    development: [{
+      label: "Optional Dry Warehouse",
+      value: "$120/sq ft"
+    }, {
+      label: "Optional Refrigerated",
+      value: "$200-220/sq ft"
+    }, {
+      label: "Land Ready for Build",
+      value: "Immediate"
+    }]
   };
-
-  return (
-    <section className="py-16 px-6">
+  return <section className="py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-primary mb-4">MCC Industrial Park - Financial Projections & Strategy</h2>
@@ -38,11 +49,7 @@ export default function FinancialProjections() {
           </p>
           
           <div className="relative overflow-hidden rounded-xl border border-border max-w-2xl mx-auto">
-            <img 
-              src="/lovable-uploads/3f8d60fa-ce14-48f0-b0e1-baac1a96b428.png" 
-              alt="Modern laboratory facility for produce quality testing" 
-              className="w-full h-48 object-cover"
-            />
+            <img src="/lovable-uploads/3f8d60fa-ce14-48f0-b0e1-baac1a96b428.png" alt="Modern laboratory facility for produce quality testing" className="w-full h-48 object-cover" />
           </div>
         </div>
 
@@ -81,7 +88,7 @@ export default function FinancialProjections() {
                     <span className="text-xl font-semibold text-emerald-500">{landPortfolioSummary.projectedAppreciation}</span>
                   </div>
                   <div className="flex justify-between items-center pt-4 border-t border-border">
-                    <span className="text-muted-foreground">3-Year Value (12% avg):</span>
+                    <span className="text-muted-foreground">4-Year Value (12% avg):</span>
                     <span className="text-2xl font-bold text-amber-500">{landPortfolioSummary.threYearValue}</span>
                   </div>
                 </div>
@@ -97,36 +104,30 @@ export default function FinancialProjections() {
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6">
               <h4 className="text-lg font-semibold text-gold mb-4">Market Fundamentals</h4>
               <div className="space-y-3">
-                {landAssumptions.market.map((item, index) => (
-                  <div key={index} className="flex justify-between">
+                {landAssumptions.market.map((item, index) => <div key={index} className="flex justify-between">
                     <span className="text-muted-foreground">{item.label}:</span>
                     <span className="text-foreground font-medium">{item.value}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
 
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6">
               <h4 className="text-lg font-semibold text-emerald-500 mb-4">Land Pricing</h4>
               <div className="space-y-3">
-                {landAssumptions.pricing.map((item, index) => (
-                  <div key={index} className="flex justify-between">
+                {landAssumptions.pricing.map((item, index) => <div key={index} className="flex justify-between">
                     <span className="text-muted-foreground">{item.label}:</span>
                     <span className="text-foreground font-medium">{item.value}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
 
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6">
               <h4 className="text-lg font-semibold text-blue-500 mb-4">Development Potential</h4>
               <div className="space-y-3">
-                {landAssumptions.development.map((item, index) => (
-                  <div key={index} className="flex justify-between">
+                {landAssumptions.development.map((item, index) => <div key={index} className="flex justify-between">
                     <span className="text-muted-foreground">{item.label}:</span>
                     <span className="text-foreground font-medium">{item.value}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
           </div>
@@ -167,6 +168,5 @@ export default function FinancialProjections() {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
