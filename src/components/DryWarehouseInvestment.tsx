@@ -1,6 +1,8 @@
 import { Building2, DollarSign, TrendingUp, MapPin } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function DryWarehouseInvestment() {
+  const { t } = useLanguage();
   const lots = [
     {
       id: "01",
@@ -163,72 +165,72 @@ export default function DryWarehouseInvestment() {
 
         <div className="grid lg:grid-cols-2 gap-12">
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8">
-            <h3 className="text-2xl font-semibold text-primary mb-6">Fed Rate Cuts Impact on Dry Warehouse Investment</h3>
+            <h3 className="text-2xl font-semibold text-primary mb-6">{t('strategic.fedRateImpact')}</h3>
             
             <div className="mb-6">
-              <h4 className="text-lg font-medium text-gold mb-4">Financing Advantages</h4>
+              <h4 className="text-lg font-medium text-gold mb-4">{t('strategic.financingAdvantages')}</h4>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start">
                   <span className="text-gold mr-2">•</span>
-                  Lower construction loan rates reduce carrying costs
+                  {t('strategic.lowerConstructionRates')}
                 </li>
                 <li className="flex items-start">
                   <span className="text-gold mr-2">•</span>
-                  Improved debt service coverage ratios
+                  {t('strategic.improvedCoverage')}
+                </li>
+                <li className="flex items-start">
+                  <span className="text-gold mr-2">•</span>  
+                  {t('strategic.enhancedReturns')}
                 </li>
                 <li className="flex items-start">
                   <span className="text-gold mr-2">•</span>
-                  Enhanced cash-on-cash returns through leverage
-                </li>
-                <li className="flex items-start">
-                  <span className="text-gold mr-2">•</span>
-                  Refinancing opportunities for existing developments
+                  {t('strategic.refinancingOpps')}
                 </li>
               </ul>
             </div>
 
             <div>
-              <h4 className="text-lg font-medium text-gold mb-4">Market Movement Benefits</h4>
+              <h4 className="text-lg font-medium text-gold mb-4">{t('strategic.marketMovementBenefits')}</h4>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start">
                   <span className="text-gold mr-2">•</span>
-                  Increased business activity from lower borrowing costs
+                  {t('strategic.increasedActivity')}
                 </li>
                 <li className="flex items-start">
                   <span className="text-gold mr-2">•</span>
-                  More importers expanding operations
+                  {t('strategic.expandingImporters')}
                 </li>
                 <li className="flex items-start">
                   <span className="text-gold mr-2">•</span>
-                  Higher demand for flexible warehouse space
+                  {t('strategic.higherDemand')}
                 </li>
                 <li className="flex items-start">
                   <span className="text-gold mr-2">•</span>
-                  Optimal timing for new development projects
+                  {t('strategic.optimalTiming')}
                 </li>
               </ul>
             </div>
           </div>
 
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8">
-            <h3 className="text-2xl font-semibold text-primary mb-6 text-center">Complete Dry Warehouse Portfolio</h3>
+            <h3 className="text-2xl font-semibold text-primary mb-6 text-center">{t('strategic.completePortfolio')}</h3>
             
             <div className="grid grid-cols-2 gap-4">
               <div className="text-center">
                 <div className="text-3xl font-bold text-gold mb-2">49.11</div>
-                <div className="text-sm text-muted-foreground">Total Acres</div>
+                <div className="text-sm text-muted-foreground">{t('strategic.totalAcres')}</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-emerald-500 mb-2">732K</div>
-                <div className="text-sm text-muted-foreground">Buildable Sq Ft</div>
+                <div className="text-sm text-muted-foreground">{t('strategic.buildableSqFt')}</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-blue-500 mb-2">$101M</div>
-                <div className="text-sm text-muted-foreground">Total Investment</div>
+                <div className="text-sm text-muted-foreground">{t('strategic.totalInvestment')}</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-amber-500 mb-2">$13.2M</div>
-                <div className="text-sm text-muted-foreground">Annual Rental Income</div>
+                <div className="text-sm text-muted-foreground">{t('strategic.annualRental')}</div>
               </div>
             </div>
           </div>
