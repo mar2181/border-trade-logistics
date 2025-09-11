@@ -72,7 +72,7 @@ export default function ExecutiveSummary() {
               <p className="text-muted-foreground leading-relaxed mb-4">
                 <strong className="text-gold">Why Investors Choose The Valley:</strong> Those who have done business in McAllen stay and grow - it's America's best-kept secret. 
                 Recent comparables show $281K/acre for ready sites, making our $250K-$300K pricing extremely attractive. 
-                <strong className="text-accent-emerald">Act in the next few months</strong> to benefit from Fed rate cuts whether you build or hold. 
+                <strong className="text-accent-emerald">Act Now</strong> to benefit from Fed rate cuts whether you build or hold. 
                 This represents a <strong className="text-gold">compelling investment opportunity</strong> with multiple favorable scenarios in a fundamentally strong market.
               </p>
 
