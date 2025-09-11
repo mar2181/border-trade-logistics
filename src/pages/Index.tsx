@@ -14,7 +14,6 @@ import LocationAdvantages from "@/components/LocationAdvantages";
 import Demographics from "@/components/Demographics";
 import StrategicPosition from "@/components/StrategicPosition";
 import RiskAnalysis from "@/components/RiskAnalysis";
-import { MarketDataSources } from "@/components/MarketDataSources";
 import InvestmentProcess from "@/components/InvestmentProcess";
 
 import FloatingBottomNav from "@/components/FloatingBottomNav";
@@ -374,7 +373,6 @@ const Index = () => {
       <ProfessionalAnalysis />
       <RiskAnalysis />
       <InvestmentProcess />
-      <MarketDataSources />
       
       
       {/* Mobile Navigation Overlay */}
