@@ -206,6 +206,34 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Virtual Tour Video Section */}
+      <section className="py-16 bg-background">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
+              MCC Industrial Park Virtual Tour
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              by Juan Elizondo Re Max/ Elite
+            </p>
+          </div>
+          
+          <div className="relative">
+            <video 
+              controls 
+              className="w-full h-auto rounded-2xl shadow-2xl border border-border"
+              poster="/lovable-uploads/d6effb3b-46b7-41a2-bcf6-897a9536d8f7.png"
+            >
+              <source 
+                src="https://svgsbaahxiaeljmfykzp.supabase.co/storage/v1/object/public/mcc_industrialpark/Untitled%20video%20-%20Made%20with%20Clipchamp%20(7).mp4" 
+                type="video/mp4" 
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+
       <ExecutiveSummary />
       <MarketAnalysis />
       <LandParcels />
