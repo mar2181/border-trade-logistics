@@ -62,19 +62,19 @@ export default function DryWarehouseInvestment() {
       id: "07",
       type: "Premium",
       size: "7.18 acres",
-      buildableSF: "38,160",
-      totalInvestment: "$6.7M", 
-      annualRental: "$477K",
-      roi: "7.1%"
+      buildableSF: "103,350",
+      totalInvestment: "$13.3M", 
+      annualRental: "$1.3M",
+      roi: "9.7%"
     },
     {
       id: "08",
       type: "Premium",
       size: "3.13 acres",
-      buildableSF: "103,350",
-      totalInvestment: "$13.3M", 
-      annualRental: "$1.3M",
-      roi: "9.7%"
+      buildableSF: "38,160",
+      totalInvestment: "$6.7M", 
+      annualRental: "$477K",
+      roi: "7.1%"
     }
   ];
 

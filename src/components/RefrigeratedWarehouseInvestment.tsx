@@ -60,19 +60,19 @@ export default function RefrigeratedWarehouseInvestment() {
       id: "07",
       type: "Premium",
       size: "7.18 acres",
-      buildableSF: "38,160",
-      totalInvestment: "$10.2M", 
-      annualRental: "$744K",
-      roi: "7.3%"
+      buildableSF: "103,350",
+      totalInvestment: "$22.6M", 
+      annualRental: "$2.0M",
+      roi: "8.9%"
     },
     {
       id: "08",
       type: "Premium",
       size: "3.13 acres",
-      buildableSF: "103,350",
-      totalInvestment: "$22.6M", 
-      annualRental: "$2.0M",
-      roi: "8.9%"
+      buildableSF: "38,160",
+      totalInvestment: "$10.2M", 
+      annualRental: "$744K",
+      roi: "7.3%"
     }
   ];
 
