@@ -270,11 +270,11 @@ const Index = () => {
         {/* Mobile Layout - Image + Card Template Structure */}
         <div className="md:hidden">
           {/* Hero Image Section - 40% of viewport height */}
-          <div className="relative h-[40vh] mt-20">
+          <div className="relative h-[40vh] mt-24 px-4">
             <img 
               src="/lovable-uploads/d6effb3b-46b7-41a2-bcf6-897a9536d8f7.png" 
               alt="MCC Industrial Park at sunset" 
-              className="w-full h-full object-cover" 
+              className="w-full h-full object-cover rounded-2xl" 
             />
           </div>
 
