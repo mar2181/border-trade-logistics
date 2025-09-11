@@ -7,56 +7,74 @@ export default function DryWarehouseInvestment() {
     {
       id: "01",
       type: "Premium",
-      size: "3.62 acres",
-      buildableSF: "55,000",
-      totalInvestment: "$7.7M",
-      annualRental: "$1.0M",
-      roi: "9.7%"
+      size: "5.04 acres",
+      buildableSF: "57,240",
+      totalInvestment: "$8.4M",
+      annualRental: "$715K",
+      roi: "8.5%"
     },
     {
       id: "02", 
       type: "Premium",
-      size: "3.81 acres",
-      buildableSF: "58,000",
-      totalInvestment: "$8.1M",
-      annualRental: "$1.0M",
-      roi: "9.7%"
+      size: "5.06 acres",
+      buildableSF: "66,780",
+      totalInvestment: "$9.4M",
+      annualRental: "$835K",
+      roi: "8.9%"
     },
     {
       id: "03",
       type: "Premium", 
-      size: "7.02 acres",
-      buildableSF: "107,000",
-      totalInvestment: "$14.9M",
-      annualRental: "$1.9M",
-      roi: "9.7%"
+      size: "5.73 acres",
+      buildableSF: "80,000",
+      totalInvestment: "$11.1M",
+      annualRental: "$1.0M",
+      roi: "9.0%"
     },
     {
       id: "04",
       type: "Premium",
-      size: "7.15 acres", 
-      buildableSF: "109,000",
-      totalInvestment: "$15.2M",
-      annualRental: "$2.0M",
-      roi: "9.7%"
+      size: "6.12 acres", 
+      buildableSF: "80,000",
+      totalInvestment: "$11.2M",
+      annualRental: "$1.0M",
+      roi: "8.9%"
     },
     {
       id: "05",
       type: "Premium",
-      size: "8.2 acres",
-      buildableSF: "125,000", 
-      totalInvestment: "$17.5M",
-      annualRental: "$2.3M",
-      roi: "9.7%"
+      size: "6.12 acres",
+      buildableSF: "80,000", 
+      totalInvestment: "$11.2M",
+      annualRental: "$1.0M",
+      roi: "8.9%"
     },
     {
       id: "06",
-      type: "Standard",
-      size: "3.51 acres",
-      buildableSF: "53,500",
-      totalInvestment: "$7.3M", 
+      type: "Premium",
+      size: "5.79 acres",
+      buildableSF: "80,000",
+      totalInvestment: "$11.1M", 
       annualRental: "$1.0M",
-      roi: "9.9%"
+      roi: "9.0%"
+    },
+    {
+      id: "07",
+      type: "Premium",
+      size: "7.18 acres",
+      buildableSF: "38,160",
+      totalInvestment: "$6.7M", 
+      annualRental: "$477K",
+      roi: "7.1%"
+    },
+    {
+      id: "08",
+      type: "Premium",
+      size: "3.13 acres",
+      buildableSF: "103,350",
+      totalInvestment: "$13.3M", 
+      annualRental: "$1.3M",
+      roi: "9.7%"
     }
   ];
 
