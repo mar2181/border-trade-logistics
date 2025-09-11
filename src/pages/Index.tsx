@@ -110,11 +110,21 @@ const Index = () => {
               <a href="/calculator" className="text-muted-foreground hover:text-gold transition-colors">Calculator</a>
             </div>
 
-            {/* Desktop Contact */}
+            {/* Desktop Contact & Language Toggle */}
             <div className="hidden md:flex items-center space-x-4">
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <Phone className="w-4 h-4" />
                 <span>(956) 522-1481</span>
+              </div>
+              
+              {/* Language Toggle */}
+              <div className="flex items-center bg-background/10 backdrop-blur-sm rounded-full border border-white/20 overflow-hidden">
+                <button className="px-3 py-1.5 text-xs font-medium text-white bg-gold/20 hover:bg-gold/30 transition-colors">
+                  EN
+                </button>
+                <button className="px-3 py-1.5 text-xs font-medium text-white/70 hover:text-white hover:bg-white/10 transition-colors">
+                  ES
+                </button>
               </div>
             </div>
           </div>
