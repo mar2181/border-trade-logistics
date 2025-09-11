@@ -85,10 +85,10 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Navigation - Floating on Mobile, Fixed on Desktop */}
-      <nav className={`fixed top-4 left-4 right-4 md:top-0 md:left-0 md:right-0 z-50 transition-colors duration-300
+<nav className={`fixed top-4 left-4 right-4 md:top-0 md:left-0 md:right-0 z-50 transition-all duration-300
                       ${isScrolled 
-                        ? 'md:bg-black/90 md:backdrop-blur-md md:border-b md:border-border' 
-                        : 'md:bg-background/90 md:backdrop-blur-md md:border-b md:border-border'
+                        ? 'md:bg-black/95 md:backdrop-blur-md md:border-b md:border-white/10' 
+                        : 'md:bg-transparent'
                       }
                       sm:bg-background/95 sm:backdrop-blur-md sm:border sm:border-border/50 sm:rounded-2xl sm:shadow-lg`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
