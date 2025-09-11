@@ -96,7 +96,7 @@ const Index = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2 sm:space-x-3">
               <img src="/lovable-uploads/86c0cf99-26fd-48bd-9d8a-d0c791fcbf83.png" alt="RE/MAX Commercial" className="h-6 sm:h-8" />
-              <Building className="w-5 h-5 sm:w-6 sm:h-6 text-gold" />
+              <Building className="w-5 h-5 sm:w-6 sm:h-6 text-gold md:hidden" />
             </div>
             
             {/* Desktop Navigation Items */}
