@@ -135,7 +135,7 @@ export default function IndividualLots() {
     {
       id: 7,
       name: t('individualLots.lot7Title'),
-      acres: 3.13,
+      acres: 7.18,
       warehouseSF: 103350,
       investment: 939000,
       pricePerAcre: 300000,
