@@ -19,25 +19,25 @@ const InvestmentTabs = () => {
 
         {/* Investment Tabs */}
         <Tabs defaultValue="dry-warehouse" className="w-full">
-          <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-2 mb-12 h-16 bg-muted/50 backdrop-blur-sm">
+          <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-2 mb-12 h-20 bg-card/80 backdrop-blur-sm border border-border rounded-xl p-2 gap-2">
             <TabsTrigger 
               value="dry-warehouse" 
-              className="flex items-center space-x-3 text-base font-semibold text-foreground data-[state=active]:bg-gold data-[state=active]:text-gray-900 transition-all duration-300"
+              className="flex items-center space-x-3 text-base font-semibold text-white/90 data-[state=active]:bg-blue-500 data-[state=active]:text-white hover:text-blue-400 hover:bg-white/5 transition-all duration-300 rounded-lg py-4 px-6"
             >
               <Warehouse className="w-5 h-5" />
               <div className="text-left">
                 <div>Dry Warehouse</div>
-                <div className="text-xs opacity-80">13.0% Average ROI</div>
+                <div className="text-xs opacity-90">13.0% Average ROI</div>
               </div>
             </TabsTrigger>
             <TabsTrigger 
               value="refrigerated-warehouse" 
-              className="flex items-center space-x-3 text-base font-semibold text-foreground data-[state=active]:bg-gold data-[state=active]:text-gray-900 transition-all duration-300"
+              className="flex items-center space-x-3 text-base font-semibold text-white/90 data-[state=active]:bg-cyan-500 data-[state=active]:text-white hover:text-cyan-400 hover:bg-white/5 transition-all duration-300 rounded-lg py-4 px-6"
             >
               <Thermometer className="w-5 h-5" />
               <div className="text-left">
                 <div>Refrigerated Warehouse</div>
-                <div className="text-xs opacity-80">8.8% Average ROI</div>
+                <div className="text-xs opacity-90">8.8% Average ROI</div>
               </div>
             </TabsTrigger>
           </TabsList>
