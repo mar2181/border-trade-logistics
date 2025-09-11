@@ -25,6 +25,17 @@ import ProfessionalAnalysis from "@/components/ProfessionalAnalysis";
 const Index = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [isMobileChatOpen, setIsMobileChatOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // Handle scroll for header background
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   // Move chatbot to mobile container when mobile chat opens
   useEffect(() => {
@@ -74,9 +85,12 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Navigation - Floating on Mobile, Fixed on Desktop */}
-      <nav className="fixed top-4 left-4 right-4 md:top-0 md:left-0 md:right-0 z-50 
-                     md:bg-background/90 md:backdrop-blur-md md:border-b md:border-border
-                     sm:bg-background/95 sm:backdrop-blur-md sm:border sm:border-border/50 sm:rounded-2xl sm:shadow-lg">
+      <nav className={`fixed top-4 left-4 right-4 md:top-0 md:left-0 md:right-0 z-50 transition-colors duration-300
+                      ${isScrolled 
+                        ? 'md:bg-black/90 md:backdrop-blur-md md:border-b md:border-border' 
+                        : 'md:bg-background/90 md:backdrop-blur-md md:border-b md:border-border'
+                      }
+                      sm:bg-background/95 sm:backdrop-blur-md sm:border sm:border-border/50 sm:rounded-2xl sm:shadow-lg`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3 sm:space-x-4">
