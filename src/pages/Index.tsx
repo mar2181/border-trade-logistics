@@ -24,6 +24,7 @@ import IndividualLots from "@/components/IndividualLots";
 import ProfessionalAnalysis from "@/components/ProfessionalAnalysis";
 const Index = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+  const [isMobileChatOpen, setIsMobileChatOpen] = useState(false);
 
   const handleMobileNavigation = (action: string) => {
     if (action === 'dry') {
@@ -355,13 +356,39 @@ const Index = () => {
       <InvestmentProcess />
       <MarketDataSources />
       
-      {/* ElevenLabs Conversational AI Agent - Hidden but accessible */}
-      <div style={{ position: 'absolute', left: '-9999px' }} dangerouslySetInnerHTML={{
-        __html: '<elevenlabs-convai agent-id="agent_8801k4w0v35xepfbwgksee62qets"></elevenlabs-convai>'
-      }} />
 
       {/* Floating Bottom Navigation - Mobile Only */}
-      <FloatingBottomNav onMenuClick={() => setIsMobileNavOpen(true)} />
+      <FloatingBottomNav 
+        onMenuClick={() => setIsMobileNavOpen(true)} 
+        onChatClick={() => setIsMobileChatOpen(!isMobileChatOpen)}
+        isChatOpen={isMobileChatOpen}
+      />
+      
+      {/* Mobile Chat Container */}
+      {isMobileChatOpen && (
+        <div className="fixed inset-0 z-40 md:hidden">
+          <div 
+            className="absolute inset-0 bg-black/50" 
+            onClick={() => setIsMobileChatOpen(false)}
+          />
+          <div className="absolute bottom-20 left-4 right-4 bg-background border border-border rounded-t-2xl shadow-2xl animate-slide-in-right">
+            <div className="flex items-center justify-between p-4 border-b border-border">
+              <h3 className="font-semibold text-foreground">Chat with Juan</h3>
+              <button
+                onClick={() => setIsMobileChatOpen(false)}
+                className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-accent transition-colors"
+              >
+                ×
+              </button>
+            </div>
+            <div className="h-96 p-4">
+              <div dangerouslySetInnerHTML={{
+                __html: '<elevenlabs-convai agent-id="agent_8801k4w0v35xepfbwgksee62qets"></elevenlabs-convai>'
+              }} />
+            </div>
+          </div>
+        </div>
+      )}
     </div>;
 };
 export default Index;

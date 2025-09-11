@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom';
 
 interface FloatingBottomNavProps {
   onMenuClick: () => void;
+  onChatClick: () => void;
+  isChatOpen: boolean;
 }
 
-const FloatingBottomNav: React.FC<FloatingBottomNavProps> = ({ onMenuClick }) => {
+const FloatingBottomNav: React.FC<FloatingBottomNavProps> = ({ onMenuClick, onChatClick, isChatOpen }) => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -36,17 +38,15 @@ const FloatingBottomNav: React.FC<FloatingBottomNavProps> = ({ onMenuClick }) =>
           </button>
           
           <button
-            onClick={() => {
-              const agent = document.querySelector('elevenlabs-convai');
-              if (agent) {
-                // Trigger the conversational AI
-                (agent as any).click?.();
-              }
-            }}
-            className="flex flex-col items-center space-y-1 px-3 py-2 rounded-xl hover:bg-accent/50 transition-colors"
+            onClick={onChatClick}
+            className={`flex flex-col items-center space-y-1 px-3 py-2 rounded-xl transition-colors ${
+              isChatOpen 
+                ? 'bg-accent text-accent-foreground' 
+                : 'hover:bg-accent/50'
+            }`}
           >
-            <MessageCircle className="w-5 h-5 text-muted-foreground" />
-            <span className="text-xs text-muted-foreground">Chat</span>
+            <MessageCircle className={`w-5 h-5 ${isChatOpen ? 'text-accent-foreground' : 'text-muted-foreground'}`} />
+            <span className={`text-xs ${isChatOpen ? 'text-accent-foreground' : 'text-muted-foreground'}`}>Chat</span>
           </button>
           
           <Link
