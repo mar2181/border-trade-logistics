@@ -20,8 +20,8 @@ export default function IndividualLots() {
       refrigerated: {
         constructionCost: 12020000,
         totalInvestment: 13532000,
-        annualNOI: 1030000,
-        roi: 7.6
+        annualNOI: 1116000,
+        roi: 8.2
       }
     },
     {
@@ -41,8 +41,8 @@ export default function IndividualLots() {
       refrigerated: {
         constructionCost: 14023800,
         totalInvestment: 15364700,
-        annualNOI: 1201400,
-        roi: 7.8
+        annualNOI: 1302210,
+        roi: 8.5
       }
     },
     {
@@ -62,8 +62,8 @@ export default function IndividualLots() {
       refrigerated: {
         constructionCost: 16800000,
         totalInvestment: 18318450,
-        annualNOI: 1440000,
-        roi: 7.9
+        annualNOI: 1560000,
+        roi: 8.5
       }
     },
     {
@@ -83,8 +83,8 @@ export default function IndividualLots() {
       refrigerated: {
         constructionCost: 16800000,
         totalInvestment: 18419150,
-        annualNOI: 1440000,
-        roi: 7.8
+        annualNOI: 1560000,
+        roi: 8.5
       }
     },
     {
@@ -104,8 +104,8 @@ export default function IndividualLots() {
       refrigerated: {
         constructionCost: 16800000,
         totalInvestment: 18421800,
-        annualNOI: 1440000,
-        roi: 7.8
+        annualNOI: 1560000,
+        roi: 8.5
       }
     },
     {
@@ -125,8 +125,8 @@ export default function IndividualLots() {
       refrigerated: {
         constructionCost: 16800000,
         totalInvestment: 18334350,
-        annualNOI: 1440000,
-        roi: 7.9
+        annualNOI: 1560000,
+        roi: 8.5
       }
     },
     {
@@ -146,8 +146,8 @@ export default function IndividualLots() {
       refrigerated: {
         constructionCost: 21703500,
         totalInvestment: 23857500,
-        annualNOI: 1860300,
-        roi: 7.8
+        annualNOI: 2015325,
+        roi: 8.4
       }
     },
     {
@@ -167,8 +167,8 @@ export default function IndividualLots() {
       refrigerated: {
         constructionCost: 8013600,
         totalInvestment: 8952600,
-        annualNOI: 686880,
-        roi: 7.7
+        annualNOI: 744120,
+        roi: 8.3
       }
     }
   ];
