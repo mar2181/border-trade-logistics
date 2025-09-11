@@ -85,7 +85,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* Navigation - Simplified Header with Logo Only */}
+      {/* Navigation - Simplified Mobile, Full Desktop */}
 <nav className={`fixed top-4 left-4 right-4 md:top-0 md:left-0 md:right-0 z-50 transition-all duration-300
                       ${isScrolled 
                         ? 'md:bg-black/95 md:backdrop-blur-md md:border-b md:border-white/10' 
@@ -93,11 +93,43 @@ const Index = () => {
                       }
                       sm:bg-background/95 sm:backdrop-blur-md sm:border sm:border-border/50 sm:rounded-2xl sm:shadow-lg`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
-          <div className="flex items-center justify-center md:justify-start">
+          <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2 sm:space-x-3">
               <img src="/lovable-uploads/86c0cf99-26fd-48bd-9d8a-d0c791fcbf83.png" alt="RE/MAX Commercial" className="h-6 sm:h-8" />
               <Building className="w-5 h-5 sm:w-6 sm:h-6 text-gold" />
               <span className="text-lg sm:text-xl font-bold text-primary-foreground">Industrial Land</span>
+            </div>
+            
+            {/* Desktop Navigation Items */}
+            <div className="hidden md:flex items-center space-x-6">
+              <a href="#overview" className="text-muted-foreground hover:text-gold transition-colors">Overview</a>
+              <a href="#analysis" className="text-muted-foreground hover:text-gold transition-colors">Market Analysis</a>
+              <a href="#land-parcels" className="text-muted-foreground hover:text-gold transition-colors">Land Parcels</a>
+              <a href="#virtual-tour" className="text-muted-foreground hover:text-gold transition-colors">Virtual Tour</a>
+              <a href="#financials" className="text-muted-foreground hover:text-gold transition-colors">Financials</a>
+              <a href="#properties" className="text-muted-foreground hover:text-gold transition-colors">Properties</a>
+              <a href="/calculator" className="text-muted-foreground hover:text-gold transition-colors">Calculator</a>
+            </div>
+
+            {/* Desktop Contact & Chat */}
+            <div className="hidden md:flex items-center space-x-4">
+              <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+                <Phone className="w-4 h-4" />
+                <span>(956) 522-1481</span>
+              </div>
+              
+              <button
+                onClick={() => {
+                  const agent = document.querySelector('elevenlabs-convai');
+                  if (agent) {
+                    (agent as any).click?.();
+                  }
+                }}
+                className="flex items-center justify-center w-8 h-8 bg-accent text-accent-foreground rounded-full hover:bg-accent/80 transition-colors"
+                aria-label="Start chat"
+              >
+                <MessageCircle className="w-4 h-4" />
+              </button>
             </div>
           </div>
         </div>
