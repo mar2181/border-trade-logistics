@@ -46,21 +46,25 @@ export default function ExecutiveSummary() {
           </div>
 
           <div className="space-y-8">
-            <div>
-              <h3 className="text-2xl font-semibold text-primary mb-4">The Valley Advantage - America's Hidden Gem</h3>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                • <strong className="text-gold">Dodge Arena District:</strong> Premium corner location on 10th Street with new road development<br />
-                • <strong className="text-accent-emerald">900K+ Metro Population:</strong> McAllen rivals El Paso size with strong growth trajectory<br />
-                • <strong className="text-accent-sapphire">Refrigerated Industry Boom:</strong> Heart of produce alley with surging demand<br />
-                • <strong className="text-gold">Fed Rate Cut Timing:</strong> Perfect storm for development financing and appreciation<br />
-                • <strong className="text-accent-emerald">Market Resilience:</strong> Valley growth fundamentals provide stability amid changing national conditions
-              </p>
-              
-              <div className="flex items-center text-muted-foreground mb-4">
-                <MapPin className="h-5 w-5 text-gold mr-2" />
-                <span>10th Street • Dodge Arena District • Heart of America's Produce Distribution Hub</span>
+            <div className="grid md:grid-cols-2 gap-6 items-start">
+              <div className="relative overflow-hidden rounded-xl border border-border">
+                <img src="/lovable-uploads/d775f7d6-ebe9-40e0-9cbe-77e7e7aed1f4.png" alt="Industrial development aerial view" className="w-full h-48 object-cover" />
               </div>
-
+              <div>
+                <h3 className="text-2xl font-semibold text-primary mb-4">The Valley Advantage - America's Hidden Gem</h3>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  • <strong className="text-gold">Dodge Arena District:</strong> Premium corner location on 10th Street with new road development<br />
+                  • <strong className="text-accent-emerald">900K+ Metro Population:</strong> McAllen rivals El Paso size with strong growth trajectory<br />
+                  • <strong className="text-accent-sapphire">Refrigerated Industry Boom:</strong> Heart of produce alley with surging demand<br />
+                  • <strong className="text-gold">Fed Rate Cut Timing:</strong> Perfect storm for development financing and appreciation<br />
+                  • <strong className="text-accent-emerald">Market Resilience:</strong> Valley growth fundamentals provide stability amid changing national conditions
+                </p>
+                
+                <div className="flex items-center text-muted-foreground mb-4">
+                  <MapPin className="h-5 w-5 text-gold mr-2" />
+                  <span>10th Street • Dodge Arena District • Heart of America's Produce Distribution Hub</span>
+                </div>
+              </div>
             </div>
 
             <div>
