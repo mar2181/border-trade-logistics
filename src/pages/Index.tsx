@@ -217,7 +217,7 @@ const Index = () => {
                 <div className="p-6 space-y-6">
                   <div className="grid grid-cols-2 gap-4">
                     <div className="text-center p-4 bg-gray-50 rounded-lg">
-                      <div className="text-2xl font-bold text-gold">8-12%</div>
+                  <div className="text-2xl font-bold text-accent-emerald">3%</div>
                       <div className="text-xs text-gray-900">Annual Land Appreciation</div>
                     </div>
                     <div className="text-center p-4 bg-gray-50 rounded-lg">
