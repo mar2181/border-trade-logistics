@@ -48,7 +48,7 @@ export default function ExecutiveSummary() {
           <div className="space-y-8">
             <div className="grid md:grid-cols-2 gap-6 items-start">
               <div className="relative overflow-hidden rounded-xl border border-border">
-                <img src="/lovable-uploads/d775f7d6-ebe9-40e0-9cbe-77e7e7aed1f4.png" alt="Industrial development aerial view" className="w-full h-48 object-cover" />
+                <img src="/lovable-uploads/0d9c191d-f650-4d6e-adaf-28eacd50ff33.png" alt="Warehouse development floor plan layout" className="w-full h-48 object-cover" />
               </div>
               <div>
                 <h3 className="text-2xl font-semibold text-primary mb-4">The Valley Advantage - America's Hidden Gem</h3>
