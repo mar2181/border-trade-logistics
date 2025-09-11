@@ -9,7 +9,7 @@ export default function ExecutiveSummary() {
               <span className="text-gold font-bold">The Valley's Hidden Gem:</span> A premier $12.24M land portfolio in America's most coveted industrial district
             </p>
             <p className="text-lg text-muted-foreground max-w-5xl mx-auto text-center mt-4">
-              44.17 acres of premium shovel-ready parcels on 10th Street, minutes from Dodge Arena in McAllen's dynamic growth market. 
+              44.17 acres of premium shovel-ready parcels on 10th Street in McAllen's dynamic industrial growth market. 
               <span className="text-accent-emerald font-semibold"> Following Fed rate adjustments</span> - position yourself strategically in this 
               <span className="text-gold font-semibold"> compelling market position</span> where savvy investors stay and grow.
             </p>
@@ -21,7 +21,7 @@ export default function ExecutiveSummary() {
             <div>
               <h3 className="text-2xl font-semibold text-primary mb-4">McAllen's Strategic Investment Opportunity</h3>
               <p className="text-muted-foreground leading-relaxed">
-                <strong className="text-accent-emerald">Only 8 properties available</strong> in McAllen's Dodge Arena District. Strategic 10th Street corridor parcels with utilities ready, 
+                <strong className="text-accent-emerald">Only 8 properties available</strong> in McAllen's premier industrial district. Strategic 10th Street corridor parcels with utilities ready, 
                 zoned industrial, 585,530 SF buildable. The Valley's projected 20-year boom, combined with Fed rate cuts, creates unmatched appreciation potential.
                 <strong className="text-gold">This market demonstrates exceptional resilience</strong> amid changing national conditions due to its unique demand drivers and constrained supply.
               </p>
@@ -53,7 +53,7 @@ export default function ExecutiveSummary() {
               <div>
                 <h3 className="text-2xl font-semibold text-primary mb-4">The Valley Advantage - America's Hidden Gem</h3>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  • <strong className="text-gold">Dodge Arena District:</strong> Premium corner location on 10th Street with new road development<br />
+                  • <strong className="text-gold">Premium Industrial Location:</strong> Strategic corner location on 10th Street with new road development<br />
                   • <strong className="text-accent-emerald">900K+ Metro Population:</strong> McAllen rivals El Paso size with strong growth trajectory<br />
                   • <strong className="text-accent-sapphire">Refrigerated Industry Boom:</strong> Heart of produce alley with surging demand<br />
                   • <strong className="text-gold">Fed Rate Cut Timing:</strong> Perfect storm for development financing and appreciation<br />
@@ -62,7 +62,7 @@ export default function ExecutiveSummary() {
                 
                 <div className="flex items-center text-muted-foreground mb-4">
                   <MapPin className="h-5 w-5 text-gold mr-2" />
-                  <span>10th Street • Dodge Arena District • Heart of America's Produce Distribution Hub</span>
+                  <span>10th Street • McAllen Industrial District • Heart of America's Produce Distribution Hub</span>
                 </div>
               </div>
             </div>

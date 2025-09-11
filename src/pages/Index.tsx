@@ -104,7 +104,7 @@ const Index = () => {
                 <span className="block text-gold">Industrial Land Opportunities</span>
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-gray-200 max-w-2xl leading-relaxed">
-                Only 8 premium properties left in McAllen's coveted Dodge Arena District on 10th Street. The Valley is America's hidden gem - 
+                Only 8 premium properties left in McAllen's premier industrial district on 10th Street. The Valley is America's hidden gem - 
                 those who invest here stay and grow. Following Fed rate adjustments, this presents strategic timing for positioned investors.
               </p>
             </div>
@@ -112,7 +112,7 @@ const Index = () => {
             <div className="hidden sm:flex items-center space-x-6 text-gray-200 text-sm">
               <div className="flex items-center">
                 <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-gold mr-2 flex-shrink-0" />
-                <span>10th Street • Dodge Arena District • Heart of America's Produce Distribution Hub</span>
+                <span>10th Street • McAllen Industrial District • Heart of America's Produce Distribution Hub</span>
               </div>
             </div>
 

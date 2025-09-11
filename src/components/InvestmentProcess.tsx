@@ -6,7 +6,7 @@ export default function InvestmentProcess() {
     {
       number: "01",
       title: "Initial Property Inquiry",
-      description: "Contact specialist to review 8 available Dodge Arena District properties",
+      description: "Contact specialist to review 8 available McAllen industrial district properties",
       icon: Calendar
     },
     {
@@ -35,7 +35,7 @@ export default function InvestmentProcess() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-primary mb-4">Strategic Investment Timing</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-            <span className="text-gold font-bold">Only 8 Properties Remaining</span> in McAllen's Dodge Arena District. 
+            <span className="text-gold font-bold">Only 8 Properties Remaining</span> in McAllen's premier industrial district. 
             Savvy investors moving in the next few months will benefit from Fed rate cuts and position themselves ahead of the curve 
             in The Valley - America's hidden gem where those who invest stay and grow.
           </p>
@@ -69,7 +69,7 @@ export default function InvestmentProcess() {
               <h4 className="text-xl font-semibold text-primary mb-4">Your McAllen Investment Specialist</h4>
               <p className="text-muted-foreground mb-6">
                 20+ years international real estate experience specializing in The Valley's industrial market. 
-                Expert in Dodge Arena District properties with deep knowledge of McAllen's sustained growth potential 
+                Expert in McAllen industrial properties with deep knowledge of The Valley's sustained growth potential 
                 and proven track record helping investors secure million-dollar opportunities before they're gone.
               </p>
               
@@ -96,14 +96,14 @@ export default function InvestmentProcess() {
             </div>
             
             <p className="text-muted-foreground mb-8 max-w-3xl mx-auto">
-              <span className="font-semibold text-accent-emerald">PERFECT TIMING:</span> Only 8 properties left in McAllen's Dodge Arena District. 
+              <span className="font-semibold text-accent-emerald">PERFECT TIMING:</span> Only 8 properties left in McAllen's premier industrial district. 
               Following Fed rate adjustments - position your investment strategically at current market pricing before the Valley's continued growth 
               drives prices higher. This is your chance to get ahead of the curve in America's hidden gem.
             </p>
             
             <div className="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
               <div>
-                <div className="text-xl font-bold text-gold mb-1">Dodge Arena</div>
+                <div className="text-xl font-bold text-gold mb-1">McAllen Industrial</div>
                 <div className="text-sm text-muted-foreground">District Premium</div>
               </div>
               <div>

@@ -20,7 +20,7 @@ export default function RiskAnalysis() {
       color: "text-amber-500",
       bgColor: "bg-amber-500/20",
       factors: [
-        "Zoning changes in Dodge Arena District",
+        "Zoning changes in McAllen industrial district",
         "New McAllen development regulations",
         "Property tax adjustments in growth market"
       ],
@@ -41,7 +41,7 @@ export default function RiskAnalysis() {
   ];
 
   const competitiveAdvantages = [
-    "Dodge Arena District - McAllen's most coveted industrial location",
+    "McAllen Industrial District - The Valley's most coveted industrial location",
     "10th Street positioning with new road development enhancing access", 
     "Only 8 properties remaining in this premium district",
     "Valley's 900K+ population supports sustained market fundamentals",
@@ -64,7 +64,7 @@ export default function RiskAnalysis() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-primary mb-4">Strategic Investment Analysis - The Valley Advantage</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-            <span className="text-gold font-bold">Why This Represents Exceptional Value:</span> McAllen's Dodge Arena District offers compelling risk-adjusted returns with strong downside protection. 
+            <span className="text-gold font-bold">Why This Represents Exceptional Value:</span> McAllen's premier industrial district offers compelling risk-adjusted returns with strong downside protection. 
             The Valley's market fundamentals create sustainable growth momentum that transcends typical real estate cycles.
           </p>
         </div>

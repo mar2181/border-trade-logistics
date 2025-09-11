@@ -37,7 +37,7 @@ export const ProfessionalUnderwriting = ({ lot }: UnderwritingProps) => {
         <div className="flex items-start justify-between">
           <div className="space-y-2">
             <h3 className="text-2xl font-bold text-primary">Lot {lot.id} - Professional Analysis</h3>
-            <p className="text-muted-foreground">10th St & Military Hwy, Dodge Arena District</p>
+            <p className="text-muted-foreground">10th St & Military Hwy, McAllen Industrial District</p>
             <div className="flex gap-2">
               <Badge variant="secondary">{lot.acres.toFixed(2)} Acres</Badge>
               <Badge variant="secondary">{lot.buildableSF.toLocaleString()} SF</Badge>

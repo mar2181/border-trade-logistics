@@ -8,7 +8,7 @@ export default function PropertySpecifications() {
   // Add individual property advantages for McAllen location
   const getPropertyAdvantages = (lotId: string) => {
     const advantages = {
-      "01": ["Direct Highway Access", "Dodge Arena Proximity", "Premium Corner Position"],
+      "01": ["Direct Highway Access", "Premium Industrial Location", "Strategic Corner Position"],
       "02": ["New Road Development", "High Traffic Visibility", "Frontage Premium"],
       "03": ["Largest Available Lot", "Maximum Development Potential", "Strategic Center Position"],
       "04": ["Future Expansion Ready", "Utilities Optimized", "Distribution Hub Potential"],
@@ -40,19 +40,19 @@ export default function PropertySpecifications() {
     {
       id: "01",
       type: "Premium", 
-      location: "10th St & Military Hwy, Dodge Arena District",
+      location: "10th St & Military Hwy, McAllen Industrial District",
       acres: 5.04,
       buildableSF: 57240,
       landInvestment: 1500000,
       planAnnual: 1000000,
-      advantages: ["Direct highway access from Military Hwy", "Dodge Arena proximity enhances visibility", "Premium corner position with dual frontage"],
+      advantages: ["Direct highway access from Military Hwy", "Strategic industrial location enhances visibility", "Premium corner position with dual frontage"],
       riskNotes: "Verify detention pond requirements and utility capacity",
       positioning: "Ideal for smaller tenant mix with flexible warehouse configurations"
     },
     {
       id: "02", 
       type: "Premium",
-      location: "10th St & Military Hwy, Dodge Arena District",
+      location: "10th St & Military Hwy, McAllen Industrial District",
       acres: 5.06,
       buildableSF: 66780,
       landInvestment: 1520000,
@@ -64,7 +64,7 @@ export default function PropertySpecifications() {
     {
       id: "03",
       type: "Premium",
-      location: "10th St & Military Hwy, Dodge Arena District", 
+      location: "10th St & Military Hwy, McAllen Industrial District",
       acres: 5.73,
       buildableSF: 80000,
       landInvestment: 1719000,
@@ -76,7 +76,7 @@ export default function PropertySpecifications() {
     {
       id: "04",
       type: "Premium",
-      location: "10th St & Military Hwy, Dodge Arena District",
+      location: "10th St & Military Hwy, McAllen Industrial District",
       acres: 6.12, 
       buildableSF: 80000,
       landInvestment: 1836000,
@@ -88,7 +88,7 @@ export default function PropertySpecifications() {
     {
       id: "05",
       type: "Premium", 
-      location: "10th St & Military Hwy, Dodge Arena District",
+      location: "10th St & Military Hwy, McAllen Industrial District",
       acres: 6.12,
       buildableSF: 80000, 
       landInvestment: 1836000,
@@ -100,7 +100,7 @@ export default function PropertySpecifications() {
     {
       id: "06",
       type: "Premium",
-      location: "10th St & Military Hwy, Dodge Arena District",
+      location: "10th St & Military Hwy, McAllen Industrial District",
       acres: 5.79,
       buildableSF: 80000,
       landInvestment: 1737000, 
@@ -112,7 +112,7 @@ export default function PropertySpecifications() {
     {
       id: "07", 
       type: "Premium",
-      location: "10th St & Military Hwy, Dodge Arena District",
+      location: "10th St & Military Hwy, McAllen Industrial District",
       acres: 7.18, // CORRECTED - was showing 3.13
       buildableSF: 103350, // Largest buildable SF
       landInvestment: 2154000,
@@ -124,7 +124,7 @@ export default function PropertySpecifications() {
     {
       id: "08",
       type: "Premium", 
-      location: "10th St & Military Hwy, Dodge Arena District",
+      location: "10th St & Military Hwy, McAllen Industrial District",
       acres: 3.13, // CORRECTED - was showing 7.18 
       buildableSF: 38160, // Smallest buildable SF
       landInvestment: 939000,
@@ -159,7 +159,7 @@ export default function PropertySpecifications() {
               <span className="text-primary font-bold">8 Premium Industrial Lots Available</span> - Professional Underwriting Analysis
             </p>
             <p className="text-lg text-muted-foreground max-w-5xl mx-auto text-center mt-4">
-              Located in McAllen's Dodge Arena District with proven logistics demand. 
+              Located in McAllen's premier industrial district with proven logistics demand. 
               <span className="text-primary font-semibold">Corrected data</span> shows 44.17 acres total, 585,530 SF buildable - 
               <span className="text-accent font-semibold">significantly larger than marketing materials indicated</span>.
             </p>

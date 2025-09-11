@@ -30,7 +30,7 @@ export default function MarketAnalysis() {
               <span className="text-gold font-bold">McAllen's Strategic Cross-Border Position</span>
             </p>
             <p className="text-lg text-muted-foreground max-w-5xl mx-auto text-center mt-4">
-              Located in McAllen's Dodge Arena District with proven produce/logistics demand. 
+              Located in McAllen's premier industrial district with proven produce/logistics demand. 
               The Valley <span className="text-accent-emerald font-semibold">demonstrates market stability</span> supported by cross-border trade through Pharr-Reynosa Bridge. 
               <span className="text-gold font-semibold">Modeled under base and stress scenarios</span> for lender confidence and investment clarity.
             </p>
@@ -119,7 +119,7 @@ export default function MarketAnalysis() {
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-amber-500/10 transition-all duration-300">
             <ArrowUp className="h-8 w-8 text-amber-500 mx-auto mb-3" />
             <div className="text-2xl font-bold text-amber-500 mb-2">42 Acres</div>
-            <div className="text-sm text-muted-foreground">Only 8 Properties Left - Dodge Arena District's last premium opportunities</div>
+            <div className="text-sm text-muted-foreground">Only 8 Properties Left - McAllen's premier industrial opportunities</div>
           </div>
         </div>
       </div>
