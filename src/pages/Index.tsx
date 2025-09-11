@@ -267,87 +267,57 @@ const Index = () => {
           </div>
         </div>
 
-        {/* Mobile Layout (New Design) */}
-        <div className="md:hidden pt-20 pb-24">
-          {/* Hero Image Container - 40% of screen height with rounded corners */}
-          <div className="px-4 mb-6">
-            <div className="relative h-[40vh] rounded-2xl overflow-hidden">
-              <img src={heroSunsetHighway} alt="Sunset highway background" className="w-full h-full object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-              
-              {/* Overlay Content on Image */}
-              <div className="absolute bottom-4 left-4 right-4 text-white">
-                <div className="inline-flex items-center px-3 py-1 bg-gold/20 text-gold rounded-full text-xs font-medium border border-gold/30 backdrop-blur-sm mb-3">
-                  <TrendingDown className="h-3 w-3 mr-1" />
-                  <span>Historic Investment Opportunity</span>
-                </div>
-                <h1 className="text-2xl font-bold leading-tight">
-                  Prime Shovel-Ready
-                  <span className="block text-gold">Industrial Land</span>
-                </h1>
-              </div>
-            </div>
+        {/* Mobile Layout - Template Structure from Reference */}
+        <div className="md:hidden relative min-h-screen">
+          {/* Full Screen Hero Image */}
+          <div className="absolute inset-0">
+            <img src={heroSunsetHighway} alt="Industrial land investment opportunity" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
           </div>
 
-          {/* Content Card Below Image */}
-          <div className="px-4">
-            <div className="bg-background border border-border rounded-2xl shadow-lg overflow-hidden">
-              {/* Card Header */}
-              <div className="p-6 pb-4">
-                <div className="flex items-center space-x-2 mb-4">
-                  <MapPin className="h-4 w-4 text-gold" />
-                  <span className="text-sm text-muted-foreground">McAllen Industrial District</span>
-                </div>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  Only 8 premium properties left in McAllen's premier industrial district. The Valley is America's hidden gem.
-                </p>
+          {/* Hero Content */}
+          <div className="relative z-10 flex flex-col justify-center items-center min-h-screen px-6 pt-24 pb-32 text-center">
+            {/* Status Badge */}
+            <div className="inline-flex items-center px-4 py-2 bg-gold/20 text-gold rounded-full text-sm font-medium border border-gold/30 backdrop-blur-sm mb-8">
+              <TrendingDown className="h-4 w-4 mr-2" />
+              <span>Expert Investment Ready When You Are</span>
+            </div>
+            
+            {/* Main Heading */}
+            <h1 className="text-4xl font-bold text-white leading-tight mb-4">
+              Prime Shovel-Ready
+              <span className="block text-gold">Industrial Land</span>
+            </h1>
+            
+            {/* Subtitle */}
+            <p className="text-lg text-gray-200 max-w-sm leading-relaxed mb-8">
+              McAllen's most trusted industrial investment professionals.
+            </p>
+            
+            {/* Key Metrics - Simple 2x2 Grid */}
+            <div className="grid grid-cols-2 gap-4 w-full max-w-xs mb-8">
+              <div className="text-center bg-black/20 rounded-xl p-4 backdrop-blur-sm">
+                <div className="text-2xl font-bold text-gold">8-12%</div>
+                <div className="text-xs text-gray-300">Annual ROI</div>
               </div>
-              
-              {/* Metrics Grid */}
-              <div className="px-6 pb-4">
-                <div className="grid grid-cols-2 gap-3">
-                  <div className="text-center p-3 bg-accent/10 rounded-lg">
-                    <div className="text-lg font-bold text-gold">3%</div>
-                    <div className="text-xs text-muted-foreground">Market Vacancy</div>
-                  </div>
-                  <div className="text-center p-3 bg-accent/10 rounded-lg">
-                    <div className="text-lg font-bold text-accent-emerald">$12.24M</div>
-                    <div className="text-xs text-muted-foreground">Total Portfolio</div>
-                  </div>
-                  <div className="text-center p-3 bg-accent/10 rounded-lg">
-                    <div className="text-lg font-bold text-accent-sapphire">44.17</div>
-                    <div className="text-xs text-muted-foreground">Total Acres</div>
-                  </div>
-                  <div className="text-center p-3 bg-accent/10 rounded-lg">
-                    <div className="text-lg font-bold text-accent-amber">8-12%</div>
-                    <div className="text-xs text-muted-foreground">Annual ROI</div>
-                  </div>
-                </div>
+              <div className="text-center bg-black/20 rounded-xl p-4 backdrop-blur-sm">
+                <div className="text-2xl font-bold text-accent-emerald">44.17</div>
+                <div className="text-xs text-gray-300">Total Acres</div>
               </div>
+              <div className="text-center bg-black/20 rounded-xl p-4 backdrop-blur-sm">
+                <div className="text-2xl font-bold text-accent-sapphire">$12.24M</div>
+                <div className="text-xs text-gray-300">Portfolio Value</div>
+              </div>
+              <div className="text-center bg-black/20 rounded-xl p-4 backdrop-blur-sm">
+                <div className="text-2xl font-bold text-accent-amber">8 Only</div>
+                <div className="text-xs text-gray-300">Remaining</div>
+              </div>
+            </div>
 
-              {/* Action Buttons */}
-              <div className="p-6 pt-2 border-t border-border">
-                <div className="flex gap-3">
-                  <Button className="flex-1 bg-gradient-to-r from-gold to-gold-dark text-primary-foreground font-semibold min-h-[44px]">
-                    <BarChart3 className="h-4 w-4 mr-2" />
-                    View Analysis
-                  </Button>
-                  <Button variant="outline" className="flex-1 min-h-[44px]">
-                    <Download className="h-4 w-4 mr-2" />
-                    Summary
-                  </Button>
-                </div>
-                
-                {/* Contact Info */}
-                <div className="flex items-center justify-center space-x-3 mt-4 pt-4 border-t border-border">
-                  <img src="/lovable-uploads/6f3fa122-bcae-43f0-bdac-141ce2b74e76.png" alt="Investment Agent" className="w-8 h-8 rounded-full object-cover" />
-                  <div className="text-center">
-                    <div className="text-sm font-semibold text-foreground">Investment Specialist</div>
-                    <div className="text-xs text-muted-foreground">RE/MAX Commercial</div>
-                  </div>
-                  <img src="/lovable-uploads/a8412600-74ab-454d-ab80-6da0e46ef31b.png" alt="RE/MAX" className="w-6 h-6" />
-                </div>
-              </div>
+            {/* Location Info */}
+            <div className="flex items-center justify-center text-gray-200 text-sm mb-8">
+              <MapPin className="h-4 w-4 text-gold mr-2" />
+              <span>McAllen Industrial District • 10th Street</span>
             </div>
           </div>
         </div>
