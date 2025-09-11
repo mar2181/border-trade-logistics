@@ -162,54 +162,52 @@ const Index = () => {
             <div className="space-y-6 sm:space-y-8 text-white order-2 lg:order-1">
               <div className="inline-flex items-center px-3 sm:px-4 py-2 bg-gold/20 text-gold rounded-full text-xs sm:text-sm font-medium border border-gold/30 backdrop-blur-sm">
                 <TrendingDown className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
-                <span>Fed Rate Cuts Drive Investment Opportunity • Historic Market Conditions</span>
+                <span>{t('hero.badge')}</span>
               </div>
               
               <div className="space-y-4 sm:space-y-6">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">
-                  Prime Shovel-Ready
-                  <span className="block text-gold">Industrial Land Opportunities</span>
+                  {t('hero.title')}
                 </h1>
                 <p className="text-lg md:text-xl text-gray-200 max-w-2xl leading-relaxed">
-                  Only 8 premium properties left in McAllen's premier industrial district on 10th Street. The Valley is America's hidden gem - 
-                  those who invest here stay and grow. Following Fed rate adjustments, this presents strategic timing for positioned investors.
+                  {t('hero.description')}
                 </p>
               </div>
 
               <div className="flex items-center space-x-6 text-gray-200 text-sm">
                 <div className="flex items-center">
                   <MapPin className="h-5 w-5 text-gold mr-2 flex-shrink-0" />
-                  <span>10th Street • McAllen Industrial District • Heart of America's Produce Distribution Hub</span>
+                  <span>{t('hero.location')}</span>
                 </div>
               </div>
 
               <div className="grid grid-cols-4 gap-4">
                 <div className="text-center bg-black/20 rounded-lg p-3 backdrop-blur-sm">
                   <div className="text-xl lg:text-2xl font-bold text-gold">3%</div>
-                  <div className="text-xs text-gray-300">Market Vacancy (3Q24)</div>
+                  <div className="text-xs text-gray-300">{t('hero.marketVacancy')}</div>
                 </div>
                 <div className="text-center bg-black/20 rounded-lg p-3 backdrop-blur-sm">
                   <div className="text-xl lg:text-2xl font-bold text-accent-emerald">60%</div>
-                  <div className="text-xs text-gray-300">TX Produce Imports</div>
+                  <div className="text-xs text-gray-300">{t('hero.produceImports')}</div>
                 </div>
                 <div className="text-center bg-black/20 rounded-lg p-3 backdrop-blur-sm">
                   <div className="text-xl lg:text-2xl font-bold text-accent-sapphire">$265-300K</div>
-                  <div className="text-xs text-gray-300">Per Acre Pricing</div>
+                  <div className="text-xs text-gray-300">{t('hero.pricing')}</div>
                 </div>
                 <div className="text-center bg-black/20 rounded-lg p-3 backdrop-blur-sm">
                   <div className="text-xl lg:text-2xl font-bold text-accent-amber">8 Properties</div>
-                  <div className="text-xs text-gray-300">Only Remaining</div>
+                  <div className="text-xs text-gray-300">{t('hero.properties')}</div>
                 </div>
               </div>
 
               <div className="flex flex-row gap-4">
                 <Button size="lg" className="bg-gradient-to-r from-gold to-gold-dark text-primary-foreground font-semibold hover:shadow-lg hover:shadow-gold/25 transition-all duration-300 min-h-[48px]">
                   <BarChart3 className="h-5 w-5 mr-2" />
-                  <span>View Analysis</span>
+                  <span>{t('hero.viewAnalysis')}</span>
                 </Button>
                 <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm transition-all duration-300 min-h-[48px]">
                   <Download className="h-5 w-5 mr-2" />
-                  <span>Executive Summary</span>
+                  <span>{t('executiveSummary.title')}</span>
                 </Button>
               </div>
             </div>
@@ -289,19 +287,18 @@ const Index = () => {
               {/* Status Badge */}
               <div className="inline-flex items-center px-4 py-2 bg-gold/10 text-gold rounded-full text-sm font-medium border border-gold/20">
                 <TrendingDown className="h-4 w-4 mr-2" />
-                <span>Expert Investment Ready When You Are</span>
+                <span>{t('hero.badge')}</span>
               </div>
               
               {/* Main Heading */}
               <div className="space-y-3">
                 <h1 className="text-3xl font-bold text-foreground leading-tight">
-                  Prime Shovel-Ready
-                  <span className="block text-gold">Industrial Land</span>
+                  {t('hero.title')}
                 </h1>
                 
                 {/* Subtitle */}
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  McAllen's most trusted industrial investment professionals.
+                  {t('hero.description')}
                 </p>
               </div>
               
@@ -317,18 +314,18 @@ const Index = () => {
                 </div>
                 <div className="text-center bg-muted rounded-xl p-4">
                   <div className="text-2xl font-bold text-accent-sapphire">$12.24M</div>
-                  <div className="text-xs text-muted-foreground">Portfolio Value</div>
+                  <div className="text-xs text-muted-foreground">{t('executiveSummary.portfolioValue')}</div>
                 </div>
                 <div className="text-center bg-muted rounded-xl p-4">
                   <div className="text-2xl font-bold text-accent-amber">8 Only</div>
-                  <div className="text-xs text-muted-foreground">Remaining</div>
+                  <div className="text-xs text-muted-foreground">{t('hero.properties')}</div>
                 </div>
               </div>
 
               {/* Location Info */}
               <div className="flex items-center justify-center text-muted-foreground text-sm pt-2">
                 <MapPin className="h-4 w-4 text-gold mr-2" />
-                <span>McAllen Industrial District • 10th Street</span>
+                <span>{t('hero.location')}</span>
               </div>
             </div>
           </div>

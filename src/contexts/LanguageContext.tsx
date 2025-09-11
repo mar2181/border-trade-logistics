@@ -19,6 +19,17 @@ const translations = {
     'nav.properties': 'Properties',
     'nav.calculator': 'Calculator',
     
+    // Hero Section
+    'hero.badge': 'Fed Rate Cuts Drive Investment Opportunity • Historic Market Conditions',
+    'hero.title': 'Prime Shovel-Ready Industrial Land Opportunities',
+    'hero.description': 'Only 8 premium properties left in McAllen\'s premier industrial district on 10th Street. The Valley is America\'s hidden gem - those who invest here stay and grow. Following Fed rate adjustments, this presents strategic timing for positioned investors.',
+    'hero.location': '10th Street • McAllen Industrial District • Heart of America\'s Produce Distribution Hub',
+    'hero.marketVacancy': 'Market Vacancy (3Q24)',
+    'hero.produceImports': 'TX Produce Imports',
+    'hero.pricing': 'Per Acre Pricing',
+    'hero.properties': 'Only Remaining',
+    'hero.viewAnalysis': 'View Analysis',
+    
     // Virtual Tour
     'virtualTour.title': 'MCC Industrial Park Virtual Tour',
     'virtualTour.subtitle': 'Virtual Property Tour',
@@ -60,6 +71,17 @@ const translations = {
     'nav.financials': 'Financieros',
     'nav.properties': 'Propiedades',
     'nav.calculator': 'Calculadora',
+    
+    // Hero Section
+    'hero.badge': 'Recortes de Tasas del Fed Impulsan Oportunidad de Inversión • Condiciones Históricas del Mercado',
+    'hero.title': 'Oportunidades de Terreno Industrial Premium Listo para Construir',
+    'hero.description': 'Solo quedan 8 propiedades premium en el distrito industrial principal de McAllen en la calle 10. El Valle es la joya oculta de América - quienes invierten aquí se quedan y crecen. Siguiendo los ajustes de tasas del Fed, esto presenta un momento estratégico para inversionistas posicionados.',
+    'hero.location': 'Calle 10 • Distrito Industrial de McAllen • Corazón del Centro de Distribución de Productos de América',
+    'hero.marketVacancy': 'Vacancia del Mercado (3T24)',
+    'hero.produceImports': 'Importaciones de Productos TX',
+    'hero.pricing': 'Precio por Acre',
+    'hero.properties': 'Solo Restantes',
+    'hero.viewAnalysis': 'Ver Análisis',
     
     // Virtual Tour
     'virtualTour.title': 'Tour Virtual del Parque Industrial MCC',
