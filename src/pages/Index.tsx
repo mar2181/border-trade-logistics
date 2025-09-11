@@ -267,57 +267,64 @@ const Index = () => {
           </div>
         </div>
 
-        {/* Mobile Layout - Template Structure from Reference */}
-        <div className="md:hidden relative min-h-screen">
-          {/* Full Screen Hero Image */}
-          <div className="absolute inset-0">
-            <img src="/lovable-uploads/d6effb3b-46b7-41a2-bcf6-897a9536d8f7.png" alt="MCC Industrial Park at sunset" className="w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
+        {/* Mobile Layout - Image + Card Template Structure */}
+        <div className="md:hidden">
+          {/* Hero Image Section - 40% of viewport height */}
+          <div className="relative h-[40vh] mt-20">
+            <img 
+              src="/lovable-uploads/d6effb3b-46b7-41a2-bcf6-897a9536d8f7.png" 
+              alt="MCC Industrial Park at sunset" 
+              className="w-full h-full object-cover" 
+            />
           </div>
 
-          {/* Hero Content */}
-          <div className="relative z-10 flex flex-col justify-center items-center min-h-screen px-6 pt-24 pb-32 text-center">
-            {/* Status Badge */}
-            <div className="inline-flex items-center px-4 py-2 bg-gold/20 text-gold rounded-full text-sm font-medium border border-gold/30 backdrop-blur-sm mb-8">
-              <TrendingDown className="h-4 w-4 mr-2" />
-              <span>Expert Investment Ready When You Are</span>
-            </div>
-            
-            {/* Main Heading */}
-            <h1 className="text-4xl font-bold text-white leading-tight mb-4">
-              Prime Shovel-Ready
-              <span className="block text-gold">Industrial Land</span>
-            </h1>
-            
-            {/* Subtitle */}
-            <p className="text-lg text-gray-200 max-w-sm leading-relaxed mb-8">
-              McAllen's most trusted industrial investment professionals.
-            </p>
-            
-            {/* Key Metrics - Simple 2x2 Grid */}
-            <div className="grid grid-cols-2 gap-4 w-full max-w-xs mb-8">
-              <div className="text-center bg-black/20 rounded-xl p-4 backdrop-blur-sm">
-                <div className="text-2xl font-bold text-gold">8-12%</div>
-                <div className="text-xs text-gray-300">Annual ROI</div>
+          {/* Content Card Below Image */}
+          <div className="px-6 py-8 bg-background">
+            <div className="bg-card rounded-2xl shadow-lg border border-border p-6 space-y-6">
+              {/* Status Badge */}
+              <div className="inline-flex items-center px-4 py-2 bg-gold/10 text-gold rounded-full text-sm font-medium border border-gold/20">
+                <TrendingDown className="h-4 w-4 mr-2" />
+                <span>Expert Investment Ready When You Are</span>
               </div>
-              <div className="text-center bg-black/20 rounded-xl p-4 backdrop-blur-sm">
-                <div className="text-2xl font-bold text-accent-emerald">44.17</div>
-                <div className="text-xs text-gray-300">Total Acres</div>
+              
+              {/* Main Heading */}
+              <div className="space-y-3">
+                <h1 className="text-3xl font-bold text-foreground leading-tight">
+                  Prime Shovel-Ready
+                  <span className="block text-gold">Industrial Land</span>
+                </h1>
+                
+                {/* Subtitle */}
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  McAllen's most trusted industrial investment professionals.
+                </p>
               </div>
-              <div className="text-center bg-black/20 rounded-xl p-4 backdrop-blur-sm">
-                <div className="text-2xl font-bold text-accent-sapphire">$12.24M</div>
-                <div className="text-xs text-gray-300">Portfolio Value</div>
+              
+              {/* Key Metrics - 2x2 Grid */}
+              <div className="grid grid-cols-2 gap-4">
+                <div className="text-center bg-muted rounded-xl p-4">
+                  <div className="text-2xl font-bold text-gold">8-12%</div>
+                  <div className="text-xs text-muted-foreground">Annual ROI</div>
+                </div>
+                <div className="text-center bg-muted rounded-xl p-4">
+                  <div className="text-2xl font-bold text-accent-emerald">44.17</div>
+                  <div className="text-xs text-muted-foreground">Total Acres</div>
+                </div>
+                <div className="text-center bg-muted rounded-xl p-4">
+                  <div className="text-2xl font-bold text-accent-sapphire">$12.24M</div>
+                  <div className="text-xs text-muted-foreground">Portfolio Value</div>
+                </div>
+                <div className="text-center bg-muted rounded-xl p-4">
+                  <div className="text-2xl font-bold text-accent-amber">8 Only</div>
+                  <div className="text-xs text-muted-foreground">Remaining</div>
+                </div>
               </div>
-              <div className="text-center bg-black/20 rounded-xl p-4 backdrop-blur-sm">
-                <div className="text-2xl font-bold text-accent-amber">8 Only</div>
-                <div className="text-xs text-gray-300">Remaining</div>
-              </div>
-            </div>
 
-            {/* Location Info */}
-            <div className="flex items-center justify-center text-gray-200 text-sm mb-8">
-              <MapPin className="h-4 w-4 text-gold mr-2" />
-              <span>McAllen Industrial District • 10th Street</span>
+              {/* Location Info */}
+              <div className="flex items-center justify-center text-muted-foreground text-sm pt-2">
+                <MapPin className="h-4 w-4 text-gold mr-2" />
+                <span>McAllen Industrial District • 10th Street</span>
+              </div>
             </div>
           </div>
         </div>
