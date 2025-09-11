@@ -1,30 +1,32 @@
 import { useState } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Play, Film } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function VideoCarousel() {
   const [activeVideo, setActiveVideo] = useState<number | null>(null);
+  const { t } = useLanguage();
 
   const videos = [
     {
       id: "TfTzm9aI29c",
-      title: "Fed Could Cut Rates to at Least 3%, Says Bank of America's Cabana",
-      description: "36K views • 4 days ago - Expert analysis on Federal Reserve rate cuts and their impact on real estate investments"
+      title: t('news.fedRates'),
+      description: t('news.fedRatesDesc')
     },
     {
-      id: "fRc0qGYyRU4",
-      title: "Cómo impactará la baja de tasas de interés? | Hoy Día | Telemundo",
-      description: "Analysis of how interest rate cuts will impact real estate investments and market opportunities"
+      id: "fRc0qGYyRU4", 
+      title: t('news.interestRates'),
+      description: t('news.interestRatesDesc')
     },
     {
       id: "lqCFB4mAJj4",
-      title: "Fed Rate Environment and Commercial Real Estate Impact Analysis",
-      description: "Market expert insights on upcoming rate changes and real estate investment timing strategies"
+      title: t('news.fedEnvironment'),
+      description: t('news.fedEnvironmentDesc')
     },
     {
-      id: "19k2h7gpQ2U", 
-      title: "Everything Fed Chair Powell was 'TOO LATE' on revealed",
-      description: "1 day ago - Critical analysis of Federal Reserve decisions affecting commercial real estate markets"
+      id: "19k2h7gpQ2U",
+      title: t('news.powellAnalysis'),
+      description: t('news.powellAnalysisDesc')
     }
   ];
 
@@ -38,11 +40,11 @@ export default function VideoCarousel() {
         <div className="text-center mb-12">
           <div className="inline-flex items-center px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20 mb-4">
             <Film className="h-4 w-4 mr-2" />
-            Market Insights & Analysis
+            {t('marketInsights.title')}
           </div>
-          <h2 className="text-4xl font-bold text-primary mb-4">Industry Expert Perspectives</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4">{t('marketInsights.subtitle')}</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Stay informed with the latest market analysis and investment insights from industry leaders
+            {t('marketInsights.description')}
           </p>
         </div>
 

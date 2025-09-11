@@ -1,6 +1,7 @@
+import { useState, useEffect } from "react";
 import { Building, MapPin, TrendingUp, DollarSign, Phone, Download, BarChart3, Calendar, Users, TrendingDown, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useState, useEffect } from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
 import warehouseAerial from "@/assets/warehouse-aerial.jpg";
 import warehouseExterior from "@/assets/warehouse-exterior.jpg";
 import warehouseInterior from "@/assets/warehouse-interior.jpg";
@@ -27,6 +28,7 @@ const Index = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [isMobileChatOpen, setIsMobileChatOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { language, setLanguage, t } = useLanguage();
 
   // Handle scroll for header background
   useEffect(() => {
@@ -101,13 +103,13 @@ const Index = () => {
             
             {/* Desktop Navigation Items */}
             <div className="hidden md:flex items-center space-x-6">
-              <a href="#overview" className="text-muted-foreground hover:text-gold transition-colors">Overview</a>
-              <a href="#analysis" className="text-muted-foreground hover:text-gold transition-colors">Market Analysis</a>
-              <a href="#land-parcels" className="text-muted-foreground hover:text-gold transition-colors">Land Parcels</a>
-              <a href="#virtual-tour" className="text-muted-foreground hover:text-gold transition-colors">Virtual Tour</a>
-              <a href="#financials" className="text-muted-foreground hover:text-gold transition-colors">Financials</a>
-              <a href="#properties" className="text-muted-foreground hover:text-gold transition-colors">Properties</a>
-              <a href="/calculator" className="text-muted-foreground hover:text-gold transition-colors">Calculator</a>
+              <a href="#overview" className="text-muted-foreground hover:text-gold transition-colors">{t('nav.overview')}</a>
+              <a href="#analysis" className="text-muted-foreground hover:text-gold transition-colors">{t('nav.marketAnalysis')}</a>
+              <a href="#land-parcels" className="text-muted-foreground hover:text-gold transition-colors">{t('nav.landParcels')}</a>
+              <a href="#virtual-tour" className="text-muted-foreground hover:text-gold transition-colors">{t('nav.virtualTour')}</a>
+              <a href="#financials" className="text-muted-foreground hover:text-gold transition-colors">{t('nav.financials')}</a>
+              <a href="#properties" className="text-muted-foreground hover:text-gold transition-colors">{t('nav.properties')}</a>
+              <a href="/calculator" className="text-muted-foreground hover:text-gold transition-colors">{t('nav.calculator')}</a>
             </div>
 
             {/* Desktop Contact & Language Toggle */}
@@ -119,10 +121,24 @@ const Index = () => {
               
               {/* Language Toggle */}
               <div className="flex items-center bg-background/10 backdrop-blur-sm rounded-full border border-white/20 overflow-hidden">
-                <button className="px-3 py-1.5 text-xs font-medium text-white bg-gold/20 hover:bg-gold/30 transition-colors">
+                <button 
+                  onClick={() => setLanguage('en')}
+                  className={`px-3 py-1.5 text-xs font-medium transition-colors ${
+                    language === 'en' 
+                      ? 'text-white bg-gold/20' 
+                      : 'text-white/70 hover:text-white hover:bg-white/10'
+                  }`}
+                >
                   EN
                 </button>
-                <button className="px-3 py-1.5 text-xs font-medium text-white/70 hover:text-white hover:bg-white/10 transition-colors">
+                <button 
+                  onClick={() => setLanguage('es')}
+                  className={`px-3 py-1.5 text-xs font-medium transition-colors ${
+                    language === 'es' 
+                      ? 'text-white bg-gold/20' 
+                      : 'text-white/70 hover:text-white hover:bg-white/10'
+                  }`}
+                >
                   ES
                 </button>
               </div>
@@ -324,7 +340,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-              MCC Industrial Park Virtual Tour
+              {t('virtualTour.title')}
             </h2>
             <p className="text-lg text-muted-foreground">
               by Juan Elizondo Re Max/ Elite
