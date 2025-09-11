@@ -6,7 +6,7 @@ export default function InvestmentProcess() {
     {
       number: "01",
       title: "Initial Property Inquiry",
-      description: "Contact specialist to review 8 available McAllen industrial district properties",
+      description: "Contact specialist to review 8 available McAllen produce district properties",
       icon: Calendar
     },
     {
@@ -24,7 +24,7 @@ export default function InvestmentProcess() {
     {
       number: "04",
       title: "Property Acquisition",
-      description: "Secure your position in America's most coveted industrial district",
+      description: "Secure your position in America's most coveted produce district",
       icon: Building
     }
   ];
