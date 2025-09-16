@@ -5,74 +5,74 @@ export default function RefrigeratedWarehouseInvestment() {
     {
       id: "01",
       type: "Premium",
-      size: "5.04 acres",
+      size: "5.55 acres",
       buildableSF: "57,240",
-      totalInvestment: "$13.5M",
-      annualRental: "$1.1M",
+      totalInvestment: "$13.69M",
+      annualRental: "$1.12M",
       roi: "8.2%"
     },
     {
       id: "02", 
       type: "Premium",
-      size: "5.06 acres",
+      size: "5.55 acres",
       buildableSF: "66,780",
-      totalInvestment: "$15.4M",
-      annualRental: "$1.3M",
-      roi: "8.5%"
+      totalInvestment: "$15.69M",
+      annualRental: "$1.30M",
+      roi: "8.3%"
     },
     {
       id: "03",
       type: "Premium", 
-      size: "5.73 acres",
+      size: "5.67 acres",
       buildableSF: "80,000",
-      totalInvestment: "$18.3M",
-      annualRental: "$1.6M",
-      roi: "8.5%"
+      totalInvestment: "$18.50M",
+      annualRental: "$1.56M",
+      roi: "8.4%"
     },
     {
       id: "04",
       type: "Premium",
-      size: "6.12 acres", 
+      size: "5.67 acres", 
       buildableSF: "80,000",
-      totalInvestment: "$18.4M",
-      annualRental: "$1.6M",
-      roi: "8.5%"
+      totalInvestment: "$18.50M",
+      annualRental: "$1.56M",
+      roi: "8.4%"
     },
     {
       id: "05",
       type: "Premium",
-      size: "6.12 acres",
+      size: "5.51 acres",
       buildableSF: "80,000", 
-      totalInvestment: "$18.4M",
-      annualRental: "$1.6M",
+      totalInvestment: "$18.45M",
+      annualRental: "$1.56M",
       roi: "8.5%"
     },
     {
       id: "06",
       type: "Premium",
-      size: "5.79 acres",
+      size: "5.51 acres",
       buildableSF: "80,000",
-      totalInvestment: "$18.3M", 
-      annualRental: "$1.6M",
+      totalInvestment: "$18.45M", 
+      annualRental: "$1.56M",
       roi: "8.5%"
     },
     {
       id: "07",
       type: "Premium",
-      size: "7.18 acres",
+      size: "4.86 acres",
       buildableSF: "103,350",
-      totalInvestment: "$22.6M", 
-      annualRental: "$2.0M",
-      roi: "8.9%"
+      totalInvestment: "$23.16M", 
+      annualRental: "$2.02M",
+      roi: "8.7%"
     },
     {
       id: "08",
       type: "Premium",
-      size: "3.13 acres",
+      size: "4.85 acres",
       buildableSF: "38,160",
-      totalInvestment: "$10.2M", 
+      totalInvestment: "$9.47M", 
       annualRental: "$744K",
-      roi: "7.3%"
+      roi: "7.9%"
     }
   ];
 
@@ -107,12 +107,12 @@ export default function RefrigeratedWarehouseInvestment() {
           </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-gold/10 transition-all duration-300">
             <TrendingUp className="h-8 w-8 text-gold mx-auto mb-3" />
-            <div className="text-3xl font-bold text-gold mb-2">8.8%</div>
+            <div className="text-3xl font-bold text-gold mb-2">8.4%</div>
             <div className="text-sm text-muted-foreground">Average Portfolio ROI</div>
           </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-amber-500/10 transition-all duration-300">
             <MapPin className="h-8 w-8 text-amber-500 mx-auto mb-3" />
-            <div className="text-3xl font-bold text-amber-500 mb-2">$135.1M</div>
+            <div className="text-3xl font-bold text-amber-500 mb-2">$136.1M</div>
             <div className="text-sm text-muted-foreground">Total Portfolio Investment</div>
           </div>
         </div>
@@ -214,7 +214,7 @@ export default function RefrigeratedWarehouseInvestment() {
             
             <div className="grid grid-cols-2 gap-4">
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-400 mb-2">44.17</div>
+                <div className="text-3xl font-bold text-blue-400 mb-2">43.17</div>
                 <div className="text-sm text-muted-foreground">Total Acres</div>
               </div>
               <div className="text-center">
@@ -222,11 +222,11 @@ export default function RefrigeratedWarehouseInvestment() {
                 <div className="text-sm text-muted-foreground">Buildable Sq Ft</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-gold mb-2">$135.1M</div>
+                <div className="text-3xl font-bold text-gold mb-2">$136.1M</div>
                 <div className="text-sm text-muted-foreground">Total Investment</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-amber-500 mb-2">$11.5M</div>
+                <div className="text-3xl font-bold text-amber-500 mb-2">$11.6M</div>
                 <div className="text-sm text-muted-foreground">Annual Rental Income</div>
               </div>
             </div>

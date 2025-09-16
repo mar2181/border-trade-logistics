@@ -7,74 +7,74 @@ export default function DryWarehouseInvestment() {
     {
       id: "01",
       type: "Premium",
-      size: "5.04 acres",
+      size: "5.55 acres",
       buildableSF: "57,240",
-      totalInvestment: "$8.4M",
+      totalInvestment: "$8.54M",
       annualRental: "$715K",
-      roi: "8.5%"
+      roi: "8.4%"
     },
     {
       id: "02", 
       type: "Premium",
-      size: "5.06 acres",
+      size: "5.55 acres",
       buildableSF: "66,780",
-      totalInvestment: "$9.4M",
+      totalInvestment: "$9.68M",
       annualRental: "$835K",
-      roi: "8.9%"
+      roi: "8.6%"
     },
     {
       id: "03",
       type: "Premium", 
-      size: "5.73 acres",
+      size: "5.67 acres",
       buildableSF: "80,000",
-      totalInvestment: "$11.1M",
+      totalInvestment: "$11.30M",
       annualRental: "$1.0M",
-      roi: "9.0%"
+      roi: "8.8%"
     },
     {
       id: "04",
       type: "Premium",
-      size: "6.12 acres", 
+      size: "5.67 acres", 
       buildableSF: "80,000",
-      totalInvestment: "$11.2M",
+      totalInvestment: "$11.30M",
       annualRental: "$1.0M",
-      roi: "8.9%"
+      roi: "8.8%"
     },
     {
       id: "05",
       type: "Premium",
-      size: "6.12 acres",
+      size: "5.51 acres",
       buildableSF: "80,000", 
-      totalInvestment: "$11.2M",
+      totalInvestment: "$11.25M",
       annualRental: "$1.0M",
       roi: "8.9%"
     },
     {
       id: "06",
       type: "Premium",
-      size: "5.79 acres",
+      size: "5.51 acres",
       buildableSF: "80,000",
-      totalInvestment: "$11.1M", 
+      totalInvestment: "$11.25M", 
       annualRental: "$1.0M",
-      roi: "9.0%"
+      roi: "8.9%"
     },
     {
       id: "07",
       type: "Premium",
-      size: "7.18 acres",
+      size: "4.86 acres",
       buildableSF: "103,350",
-      totalInvestment: "$13.3M", 
-      annualRental: "$1.3M",
-      roi: "9.7%"
+      totalInvestment: "$13.86M", 
+      annualRental: "$1.29M",
+      roi: "9.3%"
     },
     {
       id: "08",
       type: "Premium",
-      size: "3.13 acres",
+      size: "4.85 acres",
       buildableSF: "38,160",
-      totalInvestment: "$6.7M", 
+      totalInvestment: "$6.03M", 
       annualRental: "$477K",
-      roi: "7.1%"
+      roi: "7.9%"
     }
   ];
 
@@ -109,12 +109,12 @@ export default function DryWarehouseInvestment() {
           </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300">
             <TrendingUp className="h-8 w-8 text-blue-500 mx-auto mb-3" />
-            <div className="text-3xl font-bold text-blue-500 mb-2">13.0%</div>
+            <div className="text-3xl font-bold text-blue-500 mb-2">8.7%</div>
             <div className="text-sm text-muted-foreground">Average Portfolio ROI</div>
           </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-amber-500/10 transition-all duration-300">
             <MapPin className="h-8 w-8 text-amber-500 mx-auto mb-3" />
-            <div className="text-3xl font-bold text-amber-500 mb-2">$82.4M</div>
+            <div className="text-3xl font-bold text-amber-500 mb-2">$83.2M</div>
             <div className="text-sm text-muted-foreground">Total Portfolio Investment</div>
           </div>
         </div>
@@ -233,24 +233,24 @@ export default function DryWarehouseInvestment() {
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8">
             <h3 className="text-2xl font-semibold text-primary mb-6 text-center">{t('strategic.completePortfolio')}</h3>
             
-            <div className="grid grid-cols-2 gap-4">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-gold mb-2">44.17</div>
-                <div className="text-sm text-muted-foreground">{t('strategic.totalAcres')}</div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-gold mb-2">43.17</div>
+                  <div className="text-sm text-muted-foreground">{t('strategic.totalAcres')}</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-emerald-500 mb-2">585K</div>
+                  <div className="text-sm text-muted-foreground">{t('strategic.buildableSqFt')}</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-blue-500 mb-2">$83.2M</div>
+                  <div className="text-sm text-muted-foreground">{t('strategic.totalInvestment')}</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-amber-500 mb-2">$8.3M</div>
+                  <div className="text-sm text-muted-foreground">{t('strategic.annualRental')}</div>
+                </div>
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-emerald-500 mb-2">585K</div>
-                <div className="text-sm text-muted-foreground">{t('strategic.buildableSqFt')}</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-blue-500 mb-2">$82.4M</div>
-                <div className="text-sm text-muted-foreground">{t('strategic.totalInvestment')}</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-amber-500 mb-2">$8.3M</div>
-                <div className="text-sm text-muted-foreground">{t('strategic.annualRental')}</div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
