@@ -1,12 +1,12 @@
 import { BarChart3, DollarSign, Percent, TrendingUp } from "lucide-react";
 export default function FinancialProjections() {
   const landPortfolioSummary = {
-    totalLandInvestment: "$12.24M",
-    totalAcres: "44.17 acres",
-    avgPricePerAcre: "$277K",
-    annualHoldingCosts: "$367K",
+    totalLandInvestment: "$12.95M",
+    totalAcres: "43.17 acres",
+    avgPricePerAcre: "$300K",
+    annualHoldingCosts: "$389K",
     projectedAppreciation: "8-12%",
-    threYearValue: "$17.5M"
+    threYearValue: "$18.5M"
   };
   const landAssumptions = {
     market: [{
@@ -20,11 +20,11 @@ export default function FinancialProjections() {
       value: "2-3% annually"
     }],
     pricing: [{
-      label: "Premium Lots",
+      label: "All Premium Lots",
       value: "$300K/acre"
     }, {
-      label: "Standard Lots",
-      value: "$265K/acre"
+      label: "Uniform Pricing",
+      value: "$300K/acre"
     }, {
       label: "Market Comparables",
       value: "$281K/acre avg"
@@ -44,9 +44,9 @@ export default function FinancialProjections() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-primary mb-4">MCC Industrial Park - Financial Projections & Strategy</h2>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-            Comprehensive analysis of land appreciation potential, development strategies, and exit scenarios for the 44.17-acre portfolio
-          </p>
+            <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
+              Comprehensive analysis of land appreciation potential, development strategies, and exit scenarios for the 43.17-acre portfolio
+            </p>
           
           <div className="relative overflow-hidden rounded-xl border border-border max-w-2xl mx-auto">
             <img src="/lovable-uploads/3f8d60fa-ce14-48f0-b0e1-baac1a96b428.png" alt="Modern laboratory facility for produce quality testing" className="w-full h-48 object-cover" />
@@ -60,7 +60,7 @@ export default function FinancialProjections() {
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8">
               <div className="flex items-center mb-6 justify-center">
                 <BarChart3 className="h-8 w-8 text-gold mr-3" />
-                <h4 className="text-xl font-semibold text-primary">MCC Industrial Park - 44.17 Acres</h4>
+                <h4 className="text-xl font-semibold text-primary">MCC Industrial Park - 43.17 Acres</h4>
               </div>
               
               <div className="grid md:grid-cols-2 gap-8">

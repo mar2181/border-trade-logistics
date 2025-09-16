@@ -9,20 +9,20 @@ export default function IndividualLots() {
     {
       id: 1,
       name: t('individualLots.lot1Title'),
-      acres: 5.04,
+      acres: 5.55,
       warehouseSF: 57240,
-      investment: 1512000,
+      investment: 1665000,
       pricePerAcre: 300000,
       position: t('individualLots.lot1Desc'),
       dryWarehouse: {
         constructionCost: 6870000,
-        totalInvestment: 8382000,
+        totalInvestment: 8535000,
         annualNOI: 715000,
-        roi: 8.5
+        roi: 8.4
       },
       refrigerated: {
         constructionCost: 12020000,
-        totalInvestment: 13532000,
+        totalInvestment: 13685000,
         annualNOI: 1116000,
         roi: 8.2
       }
@@ -30,83 +30,83 @@ export default function IndividualLots() {
     {
       id: 2,
       name: t('individualLots.lot2Title'),
-      acres: 5.06,
+      acres: 5.55,
       warehouseSF: 66780,
-      investment: 1340900,
-      pricePerAcre: 265000,
+      investment: 1665000,
+      pricePerAcre: 300000,
       position: t('individualLots.lot2Desc'),
       dryWarehouse: {
         constructionCost: 8013600,
-        totalInvestment: 9354500,
+        totalInvestment: 9678600,
         annualNOI: 834750,
-        roi: 8.9
+        roi: 8.6
       },
       refrigerated: {
         constructionCost: 14023800,
-        totalInvestment: 15364700,
+        totalInvestment: 15688800,
         annualNOI: 1302210,
-        roi: 8.5
+        roi: 8.3
       }
     },
     {
       id: 3,
       name: t('individualLots.lot3Title'),
-      acres: 5.73,
+      acres: 5.67,
       warehouseSF: 80000,
-      investment: 1518450,
-      pricePerAcre: 265000,
+      investment: 1701000,
+      pricePerAcre: 300000,
       position: t('individualLots.lot3Desc'),
       dryWarehouse: {
         constructionCost: 9600000,
-        totalInvestment: 11118450,
+        totalInvestment: 11301000,
         annualNOI: 1000000,
-        roi: 9.0
+        roi: 8.8
       },
       refrigerated: {
         constructionCost: 16800000,
-        totalInvestment: 18318450,
+        totalInvestment: 18501000,
         annualNOI: 1560000,
-        roi: 8.5
+        roi: 8.4
       }
     },
     {
       id: 4,
       name: t('individualLots.lot4Title'),
-      acres: 6.12,
+      acres: 5.67,
       warehouseSF: 80000,
-      investment: 1619150,
-      pricePerAcre: 265000,
+      investment: 1701000,
+      pricePerAcre: 300000,
       position: t('individualLots.lot4Desc'),
       dryWarehouse: {
         constructionCost: 9600000,
-        totalInvestment: 11219150,
+        totalInvestment: 11301000,
         annualNOI: 1000000,
-        roi: 8.9
+        roi: 8.8
       },
       refrigerated: {
         constructionCost: 16800000,
-        totalInvestment: 18419150,
+        totalInvestment: 18501000,
         annualNOI: 1560000,
-        roi: 8.5
+        roi: 8.4
       }
     },
     {
       id: 5,
       name: t('individualLots.lot5Title'),
-      acres: 6.12,
+      acres: 5.51,
       warehouseSF: 80000,
-      investment: 1621800,
-      pricePerAcre: 265000,
+      investment: 1653000,
+      pricePerAcre: 300000,
       position: t('individualLots.lot5Desc'),
       dryWarehouse: {
         constructionCost: 9600000,
-        totalInvestment: 11221800,
+        totalInvestment: 11253000,
         annualNOI: 1000000,
         roi: 8.9
       },
       refrigerated: {
         constructionCost: 16800000,
-        totalInvestment: 18421800,
+        totalInvestment: 18453000,
         annualNOI: 1560000,
         roi: 8.5
       }
@@ -114,20 +114,20 @@ export default function IndividualLots() {
     {
       id: 6,
       name: t('individualLots.lot6Title'),
-      acres: 5.79,
+      acres: 5.51,
       warehouseSF: 80000,
-      investment: 1534350,
-      pricePerAcre: 265000,
+      investment: 1653000,
+      pricePerAcre: 300000,
       position: t('individualLots.lot6Desc'),
       dryWarehouse: {
         constructionCost: 9600000,
-        totalInvestment: 11134350,
+        totalInvestment: 11253000,
         annualNOI: 1000000,
-        roi: 9.0
+        roi: 8.9
       },
       refrigerated: {
         constructionCost: 16800000,
-        totalInvestment: 18334350,
+        totalInvestment: 18453000,
         annualNOI: 1560000,
         roi: 8.5
       }
@@ -135,52 +135,52 @@ export default function IndividualLots() {
     {
       id: 7,
       name: t('individualLots.lot7Title'),
-      acres: 3.13,
+      acres: 4.86,
       warehouseSF: 103350,
-      investment: 939000,
+      investment: 1458000,
       pricePerAcre: 300000,
       position: t('individualLots.lot7Desc'),
       dryWarehouse: {
         constructionCost: 12402000,
-        totalInvestment: 13341000,
+        totalInvestment: 13860000,
         annualNOI: 1291875,
-        roi: 9.7
+        roi: 9.3
       },
       refrigerated: {
         constructionCost: 21703500,
-        totalInvestment: 22642500,
+        totalInvestment: 23161500,
         annualNOI: 2015325,
-        roi: 8.9
+        roi: 8.7
       }
     },
     {
       id: 8,
       name: t('individualLots.lot8Title'), 
-      acres: 7.18,
+      acres: 4.85,
       warehouseSF: 38160,
-      investment: 2154000,
+      investment: 1455000,
       pricePerAcre: 300000,
       position: t('individualLots.lot8Desc'),
       dryWarehouse: {
         constructionCost: 4579200,
-        totalInvestment: 6733200,
+        totalInvestment: 6034200,
         annualNOI: 477000,
-        roi: 7.1
+        roi: 7.9
       },
       refrigerated: {
         constructionCost: 8013600,
-        totalInvestment: 10167600,
+        totalInvestment: 9468600,
         annualNOI: 744120,
-        roi: 7.3
+        roi: 7.9
       }
     }
   ];
 
   const portfolioSummary = {
-    totalAcres: 44.17,
+    totalAcres: 43.17,
     totalWarehouseSF: 585530,
-    totalLandInvestment: 12242300,
-    avgPricePerAcre: 277163
+    totalLandInvestment: 12951000,
+    avgPricePerAcre: 300000
   };
 
   return (
@@ -309,7 +309,7 @@ export default function IndividualLots() {
                 <p className="text-sm text-muted-foreground mb-4">
                   Lower initial capital requirement with 8-12% annual appreciation potential
                 </p>
-                <div className="text-2xl font-bold text-gold">${(12242300 / 1000000).toFixed(2)}M</div>
+                <div className="text-2xl font-bold text-gold">${(12951000 / 1000000).toFixed(2)}M</div>
                 <div className="text-xs text-muted-foreground">Portfolio Investment</div>
               </div>
               <div className="p-6 bg-background/50 rounded-lg border border-border">

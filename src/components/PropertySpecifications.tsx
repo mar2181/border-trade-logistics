@@ -44,9 +44,9 @@ export default function PropertySpecifications() {
     id: "01",
     type: "Premium",
     location: t('underwriting.location'),
-    acres: 5.04,
+    acres: 5.55,
     buildableSF: 57240,
-    landInvestment: 1500000,
+    landInvestment: 1665000,
     planAnnual: 1000000,
     advantages: ["Direct highway access from Military Hwy", "Strategic industrial location enhances visibility", "Premium corner position with dual frontage"],
     riskNotes: "Verify detention pond requirements and utility capacity",
@@ -55,9 +55,9 @@ export default function PropertySpecifications() {
     id: "02",
     type: "Premium",
     location: t('underwriting.location'),
-    acres: 5.06,
+    acres: 5.55,
     buildableSF: 66780,
-    landInvestment: 1520000,
+    landInvestment: 1665000,
     planAnnual: 1200000,
     advantages: ["New road development access improvements", "High traffic visibility on major corridor", "Enhanced frontage premium location"],
     riskNotes: "Monitor road construction timeline impact",
@@ -66,9 +66,9 @@ export default function PropertySpecifications() {
     id: "03",
     type: "Premium",
     location: t('underwriting.location'),
-    acres: 5.73,
+    acres: 5.67,
     buildableSF: 80000,
-    landInvestment: 1719000,
+    landInvestment: 1701000,
     planAnnual: 1900000,
     advantages: ["Largest available development lot in district", "Maximum development potential for anchor tenant", "Strategic center position with multiple access points"],
     riskNotes: "Ensure adequate truck circulation for large-scale operations",
@@ -77,9 +77,9 @@ export default function PropertySpecifications() {
     id: "04",
     type: "Premium",
     location: t('underwriting.location'),
-    acres: 6.12,
+    acres: 5.67,
     buildableSF: 80000,
-    landInvestment: 1836000,
+    landInvestment: 1701000,
     planAnnual: 2000000,
     advantages: ["Future expansion ready with adjacent parcels", "Utilities optimized for large-scale development", "Distribution hub potential with regional access"],
     riskNotes: "Confirm expansion rights and utility upgrade costs",
@@ -88,9 +88,9 @@ export default function PropertySpecifications() {
     id: "05",
     type: "Premium",
     location: t('underwriting.location'),
-    acres: 6.12,
+    acres: 5.51,
     buildableSF: 80000,
-    landInvestment: 1836000,
+    landInvestment: 1653000,
     planAnnual: 2300000,
     advantages: ["Premium development site with optimal configuration", "Multiple access points for efficient operations", "Flexible configuration for various tenant types"],
     riskNotes: "Verify parking requirements for multi-tenant configuration",
@@ -99,9 +99,9 @@ export default function PropertySpecifications() {
     id: "06",
     type: "Premium",
     location: t('underwriting.location'),
-    acres: 5.79,
+    acres: 5.51,
     buildableSF: 80000,
-    landInvestment: 1737000,
+    landInvestment: 1653000,
     planAnnual: 1000000,
     advantages: ["Value investment position below district average", "Quick development ready with minimal site work", "Strong ROI potential with current market rents"],
     riskNotes: "Investigate below-market pricing factors",
@@ -110,24 +110,24 @@ export default function PropertySpecifications() {
     id: "07",
     type: "Premium",
     location: t('underwriting.location'),
-    acres: 7.18,
+    acres: 4.86,
     // CORRECTED - largest acreage lot
-    buildableSF: 38160,
+    buildableSF: 103350,
     // Large lot with expansion potential
-    landInvestment: 2154000,
+    landInvestment: 1458000,
     planAnnual: 700000,
-    advantages: ["Largest acreage in portfolio for future expansion", "Multiple development phases possible", "Strategic land hold with appreciation potential"],
+    advantages: ["Highest density development potential in portfolio", "Multiple development phases possible", "Strategic land hold with appreciation potential"],
     riskNotes: "Lower initial building density - focus on land appreciation",
     positioning: "Premium land hold with future development upside"
   }, {
     id: "08",
     type: "Premium",
     location: t('underwriting.location'),
-    acres: 3.13,
+    acres: 4.85,
     // CORRECTED - high density development
-    buildableSF: 103350,
+    buildableSF: 38160,
     // Highest density development
-    landInvestment: 939000,
+    landInvestment: 1455000,
     planAnnual: 1800000,
     advantages: ["Highest density development potential in portfolio", "Exceptional SF per acre ratio", "Compact site maximizes building efficiency"],
     riskNotes: "High density requires careful site planning and circulation",
@@ -161,7 +161,7 @@ export default function PropertySpecifications() {
             </p>
             <p className="text-lg text-muted-foreground max-w-5xl mx-auto text-center mt-4">
               {t('properties.locationDescription')} 
-              <span className="text-primary font-semibold">{t('properties.correctedData')}</span> shows 44.17 acres total, 585,530 SF buildable - 
+              <span className="text-primary font-semibold">{t('properties.correctedData')}</span> shows 43.17 acres total, 585,530 SF buildable - 
               <span className="text-accent font-semibold">{t('properties.significantlyLarger')}</span>.
             </p>
           </div>
