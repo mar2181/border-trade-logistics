@@ -8,7 +8,7 @@ export default function ProfessionalAnalysis() {
     {
       strategy: "Land Hold Strategy",
       description: "Lower initial capital requirement with no construction risk",
-      investment: "$12.2M",
+      investment: "$12.95M",
       annualReturn: "8-12%",
       advantages: [
         "No construction risk or tenant lease-up risk",
@@ -25,7 +25,7 @@ export default function ProfessionalAnalysis() {
     {
       strategy: "Dry Warehouse Development",
       description: "Value creation through development with immediate income generation",
-      investment: "$82.5M",
+      investment: "$83.2M",
       annualReturn: "8.9%",
       advantages: [
         "Immediate income generation upon lease-up",
@@ -302,9 +302,9 @@ export default function ProfessionalAnalysis() {
                     <div className="space-y-3">
                       <h4 className="font-semibold text-emerald-500">Available Options:</h4>
                       <ul className="space-y-2 text-sm text-muted-foreground">
-                        <li>• Individual lot purchase ($939K - $2.15M)</li>
+                        <li>• Individual lot purchase ($1.26M - $2.19M)</li>
                         <li>• Multi-lot acquisition for larger projects</li>
-                        <li>• Complete portfolio acquisition ($12.24M)</li>
+                        <li>• Complete portfolio acquisition ($12.95M)</li>
                         <li>• Joint venture development opportunities</li>
                       </ul>
                     </div>
