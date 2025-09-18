@@ -58,7 +58,7 @@ export default function PropertySpecifications() {
       location: t('underwriting.location'),
       acres: 4.95,
       buildableSF: 79580,
-      landInvestment: 1485000,
+      landInvestment: 1311750,
       planAnnual: 994750, // 79580 * 12.5
       advantages: ["New road development access improvements", "High traffic visibility on major corridor", "Enhanced frontage premium location"],
       riskNotes: "Monitor road construction timeline impact",
@@ -70,7 +70,7 @@ export default function PropertySpecifications() {
       location: t('underwriting.location'),
       acres: 5.66,
       buildableSF: 98400,
-      landInvestment: 1698000,
+      landInvestment: 1499900,
       planAnnual: 1230000, // 98400 * 12.5
       advantages: ["Largest available development lot in district", "Maximum development potential for anchor tenant", "Strategic center position with multiple access points"],
       riskNotes: "Ensure adequate truck circulation for large-scale operations",
@@ -82,7 +82,7 @@ export default function PropertySpecifications() {
       location: t('underwriting.location'),
       acres: 6.01,
       buildableSF: 98400,
-      landInvestment: 1803000,
+      landInvestment: 1592650,
       planAnnual: 1230000, // 98400 * 12.5
       advantages: ["Future expansion ready with adjacent parcels", "Utilities optimized for large-scale development", "Distribution hub potential with regional access"],
       riskNotes: "Confirm expansion rights and utility upgrade costs",
@@ -94,7 +94,7 @@ export default function PropertySpecifications() {
       location: t('underwriting.location'),
       acres: 6.05,
       buildableSF: 98400,
-      landInvestment: 1815000,
+      landInvestment: 1603250,
       planAnnual: 1230000, // 98400 * 12.5
       advantages: ["Premium development site with optimal configuration", "Multiple access points for efficient operations", "Flexible configuration for various tenant types"],
       riskNotes: "Verify parking requirements for multi-tenant configuration",
@@ -106,7 +106,7 @@ export default function PropertySpecifications() {
       location: t('underwriting.location'),
       acres: 5.68,
       buildableSF: 98400,
-      landInvestment: 1704000,
+      landInvestment: 1505200,
       planAnnual: 1230000, // 98400 * 12.5
       advantages: ["Value investment position below district average", "Quick development ready with minimal site work", "Strong ROI potential with current market rents"],
       riskNotes: "Investigate below-market pricing factors",
@@ -130,7 +130,7 @@ export default function PropertySpecifications() {
       location: t('underwriting.location'),
       acres: 3.74,
       buildableSF: 53340,
-      landInvestment: 1122000,
+      landInvestment: 991100,
       planAnnual: 666750, // 53340 * 12.5
       advantages: ["Entry-level investment opportunity", "Exceptional development density", "Compact site maximizes building efficiency"],
       riskNotes: "Smaller scale requires careful tenant positioning",

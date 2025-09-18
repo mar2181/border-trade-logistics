@@ -1,12 +1,12 @@
 import { BarChart3, DollarSign, Percent, TrendingUp } from "lucide-react";
 export default function FinancialProjections() {
   const landPortfolioSummary = {
-    totalLandInvestment: "$13.25M",
+    totalLandInvestment: "$12.13M",
     totalAcres: "43.17 acres",
-    avgPricePerAcre: "$300K",
-    annualHoldingCosts: "$389K",
+    avgPricePerAcre: "$281K",
+    annualHoldingCosts: "$242K",
     projectedAppreciation: "8-12%",
-    threYearValue: "$18.5M"
+    threYearValue: "$17.0M"
   };
   const landAssumptions = {
     market: [{
@@ -20,13 +20,13 @@ export default function FinancialProjections() {
       value: "2-3% annually"
     }],
     pricing: [{
-      label: "All Premium Lots",
+      label: "Premium Pricing (Lots 1,7)",
       value: "$300K/acre"
     }, {
-      label: "Uniform Pricing",
-      value: "$300K/acre"
+      label: "Standard Pricing (Lots 2-6,8)",
+      value: "$265K/acre"
     }, {
-      label: "Market Comparables",
+      label: "Portfolio Average",
       value: "$281K/acre avg"
     }],
     development: [{

@@ -16,7 +16,7 @@ export default function RefrigeratedWarehouseInvestment() {
       type: "Premium",
       size: "4.95 acres",
       buildableSF: "79,580",
-      totalInvestment: "$21.38M",
+      totalInvestment: "$21.21M",
       annualRental: "$1.55M",
       roi: "7.3%"
     },
@@ -25,16 +25,16 @@ export default function RefrigeratedWarehouseInvestment() {
       type: "Premium", 
       size: "5.66 acres",
       buildableSF: "98,400",
-      totalInvestment: "$26.30M",
+      totalInvestment: "$26.10M",
       annualRental: "$1.92M",
-      roi: "7.3%"
+      roi: "7.4%"
     },
     {
       id: "04",
       type: "Premium",
       size: "6.01 acres", 
       buildableSF: "98,400",
-      totalInvestment: "$26.40M",
+      totalInvestment: "$26.19M",
       annualRental: "$1.92M",
       roi: "7.3%"
     },
@@ -43,7 +43,7 @@ export default function RefrigeratedWarehouseInvestment() {
       type: "Premium",
       size: "6.05 acres",
       buildableSF: "98,400", 
-      totalInvestment: "$26.42M",
+      totalInvestment: "$26.20M",
       annualRental: "$1.92M",
       roi: "7.3%"
     },
@@ -52,9 +52,9 @@ export default function RefrigeratedWarehouseInvestment() {
       type: "Premium",
       size: "5.68 acres",
       buildableSF: "98,400",
-      totalInvestment: "$26.30M", 
+      totalInvestment: "$26.11M", 
       annualRental: "$1.92M",
-      roi: "7.3%"
+      roi: "7.4%"
     },
     {
       id: "07",
@@ -70,9 +70,9 @@ export default function RefrigeratedWarehouseInvestment() {
       type: "Premium",
       size: "3.74 acres",
       buildableSF: "53,340",
-      totalInvestment: "$14.46M", 
+      totalInvestment: "$14.33M", 
       annualRental: "$1.04M",
-      roi: "7.2%"
+      roi: "7.3%"
     }
   ];
 
@@ -112,7 +112,7 @@ export default function RefrigeratedWarehouseInvestment() {
           </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-amber-500/10 transition-all duration-300">
             <MapPin className="h-8 w-8 text-amber-500 mx-auto mb-3" />
-            <div className="text-3xl font-bold text-amber-500 mb-2">$189.1M</div>
+            <div className="text-3xl font-bold text-amber-500 mb-2">$187.9M</div>
             <div className="text-sm text-muted-foreground">Total Portfolio Investment</div>
           </div>
         </div>
@@ -222,7 +222,7 @@ export default function RefrigeratedWarehouseInvestment() {
                 <div className="text-sm text-muted-foreground">Buildable Sq Ft</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-gold mb-2">$189.1M</div>
+                <div className="text-3xl font-bold text-gold mb-2">$187.9M</div>
                 <div className="text-sm text-muted-foreground">Total Investment</div>
               </div>
               <div className="text-center">

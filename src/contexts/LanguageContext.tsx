@@ -42,7 +42,7 @@ const translations = {
     
     // Executive Summary
     'executiveSummary.title': 'Executive Summary',
-    'executiveSummary.subtitle': 'The Valley\'s Hidden Gem: A $13.25M land portfolio in America\'s most coveted industrial district',
+    'executiveSummary.subtitle': 'The Valley\'s Hidden Gem: A $12.13M land portfolio in America\'s most coveted industrial district',
     'executiveSummary.description': '43.17 acres of premium build-ready parcels on McAllen\'s 10th Street in the dynamic industrial growth market. Leverage Fed rate adjustments to strategically position in this compelling market where smart investors stay and grow.',
     'executiveSummary.opportunity': 'Strategic Investment Opportunity in McAllen',
     'executiveSummary.opportunityDesc': 'Only 8 properties available in McAllen\'s premier industrial district. Parcels on 10th Street corridor with ready utilities, industrial zoning, 585,530 SF buildable. The Valley\'s projected 20-year boom, combined with Fed rate cuts, creates unmatched appreciation potential. This market shows exceptional resilience to changing national conditions due to its unique demand drivers and limited supply.',

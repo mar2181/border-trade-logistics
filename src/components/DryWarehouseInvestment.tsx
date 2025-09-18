@@ -18,45 +18,45 @@ export default function DryWarehouseInvestment() {
       type: "Premium",
       size: "4.95 acres",
       buildableSF: "79,580",
-      totalInvestment: "$13.42M",
+      totalInvestment: "$13.25M",
       annualRental: "$995K",
-      roi: "7.4%"
+      roi: "7.5%"
     },
     {
       id: "03",
       type: "Premium", 
       size: "5.66 acres",
       buildableSF: "98,400",
-      totalInvestment: "$16.46M",
+      totalInvestment: "$16.26M",
       annualRental: "$1.23M",
-      roi: "7.5%"
+      roi: "7.6%"
     },
     {
       id: "04",
       type: "Premium",
       size: "6.01 acres", 
       buildableSF: "98,400",
-      totalInvestment: "$16.56M",
+      totalInvestment: "$16.35M",
       annualRental: "$1.23M",
-      roi: "7.4%"
+      roi: "7.5%"
     },
     {
       id: "05",
       type: "Premium",
       size: "6.05 acres",
       buildableSF: "98,400", 
-      totalInvestment: "$16.58M",
+      totalInvestment: "$16.36M",
       annualRental: "$1.23M",
-      roi: "7.4%"
+      roi: "7.5%"
     },
     {
       id: "06",
       type: "Premium",
       size: "5.68 acres",
       buildableSF: "98,400",
-      totalInvestment: "$16.46M", 
+      totalInvestment: "$16.27M", 
       annualRental: "$1.23M",
-      roi: "7.5%"
+      roi: "7.6%"
     },
     {
       id: "07",
@@ -72,9 +72,9 @@ export default function DryWarehouseInvestment() {
       type: "Premium",
       size: "3.74 acres",
       buildableSF: "53,340",
-      totalInvestment: "$9.12M", 
+      totalInvestment: "$8.99M", 
       annualRental: "$667K",
-      roi: "7.3%"
+      roi: "7.4%"
     }
   ];
 
@@ -114,7 +114,7 @@ export default function DryWarehouseInvestment() {
           </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-amber-500/10 transition-all duration-300">
             <MapPin className="h-8 w-8 text-amber-500 mx-auto mb-3" />
-            <div className="text-3xl font-bold text-amber-500 mb-2">$118.8M</div>
+            <div className="text-3xl font-bold text-amber-500 mb-2">$117.2M</div>
             <div className="text-sm text-muted-foreground">Total Portfolio Investment</div>
           </div>
         </div>
@@ -243,7 +243,7 @@ export default function DryWarehouseInvestment() {
                   <div className="text-sm text-muted-foreground">{t('strategic.buildableSqFt')}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-500 mb-2">$118.8M</div>
+                  <div className="text-3xl font-bold text-blue-500 mb-2">$117.2M</div>
                   <div className="text-sm text-muted-foreground">{t('strategic.totalInvestment')}</div>
                 </div>
                 <div className="text-center">
