@@ -8,10 +8,10 @@ export default function LandParcels() {
   const industrialPark = {
     name: "MCC Industrial Park",
     location: t('landParcels.location'),
-    totalInvestment: "$12.24M",
+    totalInvestment: "$13.25M",
     totalAcres: "44.17",
     buildingCount: "8",
-    totalLeasableSF: "585,530",
+    totalLeasableSF: "702,820",
     occupancyRate: t('landParcels.developmentReady2'),
     avgRent: t('landParcels.shovelReady'),
     annualNOI: t('landParcels.landInvestment'),
@@ -34,10 +34,10 @@ export default function LandParcels() {
   };
 
   const keyMetrics = {
-    totalValue: "$12.24M",
-    cashFlow: "585,530 SF",
-    capRate: "$277K Avg",
-    occupancy: "44.17 Acres"
+    totalValue: "$13.25M",
+    cashFlow: "702,820 SF",
+    capRate: "$307K Avg",
+    occupancy: "43.17 Acres"
   };
 
   return (

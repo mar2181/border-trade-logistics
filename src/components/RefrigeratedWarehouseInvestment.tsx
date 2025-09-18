@@ -5,74 +5,74 @@ export default function RefrigeratedWarehouseInvestment() {
     {
       id: "01",
       type: "Premium",
-      size: "5.55 acres",
-      buildableSF: "57,240",
-      totalInvestment: "$13.69M",
-      annualRental: "$1.12M",
-      roi: "8.2%"
+      size: "4.92 acres",
+      buildableSF: "68,440",
+      totalInvestment: "$18.59M",
+      annualRental: "$1.33M",
+      roi: "7.2%"
     },
     {
       id: "02", 
       type: "Premium",
-      size: "5.55 acres",
-      buildableSF: "66,780",
-      totalInvestment: "$15.69M",
-      annualRental: "$1.30M",
-      roi: "8.3%"
+      size: "4.95 acres",
+      buildableSF: "79,580",
+      totalInvestment: "$21.38M",
+      annualRental: "$1.55M",
+      roi: "7.3%"
     },
     {
       id: "03",
       type: "Premium", 
-      size: "5.67 acres",
-      buildableSF: "80,000",
-      totalInvestment: "$18.50M",
-      annualRental: "$1.56M",
-      roi: "8.4%"
+      size: "5.66 acres",
+      buildableSF: "98,400",
+      totalInvestment: "$26.30M",
+      annualRental: "$1.92M",
+      roi: "7.3%"
     },
     {
       id: "04",
       type: "Premium",
-      size: "5.67 acres", 
-      buildableSF: "80,000",
-      totalInvestment: "$18.50M",
-      annualRental: "$1.56M",
-      roi: "8.4%"
+      size: "6.01 acres", 
+      buildableSF: "98,400",
+      totalInvestment: "$26.40M",
+      annualRental: "$1.92M",
+      roi: "7.3%"
     },
     {
       id: "05",
       type: "Premium",
-      size: "5.51 acres",
-      buildableSF: "80,000", 
-      totalInvestment: "$18.45M",
-      annualRental: "$1.56M",
-      roi: "8.5%"
+      size: "6.05 acres",
+      buildableSF: "98,400", 
+      totalInvestment: "$26.42M",
+      annualRental: "$1.92M",
+      roi: "7.3%"
     },
     {
       id: "06",
       type: "Premium",
-      size: "5.51 acres",
-      buildableSF: "80,000",
-      totalInvestment: "$18.45M", 
-      annualRental: "$1.56M",
-      roi: "8.5%"
+      size: "5.68 acres",
+      buildableSF: "98,400",
+      totalInvestment: "$26.30M", 
+      annualRental: "$1.92M",
+      roi: "7.3%"
     },
     {
       id: "07",
       type: "Premium",
-      size: "4.86 acres",
-      buildableSF: "103,350",
-      totalInvestment: "$23.16M", 
-      annualRental: "$2.02M",
-      roi: "8.7%"
+      size: "7.16 acres",
+      buildableSF: "108,460",
+      totalInvestment: "$29.26M", 
+      annualRental: "$2.11M",
+      roi: "7.2%"
     },
     {
       id: "08",
       type: "Premium",
-      size: "4.85 acres",
-      buildableSF: "38,160",
-      totalInvestment: "$9.47M", 
-      annualRental: "$744K",
-      roi: "7.9%"
+      size: "3.74 acres",
+      buildableSF: "53,340",
+      totalInvestment: "$14.46M", 
+      annualRental: "$1.04M",
+      roi: "7.2%"
     }
   ];
 
@@ -82,7 +82,7 @@ export default function RefrigeratedWarehouseInvestment() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-primary mb-4">Refrigerated Warehouse Investment</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-            Premium cold storage facilities serving the cross-border produce trade. Higher investment, stable returns, and essential infrastructure for food supply chains.
+            Corrected analysis with $250/SF construction costs. Premium cold storage facilities serving the cross-border produce trade with stable returns and essential infrastructure for food supply chains.
           </p>
         </div>
 
@@ -97,7 +97,7 @@ export default function RefrigeratedWarehouseInvestment() {
         <div className="grid md:grid-cols-4 gap-6 mb-12">
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-blue-400/10 transition-all duration-300">
             <Snowflake className="h-8 w-8 text-blue-400 mx-auto mb-3" />
-            <div className="text-3xl font-bold text-blue-400 mb-2">$210</div>
+            <div className="text-3xl font-bold text-blue-400 mb-2">$250</div>
             <div className="text-sm text-muted-foreground">Construction Cost per Sq Ft</div>
           </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-emerald-500/10 transition-all duration-300">
@@ -107,12 +107,12 @@ export default function RefrigeratedWarehouseInvestment() {
           </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-gold/10 transition-all duration-300">
             <TrendingUp className="h-8 w-8 text-gold mx-auto mb-3" />
-            <div className="text-3xl font-bold text-gold mb-2">8.4%</div>
+            <div className="text-3xl font-bold text-gold mb-2">7.3%</div>
             <div className="text-sm text-muted-foreground">Average Portfolio ROI</div>
           </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-amber-500/10 transition-all duration-300">
             <MapPin className="h-8 w-8 text-amber-500 mx-auto mb-3" />
-            <div className="text-3xl font-bold text-amber-500 mb-2">$136.1M</div>
+            <div className="text-3xl font-bold text-amber-500 mb-2">$189.1M</div>
             <div className="text-sm text-muted-foreground">Total Portfolio Investment</div>
           </div>
         </div>
@@ -218,15 +218,15 @@ export default function RefrigeratedWarehouseInvestment() {
                 <div className="text-sm text-muted-foreground">Total Acres</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-emerald-500 mb-2">585K</div>
+                <div className="text-3xl font-bold text-emerald-500 mb-2">703K</div>
                 <div className="text-sm text-muted-foreground">Buildable Sq Ft</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-gold mb-2">$136.1M</div>
+                <div className="text-3xl font-bold text-gold mb-2">$189.1M</div>
                 <div className="text-sm text-muted-foreground">Total Investment</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-amber-500 mb-2">$11.6M</div>
+                <div className="text-3xl font-bold text-amber-500 mb-2">$13.7M</div>
                 <div className="text-sm text-muted-foreground">Annual Rental Income</div>
               </div>
             </div>

@@ -9,177 +9,177 @@ export default function IndividualLots() {
     {
       id: 1,
       name: t('individualLots.lot1Title'),
-      acres: 5.55,
-      warehouseSF: 57240,
-      investment: 1665000,
+      acres: 4.92,
+      warehouseSF: 68440,
+      investment: 1476000,
       pricePerAcre: 300000,
       position: t('individualLots.lot1Desc'),
       dryWarehouse: {
-        constructionCost: 6870000,
-        totalInvestment: 8535000,
-        annualNOI: 715000,
-        roi: 8.4
+        constructionCost: 10266000, // 68440 * 150
+        totalInvestment: 11742000,  // 1476000 + 10266000
+        annualNOI: 855500,          // 68440 * 12.50
+        roi: 7.3                    // (855500 / 11742000) * 100
       },
       refrigerated: {
-        constructionCost: 12020000,
-        totalInvestment: 13685000,
-        annualNOI: 1116000,
-        roi: 8.2
+        constructionCost: 17110000, // 68440 * 250
+        totalInvestment: 18586000,  // 1476000 + 17110000
+        annualNOI: 1334580,         // 68440 * 19.50
+        roi: 7.2                    // (1334580 / 18586000) * 100
       }
     },
     {
       id: 2,
       name: t('individualLots.lot2Title'),
-      acres: 5.55,
-      warehouseSF: 66780,
-      investment: 1665000,
+      acres: 4.95,
+      warehouseSF: 79580,
+      investment: 1485000,
       pricePerAcre: 300000,
       position: t('individualLots.lot2Desc'),
       dryWarehouse: {
-        constructionCost: 8013600,
-        totalInvestment: 9678600,
-        annualNOI: 834750,
-        roi: 8.6
+        constructionCost: 11937000, // 79580 * 150
+        totalInvestment: 13422000,  // 1485000 + 11937000
+        annualNOI: 994750,          // 79580 * 12.50
+        roi: 7.4                    // (994750 / 13422000) * 100
       },
       refrigerated: {
-        constructionCost: 14023800,
-        totalInvestment: 15688800,
-        annualNOI: 1302210,
-        roi: 8.3
+        constructionCost: 19895000, // 79580 * 250
+        totalInvestment: 21380000,  // 1485000 + 19895000
+        annualNOI: 1551810,         // 79580 * 19.50
+        roi: 7.3                    // (1551810 / 21380000) * 100
       }
     },
     {
       id: 3,
       name: t('individualLots.lot3Title'),
-      acres: 5.67,
-      warehouseSF: 80000,
-      investment: 1701000,
+      acres: 5.66,
+      warehouseSF: 98400,
+      investment: 1698000,
       pricePerAcre: 300000,
       position: t('individualLots.lot3Desc'),
       dryWarehouse: {
-        constructionCost: 9600000,
-        totalInvestment: 11301000,
-        annualNOI: 1000000,
-        roi: 8.8
+        constructionCost: 14760000, // 98400 * 150
+        totalInvestment: 16458000,  // 1698000 + 14760000
+        annualNOI: 1230000,         // 98400 * 12.50
+        roi: 7.5                    // (1230000 / 16458000) * 100
       },
       refrigerated: {
-        constructionCost: 16800000,
-        totalInvestment: 18501000,
-        annualNOI: 1560000,
-        roi: 8.4
+        constructionCost: 24600000, // 98400 * 250
+        totalInvestment: 26298000,  // 1698000 + 24600000
+        annualNOI: 1918800,         // 98400 * 19.50
+        roi: 7.3                    // (1918800 / 26298000) * 100
       }
     },
     {
       id: 4,
       name: t('individualLots.lot4Title'),
-      acres: 5.67,
-      warehouseSF: 80000,
-      investment: 1701000,
+      acres: 6.01,
+      warehouseSF: 98400,
+      investment: 1803000,
       pricePerAcre: 300000,
       position: t('individualLots.lot4Desc'),
       dryWarehouse: {
-        constructionCost: 9600000,
-        totalInvestment: 11301000,
-        annualNOI: 1000000,
-        roi: 8.8
+        constructionCost: 14760000, // 98400 * 150
+        totalInvestment: 16563000,  // 1803000 + 14760000
+        annualNOI: 1230000,         // 98400 * 12.50
+        roi: 7.4                    // (1230000 / 16563000) * 100
       },
       refrigerated: {
-        constructionCost: 16800000,
-        totalInvestment: 18501000,
-        annualNOI: 1560000,
-        roi: 8.4
+        constructionCost: 24600000, // 98400 * 250
+        totalInvestment: 26403000,  // 1803000 + 24600000
+        annualNOI: 1918800,         // 98400 * 19.50
+        roi: 7.3                    // (1918800 / 26403000) * 100
       }
     },
     {
       id: 5,
       name: t('individualLots.lot5Title'),
-      acres: 5.51,
-      warehouseSF: 80000,
-      investment: 1653000,
+      acres: 6.05,
+      warehouseSF: 98400,
+      investment: 1815000,
       pricePerAcre: 300000,
       position: t('individualLots.lot5Desc'),
       dryWarehouse: {
-        constructionCost: 9600000,
-        totalInvestment: 11253000,
-        annualNOI: 1000000,
-        roi: 8.9
+        constructionCost: 14760000, // 98400 * 150
+        totalInvestment: 16575000,  // 1815000 + 14760000
+        annualNOI: 1230000,         // 98400 * 12.50
+        roi: 7.4                    // (1230000 / 16575000) * 100
       },
       refrigerated: {
-        constructionCost: 16800000,
-        totalInvestment: 18453000,
-        annualNOI: 1560000,
-        roi: 8.5
+        constructionCost: 24600000, // 98400 * 250
+        totalInvestment: 26415000,  // 1815000 + 24600000
+        annualNOI: 1918800,         // 98400 * 19.50
+        roi: 7.3                    // (1918800 / 26415000) * 100
       }
     },
     {
       id: 6,
       name: t('individualLots.lot6Title'),
-      acres: 5.51,
-      warehouseSF: 80000,
-      investment: 1653000,
+      acres: 5.68,
+      warehouseSF: 98400,
+      investment: 1704000,
       pricePerAcre: 300000,
       position: t('individualLots.lot6Desc'),
       dryWarehouse: {
-        constructionCost: 9600000,
-        totalInvestment: 11253000,
-        annualNOI: 1000000,
-        roi: 8.9
+        constructionCost: 14760000, // 98400 * 150
+        totalInvestment: 16464000,  // 1704000 + 14760000
+        annualNOI: 1230000,         // 98400 * 12.50
+        roi: 7.5                    // (1230000 / 16464000) * 100
       },
       refrigerated: {
-        constructionCost: 16800000,
-        totalInvestment: 18453000,
-        annualNOI: 1560000,
-        roi: 8.5
+        constructionCost: 24600000, // 98400 * 250
+        totalInvestment: 26304000,  // 1704000 + 24600000
+        annualNOI: 1918800,         // 98400 * 19.50
+        roi: 7.3                    // (1918800 / 26304000) * 100
       }
     },
     {
       id: 7,
       name: t('individualLots.lot7Title'),
-      acres: 4.86,
-      warehouseSF: 103350,
-      investment: 1458000,
+      acres: 7.16,
+      warehouseSF: 108460,
+      investment: 2148000,
       pricePerAcre: 300000,
       position: t('individualLots.lot7Desc'),
       dryWarehouse: {
-        constructionCost: 12402000,
-        totalInvestment: 13860000,
-        annualNOI: 1291875,
-        roi: 9.3
+        constructionCost: 16269000, // 108460 * 150
+        totalInvestment: 18417000,  // 2148000 + 16269000
+        annualNOI: 1355750,         // 108460 * 12.50
+        roi: 7.4                    // (1355750 / 18417000) * 100
       },
       refrigerated: {
-        constructionCost: 21703500,
-        totalInvestment: 23161500,
-        annualNOI: 2015325,
-        roi: 8.7
+        constructionCost: 27115000, // 108460 * 250
+        totalInvestment: 29263000,  // 2148000 + 27115000
+        annualNOI: 2114970,         // 108460 * 19.50
+        roi: 7.2                    // (2114970 / 29263000) * 100
       }
     },
     {
       id: 8,
       name: t('individualLots.lot8Title'), 
-      acres: 4.85,
-      warehouseSF: 38160,
-      investment: 1455000,
+      acres: 3.74,
+      warehouseSF: 53340,
+      investment: 1122000,
       pricePerAcre: 300000,
       position: t('individualLots.lot8Desc'),
       dryWarehouse: {
-        constructionCost: 4579200,
-        totalInvestment: 6034200,
-        annualNOI: 477000,
-        roi: 7.9
+        constructionCost: 8001000,  // 53340 * 150
+        totalInvestment: 9123000,   // 1122000 + 8001000
+        annualNOI: 666750,          // 53340 * 12.50
+        roi: 7.3                    // (666750 / 9123000) * 100
       },
       refrigerated: {
-        constructionCost: 8013600,
-        totalInvestment: 9468600,
-        annualNOI: 744120,
-        roi: 7.9
+        constructionCost: 13335000, // 53340 * 250
+        totalInvestment: 14457000,  // 1122000 + 13335000
+        annualNOI: 1040130,         // 53340 * 19.50
+        roi: 7.2                    // (1040130 / 14457000) * 100
       }
     }
   ];
 
   const portfolioSummary = {
     totalAcres: 43.17,
-    totalWarehouseSF: 585530,
-    totalLandInvestment: 12951000,
+    totalWarehouseSF: 702820,
+    totalLandInvestment: 13251000,
     avgPricePerAcre: 300000
   };
 
@@ -309,23 +309,23 @@ export default function IndividualLots() {
                 <p className="text-sm text-muted-foreground mb-4">
                   Lower initial capital requirement with 8-12% annual appreciation potential
                 </p>
-                <div className="text-2xl font-bold text-gold">${(12951000 / 1000000).toFixed(2)}M</div>
+                <div className="text-2xl font-bold text-gold">${(13251000 / 1000000).toFixed(2)}M</div>
                 <div className="text-xs text-muted-foreground">Portfolio Investment</div>
               </div>
               <div className="p-6 bg-background/50 rounded-lg border border-border">
                 <h4 className="text-lg font-semibold text-blue-500 mb-2">Dry Development</h4>
                 <p className="text-sm text-muted-foreground mb-4">
-                  8.5-9.0% stabilized ROI through value creation and cash flow
+                  7.3-7.5% stabilized ROI through value creation and cash flow
                 </p>
-                <div className="text-2xl font-bold text-blue-500">$82.5M</div>
+                <div className="text-2xl font-bold text-blue-500">$118.8M</div>
                 <div className="text-xs text-muted-foreground">Total Development</div>
               </div>
               <div className="p-6 bg-background/50 rounded-lg border border-border">
                 <h4 className="text-lg font-semibold text-cyan-500 mb-2">Refrigerated Development</h4>
                 <p className="text-sm text-muted-foreground mb-4">
-                  7.6-7.9% ROI with specialized cold storage premium
+                  7.2-7.3% ROI with specialized cold storage premium
                 </p>
-                <div className="text-2xl font-bold text-cyan-500">$135.0M</div>
+                <div className="text-2xl font-bold text-cyan-500">$189.1M</div>
                 <div className="text-xs text-muted-foreground">Total Development</div>
               </div>
             </div>
