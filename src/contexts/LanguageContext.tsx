@@ -55,7 +55,7 @@ const translations = {
     'executiveSummary.fedTiming': 'Fed Rate Cut Timing: Perfect storm for development financing and appreciation',
     'executiveSummary.marketResilience': 'Market Resilience: Valley growth fundamentals provide stability amid changing national conditions',
     'executiveSummary.valleyOpportunity': 'Valley Investment Opportunity - Perfect Timing',
-    'executiveSummary.whyInvestors': 'Why Investors Choose The Valley: Those who have done business in McAllen stay and grow - it\'s America\'s best-kept secret. Recent comparables show $281K/acre for ready sites, making our $250K-$300K pricing extremely attractive. Act Now to benefit from Fed rate cuts whether you build or hold. This represents a compelling investment opportunity with multiple favorable scenarios in a fundamentally strong market.',
+    'executiveSummary.whyInvestors': 'Why Investors Choose The Valley: Those who have done business in McAllen stay and grow - it\'s America\'s best-kept secret. Recent comparables show $275K/acre average for ready sites, with our $265K-$300K pricing offering exceptional value. Act Now to benefit from Fed rate cuts whether you build or hold. This represents a compelling investment opportunity with multiple favorable scenarios in a fundamentally strong market.',
     
     // Market Analysis
     'marketAnalysis.title': 'Market Analysis',
@@ -350,7 +350,7 @@ const translations = {
     'executiveSummary.fedTiming': 'Momento de Recortes del Fed: Tormenta perfecta para financiamiento de desarrollo y apreciación',
     'executiveSummary.marketResilience': 'Resistencia del Mercado: Los fundamentos de crecimiento del Valle proporcionan estabilidad en medio de condiciones nacionales cambiantes',
     'executiveSummary.valleyOpportunity': 'Oportunidad de Inversión del Valle - Momento Perfecto',
-    'executiveSummary.whyInvestors': 'Por Qué los Inversionistas Eligen el Valle: Aquellos que han hecho negocios en McAllen se quedan y crecen - es el secreto mejor guardado de América. Comparables recientes muestran $281K/acre para sitios listos, haciendo que nuestros precios de $250K-$300K sean extremadamente atractivos. Actúa Ahora para beneficiarte de los recortes de tasas del Fed ya sea que construyas o mantengas. Esto representa una oportunidad de inversión convincente con múltiples escenarios favorables en un mercado fundamentalmente sólido.',
+    'executiveSummary.whyInvestors': 'Por Qué los Inversionistas Eligen el Valle: Aquellos que han hecho negocios en McAllen se quedan y crecen - es el secreto mejor guardado de América. Comparables recientes muestran $275K/acre promedio para sitios listos, con nuestros precios de $265K-$300K ofreciendo valor excepcional. Actúa Ahora para beneficiarte de los recortes de tasas del Fed ya sea que construyas o mantengas. Esto representa una oportunidad de inversión convincente con múltiples escenarios favorables en un mercado fundamentalmente sólido.',
     
     // Market Analysis
     'marketAnalysis.title': 'Análisis de Mercado',

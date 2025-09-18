@@ -26,7 +26,7 @@ export default function ProfessionalAnalysis() {
       strategy: "Dry Warehouse Development",
       description: "Value creation through development with immediate income generation",
       investment: "$83.2M",
-      annualReturn: "8.9%",
+      annualReturn: "7.4%",
       advantages: [
         "Immediate income generation upon lease-up",
         "Higher returns through value creation",
