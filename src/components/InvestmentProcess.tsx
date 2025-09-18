@@ -37,7 +37,7 @@ export default function InvestmentProcess() {
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
             <span className="text-gold font-bold">Only 8 Properties Remaining</span> in McAllen's premier industrial district. 
             Savvy investors moving in the next few months will benefit from Fed rate cuts and position themselves ahead of the curve 
-            in The Valley - America's hidden gem where those who invest stay and grow.
+            in this established logistics market with proven investment fundamentals.
           </p>
         </div>
 
@@ -97,8 +97,8 @@ export default function InvestmentProcess() {
             
             <p className="text-muted-foreground mb-8 max-w-3xl mx-auto">
               <span className="font-semibold text-accent-emerald">PERFECT TIMING:</span> Only 8 properties left in McAllen's premier industrial district. 
-              Following Fed rate adjustments - position your investment strategically at current market pricing before the Valley's continued growth 
-              drives prices higher. This is your chance to get ahead of the curve in America's hidden gem.
+              Following Fed rate adjustments - position your investment strategically at current market pricing before continued market growth 
+              drives prices higher. This is your chance to get ahead of the curve in this strategic logistics hub.
             </p>
             
             <div className="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
