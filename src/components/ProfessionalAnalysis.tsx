@@ -25,7 +25,7 @@ export default function ProfessionalAnalysis() {
     {
       strategy: "Dry Warehouse Development",
       description: "Value creation through development with immediate income generation",
-      investment: "$83.2M",
+      investment: "$117.2M",
       annualReturn: "7.4%",
       advantages: [
         "Immediate income generation upon lease-up",
@@ -42,8 +42,8 @@ export default function ProfessionalAnalysis() {
     {
       strategy: "Refrigerated Development",
       description: "Specialized cold storage facilities targeting produce market",
-      investment: "$135.0M",
-      annualReturn: "7.8%",
+      investment: "$189.1M",
+      annualReturn: "7.3%",
       advantages: [
         "Premium rents from specialized cold storage",
         "Strong tenant demand from produce industry",
