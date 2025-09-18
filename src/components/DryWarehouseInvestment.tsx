@@ -1,82 +1,22 @@
 import { Building2, DollarSign, TrendingUp, MapPin } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { PORTFOLIO_CONSTANTS, formatCurrency } from "@/lib/constants";
 
 export default function DryWarehouseInvestment() {
   const { t } = useLanguage();
-  const lots = [
-    {
-      id: "01",
-      type: "Premium",
-      size: "4.92 acres",
-      buildableSF: "68,440",
-      totalInvestment: "$11.74M",
-      annualRental: "$856K",
-      roi: "7.3%"
-    },
-    {
-      id: "02", 
-      type: "Premium",
-      size: "4.95 acres",
-      buildableSF: "79,580",
-      totalInvestment: "$13.25M",
-      annualRental: "$995K",
-      roi: "7.5%"
-    },
-    {
-      id: "03",
-      type: "Premium", 
-      size: "5.66 acres",
-      buildableSF: "98,400",
-      totalInvestment: "$16.26M",
-      annualRental: "$1.23M",
-      roi: "7.6%"
-    },
-    {
-      id: "04",
-      type: "Premium",
-      size: "6.01 acres", 
-      buildableSF: "98,400",
-      totalInvestment: "$16.35M",
-      annualRental: "$1.23M",
-      roi: "7.5%"
-    },
-    {
-      id: "05",
-      type: "Premium",
-      size: "6.05 acres",
-      buildableSF: "98,400", 
-      totalInvestment: "$16.36M",
-      annualRental: "$1.23M",
-      roi: "7.5%"
-    },
-    {
-      id: "06",
-      type: "Premium",
-      size: "5.68 acres",
-      buildableSF: "98,400",
-      totalInvestment: "$16.27M", 
-      annualRental: "$1.23M",
-      roi: "7.6%"
-    },
-    {
-      id: "07",
-      type: "Premium",
-      size: "7.16 acres",
-      buildableSF: "108,460",
-      totalInvestment: "$18.42M", 
-      annualRental: "$1.36M",
-      roi: "7.4%"
-    },
-    {
-      id: "08",
-      type: "Premium",
-      size: "3.74 acres",
-      buildableSF: "53,340",
-      totalInvestment: "$8.99M", 
-      annualRental: "$667K",
-      roi: "7.4%"
-    }
-  ];
+const lots = PORTFOLIO_CONSTANTS.LOTS.map((lot, idx) => {
+  const totalInvestment = lot.landInvestment + lot.buildableSF * PORTFOLIO_CONSTANTS.DRY_CONSTRUCTION_COST_PER_SF;
+  const annualRental = lot.buildableSF * PORTFOLIO_CONSTANTS.DRY_RENT_PER_SF;
+  return {
+    id: (idx + 1).toString().padStart(2, "0"),
+    type: "Premium",
+    size: `${lot.acres.toFixed(2)} acres`,
+    buildableSF: lot.buildableSF.toLocaleString(),
+    totalInvestment: formatCurrency(totalInvestment),
+    annualRental: formatCurrency(annualRental),
+    roi: `${PORTFOLIO_CONSTANTS.DRY_ROI_MIN}-${PORTFOLIO_CONSTANTS.DRY_ROI_MAX}%`,
+  };
+});
 
   return (
     <section className="py-16 px-6">
@@ -239,15 +179,15 @@ export default function DryWarehouseInvestment() {
                   <div className="text-sm text-muted-foreground">{t('strategic.totalAcres')}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-emerald-500 mb-2">703K</div>
+                  <div className="text-3xl font-bold text-emerald-500 mb-2">{PORTFOLIO_CONSTANTS.TOTAL_BUILDABLE_SF.toLocaleString()}</div>
                   <div className="text-sm text-muted-foreground">{t('strategic.buildableSqFt')}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-500 mb-2">$117.2M</div>
+                  <div className="text-3xl font-bold text-blue-500 mb-2">{formatCurrency(PORTFOLIO_CONSTANTS.DRY_TOTAL_INVESTMENT)}</div>
                   <div className="text-sm text-muted-foreground">{t('strategic.totalInvestment')}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-amber-500 mb-2">$8.8M</div>
+                  <div className="text-3xl font-bold text-amber-500 mb-2">{formatCurrency(PORTFOLIO_CONSTANTS.TOTAL_BUILDABLE_SF * PORTFOLIO_CONSTANTS.DRY_RENT_PER_SF)}</div>
                   <div className="text-sm text-muted-foreground">{t('strategic.annualRental')}</div>
                 </div>
               </div>

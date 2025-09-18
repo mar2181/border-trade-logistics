@@ -31,7 +31,7 @@ const translations = {
     'hero.viewAnalysis': 'View Analysis',
     
     // Virtual Tour
-    'virtualTour.title': 'MCC Industrial Park Virtual Tour',
+    'virtualTour.title': 'McAllen Industrial District Virtual Tour',
     'virtualTour.subtitle': 'Virtual Property Tour',
     'virtualTour.description': 'Experience our premium industrial properties through immersive virtual tours.',
     

@@ -1,80 +1,21 @@
 import { Snowflake, DollarSign, TrendingUp, MapPin } from "lucide-react";
+import { PORTFOLIO_CONSTANTS, formatCurrency } from "@/lib/constants";
 
 export default function RefrigeratedWarehouseInvestment() {
-  const lots = [
-    {
-      id: "01",
+const refCostPerSF = (PORTFOLIO_CONSTANTS.REFRIGERATED_CONSTRUCTION_COST_MIN + PORTFOLIO_CONSTANTS.REFRIGERATED_CONSTRUCTION_COST_MAX) / 2;
+  const lots = PORTFOLIO_CONSTANTS.LOTS.map((lot, idx) => {
+    const totalInvestment = lot.landInvestment + lot.buildableSF * refCostPerSF;
+    const annualRental = lot.buildableSF * PORTFOLIO_CONSTANTS.REFRIGERATED_RENT_PER_SF;
+    return {
+      id: (idx + 1).toString().padStart(2, "0"),
       type: "Premium",
-      size: "4.92 acres",
-      buildableSF: "68,440",
-      totalInvestment: "$18.59M",
-      annualRental: "$1.33M",
-      roi: "7.2%"
-    },
-    {
-      id: "02", 
-      type: "Premium",
-      size: "4.95 acres",
-      buildableSF: "79,580",
-      totalInvestment: "$21.21M",
-      annualRental: "$1.55M",
-      roi: "7.3%"
-    },
-    {
-      id: "03",
-      type: "Premium", 
-      size: "5.66 acres",
-      buildableSF: "98,400",
-      totalInvestment: "$26.10M",
-      annualRental: "$1.92M",
-      roi: "7.4%"
-    },
-    {
-      id: "04",
-      type: "Premium",
-      size: "6.01 acres", 
-      buildableSF: "98,400",
-      totalInvestment: "$26.19M",
-      annualRental: "$1.92M",
-      roi: "7.3%"
-    },
-    {
-      id: "05",
-      type: "Premium",
-      size: "6.05 acres",
-      buildableSF: "98,400", 
-      totalInvestment: "$26.20M",
-      annualRental: "$1.92M",
-      roi: "7.3%"
-    },
-    {
-      id: "06",
-      type: "Premium",
-      size: "5.68 acres",
-      buildableSF: "98,400",
-      totalInvestment: "$26.11M", 
-      annualRental: "$1.92M",
-      roi: "7.4%"
-    },
-    {
-      id: "07",
-      type: "Premium",
-      size: "7.16 acres",
-      buildableSF: "108,460",
-      totalInvestment: "$29.26M", 
-      annualRental: "$2.11M",
-      roi: "7.2%"
-    },
-    {
-      id: "08",
-      type: "Premium",
-      size: "3.74 acres",
-      buildableSF: "53,340",
-      totalInvestment: "$14.33M", 
-      annualRental: "$1.04M",
-      roi: "7.3%"
-    }
-  ];
+      size: `${lot.acres.toFixed(2)} acres`,
+      buildableSF: lot.buildableSF.toLocaleString(),
+      totalInvestment: formatCurrency(totalInvestment),
+      annualRental: formatCurrency(annualRental),
+      roi: `${PORTFOLIO_CONSTANTS.REFRIGERATED_ROI_MIN}-${PORTFOLIO_CONSTANTS.REFRIGERATED_ROI_MAX}%`,
+    };
+  });
 
   return (
     <section className="py-16 px-6 bg-muted/20">
@@ -97,12 +38,12 @@ export default function RefrigeratedWarehouseInvestment() {
         <div className="grid md:grid-cols-4 gap-6 mb-12">
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-blue-400/10 transition-all duration-300">
             <Snowflake className="h-8 w-8 text-blue-400 mx-auto mb-3" />
-            <div className="text-3xl font-bold text-blue-400 mb-2">$250</div>
+            <div className="text-3xl font-bold text-blue-400 mb-2">{`$${PORTFOLIO_CONSTANTS.REFRIGERATED_CONSTRUCTION_COST_MIN}-$${PORTFOLIO_CONSTANTS.REFRIGERATED_CONSTRUCTION_COST_MAX}`}</div>
             <div className="text-sm text-muted-foreground">Construction Cost per Sq Ft</div>
           </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-emerald-500/10 transition-all duration-300">
             <DollarSign className="h-8 w-8 text-emerald-500 mx-auto mb-3" />
-            <div className="text-3xl font-bold text-emerald-500 mb-2">$19.50</div>
+            <div className="text-3xl font-bold text-emerald-500 mb-2">{`$${PORTFOLIO_CONSTANTS.REFRIGERATED_RENT_PER_SF.toFixed(2)}`}</div>
             <div className="text-sm text-muted-foreground">Annual Rent per Sq Ft</div>
           </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-gold/10 transition-all duration-300">
@@ -112,7 +53,7 @@ export default function RefrigeratedWarehouseInvestment() {
           </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-amber-500/10 transition-all duration-300">
             <MapPin className="h-8 w-8 text-amber-500 mx-auto mb-3" />
-            <div className="text-3xl font-bold text-amber-500 mb-2">$187.9M</div>
+            <div className="text-3xl font-bold text-amber-500 mb-2">{formatCurrency(PORTFOLIO_CONSTANTS.REFRIGERATED_TOTAL_INVESTMENT)}</div>
             <div className="text-sm text-muted-foreground">Total Portfolio Investment</div>
           </div>
         </div>
@@ -214,19 +155,19 @@ export default function RefrigeratedWarehouseInvestment() {
             
             <div className="grid grid-cols-2 gap-4">
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-400 mb-2">43.17</div>
+                <div className="text-3xl font-bold text-blue-400 mb-2">{PORTFOLIO_CONSTANTS.TOTAL_ACRES.toFixed(2)}</div>
                 <div className="text-sm text-muted-foreground">Total Acres</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-emerald-500 mb-2">703K</div>
+                <div className="text-3xl font-bold text-emerald-500 mb-2">{PORTFOLIO_CONSTANTS.TOTAL_BUILDABLE_SF.toLocaleString()}</div>
                 <div className="text-sm text-muted-foreground">Buildable Sq Ft</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-gold mb-2">$187.9M</div>
+                <div className="text-3xl font-bold text-gold mb-2">{formatCurrency(PORTFOLIO_CONSTANTS.REFRIGERATED_TOTAL_INVESTMENT)}</div>
                 <div className="text-sm text-muted-foreground">Total Investment</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-amber-500 mb-2">$13.7M</div>
+                <div className="text-3xl font-bold text-amber-500 mb-2">{formatCurrency(PORTFOLIO_CONSTANTS.TOTAL_BUILDABLE_SF * PORTFOLIO_CONSTANTS.REFRIGERATED_RENT_PER_SF)}</div>
                 <div className="text-sm text-muted-foreground">Annual Rental Income</div>
               </div>
             </div>

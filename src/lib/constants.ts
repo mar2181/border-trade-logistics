@@ -131,11 +131,16 @@ export const PORTFOLIO_CONSTANTS = {
 
 // Utility functions
 export const formatCurrency = (amount: number): string => {
-  if (amount >= 1000000) {
-    return `$${(amount / 1000000).toFixed(1)}M`;
+  if (amount >= 1_000_000_000) {
+    return `$${(amount / 1_000_000_000).toFixed(1)}B`;
   }
-  if (amount >= 1000) {
-    return `$${(amount / 1000).toFixed(0)}K`;
+  if (amount >= 1_000_000) {
+    const millions = amount / 1_000_000;
+    const decimals = millions < 20 ? 2 : 1; // show two decimals for smaller million values like 12.13M
+    return `$${millions.toFixed(decimals)}M`;
+  }
+  if (amount >= 1_000) {
+    return `$${(amount / 1_000).toFixed(0)}K`;
   }
   return `$${amount.toLocaleString()}`;
 };

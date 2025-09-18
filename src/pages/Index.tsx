@@ -216,7 +216,7 @@ const Index = () => {
               <div className="bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-white/20 overflow-hidden max-w-md mx-auto">
                 {/* ... keep existing card content ... */}
                 <div className="relative h-48 overflow-hidden">
-                  <img src="/lovable-uploads/d6effb3b-46b7-41a2-bcf6-897a9536d8f7.png" alt="MCC Industrial Park at sunset" className="w-full h-full object-cover" />
+                  <img src="/lovable-uploads/d6effb3b-46b7-41a2-bcf6-897a9536d8f7.png" alt="McAllen Industrial District at sunset" className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4">
                     <h3 className="text-white text-xl font-bold">Land Investment</h3>
@@ -275,7 +275,7 @@ const Index = () => {
           <div className="relative h-[40vh] mt-24 px-4">
             <img 
               src="/lovable-uploads/d6effb3b-46b7-41a2-bcf6-897a9536d8f7.png" 
-              alt="MCC Industrial Park at sunset" 
+              alt="McAllen Industrial District at sunset" 
               className="w-full h-full object-cover rounded-2xl" 
             />
           </div>

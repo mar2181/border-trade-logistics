@@ -1,17 +1,18 @@
 import { MapPin, Building, Calculator, TrendingUp, Zap, Eye, Maximize2, Users, Truck, Sun } from "lucide-react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { PORTFOLIO_CONSTANTS, formatCurrency } from "@/lib/constants";
 
 export default function LandParcels() {
   const { t } = useLanguage();
   
   const industrialPark = {
-    name: "MCC Industrial Park",
+    name: PORTFOLIO_CONSTANTS.LOCATION_NAME,
     location: t('landParcels.location'),
-    totalInvestment: "$12.13M",
-    totalAcres: "44.17",
+    totalInvestment: formatCurrency(PORTFOLIO_CONSTANTS.TOTAL_LAND_INVESTMENT),
+    totalAcres: PORTFOLIO_CONSTANTS.TOTAL_ACRES.toFixed(2),
     buildingCount: "8",
-    totalLeasableSF: "702,820",
+    totalLeasableSF: PORTFOLIO_CONSTANTS.TOTAL_BUILDABLE_SF.toLocaleString(),
     occupancyRate: t('landParcels.developmentReady2'),
     avgRent: t('landParcels.shovelReady'),
     annualNOI: t('landParcels.landInvestment'),
@@ -34,10 +35,10 @@ export default function LandParcels() {
   };
 
   const keyMetrics = {
-    totalValue: "$12.13M",
-    cashFlow: "702,820 SF",
-    capRate: "$275K Avg",
-    occupancy: "44.17 Acres"
+    totalValue: formatCurrency(PORTFOLIO_CONSTANTS.TOTAL_LAND_INVESTMENT),
+    cashFlow: `${PORTFOLIO_CONSTANTS.TOTAL_BUILDABLE_SF.toLocaleString()} SF`,
+    capRate: `${formatCurrency(PORTFOLIO_CONSTANTS.AVERAGE_PRICE_PER_ACRE)} Avg`,
+    occupancy: `${PORTFOLIO_CONSTANTS.TOTAL_ACRES.toFixed(2)} Acres`
   };
 
   return (
@@ -82,7 +83,7 @@ export default function LandParcels() {
                   />
                   <div className="mt-4 p-4 bg-muted/30 rounded-lg">
                     <p className="text-sm text-muted-foreground">
-                      <strong>Land Development Features:</strong> This 47.5-acre raw land parcel offers prime development potential with agricultural fields ready for conversion to industrial use. 
+                      <strong>Land Development Features:</strong> This 44.17-acre raw land parcel offers prime development potential with agricultural fields ready for conversion to industrial use. 
                       The property provides excellent access to Military Highway for optimal logistics operations and is positioned for build-to-suit development opportunities.
                     </p>
                   </div>
