@@ -163,7 +163,7 @@ export default function PropertySpecifications() {
             </p>
             <p className="text-lg text-muted-foreground max-w-5xl mx-auto text-center mt-4">
               {t('properties.locationDescription')} 
-              <span className="text-primary font-semibold">{t('properties.correctedData')}</span> shows 43.17 acres total, 702,820 SF buildable - 
+              <span className="text-primary font-semibold">{t('properties.correctedData')}</span> shows 44.17 acres total, 702,820 SF buildable - 
               <span className="text-accent font-semibold">{t('properties.significantlyLarger')}</span>.
             </p>
           </div>

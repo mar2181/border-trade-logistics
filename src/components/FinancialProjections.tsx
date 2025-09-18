@@ -27,11 +27,11 @@ export default function FinancialProjections() {
       value: "$265K/acre"
     }, {
       label: "Portfolio Average",
-      value: "$281K/acre avg"
+      value: "$275K/acre avg"
     }],
     development: [{
-      label: "Optional Dry Warehouse",
-      value: "$120/sq ft"
+      label: "Dry Warehouse Development",
+      value: "$150/sq ft"
     }, {
       label: "Optional Refrigerated",
       value: "$200-220/sq ft"
@@ -45,7 +45,7 @@ export default function FinancialProjections() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-primary mb-4">MCC Industrial Park - Financial Projections & Strategy</h2>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-              Comprehensive analysis of land appreciation potential, development strategies, and exit scenarios for the 43.17-acre portfolio
+              Comprehensive analysis of land appreciation potential, development strategies, and exit scenarios for the 44.17-acre portfolio
             </p>
           
           <div className="relative overflow-hidden rounded-xl border border-border max-w-2xl mx-auto">
@@ -60,7 +60,7 @@ export default function FinancialProjections() {
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8">
               <div className="flex items-center mb-6 justify-center">
                 <BarChart3 className="h-8 w-8 text-gold mr-3" />
-                <h4 className="text-xl font-semibold text-primary">MCC Industrial Park - 43.17 Acres</h4>
+                <h4 className="text-xl font-semibold text-primary">MCC Industrial Park - 44.17 Acres</h4>
               </div>
               
               <div className="grid md:grid-cols-2 gap-8">
@@ -159,8 +159,8 @@ export default function FinancialProjections() {
             <div className="mt-8 p-6 bg-emerald-50 dark:bg-emerald-500/10 rounded-lg">
               <h4 className="text-lg font-semibold text-emerald-700 dark:text-emerald-400 mb-2">Buyer Development Options (Optional)</h4>
               <p className="text-sm text-emerald-600 dark:text-emerald-300">
-                If developing: Dry warehouse could yield 9.7-13% ROI post-build; refrigerated 6.5-8.8%. 
-                Costs: $120/SF dry, $200-220/SF refrigerated – but land purchase first unlocks your vision.
+                If developing: Dry warehouse could yield 7.3-7.5% ROI post-build; refrigerated 7.2-7.4%. 
+                Costs: $150/SF dry, $200-220/SF refrigerated – but land purchase first unlocks your vision.
               </p>
             </div>
           </div>
