@@ -1,30 +1,31 @@
 import { Phone, Mail, Calendar, Search, FileText, Building, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { PORTFOLIO_CONSTANTS } from "@/lib/constants";
 
 export default function InvestmentProcess() {
   const processSteps = [
     {
       number: "01",
       title: "Initial Property Inquiry",
-      description: "Contact specialist to review 8 available McAllen produce district properties",
+      description: `Contact specialist to review 8 available ${PORTFOLIO_CONSTANTS.LOCATION_NAME} properties`,
       icon: Calendar
     },
     {
       number: "02", 
       title: "Site Visit & Inspection",
-      description: "Tour McAllen properties, verify utilities, assess development potential",
+      description: `Tour ${PORTFOLIO_CONSTANTS.LOCATION_NAME} properties, verify utilities, assess development potential`,
       icon: Search
     },
     {
       number: "03",
       title: "Investment Structuring", 
-      description: "Structure terms to benefit from Fed rate cuts and Valley growth",
+      description: `Structure terms to benefit from Fed rate cuts and ${PORTFOLIO_CONSTANTS.MARKET_NAME} growth`,
       icon: FileText
     },
     {
       number: "04",
       title: "Property Acquisition",
-      description: "Secure your position in America's most coveted produce district",
+      description: `Secure your position in America's premier ${PORTFOLIO_CONSTANTS.TRADE_DESCRIPTION.toLowerCase()}`,
       icon: Building
     }
   ];
@@ -35,7 +36,7 @@ export default function InvestmentProcess() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-primary mb-4">Strategic Investment Timing</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-            <span className="text-gold font-bold">Only 8 Properties Remaining</span> in McAllen's premier industrial district. 
+            <span className="text-gold font-bold">Only 8 Properties Remaining</span> in {PORTFOLIO_CONSTANTS.LOCATION_NAME}. 
             Savvy investors moving in the next few months will benefit from Fed rate cuts and position themselves ahead of the curve 
             in this established logistics market with proven investment fundamentals.
           </p>
@@ -66,17 +67,17 @@ export default function InvestmentProcess() {
           
           <div className="grid lg:grid-cols-1 gap-8 max-w-2xl mx-auto">
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8 text-center">
-              <h4 className="text-xl font-semibold text-primary mb-4">Your McAllen Investment Specialist</h4>
+              <h4 className="text-xl font-semibold text-primary mb-4">Your {PORTFOLIO_CONSTANTS.LOCATION_NAME} Investment Specialist</h4>
               <p className="text-muted-foreground mb-6">
-                20+ years international real estate experience specializing in The Valley's industrial market. 
-                Expert in McAllen industrial properties with deep knowledge of The Valley's sustained growth potential 
+                20+ years international real estate experience specializing in The {PORTFOLIO_CONSTANTS.MARKET_NAME}'s industrial market. 
+                Expert in {PORTFOLIO_CONSTANTS.LOCATION_NAME} industrial properties with deep knowledge of The {PORTFOLIO_CONSTANTS.MARKET_NAME}'s sustained growth potential 
                 and proven track record helping investors secure million-dollar opportunities before they're gone.
               </p>
               
               <div className="flex flex-col items-center space-y-4">
                 <div className="flex items-center space-x-2 text-gold">
                   <Phone className="h-5 w-5" />
-                  <span className="text-xl font-semibold">(956) 522-1481</span>
+                  <span className="text-xl font-semibold">{PORTFOLIO_CONSTANTS.CONTACT.PHONE}</span>
                 </div>
                 
                 <Button className="bg-gradient-to-r from-gold to-gold-dark text-background font-semibold hover:shadow-lg hover:shadow-gold/25 transition-all duration-300">
@@ -96,14 +97,14 @@ export default function InvestmentProcess() {
             </div>
             
             <p className="text-muted-foreground mb-8 max-w-3xl mx-auto">
-              <span className="font-semibold text-accent-emerald">PERFECT TIMING:</span> Only 8 properties left in McAllen's premier industrial district. 
+              <span className="font-semibold text-accent-emerald">PERFECT TIMING:</span> Only 8 properties left in {PORTFOLIO_CONSTANTS.LOCATION_NAME}. 
               Following Fed rate adjustments - position your investment strategically at current market pricing before continued market growth 
-              drives prices higher. This is your chance to get ahead of the curve in this strategic logistics hub.
+              drives prices higher. This is your chance to get ahead of the curve in this strategic {PORTFOLIO_CONSTANTS.TRADE_DESCRIPTION.toLowerCase()}.
             </p>
             
             <div className="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
               <div>
-                <div className="text-xl font-bold text-gold mb-1">McAllen Industrial</div>
+                <div className="text-xl font-bold text-gold mb-1">{PORTFOLIO_CONSTANTS.LOCATION_NAME}</div>
                 <div className="text-sm text-muted-foreground">District Premium</div>
               </div>
               <div>
@@ -111,11 +112,11 @@ export default function InvestmentProcess() {
                 <div className="text-sm text-muted-foreground">Only Remaining</div>
               </div>
               <div>
-                <div className="text-xl font-bold text-accent-sapphire mb-1">$12.13M</div>
+                <div className="text-xl font-bold text-accent-sapphire mb-1">${(PORTFOLIO_CONSTANTS.TOTAL_LAND_INVESTMENT / 1000000).toFixed(2)}M</div>
                 <div className="text-sm text-muted-foreground">Portfolio Value</div>
               </div>
               <div>
-                <div className="text-xl font-bold text-accent-amber mb-1">900K+</div>
+                <div className="text-xl font-bold text-accent-amber mb-1">{(PORTFOLIO_CONSTANTS.METRO_POPULATION / 1000).toFixed(0)}K+</div>
                 <div className="text-sm text-muted-foreground">Metro Population</div>
               </div>
               <div>
@@ -126,7 +127,7 @@ export default function InvestmentProcess() {
             
             <div className="mt-8 p-4 bg-accent-emerald/10 rounded-lg border border-accent-emerald/30">
               <p className="text-accent-emerald font-semibold">
-                Contact your specialist at (956) 522-1481 TODAY - These 8 premium properties won't last in The Valley's dynamic growth market!
+                Contact your specialist at {PORTFOLIO_CONSTANTS.CONTACT.PHONE} TODAY - These 8 premium properties won't last in The {PORTFOLIO_CONSTANTS.MARKET_NAME}'s dynamic growth market!
               </p>
             </div>
           </div>

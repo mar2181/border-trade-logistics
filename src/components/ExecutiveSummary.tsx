@@ -1,5 +1,6 @@
 import { Building, MapPin, Clock } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { PORTFOLIO_CONSTANTS, formatCurrency } from "@/lib/constants";
 
 export default function ExecutiveSummary() {
   const { t } = useLanguage();
@@ -33,14 +34,14 @@ export default function ExecutiveSummary() {
                   <Building className="h-5 w-5 text-gold mr-2" />
                   <span className="text-sm text-muted-foreground">{t('executiveSummary.portfolioValue')}</span>
                 </div>
-                <div className="text-3xl font-bold text-gold">$12.13M</div>
+                <div className="text-3xl font-bold text-gold">{formatCurrency(PORTFOLIO_CONSTANTS.TOTAL_LAND_INVESTMENT)}</div>
               </div>
               <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6">
                 <div className="flex items-center mb-3">
                   <Clock className="h-5 w-5 text-gold mr-2" />
                   <span className="text-sm text-muted-foreground">{t('executiveSummary.pricePerAcre')}</span>
                 </div>
-                <div className="text-3xl font-bold text-gold">$275K</div>
+                <div className="text-3xl font-bold text-gold">{formatCurrency(PORTFOLIO_CONSTANTS.AVERAGE_PRICE_PER_ACRE)}</div>
               </div>
             </div>
           </div>
@@ -84,11 +85,11 @@ export default function ExecutiveSummary() {
           <h3 className="text-2xl font-semibold text-primary mb-8 text-center">{t('marketAnalysis.keyHighlights')}</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center">
-              <div className="text-2xl font-bold text-gold mb-2">3%</div>
+              <div className="text-2xl font-bold text-gold mb-2">{PORTFOLIO_CONSTANTS.VACANCY_RATE}%</div>
               <div className="text-sm text-muted-foreground">{t('marketAnalysis.vacancy')}</div>
             </div>
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center">
-              <div className="text-2xl font-bold text-gold mb-2">$6B+</div>
+              <div className="text-2xl font-bold text-gold mb-2">{formatCurrency(PORTFOLIO_CONSTANTS.ANNUAL_TRADE_VOLUME)}+</div>
               <div className="text-sm text-muted-foreground">{t('marketAnalysis.tradeVolume')}</div>
             </div>
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center">
@@ -96,7 +97,7 @@ export default function ExecutiveSummary() {
               <div className="text-sm text-muted-foreground">{t('marketAnalysis.rentalGrowth')}</div>
             </div>
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center">
-                <div className="text-2xl font-bold text-gold mb-2">702,820 SF</div>
+                <div className="text-2xl font-bold text-gold mb-2">{PORTFOLIO_CONSTANTS.TOTAL_BUILDABLE_SF.toLocaleString()} SF</div>
               <div className="text-sm text-muted-foreground">{t('marketAnalysis.buildableArea')}</div>
             </div>
           </div>

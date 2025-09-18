@@ -2,6 +2,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Thermometer, Warehouse, TrendingUp, DollarSign } from "lucide-react";
 import DryWarehouseInvestment from "./DryWarehouseInvestment";
 import RefrigeratedWarehouseInvestment from "./RefrigeratedWarehouseInvestment";
+import { PORTFOLIO_CONSTANTS, formatCurrency } from "@/lib/constants";
 
 const InvestmentTabs = () => {
   return (
@@ -27,7 +28,7 @@ const InvestmentTabs = () => {
               <Warehouse className="w-5 h-5" />
               <div className="text-left">
                 <div>Dry Warehouse</div>
-                <div className="text-xs opacity-90">7.4% Average ROI</div>
+                <div className="text-xs opacity-90">{PORTFOLIO_CONSTANTS.DRY_ROI_AVERAGE}% Average ROI</div>
               </div>
             </TabsTrigger>
             <TabsTrigger 
@@ -37,7 +38,7 @@ const InvestmentTabs = () => {
               <Thermometer className="w-5 h-5" />
               <div className="text-left">
                 <div>Refrigerated Warehouse</div>
-                <div className="text-xs opacity-90">7.2-7.4% Average ROI</div>
+                <div className="text-xs opacity-90">{PORTFOLIO_CONSTANTS.REFRIGERATED_ROI_MIN}-{PORTFOLIO_CONSTANTS.REFRIGERATED_ROI_MAX}% Average ROI</div>
               </div>
             </TabsTrigger>
           </TabsList>
@@ -49,22 +50,22 @@ const InvestmentTabs = () => {
               <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
                 <div className="text-center p-6 bg-card rounded-lg border border-border">
                   <DollarSign className="w-8 h-8 text-gold mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-gold">$82.5M</div>
+                  <div className="text-2xl font-bold text-gold">{formatCurrency(PORTFOLIO_CONSTANTS.DRY_TOTAL_INVESTMENT)}</div>
                   <div className="text-sm text-muted-foreground">Total Investment</div>
                 </div>
                 <div className="text-center p-6 bg-card rounded-lg border border-border">
                   <TrendingUp className="w-8 h-8 text-emerald-500 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-emerald-500">7.4%</div>
+                  <div className="text-2xl font-bold text-emerald-500">{PORTFOLIO_CONSTANTS.DRY_ROI_AVERAGE}%</div>
                   <div className="text-sm text-muted-foreground">Average ROI</div>
                 </div>
                 <div className="text-center p-6 bg-card rounded-lg border border-border">
                   <Warehouse className="w-8 h-8 text-blue-500 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-blue-500">703K</div>
+                  <div className="text-2xl font-bold text-blue-500">{(PORTFOLIO_CONSTANTS.TOTAL_BUILDABLE_SF / 1000).toFixed(0)}K</div>
                   <div className="text-sm text-muted-foreground">Total SF</div>
                 </div>
                 <div className="text-center p-6 bg-card rounded-lg border border-border">
                   <div className="w-8 h-8 bg-amber-500 rounded-full mx-auto mb-2 flex items-center justify-center text-background font-bold">44</div>
-                  <div className="text-2xl font-bold text-amber-500">44.17 Acres</div>
+                  <div className="text-2xl font-bold text-amber-500">{PORTFOLIO_CONSTANTS.TOTAL_ACRES} Acres</div>
                   <div className="text-sm text-muted-foreground">Available Land</div>
                 </div>
               </div>
@@ -78,22 +79,22 @@ const InvestmentTabs = () => {
               <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
                 <div className="text-center p-6 bg-card rounded-lg border border-border">
                   <DollarSign className="w-8 h-8 text-gold mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-gold">$135.0M</div>
+                  <div className="text-2xl font-bold text-gold">{formatCurrency(PORTFOLIO_CONSTANTS.REFRIGERATED_TOTAL_INVESTMENT)}</div>
                   <div className="text-sm text-muted-foreground">Total Investment</div>
                 </div>
                 <div className="text-center p-6 bg-card rounded-lg border border-border">
                   <TrendingUp className="w-8 h-8 text-blue-500 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-blue-500">7.3%</div>
+                  <div className="text-2xl font-bold text-blue-500">{PORTFOLIO_CONSTANTS.REFRIGERATED_ROI_AVERAGE}%</div>
                   <div className="text-sm text-muted-foreground">Average ROI</div>
                 </div>
                 <div className="text-center p-6 bg-card rounded-lg border border-border">
                   <Thermometer className="w-8 h-8 text-cyan-500 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-cyan-500">703K</div>
+                  <div className="text-2xl font-bold text-cyan-500">{(PORTFOLIO_CONSTANTS.TOTAL_BUILDABLE_SF / 1000).toFixed(0)}K</div>
                   <div className="text-sm text-muted-foreground">Total SF</div>
                 </div>
                 <div className="text-center p-6 bg-card rounded-lg border border-border">
                   <div className="w-8 h-8 bg-purple-500 rounded-full mx-auto mb-2 flex items-center justify-center text-background font-bold">44</div>
-                  <div className="text-2xl font-bold text-purple-500">44.17 Acres</div>
+                  <div className="text-2xl font-bold text-purple-500">{PORTFOLIO_CONSTANTS.TOTAL_ACRES} Acres</div>
                   <div className="text-sm text-muted-foreground">Available Land</div>
                 </div>
               </div>

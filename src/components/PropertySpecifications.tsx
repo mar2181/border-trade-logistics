@@ -4,6 +4,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { ProfessionalUnderwriting } from "./ProfessionalUnderwriting";
 import { PortfolioSummary } from "./PortfolioSummary";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { PORTFOLIO_CONSTANTS } from "@/lib/constants";
 
 export default function PropertySpecifications() {
   const { t } = useLanguage();
@@ -38,105 +39,19 @@ export default function PropertySpecifications() {
     };
   };
 
-  // CORRECTED LOT DATA based on user's document - Professional underwriting ready
-  const lots = [
-    {
-      id: "01",
-      type: "Premium",
-      location: t('underwriting.location'),
-      acres: 4.92,
-      buildableSF: 68440,
-      landInvestment: 1476000,
-      planAnnual: 855500, // 68440 * 12.5
-      advantages: ["Direct highway access from Military Hwy", "Strategic industrial location enhances visibility", "Premium corner position with dual frontage"],
-      riskNotes: "Verify detention pond requirements and utility capacity",
-      positioning: "Ideal for smaller tenant mix with flexible warehouse configurations"
-    },
-    {
-      id: "02",
-      type: "Premium",
-      location: t('underwriting.location'),
-      acres: 4.95,
-      buildableSF: 79580,
-      landInvestment: 1311750,
-      planAnnual: 994750, // 79580 * 12.5
-      advantages: ["New road development access improvements", "High traffic visibility on major corridor", "Enhanced frontage premium location"],
-      riskNotes: "Monitor road construction timeline impact",
-      positioning: "Strong dry warehouse potential with visibility benefits"
-    },
-    {
-      id: "03",
-      type: "Premium",
-      location: t('underwriting.location'),
-      acres: 5.66,
-      buildableSF: 98400,
-      landInvestment: 1499900,
-      planAnnual: 1230000, // 98400 * 12.5
-      advantages: ["Largest available development lot in district", "Maximum development potential for anchor tenant", "Strategic center position with multiple access points"],
-      riskNotes: "Ensure adequate truck circulation for large-scale operations",
-      positioning: "Best suited for cold storage anchor tenant or large dry warehouse"
-    },
-    {
-      id: "04",
-      type: "Premium",
-      location: t('underwriting.location'),
-      acres: 6.01,
-      buildableSF: 98400,
-      landInvestment: 1592650,
-      planAnnual: 1230000, // 98400 * 12.5
-      advantages: ["Future expansion ready with adjacent parcels", "Utilities optimized for large-scale development", "Distribution hub potential with regional access"],
-      riskNotes: "Confirm expansion rights and utility upgrade costs",
-      positioning: "Distribution hub potential - ideal for multi-tenant facility"
-    },
-    {
-      id: "05",
-      type: "Premium",
-      location: t('underwriting.location'),
-      acres: 6.05,
-      buildableSF: 98400,
-      landInvestment: 1603250,
-      planAnnual: 1230000, // 98400 * 12.5
-      advantages: ["Premium development site with optimal configuration", "Multiple access points for efficient operations", "Flexible configuration for various tenant types"],
-      riskNotes: "Verify parking requirements for multi-tenant configuration",
-      positioning: "Premium multi-tenant opportunity with flexible layouts"
-    },
-    {
-      id: "06",
-      type: "Premium",
-      location: t('underwriting.location'),
-      acres: 5.68,
-      buildableSF: 98400,
-      landInvestment: 1505200,
-      planAnnual: 1230000, // 98400 * 12.5
-      advantages: ["Value investment position below district average", "Quick development ready with minimal site work", "Strong ROI potential with current market rents"],
-      riskNotes: "Investigate below-market pricing factors",
-      positioning: "Value play - high ROI potential with immediate development"
-    },
-    {
-      id: "07",
-      type: "Premium",
-      location: t('underwriting.location'),
-      acres: 7.16,
-      buildableSF: 108460,
-      landInvestment: 2148000,
-      planAnnual: 1355750, // 108460 * 12.5
-      advantages: ["Highest density development potential in portfolio", "Multiple development phases possible", "Strategic land hold with appreciation potential"],
-      riskNotes: "Lower initial building density - focus on land appreciation",
-      positioning: "Premium land hold with future development upside"
-    },
-    {
-      id: "08",
-      type: "Premium",
-      location: t('underwriting.location'),
-      acres: 3.74,
-      buildableSF: 53340,
-      landInvestment: 991100,
-      planAnnual: 666750, // 53340 * 12.5
-      advantages: ["Entry-level investment opportunity", "Exceptional development density", "Compact site maximizes building efficiency"],
-      riskNotes: "Smaller scale requires careful tenant positioning",
-      positioning: "Entry-level investment with strong appreciation potential"
-    }
-  ];
+  // CORRECTED LOT DATA using centralized constants
+  const lots = PORTFOLIO_CONSTANTS.LOTS.map((lot, index) => ({
+    id: (index + 1).toString().padStart(2, '0'),
+    type: "Premium",
+    location: t('underwriting.location'),
+    acres: lot.acres,
+    buildableSF: lot.buildableSF,
+    landInvestment: lot.landInvestment,
+    planAnnual: lot.buildableSF * PORTFOLIO_CONSTANTS.DRY_RENT_PER_SF,
+    advantages: getPropertyAdvantages((index + 1).toString().padStart(2, '0')),
+    riskNotes: "Professional underwriting analysis - verify all site conditions",
+    positioning: lot.position
+  }));
 
   // Portfolio calculations
   const portfolioTotals = lots.reduce((acc, lot) => ({
@@ -163,7 +78,7 @@ export default function PropertySpecifications() {
             </p>
             <p className="text-lg text-muted-foreground max-w-5xl mx-auto text-center mt-4">
               {t('properties.locationDescription')} 
-              <span className="text-primary font-semibold">{t('properties.correctedData')}</span> shows 44.17 acres total, 702,820 SF buildable - 
+              <span className="text-primary font-semibold">{t('properties.correctedData')}</span> shows {PORTFOLIO_CONSTANTS.TOTAL_ACRES} acres total, {PORTFOLIO_CONSTANTS.TOTAL_BUILDABLE_SF.toLocaleString()} SF buildable - 
               <span className="text-accent font-semibold">{t('properties.significantlyLarger')}</span>.
             </p>
           </div>

@@ -1,40 +1,41 @@
 import { BarChart3, DollarSign, Percent, TrendingUp } from "lucide-react";
+import { PORTFOLIO_CONSTANTS, formatCurrency } from "@/lib/constants";
 export default function FinancialProjections() {
   const landPortfolioSummary = {
-    totalLandInvestment: "$12.13M",
-    totalAcres: "44.17 acres",
-    avgPricePerAcre: "$275K",
+    totalLandInvestment: formatCurrency(PORTFOLIO_CONSTANTS.TOTAL_LAND_INVESTMENT),
+    totalAcres: `${PORTFOLIO_CONSTANTS.TOTAL_ACRES} acres`,
+    avgPricePerAcre: formatCurrency(PORTFOLIO_CONSTANTS.AVERAGE_PRICE_PER_ACRE),
     annualHoldingCosts: "$242K",
-    projectedAppreciation: "8-12%",
+    projectedAppreciation: `${PORTFOLIO_CONSTANTS.ANNUAL_GROWTH_MIN}-${PORTFOLIO_CONSTANTS.ANNUAL_GROWTH_MAX}%`,
     threYearValue: "$17.0M"
   };
   const landAssumptions = {
     market: [{
-      label: "Vacancy Rate",
-      value: "3%"
+        label: "Vacancy Rate",
+        value: `${PORTFOLIO_CONSTANTS.VACANCY_RATE}%`
     }, {
-      label: "Land Appreciation",
-      value: "10-15% annually"
+        label: "Land Appreciation",
+        value: `${PORTFOLIO_CONSTANTS.LAND_APPRECIATION_MIN}-${PORTFOLIO_CONSTANTS.LAND_APPRECIATION_MAX}% annually`
     }, {
       label: "Holding Costs",
       value: "2-3% annually"
     }],
     pricing: [{
-      label: "Premium Pricing (Lots 1,7)",
-      value: "$300K/acre"
-    }, {
-      label: "Standard Pricing (Lots 2-6,8)",
-      value: "$265K/acre"
-    }, {
-      label: "Portfolio Average",
-      value: "$275K/acre avg"
+        label: "Premium Pricing (Lots 1,7)",
+        value: formatCurrency(PORTFOLIO_CONSTANTS.PRICE_RANGE_MAX) + "/acre"
+      }, {
+        label: "Standard Pricing (Lots 2-6,8)",
+        value: formatCurrency(PORTFOLIO_CONSTANTS.PRICE_RANGE_MIN) + "/acre"
+      }, {
+        label: "Portfolio Average",
+        value: formatCurrency(PORTFOLIO_CONSTANTS.AVERAGE_PRICE_PER_ACRE) + "/acre avg"
     }],
     development: [{
-      label: "Dry Warehouse Development",
-      value: "$150/sq ft"
-    }, {
-      label: "Optional Refrigerated",
-      value: "$200-220/sq ft"
+        label: "Dry Warehouse Development",
+        value: `$${PORTFOLIO_CONSTANTS.DRY_CONSTRUCTION_COST_PER_SF}/sq ft`
+      }, {
+        label: "Optional Refrigerated",
+        value: `$${PORTFOLIO_CONSTANTS.REFRIGERATED_CONSTRUCTION_COST_MIN}-${PORTFOLIO_CONSTANTS.REFRIGERATED_CONSTRUCTION_COST_MAX}/sq ft`
     }, {
       label: "Land Ready for Build",
       value: "Immediate"
@@ -43,9 +44,9 @@ export default function FinancialProjections() {
   return <section id="financials" className="py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-primary mb-4">MCC Industrial Park - Financial Projections & Strategy</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4">{PORTFOLIO_CONSTANTS.LOCATION_NAME} - Financial Projections & Strategy</h2>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-              Comprehensive analysis of land appreciation potential, development strategies, and exit scenarios for the 44.17-acre portfolio
+              Comprehensive analysis of land appreciation potential, development strategies, and exit scenarios for the {PORTFOLIO_CONSTANTS.TOTAL_ACRES}-acre portfolio
             </p>
           
           <div className="relative overflow-hidden rounded-xl border border-border max-w-2xl mx-auto">
@@ -60,7 +61,7 @@ export default function FinancialProjections() {
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8">
               <div className="flex items-center mb-6 justify-center">
                 <BarChart3 className="h-8 w-8 text-gold mr-3" />
-                <h4 className="text-xl font-semibold text-primary">MCC Industrial Park - 44.17 Acres</h4>
+                <h4 className="text-xl font-semibold text-primary">{PORTFOLIO_CONSTANTS.LOCATION_NAME} - {PORTFOLIO_CONSTANTS.TOTAL_ACRES} Acres</h4>
               </div>
               
               <div className="grid md:grid-cols-2 gap-8">
@@ -141,7 +142,7 @@ export default function FinancialProjections() {
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center">
                 <Percent className="h-8 w-8 text-gold mx-auto mb-3" />
-                <div className="text-3xl font-bold text-gold mb-2">10-15%</div>
+                <div className="text-3xl font-bold text-gold mb-2">{PORTFOLIO_CONSTANTS.LAND_APPRECIATION_MIN}-{PORTFOLIO_CONSTANTS.LAND_APPRECIATION_MAX}%</div>
                 <div className="text-sm text-muted-foreground">Annual Land Appreciation</div>
               </div>
               <div className="text-center">
@@ -159,8 +160,8 @@ export default function FinancialProjections() {
             <div className="mt-8 p-6 bg-emerald-50 dark:bg-emerald-500/10 rounded-lg">
               <h4 className="text-lg font-semibold text-emerald-700 dark:text-emerald-400 mb-2">Buyer Development Options (Optional)</h4>
               <p className="text-sm text-emerald-600 dark:text-emerald-300">
-                If developing: Dry warehouse could yield 7.3-7.5% ROI post-build; refrigerated 7.2-7.4%. 
-                Costs: $150/SF dry, $200-220/SF refrigerated – but land purchase first unlocks your vision.
+                 If developing: Dry warehouse could yield {PORTFOLIO_CONSTANTS.DRY_ROI_MIN}-{PORTFOLIO_CONSTANTS.DRY_ROI_MAX}% ROI post-build; refrigerated {PORTFOLIO_CONSTANTS.REFRIGERATED_ROI_MIN}-{PORTFOLIO_CONSTANTS.REFRIGERATED_ROI_MAX}%. 
+                Costs: ${PORTFOLIO_CONSTANTS.DRY_CONSTRUCTION_COST_PER_SF}/SF dry, ${PORTFOLIO_CONSTANTS.REFRIGERATED_CONSTRUCTION_COST_MIN}-${PORTFOLIO_CONSTANTS.REFRIGERATED_CONSTRUCTION_COST_MAX}/SF refrigerated – but land purchase first unlocks your vision.
               </p>
             </div>
           </div>
