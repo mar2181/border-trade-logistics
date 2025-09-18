@@ -40,7 +40,7 @@ export default function ExecutiveSummary() {
                   <Clock className="h-5 w-5 text-gold mr-2" />
                   <span className="text-sm text-muted-foreground">{t('executiveSummary.pricePerAcre')}</span>
                 </div>
-                <div className="text-3xl font-bold text-gold">$281K</div>
+                <div className="text-3xl font-bold text-gold">$275K</div>
               </div>
             </div>
           </div>

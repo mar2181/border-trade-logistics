@@ -338,7 +338,7 @@ const translations = {
     // Executive Summary  
     'executiveSummary.title': 'Resumen Ejecutivo',
     'executiveSummary.subtitle': 'La Joya Oculta del Valle: Un portafolio de terrenos de $12.13M en el distrito industrial más codiciado de América',
-    'executiveSummary.description': '43.17 acres de parcelas premium listas para construir en la calle 10 de McAllen, en el dinámico mercado de crecimiento industrial. Aprovecha los ajustes de tasas del Fed para posicionarte estratégicamente en este atractivo mercado donde los inversionistas inteligentes permanecen y crecen.',
+    'executiveSummary.description': '44.17 acres de parcelas premium listas para construir en la calle 10 de McAllen, en el dinámico mercado de crecimiento industrial. Aprovecha los ajustes de tasas del Fed para posicionarte estratégicamente en este atractivo mercado donde los inversionistas inteligentes permanecen y crecen.',
     'executiveSummary.opportunity': 'Oportunidad de Inversión Estratégica en McAllen',
     'executiveSummary.opportunityDesc': 'Solo 8 propiedades disponibles en el principal distrito industrial de McAllen. Parcelas en el corredor de la calle 10 con servicios listos, zonificación industrial, 702,820 SF construibles. El auge proyectado de 20 años del Valle, combinado con recortes de tasas del Fed, crea un potencial de apreciación inigualable. Este mercado muestra una resiliencia excepcional frente a condiciones nacionales cambiantes debido a sus únicos impulsores de demanda y oferta limitada.',
     'executiveSummary.portfolioValue': 'Valor del Portafolio de Terrenos',

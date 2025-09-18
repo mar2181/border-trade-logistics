@@ -177,10 +177,10 @@ export default function IndividualLots() {
   ];
 
   const portfolioSummary = {
-    totalAcres: 43.17,
+    totalAcres: 44.17,
     totalWarehouseSF: 702820,
     totalLandInvestment: 12127850,
-    avgPricePerAcre: 281011
+    avgPricePerAcre: 274648
   };
 
   return (

@@ -2,8 +2,8 @@ import { BarChart3, DollarSign, Percent, TrendingUp } from "lucide-react";
 export default function FinancialProjections() {
   const landPortfolioSummary = {
     totalLandInvestment: "$12.13M",
-    totalAcres: "43.17 acres",
-    avgPricePerAcre: "$281K",
+    totalAcres: "44.17 acres",
+    avgPricePerAcre: "$275K",
     annualHoldingCosts: "$242K",
     projectedAppreciation: "8-12%",
     threYearValue: "$17.0M"
