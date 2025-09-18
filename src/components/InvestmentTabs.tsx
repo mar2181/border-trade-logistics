@@ -27,7 +27,7 @@ const InvestmentTabs = () => {
               <Warehouse className="w-5 h-5" />
               <div className="text-left">
                 <div>Dry Warehouse</div>
-                <div className="text-xs opacity-90">13.0% Average ROI</div>
+                <div className="text-xs opacity-90">7.4% Average ROI</div>
               </div>
             </TabsTrigger>
             <TabsTrigger 
@@ -59,7 +59,7 @@ const InvestmentTabs = () => {
                 </div>
                 <div className="text-center p-6 bg-card rounded-lg border border-border">
                   <Warehouse className="w-8 h-8 text-blue-500 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-blue-500">585K</div>
+                  <div className="text-2xl font-bold text-blue-500">703K</div>
                   <div className="text-sm text-muted-foreground">Total SF</div>
                 </div>
                 <div className="text-center p-6 bg-card rounded-lg border border-border">
@@ -88,7 +88,7 @@ const InvestmentTabs = () => {
                 </div>
                 <div className="text-center p-6 bg-card rounded-lg border border-border">
                   <Thermometer className="w-8 h-8 text-cyan-500 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-cyan-500">585K</div>
+                  <div className="text-2xl font-bold text-cyan-500">703K</div>
                   <div className="text-sm text-muted-foreground">Total SF</div>
                 </div>
                 <div className="text-center p-6 bg-card rounded-lg border border-border">

@@ -36,8 +36,8 @@ export default function LandParcels() {
   const keyMetrics = {
     totalValue: "$12.13M",
     cashFlow: "702,820 SF",
-    capRate: "$281K Avg",
-    occupancy: "43.17 Acres"
+    capRate: "$275K Avg",
+    occupancy: "44.17 Acres"
   };
 
   return (

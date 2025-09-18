@@ -111,7 +111,7 @@ export default function InvestmentProcess() {
                 <div className="text-sm text-muted-foreground">Only Remaining</div>
               </div>
               <div>
-                <div className="text-xl font-bold text-accent-sapphire mb-1">$11.89M</div>
+                <div className="text-xl font-bold text-accent-sapphire mb-1">$12.13M</div>
                 <div className="text-sm text-muted-foreground">Portfolio Value</div>
               </div>
               <div>
