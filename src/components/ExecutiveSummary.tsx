@@ -33,14 +33,14 @@ export default function ExecutiveSummary() {
                   <Building className="h-5 w-5 text-gold mr-2" />
                   <span className="text-sm text-muted-foreground">{t('executiveSummary.portfolioValue')}</span>
                 </div>
-                <div className="text-3xl font-bold text-gold">$12.95M</div>
+                <div className="text-3xl font-bold text-gold">$12.13M</div>
               </div>
               <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6">
                 <div className="flex items-center mb-3">
                   <Clock className="h-5 w-5 text-gold mr-2" />
                   <span className="text-sm text-muted-foreground">{t('executiveSummary.pricePerAcre')}</span>
                 </div>
-                <div className="text-3xl font-bold text-gold">$300K</div>
+                <div className="text-3xl font-bold text-gold">$281K</div>
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@ export default function ExecutiveSummary() {
               <div className="text-sm text-muted-foreground">{t('marketAnalysis.rentalGrowth')}</div>
             </div>
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center">
-                <div className="text-2xl font-bold text-gold mb-2">585,530 SF</div>
+                <div className="text-2xl font-bold text-gold mb-2">702,820 SF</div>
               <div className="text-sm text-muted-foreground">{t('marketAnalysis.buildableArea')}</div>
             </div>
           </div>

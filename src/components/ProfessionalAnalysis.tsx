@@ -8,7 +8,7 @@ export default function ProfessionalAnalysis() {
     {
       strategy: "Land Hold Strategy",
       description: "Lower initial capital requirement with no construction risk",
-      investment: "$12.95M",
+      investment: "$12.13M",
       annualReturn: "8-12%",
       advantages: [
         "No construction risk or tenant lease-up risk",
@@ -304,7 +304,7 @@ export default function ProfessionalAnalysis() {
                       <ul className="space-y-2 text-sm text-muted-foreground">
                         <li>• Individual lot purchase ($1.26M - $2.19M)</li>
                         <li>• Multi-lot acquisition for larger projects</li>
-                        <li>• Complete portfolio acquisition ($12.95M)</li>
+                        <li>• Complete portfolio acquisition ($12.13M)</li>
                         <li>• Joint venture development opportunities</li>
                       </ul>
                     </div>
