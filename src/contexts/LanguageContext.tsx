@@ -85,7 +85,7 @@ const translations = {
     // Land Parcels
     'landParcels.title': 'Prime Land Development Opportunity',
     'landParcels.description': 'Raw land parcels available for development on Military Highway with prime agricultural fields ready for industrial conversion.',
-    'landParcels.clickEnlarge': 'Click to Enlarge',
+    'landParcels.clickEnlarge': 'View Full Map',
     'landParcels.militaryHighway': 'Military Highway Land Development',
     'landParcels.militaryDesc': 'Prime raw land parcels ready for industrial development with excellent highway access and build-to-suit potential',
     'landParcels.developmentReady': 'Development Ready - Build-to-Suit Available',
