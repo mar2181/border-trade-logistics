@@ -9,7 +9,7 @@ export default function IndividualLots() {
   // Generate lots from constants with consistent calculations
   const lots = PORTFOLIO_CONSTANTS.LOTS.map((lot, index) => {
     const dryConstructionCost = lot.buildableSF * PORTFOLIO_CONSTANTS.DRY_CONSTRUCTION_COST_PER_SF;
-    const refrigConstructionCost = lot.buildableSF * PORTFOLIO_CONSTANTS.REFRIGERATED_CONSTRUCTION_COST_MIN;
+    const refrigConstructionCost = lot.buildableSF * PORTFOLIO_CONSTANTS.REFRIGERATED_CONSTRUCTION_COST_PER_SF;
     const dryTotalInvestment = lot.landInvestment + dryConstructionCost;
     const refrigTotalInvestment = lot.landInvestment + refrigConstructionCost;
     const dryNOI = lot.buildableSF * PORTFOLIO_CONSTANTS.DRY_RENT_PER_SF;

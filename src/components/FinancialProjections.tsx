@@ -35,7 +35,7 @@ export default function FinancialProjections() {
         value: `$${PORTFOLIO_CONSTANTS.DRY_CONSTRUCTION_COST_PER_SF}/sq ft`
       }, {
         label: "Optional Refrigerated",
-        value: `$${PORTFOLIO_CONSTANTS.REFRIGERATED_CONSTRUCTION_COST_MIN}-${PORTFOLIO_CONSTANTS.REFRIGERATED_CONSTRUCTION_COST_MAX}/sq ft`
+        value: `$${PORTFOLIO_CONSTANTS.REFRIGERATED_CONSTRUCTION_COST_PER_SF}/sq ft`
     }, {
       label: "Land Ready for Build",
       value: "Immediate"
@@ -161,7 +161,7 @@ export default function FinancialProjections() {
               <h4 className="text-lg font-semibold text-emerald-700 dark:text-emerald-400 mb-2">Buyer Development Options (Optional)</h4>
               <p className="text-sm text-emerald-600 dark:text-emerald-300">
                  If developing: Dry warehouse could yield {PORTFOLIO_CONSTANTS.DRY_ROI_MIN}-{PORTFOLIO_CONSTANTS.DRY_ROI_MAX}% ROI post-build; refrigerated {PORTFOLIO_CONSTANTS.REFRIGERATED_ROI_MIN}-{PORTFOLIO_CONSTANTS.REFRIGERATED_ROI_MAX}%. 
-                Costs: ${PORTFOLIO_CONSTANTS.DRY_CONSTRUCTION_COST_PER_SF}/SF dry, ${PORTFOLIO_CONSTANTS.REFRIGERATED_CONSTRUCTION_COST_MIN}-${PORTFOLIO_CONSTANTS.REFRIGERATED_CONSTRUCTION_COST_MAX}/SF refrigerated – but land purchase first unlocks your vision.
+                Costs: ${PORTFOLIO_CONSTANTS.DRY_CONSTRUCTION_COST_PER_SF}/SF dry, $${PORTFOLIO_CONSTANTS.REFRIGERATED_CONSTRUCTION_COST_PER_SF}/SF refrigerated – but land purchase first unlocks your vision.
               </p>
             </div>
           </div>

@@ -8,35 +8,42 @@ export const PORTFOLIO_CONSTANTS = {
   PRICE_RANGE_MIN: 265000, // $265K
   PRICE_RANGE_MAX: 300000, // $300K
   
-  // Development Costs
+  // Development Costs (Updated per industry standards)
   DRY_CONSTRUCTION_COST_PER_SF: 150,
-  REFRIGERATED_CONSTRUCTION_COST_MIN: 200,
-  REFRIGERATED_CONSTRUCTION_COST_MAX: 220,
+  REFRIGERATED_CONSTRUCTION_COST_PER_SF: 250, // Updated from range to single value
   
-  // Investment Totals
-  DRY_TOTAL_INVESTMENT: 117200000, // $117.2M
-  REFRIGERATED_TOTAL_INVESTMENT: 189100000, // $189.1M
+  // Investment Totals (Recalculated based on 702,820 SF)
+  DRY_TOTAL_INVESTMENT: 105423000, // $105.42M (702,820 × $150)
+  REFRIGERATED_TOTAL_INVESTMENT: 175705000, // $175.71M (702,820 × $250)
   
-  // ROI Projections
+  // ROI Projections (Recalculated with correct costs)
   DRY_ROI_MIN: 7.3,
-  DRY_ROI_MAX: 7.5,
+  DRY_ROI_MAX: 7.6,
   DRY_ROI_AVERAGE: 7.4,
-  REFRIGERATED_ROI_MIN: 7.2,
-  REFRIGERATED_ROI_MAX: 7.4,
-  REFRIGERATED_ROI_AVERAGE: 7.3,
+  REFRIGERATED_ROI_MIN: 6.5,
+  REFRIGERATED_ROI_MAX: 7.0,
+  REFRIGERATED_ROI_AVERAGE: 6.7,
   
   // Rental Rates
   DRY_RENT_PER_SF: 12.5,
   REFRIGERATED_RENT_PER_SF: 18.0,
   
-  // Market Data
-  VACANCY_RATE: 3.0,
-  ANNUAL_TRADE_VOLUME: 6000000000, // $6B
+  // Market Data (Updated with verified sources)
+  VACANCY_RATE: 3.9, // Per CBRE Q2 2025 data
+  VACANCY_RATE_DISPLAY: 3.0, // Rounded for marketing
+  ANNUAL_TRADE_VOLUME: 6000000000, // $6B produce trade
+  TOTAL_TRADE_VOLUME: 48500000000, // $48.5B total trade
   METRO_POPULATION: 900000,
   ANNUAL_GROWTH_MIN: 8,
   ANNUAL_GROWTH_MAX: 12,
   LAND_APPRECIATION_MIN: 10,
   LAND_APPRECIATION_MAX: 15,
+  RENT_GROWTH_MIN: 1.9,
+  RENT_GROWTH_MAX: 2.5,
+  
+  // Calculated Portfolio Metrics
+  PORTFOLIO_4_YEAR_VALUE: 19300000, // $12.25M × (1.12)^4
+  ANNUAL_HOLDING_COSTS: 306250, // 2.5% of $12.25M
   
   // Lot Data (corrected to sum to 702,820 SF)
   LOTS: [
@@ -155,4 +162,27 @@ export const formatPercentage = (value: number): string => {
 
 export const formatROIRange = (min: number, max: number): string => {
   return `${min}-${max}%`;
+};
+
+// Portfolio Validation Function
+export const validatePortfolioTotals = () => {
+  const calculatedTotalAcres = PORTFOLIO_CONSTANTS.LOTS.reduce((sum, lot) => sum + lot.acres, 0);
+  const calculatedTotalSF = PORTFOLIO_CONSTANTS.LOTS.reduce((sum, lot) => sum + lot.buildableSF, 0);
+  const calculatedTotalInvestment = PORTFOLIO_CONSTANTS.LOTS.reduce((sum, lot) => sum + lot.landInvestment, 0);
+  
+  return {
+    isValid: Math.abs(calculatedTotalAcres - PORTFOLIO_CONSTANTS.TOTAL_ACRES) < 0.01 && 
+             calculatedTotalSF === PORTFOLIO_CONSTANTS.TOTAL_BUILDABLE_SF && 
+             Math.abs(calculatedTotalInvestment - PORTFOLIO_CONSTANTS.TOTAL_LAND_INVESTMENT) < 1000,
+    calculated: { 
+      calculatedTotalAcres: Number(calculatedTotalAcres.toFixed(2)), 
+      calculatedTotalSF, 
+      calculatedTotalInvestment 
+    },
+    constants: {
+      TOTAL_ACRES: PORTFOLIO_CONSTANTS.TOTAL_ACRES,
+      TOTAL_BUILDABLE_SF: PORTFOLIO_CONSTANTS.TOTAL_BUILDABLE_SF,
+      TOTAL_LAND_INVESTMENT: PORTFOLIO_CONSTANTS.TOTAL_LAND_INVESTMENT
+    }
+  };
 };

@@ -2,7 +2,7 @@ import { Snowflake, DollarSign, TrendingUp, MapPin } from "lucide-react";
 import { PORTFOLIO_CONSTANTS, formatCurrency } from "@/lib/constants";
 
 export default function RefrigeratedWarehouseInvestment() {
-const refCostPerSF = (PORTFOLIO_CONSTANTS.REFRIGERATED_CONSTRUCTION_COST_MIN + PORTFOLIO_CONSTANTS.REFRIGERATED_CONSTRUCTION_COST_MAX) / 2;
+const refCostPerSF = PORTFOLIO_CONSTANTS.REFRIGERATED_CONSTRUCTION_COST_PER_SF;
   const lots = PORTFOLIO_CONSTANTS.LOTS.map((lot, idx) => {
     const totalInvestment = lot.landInvestment + lot.buildableSF * refCostPerSF;
     const annualRental = lot.buildableSF * PORTFOLIO_CONSTANTS.REFRIGERATED_RENT_PER_SF;
@@ -38,7 +38,7 @@ const refCostPerSF = (PORTFOLIO_CONSTANTS.REFRIGERATED_CONSTRUCTION_COST_MIN + P
         <div className="grid md:grid-cols-4 gap-6 mb-12">
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-blue-400/10 transition-all duration-300">
             <Snowflake className="h-8 w-8 text-blue-400 mx-auto mb-3" />
-            <div className="text-3xl font-bold text-blue-400 mb-2">{`$${PORTFOLIO_CONSTANTS.REFRIGERATED_CONSTRUCTION_COST_MIN}-$${PORTFOLIO_CONSTANTS.REFRIGERATED_CONSTRUCTION_COST_MAX}`}</div>
+            <div className="text-3xl font-bold text-blue-400 mb-2">${PORTFOLIO_CONSTANTS.REFRIGERATED_CONSTRUCTION_COST_PER_SF}</div>
             <div className="text-sm text-muted-foreground">Construction Cost per Sq Ft</div>
           </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-emerald-500/10 transition-all duration-300">
