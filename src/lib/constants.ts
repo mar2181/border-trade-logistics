@@ -1,9 +1,9 @@
 // Portfolio Constants - Single source of truth
 export const PORTFOLIO_CONSTANTS = {
   // Core Portfolio Metrics
-  TOTAL_ACRES: 44.17,
+  TOTAL_ACRES: 43.17,
   TOTAL_BUILDABLE_SF: 702820,
-  TOTAL_LAND_INVESTMENT: 12130000, // $12.13M
+  TOTAL_LAND_INVESTMENT: 12251700, // $12.25M
   AVERAGE_PRICE_PER_ACRE: 275000, // $275K
   PRICE_RANGE_MIN: 265000, // $265K
   PRICE_RANGE_MAX: 300000, // $300K
@@ -61,54 +61,54 @@ export const PORTFOLIO_CONSTANTS = {
     {
       id: "lot3",
       name: "Lot 3", 
-      acres: 5.0,
+      acres: 5.06,
       buildableSF: 87120,
-      landInvestment: 1500000,
+      landInvestment: 1518000,
       pricePerAcre: 300000,
       position: "Central Distribution Hub"
     },
     {
       id: "lot4",
       name: "Lot 4",
-      acres: 5.25,
+      acres: 6.01,
       buildableSF: 91476,
-      landInvestment: 1391250,
+      landInvestment: 1592650,
       pricePerAcre: 265000,
       position: "Logistics Corridor Access"
     },
     {
       id: "lot5",
       name: "Lot 5",
-      acres: 5.5,
+      acres: 6.05,
       buildableSF: 95832,
-      landInvestment: 1650000,
+      landInvestment: 1815000,
       pricePerAcre: 300000,
       position: "Strategic Highway Frontage"
     },
     {
       id: "lot6",
       name: "Lot 6",
-      acres: 5.75,
+      acres: 5.68,
       buildableSF: 100188,
-      landInvestment: 1523750,
+      landInvestment: 1505200,
       pricePerAcre: 265000,
       position: "Industrial Park Gateway"
     },
     {
       id: "lot7",
       name: "Lot 7",
-      acres: 6.0,
-      buildableSF: 87624, // Reduced by 600 SF to correct total
-      landInvestment: 1800000,
+      acres: 7.16,
+      buildableSF: 87624,
+      landInvestment: 2148000,
       pricePerAcre: 300000,
       position: "Prime Development Site"
     },
     {
       id: "lot8",
       name: "Lot 8",
-      acres: 6.8,
+      acres: 3.34,
       buildableSF: 92560,
-      landInvestment: 1802000,
+      landInvestment: 885100,
       pricePerAcre: 265000,
       position: "Expansion Ready Location"
     }

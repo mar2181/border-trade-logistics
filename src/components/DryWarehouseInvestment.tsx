@@ -175,7 +175,7 @@ const lots = PORTFOLIO_CONSTANTS.LOTS.map((lot, idx) => {
             
               <div className="grid grid-cols-2 gap-4">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-gold mb-2">44.17</div>
+                  <div className="text-3xl font-bold text-gold mb-2">43.17</div>
                   <div className="text-sm text-muted-foreground">{t('strategic.totalAcres')}</div>
                 </div>
                 <div className="text-center">
