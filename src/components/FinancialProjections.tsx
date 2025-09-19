@@ -5,14 +5,14 @@ export default function FinancialProjections() {
     totalLandInvestment: formatCurrency(PORTFOLIO_CONSTANTS.TOTAL_LAND_INVESTMENT),
     totalAcres: `${PORTFOLIO_CONSTANTS.TOTAL_ACRES} acres`,
     avgPricePerAcre: formatCurrency(PORTFOLIO_CONSTANTS.AVERAGE_PRICE_PER_ACRE),
-    annualHoldingCosts: "$242K",
+    annualHoldingCosts: formatCurrency(PORTFOLIO_CONSTANTS.ANNUAL_HOLDING_COSTS),
     projectedAppreciation: `${PORTFOLIO_CONSTANTS.ANNUAL_GROWTH_MIN}-${PORTFOLIO_CONSTANTS.ANNUAL_GROWTH_MAX}%`,
-    threYearValue: "$17.0M"
+    fourYearValue: formatCurrency(PORTFOLIO_CONSTANTS.PORTFOLIO_4_YEAR_VALUE)
   };
   const landAssumptions = {
     market: [{
         label: "Vacancy Rate",
-        value: `${PORTFOLIO_CONSTANTS.VACANCY_RATE}%`
+        value: `${PORTFOLIO_CONSTANTS.VACANCY_RATE_DISPLAY}%`
     }, {
         label: "Land Appreciation",
         value: `${PORTFOLIO_CONSTANTS.LAND_APPRECIATION_MIN}-${PORTFOLIO_CONSTANTS.LAND_APPRECIATION_MAX}% annually`
@@ -90,7 +90,7 @@ export default function FinancialProjections() {
                   </div>
                   <div className="flex justify-between items-center pt-4 border-t border-border">
                     <span className="text-muted-foreground">4-Year Value (12% avg):</span>
-                    <span className="text-2xl font-bold text-amber-500">{landPortfolioSummary.threYearValue}</span>
+                    <span className="text-2xl font-bold text-amber-500">{landPortfolioSummary.fourYearValue}</span>
                   </div>
                 </div>
               </div>

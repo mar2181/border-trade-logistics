@@ -48,7 +48,7 @@ const refCostPerSF = PORTFOLIO_CONSTANTS.REFRIGERATED_CONSTRUCTION_COST_PER_SF;
           </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-gold/10 transition-all duration-300">
             <TrendingUp className="h-8 w-8 text-gold mx-auto mb-3" />
-            <div className="text-3xl font-bold text-gold mb-2">7.3%</div>
+            <div className="text-3xl font-bold text-gold mb-2">{PORTFOLIO_CONSTANTS.REFRIGERATED_ROI_AVERAGE}%</div>
             <div className="text-sm text-muted-foreground">Average Portfolio ROI</div>
           </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-amber-500/10 transition-all duration-300">

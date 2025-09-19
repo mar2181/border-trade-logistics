@@ -2,14 +2,15 @@ import { FileText, Download, Calculator, TrendingUp, AlertTriangle, CheckCircle 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { PORTFOLIO_CONSTANTS, formatCurrency } from "@/lib/constants";
 
 export default function ProfessionalAnalysis() {
   const investmentScenarios = [
     {
       strategy: "Land Hold Strategy",
       description: "Lower initial capital requirement with no construction risk",
-      investment: "$12.25M",
-      annualReturn: "8-12%",
+      investment: formatCurrency(PORTFOLIO_CONSTANTS.TOTAL_LAND_INVESTMENT),
+      annualReturn: `${PORTFOLIO_CONSTANTS.ANNUAL_GROWTH_MIN}-${PORTFOLIO_CONSTANTS.ANNUAL_GROWTH_MAX}%`,
       advantages: [
         "No construction risk or tenant lease-up risk",
         "Flexibility to develop or sell at optimal market timing",
@@ -25,8 +26,8 @@ export default function ProfessionalAnalysis() {
     {
       strategy: "Dry Warehouse Development",
       description: "Value creation through development with immediate income generation",
-      investment: "$117.2M",
-      annualReturn: "7.4%",
+      investment: formatCurrency(PORTFOLIO_CONSTANTS.DRY_TOTAL_INVESTMENT),
+      annualReturn: `${PORTFOLIO_CONSTANTS.DRY_ROI_AVERAGE}%`,
       advantages: [
         "Immediate income generation upon lease-up",
         "Higher returns through value creation",
@@ -42,8 +43,8 @@ export default function ProfessionalAnalysis() {
     {
       strategy: "Refrigerated Development",
       description: "Specialized cold storage facilities targeting produce market",
-      investment: "$189.1M",
-      annualReturn: "7.3%",
+      investment: formatCurrency(PORTFOLIO_CONSTANTS.REFRIGERATED_TOTAL_INVESTMENT),
+      annualReturn: `${PORTFOLIO_CONSTANTS.REFRIGERATED_ROI_AVERAGE}%`,
       advantages: [
         "Premium rents from specialized cold storage",
         "Strong tenant demand from produce industry",
