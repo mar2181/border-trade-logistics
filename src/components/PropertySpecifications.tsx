@@ -102,18 +102,64 @@ export default function PropertySpecifications() {
           </div>
         </div>
 
-        {/* Professional Lot Analysis Carousel */}
-        <Carousel className="w-full mb-12">
-          <CarouselContent>
-            {lots.map(lot => (
-              <CarouselItem key={lot.id}>
+        {/* Professional Analysis - Individual Lots */}
+        <div className="mb-12">
+          <div className="text-center mb-8">
+            <h3 className="text-3xl font-bold text-primary mb-2">Professional Analysis - Individual Lots</h3>
+            <p className="text-muted-foreground">Detailed underwriting analysis for each property in the portfolio</p>
+          </div>
+
+          {/* Desktop & Mobile: Enhanced Carousel */}
+          <div className="block md:hidden lg:block">
+            <Carousel className="w-full relative">
+              <CarouselContent className="ml-1">
+                {lots.map((lot, index) => (
+                  <CarouselItem key={lot.id} className="pl-1">
+                    <div className="relative">
+                      {/* Lot Counter */}
+                      <div className="absolute top-4 right-4 z-10 bg-primary/90 text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
+                        Lot {index + 1} of {lots.length}
+                      </div>
+                      <ProfessionalUnderwriting lot={lot} />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              
+              {/* Enhanced Navigation */}
+              <CarouselPrevious className="left-4 h-12 w-12 border-2 border-primary/20 bg-background/90 hover:bg-primary hover:text-primary-foreground shadow-lg" />
+              <CarouselNext className="right-4 h-12 w-12 border-2 border-primary/20 bg-background/90 hover:bg-primary hover:text-primary-foreground shadow-lg" />
+              
+              {/* Dot Indicators */}
+              <div className="flex justify-center mt-6 space-x-2">
+                {lots.map((_, index) => (
+                  <div
+                    key={index}
+                    className="w-2 h-2 rounded-full bg-muted-foreground/30 transition-colors"
+                    id={`dot-${index}`}
+                  />
+                ))}
+              </div>
+              
+              {/* Swipe Hint for Mobile */}
+              <div className="lg:hidden text-center mt-4">
+                <p className="text-sm text-muted-foreground">← Swipe to view more lots →</p>
+              </div>
+            </Carousel>
+          </div>
+
+          {/* Tablet: Stacked Layout */}
+          <div className="hidden md:block lg:hidden space-y-8">
+            {lots.map((lot, index) => (
+              <div key={lot.id} className="relative">
+                <div className="absolute top-4 right-4 z-10 bg-primary/90 text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
+                  Lot {index + 1} of {lots.length}
+                </div>
                 <ProfessionalUnderwriting lot={lot} />
-              </CarouselItem>
+              </div>
             ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
+          </div>
+        </div>
 
         {/* Portfolio Summary */}
         <PortfolioSummary 
