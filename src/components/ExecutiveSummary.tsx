@@ -48,6 +48,15 @@ export default function ExecutiveSummary() {
 
           <div className="space-y-8">
             <div className="grid md:grid-cols-3 gap-6 items-start">
+              <div className="md:col-span-2">
+                <div className="relative overflow-hidden rounded-xl border border-border">
+                  <img 
+                    src="/src/assets/site-plan-blueprint.png" 
+                    alt="Industrial development site plan blueprint" 
+                    className="w-full h-full aspect-[4/3] object-contain bg-white/5 p-4"
+                  />
+                </div>
+              </div>
               
               <div className="md:col-span-1">
                 <h3 className="text-2xl font-semibold text-primary mb-4">{t('executiveSummary.valleyAdvantage')}</h3>
@@ -71,10 +80,6 @@ export default function ExecutiveSummary() {
               <p className="text-muted-foreground leading-relaxed mb-4">
                 {t('executiveSummary.whyInvestors')}
               </p>
-
-              <div className="relative overflow-hidden rounded-xl border border-border">
-                <img src="/lovable-uploads/3e9cf4b0-cd02-4374-a49b-8642655e444f.png" alt="Modern office space in warehouse development" className="w-full h-64 object-cover" />
-              </div>
             </div>
           </div>
         </div>
