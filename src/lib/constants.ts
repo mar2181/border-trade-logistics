@@ -2,7 +2,7 @@
 export const PORTFOLIO_CONSTANTS = {
   // Core Portfolio Metrics
   TOTAL_ACRES: 43.17,
-  TOTAL_BUILDABLE_SF: 703420,
+  TOTAL_BUILDABLE_SF: 702820,
   TOTAL_LAND_INVESTMENT: 12251700, // $12.25M
   AVERAGE_PRICE_PER_ACRE: 284000, // $284K (weighted average)
   PRICE_RANGE_MIN: 265000, // $265K
@@ -10,19 +10,19 @@ export const PORTFOLIO_CONSTANTS = {
   
   // Development Costs (Updated per industry standards)
   DRY_CONSTRUCTION_COST_PER_SF: 150,
-  REFRIGERATED_CONSTRUCTION_COST_PER_SF: 250, // Updated from range to single value
+  REFRIGERATED_CONSTRUCTION_COST_PER_SF: 220, // Updated to $220/SF ($200-220 range)
   
-  // Investment Totals (Construction + Land - Recalculated based on 703,420 SF)
-  DRY_TOTAL_INVESTMENT: 117764700, // $117.76M (703,420 × $150 + $12.25M land)
-  REFRIGERATED_TOTAL_INVESTMENT: 188106700, // $188.11M (703,420 × $250 + $12.25M land)
+  // Investment Totals (Construction + Land - Recalculated based on 702,820 SF)
+  DRY_TOTAL_INVESTMENT: 117673700, // $117.67M (702,820 × $150 + $12.25M land)
+  REFRIGERATED_TOTAL_INVESTMENT: 166871400, // $166.87M (702,820 × $220 + $12.25M land)
   
   // ROI Projections (Recalculated with corrected totals)
-  DRY_ROI_MIN: 7.5,
-  DRY_ROI_MAX: 7.8,
-  DRY_ROI_AVERAGE: 7.6,
-  REFRIGERATED_ROI_MIN: 6.7,
-  REFRIGERATED_ROI_MAX: 7.2,
-  REFRIGERATED_ROI_AVERAGE: 6.9,
+  DRY_ROI_MIN: 7.3,
+  DRY_ROI_MAX: 7.6,
+  DRY_ROI_AVERAGE: 7.4,
+  REFRIGERATED_ROI_MIN: 7.2,
+  REFRIGERATED_ROI_MAX: 7.4,
+  REFRIGERATED_ROI_AVERAGE: 7.3,
   
   // Rental Rates
   DRY_RENT_PER_SF: 12.5,
@@ -45,7 +45,7 @@ export const PORTFOLIO_CONSTANTS = {
   PORTFOLIO_4_YEAR_VALUE: 19300000, // $12.25M × (1.12)^4
   ANNUAL_HOLDING_COSTS: 306250, // 2.5% of $12.25M
   
-  // Lot Data (corrected to sum to 703,420 SF)
+  // Lot Data (corrected to sum to 702,820 SF)
   LOTS: [
     {
       id: "lot1",

@@ -24,7 +24,7 @@ const lots = PORTFOLIO_CONSTANTS.LOTS.map((lot, idx) => {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-primary mb-4">Dry Warehouse Investment</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-            Corrected analysis with $150/SF construction costs. Lower entry costs with steady cash-on-cash returns. Fed rate cuts make financing more attractive for traditional warehouse development.
+            Lower entry costs with steady cash-on-cash returns. Fed rate cuts make financing more attractive for traditional warehouse development.
           </p>
         </div>
 

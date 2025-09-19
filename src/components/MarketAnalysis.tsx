@@ -6,7 +6,7 @@ export default function MarketAnalysis() {
   
   const tradeVolume = [{
     product: t('marketAnalysis.avocados'),
-    value: "$1,970M",
+    value: "$1,500M",
     color: "bg-emerald-500"
   }, {
     product: t('marketAnalysis.berries'),
@@ -22,7 +22,7 @@ export default function MarketAnalysis() {
     color: "bg-red-500"
   }, {
     product: t('marketAnalysis.others'),
-    value: "$1,390M",
+    value: "$1,860M",
     color: "bg-purple-500"
   }];
   

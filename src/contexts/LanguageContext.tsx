@@ -340,7 +340,7 @@ const translations = {
     'executiveSummary.subtitle': 'Inversión Industrial Estratégica Transfronteriza: Un portafolio de terrenos de $12.25M en el centro logístico premier de América',
     'executiveSummary.description': '43.17 acres de parcelas premium listas para construir en la calle 10 de McAllen, en el dinámico mercado de crecimiento industrial. Aprovecha los ajustes de tasas del Fed para posicionarte estratégicamente en este atractivo mercado donde los inversionistas inteligentes permanecen y crecen.',
     'executiveSummary.opportunity': 'Oportunidad de Inversión Estratégica en McAllen',
-    'executiveSummary.opportunityDesc': 'Solo 8 propiedades disponibles en el principal distrito industrial de McAllen. Parcelas en el corredor de la calle 10 con servicios listos, zonificación industrial, 703,420 SF construibles. El auge proyectado de 20 años del Valle, combinado con recortes de tasas del Fed, crea un potencial de apreciación inigualable. Este mercado muestra una resiliencia excepcional frente a condiciones nacionales cambiantes debido a sus únicos impulsores de demanda y oferta limitada.',
+    'executiveSummary.opportunityDesc': 'Solo 8 propiedades disponibles en el principal distrito industrial de McAllen. Parcelas en el corredor de la calle 10 con servicios listos, zonificación industrial, 702,820 SF construibles. El auge proyectado de 20 años del Valle, combinado con recortes de tasas del Fed, crea un potencial de apreciación inigualable. Este mercado muestra una resiliencia excepcional frente a condiciones nacionales cambiantes debido a sus únicos impulsores de demanda y oferta limitada.',
     'executiveSummary.portfolioValue': 'Valor del Portafolio de Terrenos',
     'executiveSummary.pricePerAcre': 'Precio por Acre',
     'executiveSummary.valleyAdvantage': 'La Ventaja del Valle - Posición de Mercado Estratégica',
@@ -597,7 +597,38 @@ const translations = {
     'news.fedEnvironment': 'Análisis del Entorno de Tasas del Fed y su Impacto en Bienes Raíces Comerciales',
     'news.fedEnvironmentDesc': 'Perspectivas de expertos sobre cambios de tasas y estrategias de inversión inmobiliaria.',
     'news.powellAnalysis': 'Todo lo que el presidente del Fed, Powell, hizo \'DEMASIADO TARDE\' revelado',
-    'news.powellAnalysisDesc': 'Hace 1 día - Análisis crítico de decisiones del Federal Reserve que afectan los mercados inmobiliarios comerciales.'
+    'news.powellAnalysisDesc': 'Hace 1 día - Análisis crítico de decisiones del Federal Reserve que afectan los mercados inmobiliarios comerciales.',
+    
+    // Missing translations from audit report
+    'common.landInvestment': 'Inversión en Terreno',
+    'common.shovelReadyParcels': 'Parcelas Industriales Listas para Construir',
+    'common.totalAcres': 'Total de Acres',
+    'common.oneMilleRadius': 'Radio de 1 Milla',
+    'common.annualNOI': 'NOI Anual',
+    'common.avgPricePerAcre': 'Precio Promedio por Acre',
+    'common.avgPrice': 'Precio Promedio',
+    'common.lotsPlanned': '8 Lotes - Edificios Planificados',
+    'common.appreciationRate': 'Tasa de Apreciación',
+    'common.capRate': 'Tasa de Capitalización',
+    
+    // Portfolio Investment Strategies
+    'portfolio.strategies': 'Estrategias de Inversión de Portafolio',
+    'portfolio.landHold': 'Mantenimiento de Terreno',
+    'portfolio.dryDevelopment': 'Desarrollo Seco',
+    'portfolio.refrigeratedDevelopment': 'Desarrollo Refrigerado',
+    'portfolio.mixedDevelopment': 'Desarrollo Mixto',
+    
+    // Professional Investment Analysis
+    'professional.analysis': 'Análisis Profesional de Inversión',
+    'professional.dueDiligence': 'Debida Diligencia',
+    'professional.marketComps': 'Comparables de Mercado',
+    'professional.riskAnalysis': 'Análisis de Riesgo',
+    
+    // Investment Process
+    'process.stepByStep': 'Proceso de Inversión Paso a Paso',
+    'process.contact': 'Información de Contacto',
+    'process.schedule': 'Programar Reunión',
+    'process.analyze': 'Analizar Oportunidad'
   }
 };
 

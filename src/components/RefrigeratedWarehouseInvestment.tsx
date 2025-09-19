@@ -23,7 +23,7 @@ const refCostPerSF = PORTFOLIO_CONSTANTS.REFRIGERATED_CONSTRUCTION_COST_PER_SF;
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-primary mb-4">Refrigerated Warehouse Investment</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-            Corrected analysis with $250/SF construction costs. Premium cold storage facilities serving the cross-border produce trade with stable returns and essential infrastructure for food supply chains.
+            Premium cold storage facilities serving the cross-border produce trade with stable returns and essential infrastructure for food supply chains.
           </p>
         </div>
 
