@@ -69,7 +69,7 @@ export const PORTFOLIO_CONSTANTS = {
       id: "lot3",
       name: "Lot 3", 
       acres: 5.06,
-      buildableSF: 98400,
+      buildableSF: 87120,
       landInvestment: 1518000,
       pricePerAcre: 300000,
       position: "Central Distribution Hub"
@@ -78,7 +78,7 @@ export const PORTFOLIO_CONSTANTS = {
       id: "lot4",
       name: "Lot 4",
       acres: 6.01,
-      buildableSF: 98400,
+      buildableSF: 91476,
       landInvestment: 1592650,
       pricePerAcre: 265000,
       position: "Logistics Corridor Access"
@@ -87,7 +87,7 @@ export const PORTFOLIO_CONSTANTS = {
       id: "lot5",
       name: "Lot 5",
       acres: 6.05,
-      buildableSF: 98400,
+      buildableSF: 95832,
       landInvestment: 1815000,
       pricePerAcre: 300000,
       position: "Strategic Highway Frontage"
@@ -96,7 +96,7 @@ export const PORTFOLIO_CONSTANTS = {
       id: "lot6",
       name: "Lot 6",
       acres: 5.68,
-      buildableSF: 98400,
+      buildableSF: 100188,
       landInvestment: 1505200,
       pricePerAcre: 265000,
       position: "Industrial Park Gateway"
@@ -105,7 +105,7 @@ export const PORTFOLIO_CONSTANTS = {
       id: "lot7",
       name: "Lot 7",
       acres: 7.16,
-      buildableSF: 108460,
+      buildableSF: 87624,
       landInvestment: 2148000,
       pricePerAcre: 300000,
       position: "Prime Development Site"
@@ -114,7 +114,7 @@ export const PORTFOLIO_CONSTANTS = {
       id: "lot8",
       name: "Lot 8",
       acres: 3.34,
-      buildableSF: 53340,
+      buildableSF: 92560,
       landInvestment: 885100,
       pricePerAcre: 265000,
       position: "Expansion Ready Location"
