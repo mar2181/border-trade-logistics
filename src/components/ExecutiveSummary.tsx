@@ -1,10 +1,10 @@
 import { Building, MapPin, Clock } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { PORTFOLIO_CONSTANTS, formatCurrency } from "@/lib/constants";
-
 export default function ExecutiveSummary() {
-  const { t } = useLanguage();
-  
+  const {
+    t
+  } = useLanguage();
   return <section id="overview" className="py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
@@ -49,7 +49,7 @@ export default function ExecutiveSummary() {
           <div className="space-y-8">
             <div className="grid md:grid-cols-2 gap-6 items-start">
               <div className="relative overflow-hidden rounded-xl border border-border">
-                <img src="/lovable-uploads/0d9c191d-f650-4d6e-adaf-28eacd50ff33.png" alt="Warehouse development floor plan layout" className="w-full h-48 object-cover" />
+                
               </div>
               <div>
                 <h3 className="text-2xl font-semibold text-primary mb-4">{t('executiveSummary.valleyAdvantage')}</h3>
