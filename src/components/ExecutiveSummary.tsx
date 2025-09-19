@@ -48,12 +48,8 @@ export default function ExecutiveSummary() {
 
           <div className="space-y-8">
             <div className="grid md:grid-cols-3 gap-6 items-start">
-              <div className="relative overflow-hidden rounded-xl border border-border aspect-[4/3] md:col-span-2">
-                <img 
-                  src="/src/assets/site-plan-strategic.png" 
-                  alt="Strategic site plan and development layout for McAllen industrial district" 
-                  className="w-full h-full object-contain transform rotate-90" 
-                />
+              <div className="relative overflow-hidden rounded-xl border border-border aspect-[4/3] md:col-span-2 bg-muted/20 flex items-center justify-center">
+                <p className="text-muted-foreground text-sm">Image area - ready for new content</p>
               </div>
               <div className="md:col-span-1">
                 <h3 className="text-2xl font-semibold text-primary mb-4">{t('executiveSummary.valleyAdvantage')}</h3>
