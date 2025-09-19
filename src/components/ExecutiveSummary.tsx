@@ -1,10 +1,10 @@
 import { Building, MapPin, Clock } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { PORTFOLIO_CONSTANTS, formatCurrency } from "@/lib/constants";
+
 export default function ExecutiveSummary() {
-  const {
-    t
-  } = useLanguage();
+  const { t } = useLanguage();
+  
   return <section id="overview" className="py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
@@ -47,18 +47,11 @@ export default function ExecutiveSummary() {
           </div>
 
           <div className="space-y-8">
-            <div className="grid lg:grid-cols-5 gap-8 items-center">
-              <div className="lg:col-span-3">
-                <div className="relative overflow-hidden rounded-xl border border-border h-[500px]">
-                  <img 
-                    src="/src/assets/site-plan-blueprint.png" 
-                    alt="Industrial development site plan blueprint" 
-                    className="w-full h-full object-contain bg-white/5 p-6 transform -rotate-90"
-                  />
-                </div>
+            <div className="grid md:grid-cols-2 gap-6 items-start">
+              <div className="relative overflow-hidden rounded-xl border border-border">
+                <img src="/lovable-uploads/0d9c191d-f650-4d6e-adaf-28eacd50ff33.png" alt="Warehouse development floor plan layout" className="w-full h-48 object-cover" />
               </div>
-              
-              <div className="lg:col-span-2">
+              <div>
                 <h3 className="text-2xl font-semibold text-primary mb-4">{t('executiveSummary.valleyAdvantage')}</h3>
                 <p className="text-muted-foreground leading-relaxed mb-6">
                   • <strong className="text-gold">{t('executiveSummary.premiumLocation')}</strong><br />
@@ -80,6 +73,10 @@ export default function ExecutiveSummary() {
               <p className="text-muted-foreground leading-relaxed mb-4">
                 {t('executiveSummary.whyInvestors')}
               </p>
+
+              <div className="relative overflow-hidden rounded-xl border border-border">
+                <img src="/lovable-uploads/3e9cf4b0-cd02-4374-a49b-8642655e444f.png" alt="Modern office space in warehouse development" className="w-full h-64 object-cover" />
+              </div>
             </div>
           </div>
         </div>
