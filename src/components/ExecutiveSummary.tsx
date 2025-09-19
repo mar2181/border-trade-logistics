@@ -47,19 +47,18 @@ export default function ExecutiveSummary() {
           </div>
 
           <div className="space-y-8">
-            <div className="grid md:grid-cols-3 gap-6 items-center">
-              <div className="md:col-span-2">
-                <div className="relative overflow-hidden rounded-xl border border-border">
+            <div className="grid lg:grid-cols-5 gap-8 items-center">
+              <div className="lg:col-span-3">
+                <div className="relative overflow-hidden rounded-xl border border-border h-[500px]">
                   <img 
                     src="/src/assets/site-plan-blueprint.png" 
                     alt="Industrial development site plan blueprint" 
-                    className="w-full h-auto object-contain bg-white/5 p-4 transform -rotate-90"
-                    style={{ minHeight: '400px' }}
+                    className="w-full h-full object-contain bg-white/5 p-6 transform -rotate-90"
                   />
                 </div>
               </div>
               
-              <div className="md:col-span-1">
+              <div className="lg:col-span-2">
                 <h3 className="text-2xl font-semibold text-primary mb-4">{t('executiveSummary.valleyAdvantage')}</h3>
                 <p className="text-muted-foreground leading-relaxed mb-6">
                   • <strong className="text-gold">{t('executiveSummary.premiumLocation')}</strong><br />
