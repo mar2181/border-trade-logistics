@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Building, MapPin, TrendingUp, DollarSign, Phone, Download, BarChart3, Calendar, Users, TrendingDown, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { PORTFOLIO_CONSTANTS } from "@/lib/constants";
 import warehouseAerial from "@/assets/warehouse-aerial.jpg";
 import warehouseExterior from "@/assets/warehouse-exterior.jpg";
 import warehouseInterior from "@/assets/warehouse-interior.jpg";
@@ -182,7 +183,7 @@ const Index = () => {
 
               <div className="grid grid-cols-4 gap-4">
                 <div className="text-center bg-black/20 rounded-lg p-3 backdrop-blur-sm">
-                  <div className="text-xl lg:text-2xl font-bold text-gold">3%</div>
+                  <div className="text-xl lg:text-2xl font-bold text-gold">3.9%</div>
                   <div className="text-xs text-gray-300">{t('hero.marketVacancy')}</div>
                 </div>
                 <div className="text-center bg-black/20 rounded-lg p-3 backdrop-blur-sm">
@@ -227,8 +228,8 @@ const Index = () => {
                 <div className="p-6 space-y-6">
                   <div className="grid grid-cols-2 gap-4">
                     <div className="text-center p-4 bg-gray-50 rounded-lg">
-                  <div className="text-2xl font-bold text-accent-emerald">3%</div>
-                      <div className="text-xs text-gray-900">Annual Land Appreciation</div>
+                  <div className="text-2xl font-bold text-accent-emerald">3.9%</div>
+                      <div className="text-xs text-gray-900">Market Vacancy (3Q24)</div>
                     </div>
                     <div className="text-center p-4 bg-gray-50 rounded-lg">
                     <div className="text-2xl font-bold text-accent-sapphire">$12.25M</div>
@@ -247,7 +248,7 @@ const Index = () => {
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-muted-foreground text-sm">Buildable SF:</span>
-                      <span className="font-bold text-accent-emerald text-sm">702,820 SF</span>
+                      <span className="font-bold text-accent-emerald text-sm">{PORTFOLIO_CONSTANTS.TOTAL_BUILDABLE_SF.toLocaleString()} SF</span>
                     </div>
                   </div>
 

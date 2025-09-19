@@ -2,7 +2,7 @@
 export const PORTFOLIO_CONSTANTS = {
   // Core Portfolio Metrics
   TOTAL_ACRES: 43.17,
-  TOTAL_BUILDABLE_SF: 703420,
+  TOTAL_BUILDABLE_SF: 702820,
   TOTAL_LAND_INVESTMENT: 12251700, // $12.25M
   AVERAGE_PRICE_PER_ACRE: 284000, // $284K (weighted average)
   PRICE_RANGE_MIN: 265000, // $265K
@@ -12,25 +12,25 @@ export const PORTFOLIO_CONSTANTS = {
   DRY_CONSTRUCTION_COST_PER_SF: 150,
   REFRIGERATED_CONSTRUCTION_COST_PER_SF: 250, // Updated from range to single value
   
-  // Investment Totals (Recalculated based on 702,820 SF)
-  DRY_TOTAL_INVESTMENT: 105513000, // $105.51M (703,420 × $150)
-  REFRIGERATED_TOTAL_INVESTMENT: 175855000, // $175.86M (703,420 × $250)
+  // Investment Totals (Construction + Land - Recalculated based on 702,820 SF)
+  DRY_TOTAL_INVESTMENT: 117674700, // $117.67M (702,820 × $150 + $12.25M land)
+  REFRIGERATED_TOTAL_INVESTMENT: 187956700, // $187.96M (702,820 × $250 + $12.25M land)
   
-  // ROI Projections (Recalculated with correct costs)
-  DRY_ROI_MIN: 7.3,
-  DRY_ROI_MAX: 7.6,
-  DRY_ROI_AVERAGE: 7.4,
-  REFRIGERATED_ROI_MIN: 6.5,
-  REFRIGERATED_ROI_MAX: 7.0,
-  REFRIGERATED_ROI_AVERAGE: 6.7,
+  // ROI Projections (Recalculated with corrected totals)
+  DRY_ROI_MIN: 7.5,
+  DRY_ROI_MAX: 7.8,
+  DRY_ROI_AVERAGE: 7.6,
+  REFRIGERATED_ROI_MIN: 6.7,
+  REFRIGERATED_ROI_MAX: 7.2,
+  REFRIGERATED_ROI_AVERAGE: 6.9,
   
   // Rental Rates
   DRY_RENT_PER_SF: 12.5,
   REFRIGERATED_RENT_PER_SF: 18.0,
   
   // Market Data (Updated with verified sources)
-  VACANCY_RATE: 3.9, // Per CBRE Q2 2025 data
-  VACANCY_RATE_DISPLAY: 3.0, // Rounded for marketing
+  VACANCY_RATE: 3.9, // Per CBRE Q3 2024 data - consistent sitewide
+  VACANCY_RATE_DISPLAY: 3.9, // Standardized to match analysis
   ANNUAL_TRADE_VOLUME: 6000000000, // $6B produce trade
   TOTAL_TRADE_VOLUME: 48500000000, // $48.5B total trade
   METRO_POPULATION: 900000,
@@ -69,7 +69,7 @@ export const PORTFOLIO_CONSTANTS = {
       id: "lot3",
       name: "Lot 3", 
       acres: 5.06,
-      buildableSF: 98400,
+      buildableSF: 87120,
       landInvestment: 1518000,
       pricePerAcre: 300000,
       position: "Central Distribution Hub"
@@ -78,7 +78,7 @@ export const PORTFOLIO_CONSTANTS = {
       id: "lot4",
       name: "Lot 4",
       acres: 6.01,
-      buildableSF: 98400,
+      buildableSF: 91476,
       landInvestment: 1592650,
       pricePerAcre: 265000,
       position: "Logistics Corridor Access"
@@ -87,7 +87,7 @@ export const PORTFOLIO_CONSTANTS = {
       id: "lot5",
       name: "Lot 5",
       acres: 6.05,
-      buildableSF: 98400,
+      buildableSF: 95832,
       landInvestment: 1815000,
       pricePerAcre: 300000,
       position: "Strategic Highway Frontage"
@@ -96,7 +96,7 @@ export const PORTFOLIO_CONSTANTS = {
       id: "lot6",
       name: "Lot 6",
       acres: 5.68,
-      buildableSF: 98400,
+      buildableSF: 100188,
       landInvestment: 1505200,
       pricePerAcre: 265000,
       position: "Industrial Park Gateway"
@@ -105,7 +105,7 @@ export const PORTFOLIO_CONSTANTS = {
       id: "lot7",
       name: "Lot 7",
       acres: 7.16,
-      buildableSF: 108460,
+      buildableSF: 87624,
       landInvestment: 2148000,
       pricePerAcre: 300000,
       position: "Prime Development Site"
@@ -114,7 +114,7 @@ export const PORTFOLIO_CONSTANTS = {
       id: "lot8",
       name: "Lot 8",
       acres: 3.34,
-      buildableSF: 53340,
+      buildableSF: 92560,
       landInvestment: 885100,
       pricePerAcre: 265000,
       position: "Expansion Ready Location"

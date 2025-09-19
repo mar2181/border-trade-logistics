@@ -55,7 +55,7 @@ const translations = {
     'executiveSummary.fedTiming': 'Fed Rate Cut Timing: Perfect storm for development financing and appreciation',
     'executiveSummary.marketResilience': 'Market Resilience: Valley growth fundamentals provide stability amid changing national conditions',
     'executiveSummary.valleyOpportunity': 'Valley Investment Opportunity - Perfect Timing',
-    'executiveSummary.whyInvestors': 'Why Investors Choose The Valley: McAllen represents an established logistics hub with proven market fundamentals. Portfolio weighted average: $284K/acre with $265K-$300K pricing by lot. Recent market comps: ~$275K/acre. Act Now to benefit from Fed rate cuts whether you build or hold. This represents a compelling investment opportunity with multiple favorable scenarios in a fundamentally strong market.',
+    'executiveSummary.whyInvestors': 'Why Investors Choose The Valley: McAllen represents an established logistics hub with proven market fundamentals. Portfolio weighted average: $284K/acre with $265K-$300K pricing by lot. Act Now to benefit from Fed rate cuts whether you build or hold. This represents a compelling investment opportunity with multiple favorable scenarios in a fundamentally strong market.',
     
     // Market Analysis
     'marketAnalysis.title': 'Market Analysis',
@@ -350,7 +350,7 @@ const translations = {
     'executiveSummary.fedTiming': 'Momento de Recortes del Fed: Tormenta perfecta para financiamiento de desarrollo y apreciación',
     'executiveSummary.marketResilience': 'Resistencia del Mercado: Los fundamentos de crecimiento del Valle proporcionan estabilidad en medio de condiciones nacionales cambiantes',
     'executiveSummary.valleyOpportunity': 'Oportunidad de Inversión del Valle - Momento Perfecto',
-    'executiveSummary.whyInvestors': 'Por Qué los Inversionistas Eligen el Valle: McAllen representa un centro logístico establecido con fundamentos de mercado comprobados. Promedio ponderado del portafolio: $284K/acre con precios de $265K-$300K por lote. Comparables recientes del mercado: ~$275K/acre. Actúa Ahora para beneficiarte de los recortes de tasas del Fed ya sea que construyas o mantengas. Esto representa una oportunidad de inversión convincente con múltiples escenarios favorables en un mercado fundamentalmente sólido.',
+    'executiveSummary.whyInvestors': 'Por Qué los Inversionistas Eligen el Valle: McAllen representa un centro logístico establecido con fundamentos de mercado comprobados. Promedio ponderado del portafolio: $284K/acre con precios de $265K-$300K por lote. Actúa Ahora para beneficiarte de los recortes de tasas del Fed ya sea que construyas o mantengas. Esto representa una oportunidad de inversión convincente con múltiples escenarios favorables en un mercado fundamentalmente sólido.',
     
     // Market Analysis
     'marketAnalysis.title': 'Análisis de Mercado',

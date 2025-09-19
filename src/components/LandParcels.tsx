@@ -16,7 +16,7 @@ export default function LandParcels() {
     occupancyRate: t('landParcels.developmentReady2'),
     avgRent: t('landParcels.shovelReady'),
     annualNOI: t('landParcels.landInvestment'),
-    capRate: "8-12%",
+    capRate: "10-15% Appreciation",
     yearBuilt: t('landParcels.immediateDev'),
     features: [
       t('landParcels.shovelReadyLots'), 
@@ -154,7 +154,7 @@ export default function LandParcels() {
                 <div className="text-center p-4 bg-muted/30 rounded-lg">
                   <TrendingUp className="h-6 w-6 text-amber-500 mx-auto mb-2" />
                   <div className="text-lg font-bold text-foreground">{industrialPark.capRate} {t('landParcels.appreciation')}</div>
-                  <div className="text-xs text-muted-foreground">{t('landParcels.capRate')}</div>
+                  <div className="text-xs text-muted-foreground">Annual Appreciation Projection</div>
                 </div>
               </div>
 

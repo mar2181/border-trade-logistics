@@ -167,7 +167,7 @@ const refCostPerSF = PORTFOLIO_CONSTANTS.REFRIGERATED_CONSTRUCTION_COST_PER_SF;
                 <div className="text-sm text-muted-foreground">Total Investment</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-amber-500 mb-2">{formatCurrency(PORTFOLIO_CONSTANTS.TOTAL_BUILDABLE_SF * PORTFOLIO_CONSTANTS.REFRIGERATED_RENT_PER_SF)}</div>
+                  <div className="text-3xl font-bold text-amber-500 mb-2">{formatCurrency(PORTFOLIO_CONSTANTS.TOTAL_BUILDABLE_SF * PORTFOLIO_CONSTANTS.REFRIGERATED_RENT_PER_SF)}</div>
                 <div className="text-sm text-muted-foreground">Annual Rental Income</div>
               </div>
             </div>

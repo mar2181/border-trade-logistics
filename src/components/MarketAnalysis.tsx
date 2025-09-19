@@ -22,7 +22,7 @@ export default function MarketAnalysis() {
     color: "bg-red-500"
   }, {
     product: t('marketAnalysis.others'),
-    value: "$2,440M",
+    value: "$1,390M",
     color: "bg-purple-500"
   }];
   
@@ -112,11 +112,11 @@ export default function MarketAnalysis() {
             <div className="text-2xl font-bold text-emerald-500 mb-2">+10%</div>
             <div className="text-sm text-muted-foreground">{t('marketAnalysis.importGrowth')}</div>
           </div>
-          <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300">
-            <DollarSign className="h-8 w-8 text-blue-500 mx-auto mb-3" />
-            <div className="text-2xl font-bold text-blue-500 mb-2">3.9%</div>
-            <div className="text-sm text-muted-foreground">{t('marketAnalysis.rentTrajectory')}</div>
-          </div>
+            <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300">
+              <DollarSign className="h-8 w-8 text-blue-500 mx-auto mb-3" />
+              <div className="text-2xl font-bold text-blue-500 mb-2">3.9%</div>
+              <div className="text-sm text-muted-foreground">{t('marketAnalysis.vacancy')}</div>
+            </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-amber-500/10 transition-all duration-300">
             <ArrowUp className="h-8 w-8 text-amber-500 mx-auto mb-3" />
             <div className="text-2xl font-bold text-amber-500 mb-2">43.17 Acres</div>
