@@ -2,7 +2,7 @@
 export const PORTFOLIO_CONSTANTS = {
   // Core Portfolio Metrics
   TOTAL_ACRES: 43.17,
-  TOTAL_BUILDABLE_SF: 702820,
+  TOTAL_BUILDABLE_SF: 703420,
   TOTAL_LAND_INVESTMENT: 12251700, // $12.25M
   AVERAGE_PRICE_PER_ACRE: 284000, // $284K (weighted average)
   PRICE_RANGE_MIN: 265000, // $265K
@@ -12,9 +12,9 @@ export const PORTFOLIO_CONSTANTS = {
   DRY_CONSTRUCTION_COST_PER_SF: 150,
   REFRIGERATED_CONSTRUCTION_COST_PER_SF: 250, // Updated from range to single value
   
-  // Investment Totals (Construction + Land - Recalculated based on 702,820 SF)
-  DRY_TOTAL_INVESTMENT: 117674700, // $117.67M (702,820 × $150 + $12.25M land)
-  REFRIGERATED_TOTAL_INVESTMENT: 187956700, // $187.96M (702,820 × $250 + $12.25M land)
+  // Investment Totals (Construction + Land - Recalculated based on 703,420 SF)
+  DRY_TOTAL_INVESTMENT: 117764700, // $117.76M (703,420 × $150 + $12.25M land)
+  REFRIGERATED_TOTAL_INVESTMENT: 188106700, // $188.11M (703,420 × $250 + $12.25M land)
   
   // ROI Projections (Recalculated with corrected totals)
   DRY_ROI_MIN: 7.5,
@@ -45,7 +45,7 @@ export const PORTFOLIO_CONSTANTS = {
   PORTFOLIO_4_YEAR_VALUE: 19300000, // $12.25M × (1.12)^4
   ANNUAL_HOLDING_COSTS: 306250, // 2.5% of $12.25M
   
-  // Lot Data (corrected to sum to 702,820 SF)
+  // Lot Data (corrected to sum to 703,420 SF)
   LOTS: [
     {
       id: "lot1",
@@ -69,7 +69,7 @@ export const PORTFOLIO_CONSTANTS = {
       id: "lot3",
       name: "Lot 3", 
       acres: 5.06,
-      buildableSF: 87120,
+      buildableSF: 98400,
       landInvestment: 1518000,
       pricePerAcre: 300000,
       position: "Central Distribution Hub"
@@ -78,7 +78,7 @@ export const PORTFOLIO_CONSTANTS = {
       id: "lot4",
       name: "Lot 4",
       acres: 6.01,
-      buildableSF: 91476,
+      buildableSF: 98400,
       landInvestment: 1592650,
       pricePerAcre: 265000,
       position: "Logistics Corridor Access"
@@ -87,7 +87,7 @@ export const PORTFOLIO_CONSTANTS = {
       id: "lot5",
       name: "Lot 5",
       acres: 6.05,
-      buildableSF: 95832,
+      buildableSF: 98400,
       landInvestment: 1815000,
       pricePerAcre: 300000,
       position: "Strategic Highway Frontage"
@@ -96,7 +96,7 @@ export const PORTFOLIO_CONSTANTS = {
       id: "lot6",
       name: "Lot 6",
       acres: 5.68,
-      buildableSF: 100188,
+      buildableSF: 98400,
       landInvestment: 1505200,
       pricePerAcre: 265000,
       position: "Industrial Park Gateway"
@@ -105,7 +105,7 @@ export const PORTFOLIO_CONSTANTS = {
       id: "lot7",
       name: "Lot 7",
       acres: 7.16,
-      buildableSF: 87624,
+      buildableSF: 108460,
       landInvestment: 2148000,
       pricePerAcre: 300000,
       position: "Prime Development Site"
@@ -114,7 +114,7 @@ export const PORTFOLIO_CONSTANTS = {
       id: "lot8",
       name: "Lot 8",
       acres: 3.34,
-      buildableSF: 92560,
+      buildableSF: 53340,
       landInvestment: 885100,
       pricePerAcre: 265000,
       position: "Expansion Ready Location"
