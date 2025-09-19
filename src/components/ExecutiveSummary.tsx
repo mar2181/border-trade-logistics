@@ -47,13 +47,14 @@ export default function ExecutiveSummary() {
           </div>
 
           <div className="space-y-8">
-            <div className="grid md:grid-cols-3 gap-6 items-start">
+            <div className="grid md:grid-cols-3 gap-6 items-center">
               <div className="md:col-span-2">
                 <div className="relative overflow-hidden rounded-xl border border-border">
                   <img 
                     src="/src/assets/site-plan-blueprint.png" 
                     alt="Industrial development site plan blueprint" 
-                    className="w-full h-full aspect-[4/3] object-contain bg-white/5 p-4"
+                    className="w-full h-auto object-contain bg-white/5 p-4 transform -rotate-90"
+                    style={{ minHeight: '400px' }}
                   />
                 </div>
               </div>
