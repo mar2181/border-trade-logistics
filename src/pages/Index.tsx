@@ -231,7 +231,7 @@ const Index = () => {
                       <div className="text-xs text-gray-900">Annual Land Appreciation</div>
                     </div>
                     <div className="text-center p-4 bg-gray-50 rounded-lg">
-                    <div className="text-2xl font-bold text-accent-sapphire">$12.13M</div>
+                    <div className="text-2xl font-bold text-accent-sapphire">$12.25M</div>
                       <div className="text-xs text-gray-900">Total Land Value</div>
                     </div>
                   </div>
@@ -239,7 +239,7 @@ const Index = () => {
                   <div className="space-y-3">
                     <div className="flex justify-between items-center">
                       <span className="text-muted-foreground text-sm">Land Portfolio:</span>
-                      <span className="font-bold text-primary text-sm">$12.13M Total</span>
+                      <span className="font-bold text-primary text-sm">$12.25M Total</span>
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-muted-foreground text-sm">Total Acres:</span>
@@ -312,7 +312,7 @@ const Index = () => {
                   <div className="text-xs text-muted-foreground">Total Acres</div>
                 </div>
                 <div className="text-center bg-muted rounded-xl p-4">
-                  <div className="text-2xl font-bold text-accent-sapphire">$12.13M</div>
+                  <div className="text-2xl font-bold text-accent-sapphire">$12.25M</div>
                   <div className="text-xs text-muted-foreground">{t('executiveSummary.portfolioValue')}</div>
                 </div>
                 <div className="text-center bg-muted rounded-xl p-4">

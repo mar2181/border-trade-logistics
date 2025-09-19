@@ -42,7 +42,7 @@ const translations = {
     
     // Executive Summary
     'executiveSummary.title': 'Executive Summary',
-    'executiveSummary.subtitle': 'Strategic Cross-Border Industrial Investment: A $12.13M land portfolio in America\'s premier logistics hub',
+    'executiveSummary.subtitle': 'Strategic Cross-Border Industrial Investment: A $12.25M land portfolio in America\'s premier logistics hub',
     'executiveSummary.description': '43.17 acres of premium build-ready parcels on McAllen\'s 10th Street in the dynamic industrial growth market. Leverage Fed rate adjustments to strategically position in this compelling market where smart investors stay and grow.',
     'executiveSummary.opportunity': 'Strategic Investment Opportunity in McAllen',
     'executiveSummary.opportunityDesc': 'Only 8 properties available in McAllen\'s premier industrial district. Parcels on 10th Street corridor with ready utilities, industrial zoning, 702,820 SF buildable. The Valley\'s projected 20-year boom, combined with Fed rate cuts, creates unmatched appreciation potential. This market shows exceptional resilience to changing national conditions due to its unique demand drivers and limited supply.',
@@ -55,7 +55,7 @@ const translations = {
     'executiveSummary.fedTiming': 'Fed Rate Cut Timing: Perfect storm for development financing and appreciation',
     'executiveSummary.marketResilience': 'Market Resilience: Valley growth fundamentals provide stability amid changing national conditions',
     'executiveSummary.valleyOpportunity': 'Valley Investment Opportunity - Perfect Timing',
-    'executiveSummary.whyInvestors': 'Why Investors Choose The Valley: McAllen represents an established logistics hub with proven market fundamentals. Recent comparables show $275K/acre average for ready sites, with our $265K-$300K pricing offering exceptional value. Act Now to benefit from Fed rate cuts whether you build or hold. This represents a compelling investment opportunity with multiple favorable scenarios in a fundamentally strong market.',
+    'executiveSummary.whyInvestors': 'Why Investors Choose The Valley: McAllen represents an established logistics hub with proven market fundamentals. Portfolio weighted average: $284K/acre with $265K-$300K pricing by lot. Recent market comps: ~$275K/acre. Act Now to benefit from Fed rate cuts whether you build or hold. This represents a compelling investment opportunity with multiple favorable scenarios in a fundamentally strong market.',
     
     // Market Analysis
     'marketAnalysis.title': 'Market Analysis',
@@ -337,7 +337,7 @@ const translations = {
     
     // Executive Summary  
     'executiveSummary.title': 'Resumen Ejecutivo',
-    'executiveSummary.subtitle': 'Inversión Industrial Estratégica Transfronteriza: Un portafolio de terrenos de $12.13M en el centro logístico premier de América',
+    'executiveSummary.subtitle': 'Inversión Industrial Estratégica Transfronteriza: Un portafolio de terrenos de $12.25M en el centro logístico premier de América',
     'executiveSummary.description': '43.17 acres de parcelas premium listas para construir en la calle 10 de McAllen, en el dinámico mercado de crecimiento industrial. Aprovecha los ajustes de tasas del Fed para posicionarte estratégicamente en este atractivo mercado donde los inversionistas inteligentes permanecen y crecen.',
     'executiveSummary.opportunity': 'Oportunidad de Inversión Estratégica en McAllen',
     'executiveSummary.opportunityDesc': 'Solo 8 propiedades disponibles en el principal distrito industrial de McAllen. Parcelas en el corredor de la calle 10 con servicios listos, zonificación industrial, 702,820 SF construibles. El auge proyectado de 20 años del Valle, combinado con recortes de tasas del Fed, crea un potencial de apreciación inigualable. Este mercado muestra una resiliencia excepcional frente a condiciones nacionales cambiantes debido a sus únicos impulsores de demanda y oferta limitada.',
@@ -350,7 +350,7 @@ const translations = {
     'executiveSummary.fedTiming': 'Momento de Recortes del Fed: Tormenta perfecta para financiamiento de desarrollo y apreciación',
     'executiveSummary.marketResilience': 'Resistencia del Mercado: Los fundamentos de crecimiento del Valle proporcionan estabilidad en medio de condiciones nacionales cambiantes',
     'executiveSummary.valleyOpportunity': 'Oportunidad de Inversión del Valle - Momento Perfecto',
-    'executiveSummary.whyInvestors': 'Por Qué los Inversionistas Eligen el Valle: McAllen representa un centro logístico establecido con fundamentos de mercado comprobados. Comparables recientes muestran $275K/acre promedio para sitios listos, con nuestros precios de $265K-$300K ofreciendo valor excepcional. Actúa Ahora para beneficiarte de los recortes de tasas del Fed ya sea que construyas o mantengas. Esto representa una oportunidad de inversión convincente con múltiples escenarios favorables en un mercado fundamentalmente sólido.',
+    'executiveSummary.whyInvestors': 'Por Qué los Inversionistas Eligen el Valle: McAllen representa un centro logístico establecido con fundamentos de mercado comprobados. Promedio ponderado del portafolio: $284K/acre con precios de $265K-$300K por lote. Comparables recientes del mercado: ~$275K/acre. Actúa Ahora para beneficiarte de los recortes de tasas del Fed ya sea que construyas o mantengas. Esto representa una oportunidad de inversión convincente con múltiples escenarios favorables en un mercado fundamentalmente sólido.',
     
     // Market Analysis
     'marketAnalysis.title': 'Análisis de Mercado',
