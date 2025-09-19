@@ -48,11 +48,11 @@ export default function ExecutiveSummary() {
 
           <div className="space-y-8">
             <div className="grid md:grid-cols-2 gap-6 items-start">
-              <div className="relative overflow-hidden rounded-xl border border-border">
+              <div className="relative overflow-hidden rounded-xl border border-border aspect-square">
                 <img 
                   src="/src/assets/site-plan-strategic.png" 
                   alt="Strategic site plan and development layout for McAllen industrial district" 
-                  className="w-full h-64 object-contain transform rotate-90" 
+                  className="w-full h-full object-contain transform rotate-90" 
                 />
               </div>
               <div>
