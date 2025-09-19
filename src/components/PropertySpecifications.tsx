@@ -102,18 +102,14 @@ export default function PropertySpecifications() {
           </div>
         </div>
 
-        {/* Professional Lot Analysis Carousel */}
-        <Carousel className="w-full mb-12">
-          <CarouselContent>
-            {lots.map(lot => (
-              <CarouselItem key={lot.id}>
-                <ProfessionalUnderwriting lot={lot} />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
+        {/* Professional Lot Analysis - Vertical Layout */}
+        <div className="space-y-8 mb-12">
+          {lots.map(lot => (
+            <div key={lot.id}>
+              <ProfessionalUnderwriting lot={lot} />
+            </div>
+          ))}
+        </div>
 
         {/* Portfolio Summary */}
         <PortfolioSummary 
