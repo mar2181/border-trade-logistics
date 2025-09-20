@@ -1,7 +1,7 @@
 // Portfolio Constants - Single source of truth
 export const PORTFOLIO_CONSTANTS = {
   // Core Portfolio Metrics
-  TOTAL_ACRES: 43.17,
+  TOTAL_ACRES: 43.7,
   TOTAL_BUILDABLE_SF: 702820,
   TOTAL_LAND_INVESTMENT: 12251700, // $12.25M
   AVERAGE_PRICE_PER_ACRE: 284000, // $284K (weighted average)
