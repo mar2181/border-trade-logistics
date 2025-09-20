@@ -8,25 +8,25 @@ export const PORTFOLIO_CONSTANTS = {
   PRICE_RANGE_MIN: 265000, // $265K
   PRICE_RANGE_MAX: 300000, // $300K
   
-  // Development Costs (Updated per dataset)
+  // Construction Costs (Hard Costs only)
   DRY_CONSTRUCTION_COST_PER_SF: 150,
-  REFRIGERATED_CONSTRUCTION_COST_PER_SF: 250, // Updated to $250/SF per dataset
+  REFRIGERATED_CONSTRUCTION_COST_PER_SF: 250,
   
   // Investment Totals (Construction + Land - Based on 703,420 SF)
   DRY_TOTAL_INVESTMENT: 117640850, // $117,640,850 (≈$117.64M)
-  REFRIGERATED_TOTAL_INVESTMENT: 187982850, // $187,982,850 (≈$188.0M)
+  REFRIGERATED_TOTAL_INVESTMENT: 187982850, // $187,982,850 (≈$187.98M)
   
-  // ROI Projections (Recalculated with dataset totals)
-  DRY_ROI_MIN: 7.3,
-  DRY_ROI_MAX: 7.6,
-  DRY_ROI_AVERAGE: 7.5, // 8,792,750 ÷ 117,640,850
-  REFRIGERATED_ROI_MIN: 6.6,
-  REFRIGERATED_ROI_MAX: 6.8,
-  REFRIGERATED_ROI_AVERAGE: 6.7, // 12,661,560 ÷ 187,982,850
+  // ROI Projections (Exact calculations)
+  DRY_ROI_MIN: 7.28,
+  DRY_ROI_MAX: 7.57,
+  DRY_ROI_AVERAGE: 7.48, // 8,792,750 ÷ 117,640,850 = 7.478%
+  REFRIGERATED_ROI_MIN: 6.63,
+  REFRIGERATED_ROI_MAX: 6.78,
+  REFRIGERATED_ROI_AVERAGE: 6.74, // 12,661,560 ÷ 187,982,850 = 6.735%
   
-  // Rental Rates
-  DRY_RENT_PER_SF: 12.5,
-  REFRIGERATED_RENT_PER_SF: 18.0,
+  // Rental Rates (Annual, NNN)
+  DRY_RENT_PER_SF: 12.50,
+  REFRIGERATED_RENT_PER_SF: 18.00,
   
   // Calculated Annual Rental Totals
   DRY_ANNUAL_RENTAL_TOTAL: 8792750, // 703,420 × 12.50
@@ -49,8 +49,8 @@ export const PORTFOLIO_CONSTANTS = {
   RENT_GROWTH_MIN: 1.9,
   RENT_GROWTH_MAX: 2.5,
   
-  // Calculated Portfolio Metrics
-  PORTFOLIO_4_YEAR_VALUE: 19148915, // $12,127,850 × (1.12)^4
+  // Calculated Portfolio Metrics  
+  PORTFOLIO_4_YEAR_VALUE: 19083407, // $12,127,850 × (1.12)^4 = $19,083,407
   ANNUAL_HOLDING_COSTS: 303196, // 2.5% of $12,127,850
   
   // Lot Data (exact dataset values)

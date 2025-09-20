@@ -2,12 +2,12 @@ import { BarChart3, DollarSign, Percent, TrendingUp } from "lucide-react";
 import { PORTFOLIO_CONSTANTS, formatCurrency } from "@/lib/constants";
 export default function FinancialProjections() {
   const landPortfolioSummary = {
-    totalLandInvestment: formatCurrency(PORTFOLIO_CONSTANTS.TOTAL_LAND_INVESTMENT),
+    totalLandInvestment: `$12,127,850 (≈$12.13M)`,
     totalAcres: `${PORTFOLIO_CONSTANTS.TOTAL_ACRES} acres`,
-    avgPricePerAcre: formatCurrency(PORTFOLIO_CONSTANTS.AVERAGE_PRICE_PER_ACRE),
-    annualHoldingCosts: formatCurrency(PORTFOLIO_CONSTANTS.ANNUAL_HOLDING_COSTS),
-    projectedAppreciation: `${PORTFOLIO_CONSTANTS.ANNUAL_GROWTH_MIN}-${PORTFOLIO_CONSTANTS.ANNUAL_GROWTH_MAX}%`,
-    fourYearValue: formatCurrency(PORTFOLIO_CONSTANTS.PORTFOLIO_4_YEAR_VALUE)
+    avgPricePerAcre: `$274,572 (≈$275K)`,
+    annualHoldingCosts: `$303,196 (≈$303K)`,
+    projectedAppreciation: `12% compounded annually`,
+    fourYearValue: `$19,083,407 (≈$19.08M)`
   };
   const landAssumptions = {
     market: [{
@@ -68,7 +68,7 @@ export default function FinancialProjections() {
                   <div className="space-y-4">
                   <div className="flex justify-between items-center">
                     <span className="text-muted-foreground">Total Land Investment:</span>
-                    <span className="text-2xl font-bold text-gold">$12,127,850 (≈$12.13M)</span>
+                    <span className="text-2xl font-bold text-gold">{landPortfolioSummary.totalLandInvestment}</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-muted-foreground">Total Acres:</span>
@@ -76,7 +76,7 @@ export default function FinancialProjections() {
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-muted-foreground">Average Price/Acre:</span>
-                    <span className="text-xl font-semibold text-blue-500">$274,572 (≈$275K)</span>
+                    <span className="text-xl font-semibold text-blue-500">{landPortfolioSummary.avgPricePerAcre}</span>
                   </div>
                 </div>
                 <div className="space-y-4">
@@ -164,7 +164,7 @@ export default function FinancialProjections() {
             <div className="mt-8 p-6 bg-emerald-50 dark:bg-emerald-500/10 rounded-lg">
               <h4 className="text-lg font-semibold text-emerald-700 dark:text-emerald-400 mb-2">Buyer Development Options (Optional)</h4>
               <p className="text-sm text-emerald-600 dark:text-emerald-300">
-                 If developing: Dry warehouse could yield {PORTFOLIO_CONSTANTS.DRY_ROI_MIN}-{PORTFOLIO_CONSTANTS.DRY_ROI_MAX}% ROI post-build; refrigerated {PORTFOLIO_CONSTANTS.REFRIGERATED_ROI_MIN}-{PORTFOLIO_CONSTANTS.REFRIGERATED_ROI_MAX}%. 
+                 If developing: Dry warehouse could yield 7.28-7.57% ROI post-build; refrigerated 6.63-6.78%. 
                 Costs: $150/SF dry, $250/SF refrigerated – but land purchase first unlocks your vision.
               </p>
             </div>
