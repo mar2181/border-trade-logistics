@@ -27,13 +27,13 @@ export default function IndividualLots() {
         constructionCost: dryConstructionCost,
         totalInvestment: dryTotalInvestment,
         annualNOI: dryNOI,
-        roi: Number(((dryNOI / dryTotalInvestment) * 100).toFixed(1))
+        roi: Number(((dryNOI / dryTotalInvestment) * 100).toFixed(2))
       },
       refrigerated: {
         constructionCost: refrigConstructionCost,
         totalInvestment: refrigTotalInvestment,
         annualNOI: refrigNOI,
-        roi: Number(((refrigNOI / refrigTotalInvestment) * 100).toFixed(1))
+        roi: Number(((refrigNOI / refrigTotalInvestment) * 100).toFixed(2))
       }
     };
   });
@@ -103,12 +103,12 @@ export default function IndividualLots() {
                   </div>
                   <div className="text-center p-4 bg-gradient-to-br from-blue-500/10 to-blue-500/5 rounded-lg border border-blue-500/20 hover:from-blue-500/20 hover:to-blue-500/10 transition-all duration-300">
                     <Calculator className="h-6 w-6 text-blue-500 mx-auto mb-2" />
-                    <div className="text-lg font-bold text-foreground">{lot.dryWarehouse.roi}%</div>
+                    <div className="text-lg font-bold text-foreground">{lot.dryWarehouse.roi.toFixed(2)}%</div>
                     <div className="text-xs text-blue-600 font-medium">{t('individualLots.dryWarehouseROI')}</div>
                   </div>
                   <div className="text-center p-4 bg-gradient-to-br from-cyan-500/10 to-cyan-500/5 rounded-lg border border-cyan-500/20 hover:from-cyan-500/20 hover:to-cyan-500/10 transition-all duration-300">
                     <TrendingUp className="h-6 w-6 text-cyan-500 mx-auto mb-2" />
-                    <div className="text-lg font-bold text-foreground">{lot.refrigerated.roi}%</div>
+                    <div className="text-lg font-bold text-foreground">{lot.refrigerated.roi.toFixed(2)}%</div>
                     <div className="text-xs text-cyan-600 font-medium">{t('individualLots.refrigeratedROI')}</div>
                   </div>
                 </div>
@@ -131,7 +131,7 @@ export default function IndividualLots() {
                       </div>
                       <div className="flex justify-between items-center pt-2 border-t border-blue-500/20">
                         <span className="text-foreground font-medium">{t('individualLots.projectedROI')}</span>
-                        <span className="font-bold text-blue-500 text-lg">{lot.dryWarehouse.roi}%</span>
+                        <span className="font-bold text-blue-500 text-lg">{lot.dryWarehouse.roi.toFixed(2)}%</span>
                       </div>
                     </div>
                   </div>
@@ -152,7 +152,7 @@ export default function IndividualLots() {
                       </div>
                       <div className="flex justify-between items-center pt-2 border-t border-cyan-500/20">
                         <span className="text-foreground font-medium">{t('individualLots.projectedROI')}</span>
-                        <span className="font-bold text-cyan-500 text-lg">{lot.refrigerated.roi}%</span>
+                        <span className="font-bold text-cyan-500 text-lg">{lot.refrigerated.roi.toFixed(2)}%</span>
                       </div>
                     </div>
                   </div>
@@ -177,7 +177,7 @@ export default function IndividualLots() {
               <div className="p-6 bg-background/50 rounded-lg border border-border">
                 <h4 className="text-lg font-semibold text-blue-500 mb-2">Dry Development</h4>
                 <p className="text-sm text-muted-foreground mb-4">
-                  7.3-7.6% stabilized ROI through value creation and cash flow
+                  7.28-7.57% stabilized ROI through value creation and cash flow
                 </p>
                 <div className="text-2xl font-bold text-blue-500">$117,640,850</div>
                 <div className="text-xs text-muted-foreground">Total Development</div>
@@ -185,7 +185,7 @@ export default function IndividualLots() {
               <div className="p-6 bg-background/50 rounded-lg border border-border">
                 <h4 className="text-lg font-semibold text-cyan-500 mb-2">Refrigerated Development</h4>
                 <p className="text-sm text-muted-foreground mb-4">
-                  6.6-6.8% ROI with specialized cold storage premium
+                  6.63-6.78% ROI with specialized cold storage premium
                 </p>
                 <div className="text-2xl font-bold text-cyan-500">$187,982,850</div>
                 <div className="text-xs text-muted-foreground">Total Development</div>
