@@ -1,28 +1,28 @@
 // Portfolio Constants - Single source of truth
 export const PORTFOLIO_CONSTANTS = {
   // Core Portfolio Metrics
-  TOTAL_ACRES: 43.7,
-  TOTAL_BUILDABLE_SF: 702820,
-  TOTAL_LAND_INVESTMENT: 12251700, // $12.25M
-  AVERAGE_PRICE_PER_ACRE: 284000, // $284K (weighted average)
+  TOTAL_ACRES: 44.17,
+  TOTAL_BUILDABLE_SF: 703420,
+  TOTAL_LAND_INVESTMENT: 12127850, // $12,127,850 (≈$12.13M)
+  AVERAGE_PRICE_PER_ACRE: 274572, // $274,572 (≈$275K weighted average)
   PRICE_RANGE_MIN: 265000, // $265K
   PRICE_RANGE_MAX: 300000, // $300K
   
-  // Development Costs (Updated per industry standards)
+  // Development Costs (Updated per dataset)
   DRY_CONSTRUCTION_COST_PER_SF: 150,
-  REFRIGERATED_CONSTRUCTION_COST_PER_SF: 220, // Updated to $220/SF ($200-220 range)
+  REFRIGERATED_CONSTRUCTION_COST_PER_SF: 250, // Updated to $250/SF per dataset
   
-  // Investment Totals (Construction + Land - Recalculated based on 702,820 SF)
-  DRY_TOTAL_INVESTMENT: 117673700, // $117.67M (702,820 × $150 + $12.25M land)
-  REFRIGERATED_TOTAL_INVESTMENT: 166871400, // $166.87M (702,820 × $220 + $12.25M land)
+  // Investment Totals (Construction + Land - Based on 703,420 SF)
+  DRY_TOTAL_INVESTMENT: 117640850, // $117,640,850 (≈$117.64M)
+  REFRIGERATED_TOTAL_INVESTMENT: 187982850, // $187,982,850 (≈$188.0M)
   
-  // ROI Projections (Recalculated with corrected totals)
+  // ROI Projections (Recalculated with dataset totals)
   DRY_ROI_MIN: 7.3,
   DRY_ROI_MAX: 7.6,
-  DRY_ROI_AVERAGE: 7.4,
-  REFRIGERATED_ROI_MIN: 7.2,
-  REFRIGERATED_ROI_MAX: 7.4,
-  REFRIGERATED_ROI_AVERAGE: 7.3,
+  DRY_ROI_AVERAGE: 7.5, // 8,792,750 ÷ 117,640,850
+  REFRIGERATED_ROI_MIN: 6.6,
+  REFRIGERATED_ROI_MAX: 6.8,
+  REFRIGERATED_ROI_AVERAGE: 6.7, // 12,661,560 ÷ 187,982,850
   
   // Rental Rates
   DRY_RENT_PER_SF: 12.5,
@@ -42,10 +42,10 @@ export const PORTFOLIO_CONSTANTS = {
   RENT_GROWTH_MAX: 2.5,
   
   // Calculated Portfolio Metrics
-  PORTFOLIO_4_YEAR_VALUE: 19300000, // $12.25M × (1.12)^4
-  ANNUAL_HOLDING_COSTS: 306250, // 2.5% of $12.25M
+  PORTFOLIO_4_YEAR_VALUE: 19148915, // $12,127,850 × (1.12)^4
+  ANNUAL_HOLDING_COSTS: 303196, // 2.5% of $12,127,850
   
-  // Lot Data (corrected to sum to 702,820 SF)
+  // Lot Data (exact dataset values)
   LOTS: [
     {
       id: "lot1",
@@ -68,17 +68,17 @@ export const PORTFOLIO_CONSTANTS = {
     {
       id: "lot3",
       name: "Lot 3", 
-      acres: 5.06,
-      buildableSF: 87120,
-      landInvestment: 1518000,
-      pricePerAcre: 300000,
+      acres: 5.66,
+      buildableSF: 98400,
+      landInvestment: 1499900,
+      pricePerAcre: 265000,
       position: "Central Distribution Hub"
     },
     {
       id: "lot4",
       name: "Lot 4",
       acres: 6.01,
-      buildableSF: 91476,
+      buildableSF: 98400,
       landInvestment: 1592650,
       pricePerAcre: 265000,
       position: "Logistics Corridor Access"
@@ -87,16 +87,16 @@ export const PORTFOLIO_CONSTANTS = {
       id: "lot5",
       name: "Lot 5",
       acres: 6.05,
-      buildableSF: 95832,
-      landInvestment: 1815000,
-      pricePerAcre: 300000,
+      buildableSF: 98400,
+      landInvestment: 1603250,
+      pricePerAcre: 265000,
       position: "Strategic Highway Frontage"
     },
     {
       id: "lot6",
       name: "Lot 6",
       acres: 5.68,
-      buildableSF: 100188,
+      buildableSF: 98400,
       landInvestment: 1505200,
       pricePerAcre: 265000,
       position: "Industrial Park Gateway"
@@ -105,7 +105,7 @@ export const PORTFOLIO_CONSTANTS = {
       id: "lot7",
       name: "Lot 7",
       acres: 7.16,
-      buildableSF: 87624,
+      buildableSF: 108460,
       landInvestment: 2148000,
       pricePerAcre: 300000,
       position: "Prime Development Site"
@@ -113,9 +113,9 @@ export const PORTFOLIO_CONSTANTS = {
     {
       id: "lot8",
       name: "Lot 8",
-      acres: 3.34,
-      buildableSF: 92560,
-      landInvestment: 885100,
+      acres: 3.74,
+      buildableSF: 53340,
+      landInvestment: 991100,
       pricePerAcre: 265000,
       position: "Expansion Ready Location"
     }
@@ -150,6 +150,20 @@ export const formatCurrency = (amount: number): string => {
     return `$${(amount / 1_000).toFixed(0)}K`;
   }
   return `$${amount.toLocaleString()}`;
+};
+
+// Enhanced formatting functions for exact display requirements
+export const formatExactCurrency = (amount: number): string => {
+  return `$${amount.toLocaleString()}`;
+};
+
+export const formatCurrencyWithMNotation = (amount: number): string => {
+  const exact = formatExactCurrency(amount);
+  if (amount >= 1_000_000) {
+    const millions = (amount / 1_000_000).toFixed(2);
+    return `${exact} (≈$${millions}M)`;
+  }
+  return exact;
 };
 
 export const formatSF = (sf: number): string => {
