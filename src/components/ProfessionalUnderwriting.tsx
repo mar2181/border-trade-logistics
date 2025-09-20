@@ -27,8 +27,10 @@ export const ProfessionalUnderwriting = ({ lot }: UnderwritingProps) => {
   const impliedPlanRent = lot.planAnnual / lot.buildableSF;
   
   const coverageFlag = coverage < 20 || coverage > 65;
-  const planVariance = lot.planAnnual - dryRent12;
-  const planVariancePercent = ((planVariance / dryRent12) * 100);
+  
+  // Correct vs Plan calculations: how much each scenario differs from plan
+  const dryRent12VsPlan = ((dryRent12 - lot.planAnnual) / lot.planAnnual * 100);
+  const dryRent12_5VsPlan = ((dryRent12_5 - lot.planAnnual) / lot.planAnnual * 100);
 
   return (
     <div className="space-y-6">
@@ -130,16 +132,16 @@ export const ProfessionalUnderwriting = ({ lot }: UnderwritingProps) => {
                   <td className="p-2">Dry Warehouse ($12/SF)</td>
                   <td className="p-2 text-right">$12.00</td>
                   <td className="p-2 text-right">${dryRent12.toLocaleString()}</td>
-                  <td className={`p-2 text-right font-medium ${planVariancePercent > 0 ? 'text-destructive' : 'text-primary'}`}>
-                    {planVariancePercent > 0 ? '+' : ''}{planVariancePercent.toFixed(1)}%
+                  <td className={`p-2 text-right font-medium ${dryRent12VsPlan > 0 ? 'text-primary' : 'text-destructive'}`}>
+                    {dryRent12VsPlan > 0 ? '+' : ''}{dryRent12VsPlan.toFixed(1)}%
                   </td>
                 </tr>
                 <tr>
                   <td className="p-2">Dry Warehouse ($12.50/SF)</td>
                   <td className="p-2 text-right">$12.50</td>
                   <td className="p-2 text-right">${dryRent12_5.toLocaleString()}</td>
-                  <td className={`p-2 text-right font-medium ${((lot.planAnnual - dryRent12_5) / dryRent12_5 * 100) > 0 ? 'text-destructive' : 'text-primary'}`}>
-                    {((lot.planAnnual - dryRent12_5) / dryRent12_5 * 100) > 0 ? '+' : ''}{((lot.planAnnual - dryRent12_5) / dryRent12_5 * 100).toFixed(1)}%
+                  <td className={`p-2 text-right font-medium ${dryRent12_5VsPlan > 0 ? 'text-primary' : 'text-destructive'}`}>
+                    {dryRent12_5VsPlan > 0 ? '+' : ''}{dryRent12_5VsPlan.toFixed(1)}%
                   </td>
                 </tr>
                 <tr className="bg-accent/10">

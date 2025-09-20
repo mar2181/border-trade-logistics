@@ -83,7 +83,7 @@ export default function LandParcels() {
                   />
                   <div className="mt-4 p-4 bg-muted/30 rounded-lg">
                     <p className="text-sm text-muted-foreground">
-                      <strong>Land Development Features:</strong> This 43.17-acre raw land parcel offers prime development potential with agricultural fields ready for conversion to industrial use.
+                      <strong>Land Development Features:</strong> This 44.17-acre raw land parcel offers prime development potential with agricultural fields ready for conversion to industrial use.
                       The property provides excellent access to Military Highway for optimal logistics operations and is positioned for build-to-suit development opportunities.
                     </p>
                   </div>

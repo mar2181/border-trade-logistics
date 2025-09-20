@@ -305,7 +305,7 @@ export default function ProfessionalAnalysis() {
                       <ul className="space-y-2 text-sm text-muted-foreground">
                         <li>• Individual lot purchase ($1.26M - $2.19M)</li>
                         <li>• Multi-lot acquisition for larger projects</li>
-                        <li>• Complete portfolio acquisition ($12.25M)</li>
+                        <li>• Complete portfolio acquisition ($12,127,850)</li>
                         <li>• Joint venture development opportunities</li>
                       </ul>
                     </div>
