@@ -28,6 +28,14 @@ export const PORTFOLIO_CONSTANTS = {
   DRY_RENT_PER_SF: 12.5,
   REFRIGERATED_RENT_PER_SF: 18.0,
   
+  // Calculated Annual Rental Totals
+  DRY_ANNUAL_RENTAL_TOTAL: 8792750, // 703,420 × 12.50
+  REFRIGERATED_ANNUAL_RENTAL_TOTAL: 12661560, // 703,420 × 18.00
+  
+  // Construction Cost Totals
+  DRY_CONSTRUCTION_TOTAL: 105513000, // 703,420 × 150
+  REFRIGERATED_CONSTRUCTION_TOTAL: 175855000, // 703,420 × 250
+  
   // Market Data (Updated with verified sources)
   VACANCY_RATE: 3.9, // Per CBRE Q3 2024 data - consistent sitewide
   VACANCY_RATE_DISPLAY: 3.9, // Standardized to match analysis

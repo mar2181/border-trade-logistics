@@ -43,10 +43,10 @@ export default function FinancialProjections() {
   };
   return <section id="financials" className="py-16 px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
+          <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-primary mb-4">{PORTFOLIO_CONSTANTS.LOCATION_NAME} - Financial Projections & Strategy</h2>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-              Comprehensive analysis of land appreciation potential, development strategies, and exit scenarios for the {PORTFOLIO_CONSTANTS.TOTAL_ACRES}-acre portfolio
+              Comprehensive analysis of land appreciation potential, development strategies, and exit scenarios for the 44.17-acre portfolio
             </p>
           
           <div className="relative overflow-hidden rounded-xl border border-border max-w-2xl mx-auto">
@@ -61,25 +61,29 @@ export default function FinancialProjections() {
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8">
               <div className="flex items-center mb-6 justify-center">
                 <BarChart3 className="h-8 w-8 text-gold mr-3" />
-                <h4 className="text-xl font-semibold text-primary">{PORTFOLIO_CONSTANTS.LOCATION_NAME} - {PORTFOLIO_CONSTANTS.TOTAL_ACRES} Acres</h4>
+                <h4 className="text-xl font-semibold text-primary">{PORTFOLIO_CONSTANTS.LOCATION_NAME} - 44.17 Acres</h4>
               </div>
               
               <div className="grid md:grid-cols-2 gap-8">
-                <div className="space-y-4">
+                  <div className="space-y-4">
                   <div className="flex justify-between items-center">
                     <span className="text-muted-foreground">Total Land Investment:</span>
-                    <span className="text-2xl font-bold text-gold">{landPortfolioSummary.totalLandInvestment}</span>
+                    <span className="text-2xl font-bold text-gold">$12,127,850 (≈$12.13M)</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-muted-foreground">Total Acres:</span>
-                    <span className="text-xl font-semibold text-emerald-500">{landPortfolioSummary.totalAcres}</span>
+                    <span className="text-xl font-semibold text-emerald-500">44.17 acres</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-muted-foreground">Average Price/Acre:</span>
-                    <span className="text-xl font-semibold text-blue-500">{landPortfolioSummary.avgPricePerAcre}</span>
+                    <span className="text-xl font-semibold text-blue-500">$274,572 (≈$275K)</span>
                   </div>
                 </div>
                 <div className="space-y-4">
+                  <div className="flex justify-between items-center">
+                    <span className="text-muted-foreground">Total Buildable SF:</span>
+                    <span className="text-xl font-semibold text-purple-500">703,420 SF</span>
+                  </div>
                   <div className="flex justify-between items-center">
                     <span className="text-muted-foreground">Annual Holding Costs:</span>
                     <span className="text-xl font-semibold text-red-400">{landPortfolioSummary.annualHoldingCosts}</span>
@@ -161,7 +165,7 @@ export default function FinancialProjections() {
               <h4 className="text-lg font-semibold text-emerald-700 dark:text-emerald-400 mb-2">Buyer Development Options (Optional)</h4>
               <p className="text-sm text-emerald-600 dark:text-emerald-300">
                  If developing: Dry warehouse could yield {PORTFOLIO_CONSTANTS.DRY_ROI_MIN}-{PORTFOLIO_CONSTANTS.DRY_ROI_MAX}% ROI post-build; refrigerated {PORTFOLIO_CONSTANTS.REFRIGERATED_ROI_MIN}-{PORTFOLIO_CONSTANTS.REFRIGERATED_ROI_MAX}%. 
-                Costs: ${PORTFOLIO_CONSTANTS.DRY_CONSTRUCTION_COST_PER_SF}/SF dry, $${PORTFOLIO_CONSTANTS.REFRIGERATED_CONSTRUCTION_COST_PER_SF}/SF refrigerated – but land purchase first unlocks your vision.
+                Costs: $150/SF dry, $250/SF refrigerated – but land purchase first unlocks your vision.
               </p>
             </div>
           </div>

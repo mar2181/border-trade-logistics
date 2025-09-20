@@ -77,7 +77,7 @@ export default function PropertySpecifications() {
               <span className="text-primary font-bold">{t('properties.premiumLots')}</span> - {t('properties.professionalAnalysis')}
             </p>
             <p className="text-lg text-muted-foreground max-w-5xl mx-auto text-center mt-4">
-              {t('properties.locationDescription')} Updated data shows {PORTFOLIO_CONSTANTS.TOTAL_ACRES} acres total, {PORTFOLIO_CONSTANTS.TOTAL_BUILDABLE_SF.toLocaleString()} SF buildable across 8 premium lots.
+              {t('properties.locationDescription')} Updated data shows 44.17 acres total, 703,420 SF buildable across 8 premium lots.
             </p>
           </div>
           

@@ -49,12 +49,12 @@ const lots = PORTFOLIO_CONSTANTS.LOTS.map((lot, idx) => {
           </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300">
             <TrendingUp className="h-8 w-8 text-blue-500 mx-auto mb-3" />
-            <div className="text-3xl font-bold text-blue-500 mb-2">{PORTFOLIO_CONSTANTS.DRY_ROI_AVERAGE}%</div>
+            <div className="text-3xl font-bold text-blue-500 mb-2">7.5%</div>
             <div className="text-sm text-muted-foreground">Average Portfolio ROI</div>
           </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center hover:shadow-lg hover:shadow-amber-500/10 transition-all duration-300">
             <MapPin className="h-8 w-8 text-amber-500 mx-auto mb-3" />
-            <div className="text-3xl font-bold text-amber-500 mb-2">{formatCurrency(PORTFOLIO_CONSTANTS.DRY_TOTAL_INVESTMENT)}</div>
+            <div className="text-3xl font-bold text-amber-500 mb-2">$117,640,850 (≈$117.64M)</div>
             <div className="text-sm text-muted-foreground">Total Portfolio Investment</div>
           </div>
         </div>
@@ -175,19 +175,19 @@ const lots = PORTFOLIO_CONSTANTS.LOTS.map((lot, idx) => {
             
               <div className="grid grid-cols-2 gap-4">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-gold mb-2">{PORTFOLIO_CONSTANTS.TOTAL_ACRES}</div>
+                  <div className="text-3xl font-bold text-gold mb-2">44.17</div>
                   <div className="text-sm text-muted-foreground">{t('strategic.totalAcres')}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-emerald-500 mb-2">{PORTFOLIO_CONSTANTS.TOTAL_BUILDABLE_SF.toLocaleString()}</div>
+                  <div className="text-3xl font-bold text-emerald-500 mb-2">703,420</div>
                   <div className="text-sm text-muted-foreground">{t('strategic.buildableSqFt')}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-500 mb-2">{formatCurrency(PORTFOLIO_CONSTANTS.DRY_TOTAL_INVESTMENT)}</div>
+                  <div className="text-3xl font-bold text-blue-500 mb-2">$117,640,850</div>
                   <div className="text-sm text-muted-foreground">{t('strategic.totalInvestment')}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-amber-500 mb-2">{formatCurrency(PORTFOLIO_CONSTANTS.TOTAL_BUILDABLE_SF * PORTFOLIO_CONSTANTS.DRY_RENT_PER_SF)}</div>
+                  <div className="text-3xl font-bold text-amber-500 mb-2">$8,792,750</div>
                   <div className="text-sm text-muted-foreground">{t('strategic.annualRental')}</div>
                 </div>
               </div>

@@ -56,19 +56,19 @@ export default function IndividualLots() {
           
           <div className="grid md:grid-cols-4 gap-6 mb-8">
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center">
-              <div className="text-2xl font-bold text-gold mb-2">{portfolioSummary.totalAcres}</div>
+              <div className="text-2xl font-bold text-gold mb-2">44.17</div>
               <div className="text-sm text-muted-foreground">{t('individualLots.totalAcres')}</div>
             </div>
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center">
-              <div className="text-2xl font-bold text-emerald-500 mb-2">{portfolioSummary.totalWarehouseSF.toLocaleString()} SF</div>
+              <div className="text-2xl font-bold text-emerald-500 mb-2">703,420 SF</div>
               <div className="text-sm text-muted-foreground">{t('individualLots.totalBuildable')}</div>
             </div>
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center">
-              <div className="text-2xl font-bold text-blue-500 mb-2">${(portfolioSummary.totalLandInvestment / 1000000).toFixed(2)}M</div>
+              <div className="text-2xl font-bold text-blue-500 mb-2">$12,127,850 (≈$12.13M)</div>
               <div className="text-sm text-muted-foreground">{t('individualLots.portfolioInvestment')}</div>
             </div>
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 text-center">
-              <div className="text-2xl font-bold text-amber-500 mb-2">${(portfolioSummary.avgPricePerAcre / 1000).toFixed(0)}K</div>
+              <div className="text-2xl font-bold text-amber-500 mb-2">$274,572 (≈$275K)</div>
               <div className="text-sm text-muted-foreground">{t('individualLots.avgPrice')}</div>
             </div>
           </div>
@@ -169,25 +169,25 @@ export default function IndividualLots() {
               <div className="p-6 bg-background/50 rounded-lg border border-border">
                 <h4 className="text-lg font-semibold text-gold mb-2">Land Hold Strategy</h4>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Lower initial capital requirement with {PORTFOLIO_CONSTANTS.ANNUAL_GROWTH_MIN}-{PORTFOLIO_CONSTANTS.ANNUAL_GROWTH_MAX}% annual appreciation potential
+                  Lower initial capital requirement with 8-12% annual appreciation potential
                 </p>
-                <div className="text-2xl font-bold text-gold">{formatCurrency(PORTFOLIO_CONSTANTS.TOTAL_LAND_INVESTMENT)}</div>
+                <div className="text-2xl font-bold text-gold">$12,127,850</div>
                 <div className="text-xs text-muted-foreground">Portfolio Investment</div>
               </div>
               <div className="p-6 bg-background/50 rounded-lg border border-border">
                 <h4 className="text-lg font-semibold text-blue-500 mb-2">Dry Development</h4>
                 <p className="text-sm text-muted-foreground mb-4">
-                  {PORTFOLIO_CONSTANTS.DRY_ROI_MIN}-{PORTFOLIO_CONSTANTS.DRY_ROI_MAX}% stabilized ROI through value creation and cash flow
+                  7.3-7.6% stabilized ROI through value creation and cash flow
                 </p>
-                <div className="text-2xl font-bold text-blue-500">{formatCurrency(PORTFOLIO_CONSTANTS.DRY_TOTAL_INVESTMENT)}</div>
+                <div className="text-2xl font-bold text-blue-500">$117,640,850</div>
                 <div className="text-xs text-muted-foreground">Total Development</div>
               </div>
               <div className="p-6 bg-background/50 rounded-lg border border-border">
                 <h4 className="text-lg font-semibold text-cyan-500 mb-2">Refrigerated Development</h4>
                 <p className="text-sm text-muted-foreground mb-4">
-                  {PORTFOLIO_CONSTANTS.REFRIGERATED_ROI_MIN}-{PORTFOLIO_CONSTANTS.REFRIGERATED_ROI_MAX}% ROI with specialized cold storage premium
+                  6.6-6.8% ROI with specialized cold storage premium
                 </p>
-                <div className="text-2xl font-bold text-cyan-500">{formatCurrency(PORTFOLIO_CONSTANTS.REFRIGERATED_TOTAL_INVESTMENT)}</div>
+                <div className="text-2xl font-bold text-cyan-500">$187,982,850</div>
                 <div className="text-xs text-muted-foreground">Total Development</div>
               </div>
             </div>
