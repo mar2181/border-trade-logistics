@@ -20,6 +20,17 @@ export default function ExecutiveSummary() {
           </div>
         </div>
 
+        {/* Wide Site Plan Image - Full Width Above Strategic Investment Section */}
+        <div className="my-12">
+          <div className="relative overflow-hidden rounded-xl border border-border bg-white">
+            <img 
+              src={sitePlanImage} 
+              alt="McAllen Industrial District Site Plan - Warehouse Lot Layout" 
+              className="w-full h-[400px] object-contain p-6" 
+            />
+          </div>
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div>
@@ -27,15 +38,6 @@ export default function ExecutiveSummary() {
               <p className="text-muted-foreground leading-relaxed">
                 {t('executiveSummary.opportunityDesc')}
               </p>
-            </div>
-
-            {/* Wide Site Plan Image */}
-            <div className="relative overflow-hidden rounded-xl border border-border">
-              <img 
-                src={sitePlanImage} 
-                alt="McAllen Industrial District Site Plan - Warehouse Lot Layout" 
-                className="w-full h-[300px] object-contain bg-white p-4" 
-              />
             </div>
 
             <div className="grid grid-cols-2 gap-6">
@@ -59,7 +61,7 @@ export default function ExecutiveSummary() {
           <div className="space-y-8">
             <div className="grid md:grid-cols-2 gap-6 items-start">
               <div className="relative overflow-hidden rounded-xl border border-border">
-                {/* Empty space where image was */}
+                {/* Removed image from here - this was the wrong location */}
               </div>
               <div>
                 <h3 className="text-2xl font-semibold text-primary mb-4">{t('executiveSummary.valleyAdvantage')}</h3>
