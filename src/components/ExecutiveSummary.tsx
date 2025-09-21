@@ -1,6 +1,7 @@
 import { Building, MapPin, Clock } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { PORTFOLIO_CONSTANTS, formatCurrency } from "@/lib/constants";
+import sitePlanImage from "@/assets/mcallen-site-plan.png";
 export default function ExecutiveSummary() {
   const {
     t
@@ -49,7 +50,11 @@ export default function ExecutiveSummary() {
           <div className="space-y-8">
             <div className="grid md:grid-cols-2 gap-6 items-start">
               <div className="relative overflow-hidden rounded-xl border border-border">
-                
+                <img 
+                  src={sitePlanImage} 
+                  alt="McAllen Industrial District Site Plan - Warehouse Lot Layout" 
+                  className="w-full h-64 object-contain bg-white p-2" 
+                />
               </div>
               <div>
                 <h3 className="text-2xl font-semibold text-primary mb-4">{t('executiveSummary.valleyAdvantage')}</h3>
