@@ -29,6 +29,15 @@ export default function ExecutiveSummary() {
               </p>
             </div>
 
+            {/* Wide Site Plan Image */}
+            <div className="relative overflow-hidden rounded-xl border border-border">
+              <img 
+                src={sitePlanImage} 
+                alt="McAllen Industrial District Site Plan - Warehouse Lot Layout" 
+                className="w-full h-[300px] object-contain bg-white p-4" 
+              />
+            </div>
+
             <div className="grid grid-cols-2 gap-6">
               <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6">
                 <div className="flex items-center mb-3">
@@ -50,11 +59,7 @@ export default function ExecutiveSummary() {
           <div className="space-y-8">
             <div className="grid md:grid-cols-2 gap-6 items-start">
               <div className="relative overflow-hidden rounded-xl border border-border">
-                <img 
-                  src={sitePlanImage} 
-                  alt="McAllen Industrial District Site Plan - Warehouse Lot Layout" 
-                  className="w-[969px] h-[376px] object-contain bg-white p-2" 
-                />
+                {/* Empty space where image was */}
               </div>
               <div>
                 <h3 className="text-2xl font-semibold text-primary mb-4">{t('executiveSummary.valleyAdvantage')}</h3>
