@@ -53,7 +53,7 @@ export default function ExecutiveSummary() {
                 <img 
                   src={sitePlanImage} 
                   alt="McAllen Industrial District Site Plan - Warehouse Lot Layout" 
-                  className="w-full h-64 object-contain bg-white p-2" 
+                  className="w-[969px] h-[376px] object-contain bg-white p-2" 
                 />
               </div>
               <div>
