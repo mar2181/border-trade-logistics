@@ -140,6 +140,7 @@ export const PORTFOLIO_CONSTANTS = {
     AGENT: "Juan Elizondo",
     COMPANY: "RE/MAX Commercial",
     PHONE: "(956) 522-1481",
+    EMAIL: "elizondojuanjose@gmail.com",
     TITLE: "Investment Specialist"
   }
 } as const;

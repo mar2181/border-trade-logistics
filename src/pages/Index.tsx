@@ -201,11 +201,26 @@ const Index = () => {
               </div>
 
               <div className="flex flex-row gap-4">
-                <Button size="lg" className="bg-gradient-to-r from-gold to-gold-dark text-primary-foreground font-semibold hover:shadow-lg hover:shadow-gold/25 transition-all duration-300 min-h-[48px]">
+                <Button 
+                  size="lg" 
+                  className="bg-gradient-to-r from-gold to-gold-dark text-primary-foreground font-semibold hover:shadow-lg hover:shadow-gold/25 transition-all duration-300 min-h-[48px]"
+                  onClick={() => {
+                    const analysisSection = document.getElementById('professional-analysis');
+                    analysisSection?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                >
                   <BarChart3 className="h-5 w-5 mr-2" />
                   <span>{t('hero.viewAnalysis')}</span>
                 </Button>
-                <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm transition-all duration-300 min-h-[48px]">
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm transition-all duration-300 min-h-[48px]"
+                  onClick={() => {
+                    const executiveSection = document.getElementById('executive-summary');
+                    executiveSection?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                >
                   <Download className="h-5 w-5 mr-2" />
                   <span>{t('executiveSummary.title')}</span>
                 </Button>
@@ -360,7 +375,9 @@ const Index = () => {
         </div>
       </section>
 
-      <ExecutiveSummary />
+      <section id="executive-summary">
+        <ExecutiveSummary />
+      </section>
       <MarketAnalysis />
       <LandParcels />
       <IndividualLots />
@@ -371,7 +388,9 @@ const Index = () => {
       <PropertySpecifications />
       <Demographics />
       <VideoCarousel />
-      <ProfessionalAnalysis />
+      <section id="professional-analysis">
+        <ProfessionalAnalysis />
+      </section>
       <RiskAnalysis />
       <InvestmentProcess />
       

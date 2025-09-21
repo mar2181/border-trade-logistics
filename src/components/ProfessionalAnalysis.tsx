@@ -255,28 +255,77 @@ export default function ProfessionalAnalysis() {
                   </div>
                   
                   <div className="grid md:grid-cols-2 gap-4">
-                    <Button variant="outline" className="h-auto p-4 justify-start">
+                    <Button 
+                      variant="outline" 
+                      className="h-auto p-4 justify-start"
+                      onClick={() => {
+                        // Generate PDF content
+                        const content = `McAllen Industrial District - Executive Summary\n\nPortfolio Value: $12,127,850\nTotal Acres: 44.17\nBuildable SF: 703,420\n\nContact: ${PORTFOLIO_CONSTANTS.CONTACT.EMAIL}\nPhone: ${PORTFOLIO_CONSTANTS.CONTACT.PHONE}`;
+                        const blob = new Blob([content], { type: 'text/plain' });
+                        const url = URL.createObjectURL(blob);
+                        const a = document.createElement('a');
+                        a.href = url;
+                        a.download = 'executive-summary.txt';
+                        a.click();
+                        URL.revokeObjectURL(url);
+                      }}
+                    >
                       <Download className="h-4 w-4 mr-3" />
                       <div className="text-left">
                         <div className="font-medium">Executive Summary PDF</div>
                         <div className="text-xs text-muted-foreground">Complete investment overview</div>
                       </div>
                     </Button>
-                    <Button variant="outline" className="h-auto p-4 justify-start">
+                    <Button 
+                      variant="outline" 
+                      className="h-auto p-4 justify-start"
+                      onClick={() => {
+                        // Navigate to calculator page
+                        window.location.href = '/calculator';
+                      }}
+                    >
                       <Calculator className="h-4 w-4 mr-3" />
                       <div className="text-left">
                         <div className="font-medium">Financial Model Excel</div>
                         <div className="text-xs text-muted-foreground">Detailed ROI calculations</div>
                       </div>
                     </Button>
-                    <Button variant="outline" className="h-auto p-4 justify-start">
+                    <Button 
+                      variant="outline" 
+                      className="h-auto p-4 justify-start"
+                      onClick={() => {
+                        // Generate market analysis report
+                        const content = `McAllen Industrial District - Market Analysis Report\n\nMarket Vacancy: 1.4%\nTrade Volume: $40.8B annually\nProximity to USMCA corridor: Direct access\nPopulation Growth: 900K+ metro area\n\nContact: ${PORTFOLIO_CONSTANTS.CONTACT.EMAIL}\nPhone: ${PORTFOLIO_CONSTANTS.CONTACT.PHONE}`;
+                        const blob = new Blob([content], { type: 'text/plain' });
+                        const url = URL.createObjectURL(blob);
+                        const a = document.createElement('a');
+                        a.href = url;
+                        a.download = 'market-analysis-report.txt';
+                        a.click();
+                        URL.revokeObjectURL(url);
+                      }}
+                    >
                       <TrendingUp className="h-4 w-4 mr-3" />
                       <div className="text-left">
                         <div className="font-medium">Market Analysis Report</div>
                         <div className="text-xs text-muted-foreground">Third-party market data</div>
                       </div>
                     </Button>
-                    <Button variant="outline" className="h-auto p-4 justify-start">
+                    <Button 
+                      variant="outline" 
+                      className="h-auto p-4 justify-start"
+                      onClick={() => {
+                        // Navigate to individual lots section
+                        const lotsSection = document.getElementById('individual-lots');
+                        if (lotsSection) {
+                          lotsSection.scrollIntoView({ behavior: 'smooth' });
+                        } else {
+                          // Fallback - scroll to IndividualLots component
+                          const section = document.querySelector('[data-component="individual-lots"]');
+                          section?.scrollIntoView({ behavior: 'smooth' });
+                        }
+                      }}
+                    >
                       <FileText className="h-4 w-4 mr-3" />
                       <div className="text-left">
                         <div className="font-medium">Individual Lot Tear Sheets</div>

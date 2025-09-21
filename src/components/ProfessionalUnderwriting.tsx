@@ -219,11 +219,36 @@ export const ProfessionalUnderwriting = ({ lot }: UnderwritingProps) => {
 
       {/* Action Items */}
       <div className="flex gap-3">
-        <Button className="flex-1">
+        <Button 
+          className="flex-1"
+          onClick={() => {
+            // Generate tear sheet content
+            const content = `Lot ${lot.id} Investment Tear Sheet\n\nAcres: ${lot.acres}\nBuildable SF: ${lot.buildableSF.toLocaleString()}\nLand Investment: $${lot.landInvestment.toLocaleString()}\nPlan Annual NOI: $${lot.planAnnual.toLocaleString()}\n\nContact: elizondojuanjose@gmail.com\nPhone: (956) 522-1481`;
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `lot-${lot.id}-tear-sheet.txt`;
+            a.click();
+            URL.revokeObjectURL(url);
+          }}
+        >
           <FileText className="h-4 w-4 mr-2" />
           Export Tear Sheet
         </Button>
-        <Button variant="outline" className="flex-1">
+        <Button 
+          variant="outline" 
+          className="flex-1"
+          onClick={() => {
+            // Navigate to calculator with lot data
+            const params = new URLSearchParams({
+              acres: lot.acres.toString(),
+              buildableSF: lot.buildableSF.toString(),
+              landPrice: lot.landInvestment.toString()
+            });
+            window.location.href = `/calculator?${params.toString()}`;
+          }}
+        >
           <Calculator className="h-4 w-4 mr-2" />
           Run Scenarios
         </Button>

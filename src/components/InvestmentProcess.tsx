@@ -80,7 +80,12 @@ export default function InvestmentProcess() {
                   <span className="text-xl font-semibold">{PORTFOLIO_CONSTANTS.CONTACT.PHONE}</span>
                 </div>
                 
-                <Button className="bg-gradient-to-r from-gold to-gold-dark text-background font-semibold hover:shadow-lg hover:shadow-gold/25 transition-all duration-300">
+                <Button 
+                  className="bg-gradient-to-r from-gold to-gold-dark text-background font-semibold hover:shadow-lg hover:shadow-gold/25 transition-all duration-300"
+                  onClick={() => {
+                    window.location.href = `mailto:${PORTFOLIO_CONSTANTS.CONTACT.EMAIL}?subject=Million-Dollar Investment Opportunity - McAllen Industrial District&body=Hi Juan,%0D%0A%0D%0AI'm interested in learning more about the McAllen Industrial District investment opportunities. Please send me more information.%0D%0A%0D%0AThank you!`;
+                  }}
+                >
                   <Mail className="h-4 w-4 mr-2" />
                   Contact for Million-Dollar Opportunity
                 </Button>
