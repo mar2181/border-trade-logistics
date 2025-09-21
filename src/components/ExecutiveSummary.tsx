@@ -26,7 +26,8 @@ export default function ExecutiveSummary() {
             <img 
               src={sitePlanImage} 
               alt="McAllen Industrial District Site Plan - Warehouse Lot Layout" 
-              className="w-full h-[400px] object-contain p-6" 
+              className="w-full h-[600px] object-contain p-2" 
+              style={{ maxWidth: 'none' }}
             />
           </div>
         </div>
