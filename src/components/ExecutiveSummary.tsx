@@ -47,13 +47,13 @@ export default function ExecutiveSummary() {
                 <img 
                   src={remaxBalloon} 
                   alt="RE/MAX balloon" 
-                  className="floating-balloon animate-float-drift w-26 h-34 opacity-55"
+                  className="floating-balloon animate-float-drift w-32 h-40 opacity-55"
                   style={{ right: '2%', top: '55%', animationDelay: '5s' }}
                 />
                 <img 
                   src={remaxBalloon} 
                   alt="RE/MAX balloon" 
-                  className="floating-balloon animate-float-gentle w-22 h-30 opacity-48"
+                  className="floating-balloon animate-float-gentle w-24 h-32 opacity-48"
                   style={{ right: '6%', top: '70%', animationDelay: '12s' }}
                 />
                 
@@ -61,13 +61,13 @@ export default function ExecutiveSummary() {
                 <img 
                   src={remaxBalloon} 
                   alt="RE/MAX balloon" 
-                  className="floating-balloon animate-float-sway w-18 h-26 opacity-40"
+                  className="floating-balloon animate-float-sway w-20 h-28 opacity-40"
                   style={{ left: '0.5%', top: '30%', animationDelay: '20s' }}
                 />
                 <img 
                   src={remaxBalloon} 
                   alt="RE/MAX balloon" 
-                  className="floating-balloon animate-float-drift w-19 h-27 opacity-42"
+                  className="floating-balloon animate-float-drift w-20 h-28 opacity-42"
                   style={{ right: '0.5%', top: '25%', animationDelay: '15s' }}
                 />
               </div>
