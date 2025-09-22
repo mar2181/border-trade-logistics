@@ -90,16 +90,14 @@ export default function ExecutiveSummary() {
           </div>
         </div>
 
-        {/* Lot Layout Plan - Large Display */}
-        <div className="my-16">
-          <div className="text-center mb-8">
-            <h3 className="text-3xl font-semibold text-primary mb-4">Available Land Parcels</h3>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Strategic lot positioning with premium access to utilities and transportation corridors
-            </p>
-          </div>
-          <div className="relative rounded-2xl overflow-hidden border border-border shadow-2xl">
-            
+        {/* Lot Layout Image in the gap */}
+        <div className="my-8">
+          <div className="relative rounded-xl overflow-hidden border border-border">
+            <img 
+              src={lotLayoutPlan} 
+              alt="Available land parcels layout plan" 
+              className="w-full h-64 object-cover"
+            />
           </div>
         </div>
 
