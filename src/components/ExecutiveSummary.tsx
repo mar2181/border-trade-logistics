@@ -29,41 +29,96 @@ export default function ExecutiveSummary() {
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
               {/* Hidden on mobile for performance */}
               <div className="hidden md:block">
+                {/* Large balloons for foreground */}
                 <img 
                   src={remaxBalloon} 
                   alt="RE/MAX balloon" 
-                  className="floating-balloon animate-float-gentle w-16 h-20"
+                  className="floating-balloon animate-float-gentle w-20 h-24 opacity-50"
                   style={{ top: '10%', left: '5%', animationDelay: '0s' }}
                 />
                 <img 
                   src={remaxBalloon} 
                   alt="RE/MAX balloon" 
-                  className="floating-balloon animate-float-drift w-12 h-16 opacity-30"
-                  style={{ top: '20%', right: '8%', animationDelay: '3s' }}
+                  className="floating-balloon animate-float-sway w-18 h-22 opacity-45"
+                  style={{ top: '60%', right: '8%', animationDelay: '4s' }}
+                />
+                
+                {/* Medium balloons for mid-ground */}
+                <img 
+                  src={remaxBalloon} 
+                  alt="RE/MAX balloon" 
+                  className="floating-balloon animate-float-drift w-14 h-18 opacity-40"
+                  style={{ top: '20%', right: '15%', animationDelay: '2s' }}
                 />
                 <img 
                   src={remaxBalloon} 
                   alt="RE/MAX balloon" 
-                  className="floating-balloon animate-float-slow w-20 h-24 opacity-35"
-                  style={{ top: '60%', left: '10%', animationDelay: '7s' }}
+                  className="floating-balloon animate-float-slow w-16 h-20 opacity-35"
+                  style={{ top: '50%', left: '12%', animationDelay: '6s' }}
                 />
                 <img 
                   src={remaxBalloon} 
                   alt="RE/MAX balloon" 
-                  className="floating-balloon animate-float-sway w-14 h-18 opacity-40"
-                  style={{ top: '50%', right: '12%', animationDelay: '5s' }}
+                  className="floating-balloon animate-float-gentle w-15 h-19 opacity-42"
+                  style={{ top: '30%', left: '70%', animationDelay: '8s' }}
                 />
                 <img 
                   src={remaxBalloon} 
                   alt="RE/MAX balloon" 
-                  className="floating-balloon animate-float-gentle w-10 h-14 opacity-25"
+                  className="floating-balloon animate-float-drift w-17 h-21 opacity-38"
+                  style={{ top: '70%', left: '25%', animationDelay: '1s' }}
+                />
+                
+                {/* Small balloons for background depth */}
+                <img 
+                  src={remaxBalloon} 
+                  alt="RE/MAX balloon" 
+                  className="floating-balloon animate-float-sway w-10 h-14 opacity-25"
                   style={{ top: '15%', left: '50%', animationDelay: '10s' }}
                 />
                 <img 
                   src={remaxBalloon} 
                   alt="RE/MAX balloon" 
-                  className="floating-balloon animate-float-drift w-18 h-22 opacity-45"
-                  style={{ top: '70%', right: '25%', animationDelay: '2s' }}
+                  className="floating-balloon animate-float-gentle w-8 h-12 opacity-20"
+                  style={{ top: '40%', right: '35%', animationDelay: '12s' }}
+                />
+                <img 
+                  src={remaxBalloon} 
+                  alt="RE/MAX balloon" 
+                  className="floating-balloon animate-float-drift w-12 h-16 opacity-30"
+                  style={{ top: '80%', right: '40%', animationDelay: '3s' }}
+                />
+                <img 
+                  src={remaxBalloon} 
+                  alt="RE/MAX balloon" 
+                  className="floating-balloon animate-float-slow w-9 h-13 opacity-22"
+                  style={{ top: '25%', left: '30%', animationDelay: '14s' }}
+                />
+                
+                {/* Extra small balloons for far background */}
+                <img 
+                  src={remaxBalloon} 
+                  alt="RE/MAX balloon" 
+                  className="floating-balloon animate-float-sway w-6 h-10 opacity-15"
+                  style={{ top: '5%', right: '50%', animationDelay: '16s' }}
+                />
+                <img 
+                  src={remaxBalloon} 
+                  alt="RE/MAX balloon" 
+                  className="floating-balloon animate-float-gentle w-7 h-11 opacity-18"
+                  style={{ top: '65%', left: '60%', animationDelay: '9s' }}
+                />
+                <img 
+                  src={remaxBalloon} 
+                  alt="RE/MAX balloon" 
+                  className="floating-balloon animate-float-drift w-11 h-15 opacity-28"
+                  style={{ top: '35%', right: '5%', animationDelay: '5s' }}
+                />
+                <img 
+                  src={remaxBalloon} 
+                  alt="RE/MAX balloon" 
+                  className="floating-balloon animate-float-slow w-8 h-12 opacity-20"
+                  style={{ top: '85%', left: '45%', animationDelay: '11s' }}
                 />
               </div>
             </div>
