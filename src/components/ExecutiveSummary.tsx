@@ -2,7 +2,7 @@ import { Building, MapPin, Clock } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { PORTFOLIO_CONSTANTS, formatCurrency } from "@/lib/constants";
 import sitePlanImage from "@/assets/mcc-industrial-park.png";
-import warehouseAerialLayout from "@/assets/warehouse-aerial-layout.png";
+import mccWarehouseFacility from "@/assets/mcc-warehouse-facility.png";
 export default function ExecutiveSummary() {
   const {
     t
@@ -40,12 +40,12 @@ export default function ExecutiveSummary() {
                   
                   <div className="face back">
                     <img 
-                      src={warehouseAerialLayout} 
-                      alt="Aerial view of warehouse lots layout with numbered parcels" 
+                      src={mccWarehouseFacility} 
+                      alt="MCC Industrial Park warehouse facility with professional amenities" 
                       className="w-full h-full object-cover" 
                     />
                     <div className="absolute bottom-4 left-4 bg-primary/90 text-primary-foreground px-3 py-1 rounded-lg text-sm font-medium">
-                      Aerial Layout View
+                      MCC Warehouse Facility
                     </div>
                   </div>
                 </div>
