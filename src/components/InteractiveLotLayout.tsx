@@ -12,16 +12,16 @@ interface LotArea {
   height: number;
 }
 
-// Coordinates for each lot based on the image layout (percentage-based for responsiveness)
+// Coordinates for each lot based on the actual image layout (percentage-based for responsiveness)
 const LOT_AREAS: LotArea[] = [
-  { id: "lot1", x: 15, y: 20, width: 20, height: 25 }, // Top-left corner
-  { id: "lot2", x: 40, y: 15, width: 22, height: 30 }, // Top-center
-  { id: "lot3", x: 67, y: 10, width: 25, height: 35 }, // Top-right
-  { id: "lot4", x: 10, y: 50, width: 25, height: 30 }, // Mid-left
-  { id: "lot5", x: 40, y: 50, width: 25, height: 35 }, // Mid-center
-  { id: "lot6", x: 70, y: 50, width: 22, height: 30 }, // Mid-right
-  { id: "lot7", x: 10, y: 75, width: 35, height: 20 }, // Bottom-left (largest lot) - Made more prominent
-  { id: "lot8", x: 70, y: 88, width: 18, height: 10 }, // Bottom-right (smallest lot)
+  { id: "lot1", x: 16, y: 40, width: 16, height: 22 }, // Bottom row left - Lot #1
+  { id: "lot2", x: 33, y: 40, width: 16, height: 22 }, // Bottom row center-left - Lot #2  
+  { id: "lot3", x: 50, y: 40, width: 16, height: 22 }, // Bottom row center-right - Lot #3
+  { id: "lot4", x: 25, y: 65, width: 20, height: 15 }, // Middle area - Lot #4
+  { id: "lot5", x: 67, y: 40, width: 16, height: 32 }, // Right side tall - Lot #5
+  { id: "lot6", x: 67, y: 25, width: 16, height: 14 }, // Right side top - Lot #6
+  { id: "lot7", x: 16, y: 12, width: 25, height: 16 }, // Top left large - Lot #7
+  { id: "lot8", x: 42, y: 12, width: 18, height: 16 }, // Top right - Lot #8
 ];
 
 const calculateLotROI = (lot: any) => {
