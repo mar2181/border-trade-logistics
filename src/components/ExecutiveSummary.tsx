@@ -20,15 +20,55 @@ export default function ExecutiveSummary() {
           </div>
         </div>
 
-        {/* Wide Site Plan Image - Full Width Above Strategic Investment Section */}
+        {/* Wide Site Plan Image - Double-sided Card */}
         <div className="my-12">
-          <div className="relative overflow-hidden rounded-xl border border-border bg-white">
-            <img 
-              src={sitePlanImage} 
-              alt="McAllen Industrial District Site Plan - Warehouse Lot Layout" 
-              className="w-full h-[600px] object-contain p-2" 
-              style={{ maxWidth: 'none' }}
-            />
+          <div className="group relative w-full h-[600px] perspective-1000">
+            <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
+              {/* Front Side - Site Plan */}
+              <div className="absolute inset-0 w-full h-full backface-hidden rounded-xl border border-border bg-white overflow-hidden">
+                <img 
+                  src={sitePlanImage} 
+                  alt="McAllen Industrial District Site Plan - Warehouse Lot Layout" 
+                  className="w-full h-full object-contain p-2" 
+                  style={{ maxWidth: 'none' }}
+                />
+                <div className="absolute bottom-4 right-4 bg-primary/90 text-primary-foreground px-3 py-1 rounded-lg text-sm font-medium">
+                  {t('executiveSummary.hoverToFlip') || 'Hover to flip'}
+                </div>
+              </div>
+              
+              {/* Back Side - Additional Info */}
+              <div className="absolute inset-0 w-full h-full backface-hidden rounded-xl border border-border bg-gradient-to-br from-primary/5 to-accent-emerald/5 rotate-y-180 overflow-hidden">
+                <div className="flex flex-col h-full p-8 justify-center items-center text-center">
+                  <div className="max-w-2xl space-y-6">
+                    <h3 className="text-3xl font-bold text-primary mb-4">
+                      {t('executiveSummary.siteDetails') || 'Site Development Details'}
+                    </h3>
+                    <div className="grid grid-cols-2 gap-6">
+                      <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-4">
+                        <div className="text-2xl font-bold text-gold mb-2">44.18 AC</div>
+                        <div className="text-sm text-muted-foreground">Total Development Area</div>
+                      </div>
+                      <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-4">
+                        <div className="text-2xl font-bold text-accent-emerald mb-2">703,420 SF</div>
+                        <div className="text-sm text-muted-foreground">Buildable Square Footage</div>
+                      </div>
+                      <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-4">
+                        <div className="text-2xl font-bold text-accent-sapphire mb-2">15 Lots</div>
+                        <div className="text-sm text-muted-foreground">Individual Parcels</div>
+                      </div>
+                      <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-4">
+                        <div className="text-2xl font-bold text-gold mb-2">Strategic</div>
+                        <div className="text-sm text-muted-foreground">Border Location</div>
+                      </div>
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {t('executiveSummary.siteDescription') || 'Prime industrial development opportunity in the heart of the Rio Grande Valley, designed for maximum logistics efficiency and cross-border trade advantage.'}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
