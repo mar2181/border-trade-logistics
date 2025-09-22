@@ -3,6 +3,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { PORTFOLIO_CONSTANTS, formatCurrency } from "@/lib/constants";
 import sitePlanImage from "@/assets/mcc-industrial-park.png";
 import mccWarehouseFacility from "@/assets/mcc-warehouse-facility.png";
+import remaxBalloon from "@/assets/remax-balloon.png";
 export default function ExecutiveSummary() {
   const {
     t
@@ -21,29 +22,75 @@ export default function ExecutiveSummary() {
           </div>
         </div>
 
-        {/* Wide Site Plan Image - 3D Spinning Card */}
+        {/* Wide Site Plan Image - 3D Spinning Card with Floating Balloons */}
         <div className="my-12">
-          <div className="land-card">
-            <div className="stage" role="button" tabIndex={0} aria-label="3D site plan view">
-              <div className="slab-wrap">
-                <div className="slab">
-                  <div className="face front">
-                    <img 
-                      src={sitePlanImage} 
-                      alt="MCC Industrial Park - Modern warehouse development with professional facilities" 
-                      className="w-full h-full object-cover" 
-                    />
-                    <div className="absolute bottom-4 right-4 bg-primary/90 text-primary-foreground px-3 py-1 rounded-lg text-sm font-medium">
-                      {t('executiveSummary.hoverToSpin') || 'Hover to spin'}
+          <div className="relative">
+            {/* Floating RE/MAX Balloons Background */}
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              {/* Hidden on mobile for performance */}
+              <div className="hidden md:block">
+                <img 
+                  src={remaxBalloon} 
+                  alt="RE/MAX balloon" 
+                  className="floating-balloon animate-float-gentle w-16 h-20"
+                  style={{ top: '10%', left: '5%', animationDelay: '0s' }}
+                />
+                <img 
+                  src={remaxBalloon} 
+                  alt="RE/MAX balloon" 
+                  className="floating-balloon animate-float-drift w-12 h-16 opacity-30"
+                  style={{ top: '20%', right: '8%', animationDelay: '3s' }}
+                />
+                <img 
+                  src={remaxBalloon} 
+                  alt="RE/MAX balloon" 
+                  className="floating-balloon animate-float-slow w-20 h-24 opacity-35"
+                  style={{ top: '60%', left: '10%', animationDelay: '7s' }}
+                />
+                <img 
+                  src={remaxBalloon} 
+                  alt="RE/MAX balloon" 
+                  className="floating-balloon animate-float-sway w-14 h-18 opacity-40"
+                  style={{ top: '50%', right: '12%', animationDelay: '5s' }}
+                />
+                <img 
+                  src={remaxBalloon} 
+                  alt="RE/MAX balloon" 
+                  className="floating-balloon animate-float-gentle w-10 h-14 opacity-25"
+                  style={{ top: '15%', left: '50%', animationDelay: '10s' }}
+                />
+                <img 
+                  src={remaxBalloon} 
+                  alt="RE/MAX balloon" 
+                  className="floating-balloon animate-float-drift w-18 h-22 opacity-45"
+                  style={{ top: '70%', right: '25%', animationDelay: '2s' }}
+                />
+              </div>
+            </div>
+            
+            {/* Main Spinning Card */}
+            <div className="land-card relative z-10">
+              <div className="stage" role="button" tabIndex={0} aria-label="3D site plan view">
+                <div className="slab-wrap">
+                  <div className="slab">
+                    <div className="face front">
+                      <img 
+                        src={sitePlanImage} 
+                        alt="MCC Industrial Park - Modern warehouse development with professional facilities" 
+                        className="w-full h-full object-cover" 
+                      />
+                      <div className="absolute bottom-4 right-4 bg-primary/90 text-primary-foreground px-3 py-1 rounded-lg text-sm font-medium">
+                        {t('executiveSummary.hoverToSpin') || 'Hover to spin'}
+                      </div>
                     </div>
-                  </div>
-                  
-                  <div className="face back">
-                    <img 
-                      src={mccWarehouseFacility} 
-                      alt="MCC Industrial Park warehouse facility with Juan Jose Elizondo contact information" 
-                      className="w-full h-full object-cover" 
-                    />
+                    
+                    <div className="face back">
+                      <img 
+                        src={mccWarehouseFacility} 
+                        alt="MCC Industrial Park warehouse facility with Juan Jose Elizondo contact information" 
+                        className="w-full h-full object-cover" 
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
