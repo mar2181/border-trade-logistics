@@ -2,6 +2,7 @@ import { Building, MapPin, Clock } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { PORTFOLIO_CONSTANTS, formatCurrency } from "@/lib/constants";
 import sitePlanImage from "@/assets/mcallen-site-plan.png";
+import warehouseAerialLayout from "@/assets/warehouse-aerial-layout.png";
 export default function ExecutiveSummary() {
   const {
     t
@@ -38,33 +39,13 @@ export default function ExecutiveSummary() {
                   </div>
                   
                   <div className="face back">
-                    <div className="flex flex-col h-full p-8 justify-center items-center text-center bg-gradient-to-br from-primary/5 to-accent-emerald/5">
-                      <div className="max-w-2xl space-y-6">
-                        <h3 className="text-3xl font-bold text-primary mb-4">
-                          {t('executiveSummary.siteDetails') || 'Site Development Details'}
-                        </h3>
-                        <div className="grid grid-cols-2 gap-6">
-                          <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-4">
-                            <div className="text-2xl font-bold text-gold mb-2">44.18 AC</div>
-                            <div className="text-sm text-muted-foreground">Total Development Area</div>
-                          </div>
-                          <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-4">
-                            <div className="text-2xl font-bold text-accent-emerald mb-2">703,420 SF</div>
-                            <div className="text-sm text-muted-foreground">Buildable Square Footage</div>
-                          </div>
-                          <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-4">
-                            <div className="text-2xl font-bold text-accent-sapphire mb-2">15 Lots</div>
-                            <div className="text-sm text-muted-foreground">Individual Parcels</div>
-                          </div>
-                          <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-4">
-                            <div className="text-2xl font-bold text-gold mb-2">Strategic</div>
-                            <div className="text-sm text-muted-foreground">Border Location</div>
-                          </div>
-                        </div>
-                        <p className="text-muted-foreground leading-relaxed">
-                          {t('executiveSummary.siteDescription') || 'Prime industrial development opportunity in the heart of the Rio Grande Valley, designed for maximum logistics efficiency and cross-border trade advantage.'}
-                        </p>
-                      </div>
+                    <img 
+                      src={warehouseAerialLayout} 
+                      alt="Aerial view of warehouse lots layout with numbered parcels" 
+                      className="w-full h-full object-cover" 
+                    />
+                    <div className="absolute bottom-4 left-4 bg-primary/90 text-primary-foreground px-3 py-1 rounded-lg text-sm font-medium">
+                      Aerial Layout View
                     </div>
                   </div>
                 </div>
