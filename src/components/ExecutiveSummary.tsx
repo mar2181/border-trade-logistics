@@ -31,46 +31,40 @@ export default function ExecutiveSummary() {
               {/* Hidden on mobile for performance */}
               <div className="hidden md:block">
                 {/* Far left edge balloons - well spread out */}
-                <img 
-                  src={remaxBalloon} 
-                  alt="RE/MAX balloon" 
-                  className="floating-balloon animate-float-gentle w-24 h-32 opacity-50"
-                  style={{ left: '2%', top: '60%', animationDelay: '0s' }}
-                />
-                <img 
-                  src={remaxBalloon} 
-                  alt="RE/MAX balloon" 
-                  className="floating-balloon animate-float-slow w-20 h-28 opacity-45"
-                  style={{ left: '6%', top: '75%', animationDelay: '8s' }}
-                />
+                <img src={remaxBalloon} alt="RE/MAX balloon" className="floating-balloon animate-float-gentle w-24 h-32 opacity-50" style={{
+                left: '2%',
+                top: '60%',
+                animationDelay: '0s'
+              }} />
+                <img src={remaxBalloon} alt="RE/MAX balloon" className="floating-balloon animate-float-slow w-20 h-28 opacity-45" style={{
+                left: '6%',
+                top: '75%',
+                animationDelay: '8s'
+              }} />
                 
                 {/* Far right edge balloons - well spread out */}
-                <img 
-                  src={remaxBalloon} 
-                  alt="RE/MAX balloon" 
-                  className="floating-balloon animate-float-drift w-32 h-40 opacity-55"
-                  style={{ right: '2%', top: '55%', animationDelay: '5s' }}
-                />
-                <img 
-                  src={remaxBalloon} 
-                  alt="RE/MAX balloon" 
-                  className="floating-balloon animate-float-gentle w-24 h-32 opacity-48"
-                  style={{ right: '6%', top: '70%', animationDelay: '12s' }}
-                />
+                <img src={remaxBalloon} alt="RE/MAX balloon" className="floating-balloon animate-float-drift w-32 h-40 opacity-55" style={{
+                right: '2%',
+                top: '55%',
+                animationDelay: '5s'
+              }} />
+                <img src={remaxBalloon} alt="RE/MAX balloon" className="floating-balloon animate-float-gentle w-24 h-32 opacity-48" style={{
+                right: '6%',
+                top: '70%',
+                animationDelay: '12s'
+              }} />
                 
                 {/* Corner balloons for natural flow - avoiding center completely */}
-                <img 
-                  src={remaxBalloon} 
-                  alt="RE/MAX balloon" 
-                  className="floating-balloon animate-float-sway w-20 h-28 opacity-40"
-                  style={{ left: '0.5%', top: '30%', animationDelay: '20s' }}
-                />
-                <img 
-                  src={remaxBalloon} 
-                  alt="RE/MAX balloon" 
-                  className="floating-balloon animate-float-drift w-20 h-28 opacity-42"
-                  style={{ right: '0.5%', top: '25%', animationDelay: '15s' }}
-                />
+                <img src={remaxBalloon} alt="RE/MAX balloon" className="floating-balloon animate-float-sway w-20 h-28 opacity-40" style={{
+                left: '0.5%',
+                top: '30%',
+                animationDelay: '20s'
+              }} />
+                <img src={remaxBalloon} alt="RE/MAX balloon" className="floating-balloon animate-float-drift w-20 h-28 opacity-42" style={{
+                right: '0.5%',
+                top: '25%',
+                animationDelay: '15s'
+              }} />
               </div>
             </div>
             
@@ -80,22 +74,14 @@ export default function ExecutiveSummary() {
                 <div className="slab-wrap">
                   <div className="slab">
                     <div className="face front">
-                      <img 
-                        src={sitePlanImage} 
-                        alt="MCC Industrial Park - Modern warehouse development with professional facilities" 
-                        className="w-full h-full object-cover" 
-                      />
+                      <img src={sitePlanImage} alt="MCC Industrial Park - Modern warehouse development with professional facilities" className="w-full h-full object-cover" />
                       <div className="absolute bottom-4 right-4 bg-primary/90 text-primary-foreground px-3 py-1 rounded-lg text-sm font-medium">
                         {t('executiveSummary.hoverToSpin') || 'Hover to spin'}
                       </div>
                     </div>
                     
                     <div className="face back">
-                      <img 
-                        src={mccWarehouseFacility} 
-                        alt="MCC Industrial Park warehouse facility with Juan Jose Elizondo contact information" 
-                        className="w-full h-full object-cover" 
-                      />
+                      <img src={mccWarehouseFacility} alt="MCC Industrial Park warehouse facility with Juan Jose Elizondo contact information" className="w-full h-full object-cover" />
                     </div>
                   </div>
                 </div>
@@ -106,13 +92,7 @@ export default function ExecutiveSummary() {
 
         {/* Add lot layout image in the gap */}
         <div className="my-8">
-          <div className="relative rounded-xl overflow-hidden border border-border h-80">
-            <img 
-              src={lotLayoutPlan} 
-              alt="Detailed lot layout plan showing available parcels #1-8 with strategic positioning" 
-              className="w-full h-full object-cover"
-            />
-          </div>
+          
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
