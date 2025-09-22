@@ -42,7 +42,7 @@ export default function ExecutiveSummary() {
                     <img 
                       src={mccWarehouseFacility} 
                       alt="MCC Industrial Park warehouse facility with Juan Jose Elizondo contact information" 
-                      className="w-full h-full object-contain bg-white" 
+                      className="w-full h-full object-cover" 
                     />
                   </div>
                 </div>
