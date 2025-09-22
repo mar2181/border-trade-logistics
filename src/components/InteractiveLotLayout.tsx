@@ -20,7 +20,7 @@ const LOT_AREAS: LotArea[] = [
   { id: "lot4", x: 10, y: 50, width: 25, height: 30 }, // Mid-left
   { id: "lot5", x: 40, y: 50, width: 25, height: 35 }, // Mid-center
   { id: "lot6", x: 70, y: 50, width: 22, height: 30 }, // Mid-right
-  { id: "lot7", x: 15, y: 85, width: 30, height: 12 }, // Bottom-left (largest lot)
+  { id: "lot7", x: 10, y: 75, width: 35, height: 20 }, // Bottom-left (largest lot) - Made more prominent
   { id: "lot8", x: 70, y: 88, width: 18, height: 10 }, // Bottom-right (smallest lot)
 ];
 
@@ -67,9 +67,9 @@ export default function InteractiveLotLayout() {
                   y={area.y}
                   width={area.width}
                   height={area.height}
-                  fill="rgba(59, 130, 246, 0.1)"
-                  stroke="rgba(59, 130, 246, 0.3)"
-                  strokeWidth="0.5"
+                  fill={area.id === "lot7" ? "rgba(255, 215, 0, 0.15)" : "rgba(59, 130, 246, 0.1)"}
+                  stroke={area.id === "lot7" ? "rgba(255, 215, 0, 0.5)" : "rgba(59, 130, 246, 0.3)"}
+                  strokeWidth={area.id === "lot7" ? "1" : "0.5"}
                   className="cursor-pointer transition-all duration-200 hover:fill-primary/20 hover:stroke-primary/60 hover:stroke-1"
                 />
               </HoverCardTrigger>
