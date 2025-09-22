@@ -41,12 +41,9 @@ export default function ExecutiveSummary() {
                   <div className="face back">
                     <img 
                       src={mccWarehouseFacility} 
-                      alt="MCC Industrial Park warehouse facility with professional amenities" 
-                      className="w-full h-full object-cover" 
+                      alt="MCC Industrial Park warehouse facility with Juan Jose Elizondo contact information" 
+                      className="w-full h-full object-contain bg-white" 
                     />
-                    <div className="absolute bottom-4 left-4 bg-primary/90 text-primary-foreground px-3 py-1 rounded-lg text-sm font-medium">
-                      MCC Warehouse Facility
-                    </div>
                   </div>
                 </div>
               </div>
