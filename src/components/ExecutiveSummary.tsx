@@ -25,74 +25,50 @@ export default function ExecutiveSummary() {
         {/* Wide Site Plan Image - 3D Spinning Card with Floating Balloons */}
         <div className="my-12">
           <div className="relative">
-            {/* Floating RE/MAX Balloons Background */}
-            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            {/* Floating RE/MAX Balloons Background - Starting from behind */}
+            <div className="absolute inset-0 overflow-hidden pointer-events-none -z-10">
               {/* Hidden on mobile for performance */}
               <div className="hidden md:block">
-                {/* Left side balloons - safe edge positioning */}
+                {/* Far left edge balloons - well spread out */}
                 <img 
                   src={remaxBalloon} 
                   alt="RE/MAX balloon" 
-                  className="floating-balloon animate-float-gentle w-20 h-26 opacity-55"
-                  style={{ left: '3%', animationDelay: '0s' }}
+                  className="floating-balloon animate-float-gentle w-24 h-32 opacity-50"
+                  style={{ left: '2%', top: '60%', animationDelay: '0s' }}
                 />
                 <img 
                   src={remaxBalloon} 
                   alt="RE/MAX balloon" 
-                  className="floating-balloon animate-float-slow w-18 h-24 opacity-50"
-                  style={{ left: '7%', animationDelay: '7s' }}
-                />
-                <img 
-                  src={remaxBalloon} 
-                  alt="RE/MAX balloon" 
-                  className="floating-balloon animate-float-drift w-16 h-22 opacity-45"
-                  style={{ left: '11%', animationDelay: '14s' }}
-                />
-                <img 
-                  src={remaxBalloon} 
-                  alt="RE/MAX balloon" 
-                  className="floating-balloon animate-float-sway w-14 h-20 opacity-40"
-                  style={{ left: '15%', animationDelay: '21s' }}
+                  className="floating-balloon animate-float-slow w-20 h-28 opacity-45"
+                  style={{ left: '6%', top: '75%', animationDelay: '8s' }}
                 />
                 
-                {/* Right side balloons - safe edge positioning */}
+                {/* Far right edge balloons - well spread out */}
                 <img 
                   src={remaxBalloon} 
                   alt="RE/MAX balloon" 
-                  className="floating-balloon animate-float-drift w-22 h-28 opacity-60"
-                  style={{ right: '3%', animationDelay: '5s' }}
+                  className="floating-balloon animate-float-drift w-26 h-34 opacity-55"
+                  style={{ right: '2%', top: '55%', animationDelay: '5s' }}
                 />
                 <img 
                   src={remaxBalloon} 
                   alt="RE/MAX balloon" 
-                  className="floating-balloon animate-float-gentle w-19 h-25 opacity-52"
-                  style={{ right: '7%', animationDelay: '12s' }}
-                />
-                <img 
-                  src={remaxBalloon} 
-                  alt="RE/MAX balloon" 
-                  className="floating-balloon animate-float-slow w-17 h-23 opacity-48"
-                  style={{ right: '11%', animationDelay: '9s' }}
-                />
-                <img 
-                  src={remaxBalloon} 
-                  alt="RE/MAX balloon" 
-                  className="floating-balloon animate-float-sway w-15 h-21 opacity-42"
-                  style={{ right: '15%', animationDelay: '16s' }}
+                  className="floating-balloon animate-float-gentle w-22 h-30 opacity-48"
+                  style={{ right: '6%', top: '70%', animationDelay: '12s' }}
                 />
                 
-                {/* Additional far edge balloons for more movement */}
+                {/* Corner balloons for natural flow - avoiding center completely */}
                 <img 
                   src={remaxBalloon} 
                   alt="RE/MAX balloon" 
-                  className="floating-balloon animate-float-gentle w-12 h-18 opacity-35"
-                  style={{ left: '1%', animationDelay: '25s' }}
+                  className="floating-balloon animate-float-sway w-18 h-26 opacity-40"
+                  style={{ left: '0.5%', top: '30%', animationDelay: '20s' }}
                 />
                 <img 
                   src={remaxBalloon} 
                   alt="RE/MAX balloon" 
-                  className="floating-balloon animate-float-drift w-13 h-19 opacity-38"
-                  style={{ right: '1%', animationDelay: '18s' }}
+                  className="floating-balloon animate-float-drift w-19 h-27 opacity-42"
+                  style={{ right: '0.5%', top: '25%', animationDelay: '15s' }}
                 />
               </div>
             </div>
