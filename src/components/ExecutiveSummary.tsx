@@ -4,7 +4,7 @@ import { PORTFOLIO_CONSTANTS, formatCurrency } from "@/lib/constants";
 import sitePlanImage from "@/assets/mcc-industrial-park.png";
 import mccWarehouseFacility from "@/assets/mcc-warehouse-facility.png";
 import remaxBalloon from "@/assets/remax-balloon.png";
-import lotLayoutPlan from "@/assets/lot-layout-plan.png";
+import lotLayoutPlan from "@/assets/lot-layout-updated.png";
 export default function ExecutiveSummary() {
   const {
     t
