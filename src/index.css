@@ -271,11 +271,11 @@
     transform: rotateY(180deg); 
   }
 
-  .land-card:hover .slab,
-  .land-card:active .slab,
-  .land-card:focus-within .slab {
-    animation: slab-spin 18s linear infinite;
-  }
+.land-card:hover .slab,
+.land-card:active .slab,
+.land-card:focus-within .slab {
+  animation: slab-spin 36s linear infinite;
+}
 
   @keyframes slab-spin {
     from { transform: rotateX(8deg) rotateY(0deg); }
