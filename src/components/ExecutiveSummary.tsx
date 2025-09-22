@@ -4,7 +4,7 @@ import { PORTFOLIO_CONSTANTS, formatCurrency } from "@/lib/constants";
 import sitePlanImage from "@/assets/mcc-industrial-park.png";
 import mccWarehouseFacility from "@/assets/mcc-warehouse-facility.png";
 import remaxBalloon from "@/assets/remax-balloon.png";
-import lotLayoutPlan from "@/assets/lot-layout-updated.png";
+import InteractiveLotLayout from "./InteractiveLotLayout";
 export default function ExecutiveSummary() {
   const {
     t
@@ -93,13 +93,7 @@ export default function ExecutiveSummary() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <div className="relative z-10 rounded-xl overflow-hidden border border-border h-80">
-              <img
-                src={lotLayoutPlan}
-                alt="Detailed lot layout plan showing available parcels #1–8 with strategic positioning"
-                className="block w-full h-full object-contain"
-              />
-            </div>
+            <InteractiveLotLayout />
             <div>
               <h3 className="text-2xl font-semibold text-primary mb-4">{t('executiveSummary.opportunity')}</h3>
               <p className="text-muted-foreground leading-relaxed">
