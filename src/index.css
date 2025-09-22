@@ -223,24 +223,62 @@
            bg-primary/10 text-primary border border-primary/20;
   }
   
-  /* 3D Flip Card Effects */
-  .perspective-1000 {
-    perspective: 1000px;
+  /* 3D Spinning Card Effects */
+  .land-card { 
+    position: relative; 
+    border-radius: 16px; 
+    overflow: hidden; 
   }
   
-  .transform-style-preserve-3d {
-    transform-style: preserve-3d;
+  .land-card .stage { 
+    height: 600px; 
+    perspective: 1200px; 
+    position: relative; 
+  }
+
+  .land-card .slab-wrap { 
+    position: absolute; 
+    inset: 0; 
+    display: grid; 
+    place-items: center;
+    transform-style: preserve-3d; 
+    -webkit-transform-style: preserve-3d;
+  }
+
+  .land-card .slab {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d; 
+    -webkit-transform-style: preserve-3d;
+    will-change: transform;
+    transform: rotateX(8deg) rotateY(0deg);
+    transition: transform 600ms ease;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.22), inset 0 0 0 1px rgba(255,255,255,0.06);
+  }
+
+  .land-card .face { 
+    position: absolute; 
+    inset: 0; 
+    border-radius: inherit;
+    backface-visibility: hidden; 
+    -webkit-backface-visibility: hidden;
+    overflow: hidden;
   }
   
-  .backface-hidden {
-    backface-visibility: hidden;
+  .land-card .back { 
+    transform: rotateY(180deg); 
   }
-  
-  .rotate-y-180 {
-    transform: rotateY(180deg);
+
+  .land-card:hover .slab,
+  .land-card:active .slab,
+  .land-card:focus-within .slab {
+    animation: slab-spin 18s linear infinite;
   }
-  
-  .group:hover .group-hover\:rotate-y-180 {
-    transform: rotateY(180deg);
+
+  @keyframes slab-spin {
+    from { transform: rotateX(8deg) rotateY(0deg); }
+    to   { transform: rotateX(8deg) rotateY(360deg); }
   }
 }
