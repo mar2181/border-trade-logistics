@@ -93,6 +93,13 @@ export default function ExecutiveSummary() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
+            <div className="relative z-10 rounded-xl overflow-hidden border border-border h-80">
+              <img
+                src={lotLayoutPlan}
+                alt="Detailed lot layout plan showing available parcels #1–8 with strategic positioning"
+                className="block w-full h-full object-contain"
+              />
+            </div>
             <div>
               <h3 className="text-2xl font-semibold text-primary mb-4">{t('executiveSummary.opportunity')}</h3>
               <p className="text-muted-foreground leading-relaxed">
@@ -119,14 +126,7 @@ export default function ExecutiveSummary() {
           </div>
 
           <div className="space-y-8">
-            <div className="grid md:grid-cols-2 gap-6 items-start">
-              <div className="relative z-10 rounded-xl overflow-hidden border border-border h-80">
-                <img
-                  src={lotLayoutPlan}
-                  alt="Detailed lot layout plan showing available parcels #1–8 with strategic positioning"
-                  className="block w-full h-full object-contain"
-                />
-              </div>
+            <div className="grid md:grid-cols-1 gap-6 items-start">
               <div>
                 <h3 className="text-2xl font-semibold text-primary mb-4">{t('executiveSummary.valleyAdvantage')}</h3>
                 <p className="text-muted-foreground leading-relaxed mb-6">
