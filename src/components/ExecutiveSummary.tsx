@@ -112,11 +112,11 @@ export default function ExecutiveSummary() {
               Strategic lot positioning with premium access to utilities and transportation corridors
             </p>
           </div>
-          <div className="relative rounded-2xl overflow-hidden border border-border shadow-2xl">
+          <div className="relative rounded-2xl overflow-hidden border border-border shadow-2xl h-96">
             <img 
               src={lotLayoutPlan} 
               alt="Detailed lot layout plan showing available parcels #1-8 with strategic positioning" 
-              className="w-full h-auto object-contain bg-background"
+              className="w-full h-full object-cover"
             />
           </div>
         </div>
