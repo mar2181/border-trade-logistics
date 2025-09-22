@@ -92,7 +92,13 @@ export default function ExecutiveSummary() {
 
         {/* Add lot layout image in the gap */}
         <div className="my-8">
-          
+          <div className="relative z-10 rounded-xl overflow-hidden border border-border h-80">
+            <img
+              src={lotLayoutPlan}
+              alt="Detailed lot layout plan showing available parcels #1–8 with strategic positioning"
+              className="block w-full h-full object-contain"
+            />
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
