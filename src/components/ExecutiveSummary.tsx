@@ -1,7 +1,7 @@
 import { Building, MapPin, Clock } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { PORTFOLIO_CONSTANTS, formatCurrency } from "@/lib/constants";
-import sitePlanImage from "@/assets/mcallen-site-plan.png";
+import sitePlanImage from "@/assets/mcc-industrial-park.png";
 import warehouseAerialLayout from "@/assets/warehouse-aerial-layout.png";
 export default function ExecutiveSummary() {
   const {
@@ -30,8 +30,8 @@ export default function ExecutiveSummary() {
                   <div className="face front">
                     <img 
                       src={sitePlanImage} 
-                      alt="McAllen Industrial District Site Plan - Warehouse Lot Layout" 
-                      className="w-full h-full object-contain p-2 bg-white" 
+                      alt="MCC Industrial Park - Modern warehouse development with professional facilities" 
+                      className="w-full h-full object-cover" 
                     />
                     <div className="absolute bottom-4 right-4 bg-primary/90 text-primary-foreground px-3 py-1 rounded-lg text-sm font-medium">
                       {t('executiveSummary.hoverToSpin') || 'Hover to spin'}
