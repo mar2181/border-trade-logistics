@@ -23,7 +23,7 @@ export default function ExecutiveSummary() {
         {/* Wide Site Plan Image - Double-sided Card */}
         <div className="my-12">
           <div className="group relative w-full h-[600px] perspective-1000">
-            <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
+            <div className="relative w-full h-full transition-transform duration-[1200ms] ease-in-out transform-style-preserve-3d group-hover:rotate-y-180">
               {/* Front Side - Site Plan */}
               <div className="absolute inset-0 w-full h-full backface-hidden rounded-xl border border-border bg-white overflow-hidden">
                 <img 
