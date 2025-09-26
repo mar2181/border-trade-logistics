@@ -1,5 +1,6 @@
 import { MapPin, Truck, Building2, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import lotLayoutAerial from "@/assets/lot-layout-aerial.jpg";
 
 export default function StrategicPosition() {
   const { t } = useLanguage();
@@ -69,8 +70,8 @@ export default function StrategicPosition() {
           <div className="space-y-6">
             <div className="relative overflow-hidden rounded-xl border border-border">
               <img 
-                src="/lovable-uploads/91317bb0-2352-47ce-86ac-450496928ed0.png"
-                alt="Aerial render of proposed industrial development on Military Highway showing modern warehouse facilities and truck access"
+                src={lotLayoutAerial}
+                alt="Aerial view of lot layout showing numbered lots 1-8 positioned along Military Road and 10th Street"
                 className="w-full h-64 object-cover"
               />
             </div>
