@@ -4,7 +4,7 @@ import { PORTFOLIO_CONSTANTS, formatCurrency } from "@/lib/constants";
 import sitePlanImage from "@/assets/mcc-industrial-park.png";
 import mccWarehouseFacility from "@/assets/mcc-warehouse-facility.png";
 import remaxBalloon from "@/assets/remax-balloon.png";
-import lotLayoutAerialValley from "@/assets/lot-layout-aerial-valley.jpg";
+import lotLayoutClean from "@/assets/lot-layout-clean.png";
 export default function ExecutiveSummary() {
   const {
     t
@@ -95,8 +95,8 @@ export default function ExecutiveSummary() {
           <div className="space-y-8">
             <div className="relative z-10 rounded-xl overflow-hidden border border-border h-80">
               <img
-                src={lotLayoutAerialValley}
-                alt="Aerial view of lot layout showing numbered lots 1-8 positioned along Military Road and 10th Street"
+                src={lotLayoutClean}
+                alt="Clean lot layout plan showing numbered lots 1-8 positioned along Military Road and 10th Street"
                 className="block w-full h-full object-contain"
               />
             </div>
